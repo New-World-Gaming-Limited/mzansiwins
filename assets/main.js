@@ -114,6 +114,7 @@
     saveStarred(starred);
     updateStarButtons();
     reorderStarred();
+    updateBonusCounter();
   };
   function updateStarButtons() {
     var starred = getStarred();
@@ -143,9 +144,34 @@
     });
     cards.forEach(function(c) { container.appendChild(c); });
   }
+  /* ===== BONUS COUNTER (listing pages) ===== */
+  function updateBonusCounter() {
+    var starredTotal = document.querySelector('.starred-total');
+    var starredCount = document.querySelector('.starred-count');
+    if (!starredTotal || !starredCount) return;
+    var starred = getStarred();
+    var total = 0;
+    var count = 0;
+    // Use data from table rows or mobile cards
+    var elements = document.querySelectorAll('[data-brand-id][data-bonus-val]');
+    var seen = {};
+    elements.forEach(function(el) {
+      var id = el.getAttribute('data-brand-id');
+      if (seen[id]) return;
+      seen[id] = true;
+      if (starred.indexOf(id) >= 0) {
+        total += parseInt(el.getAttribute('data-bonus-val') || '0');
+        count++;
+      }
+    });
+    starredTotal.textContent = 'R' + total.toLocaleString('en-ZA');
+    starredCount.textContent = count + ' bookmaker' + (count !== 1 ? 's' : '') + ' starred';
+  }
+
   document.addEventListener('DOMContentLoaded', function() {
     updateStarButtons();
     reorderStarred();
+    updateBonusCounter();
   });
 
   /* ===== FILTER TABS ===== */

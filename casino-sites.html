@@ -148,8 +148,24 @@
       <nav class="breadcrumbs" aria-label="Breadcrumb"><a href="index.html">Home</a><span class="sep"><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="9 18 15 12 9 6"/></svg></span><span class="text-secondary">Best Casino Sites</span></nav>
       <h1 class="page-title">Best Casino Sites in South Africa 2026</h1>
       <p class="page-subtitle">The best online casinos for Mzansi players. Every single one licensed and tested with real rands.</p>
+
+      <!-- Bonus counter banner -->
+      <div class="bonus-counter-banner">
+        <div class="bonus-counter-item">
+          <div class="bonus-counter-label">Total bonuses available</div>
+          <div class="bonus-counter-value" style="color:var(--bonus)">R166,185</div>
+          <div class="bonus-counter-sub">35 bookmakers</div>
+        </div>
+        <div class="bonus-counter-divider"></div>
+        <div class="bonus-counter-item">
+          <div class="bonus-counter-label"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg> Your starred bonuses</div>
+          <div class="bonus-counter-value starred-total" style="color:var(--accent)">R0</div>
+          <div class="bonus-counter-sub starred-count">0 bookmakers starred</div>
+        </div>
+      </div>
+
       <input type="text" class="search-box" placeholder="Search bookmakers..." oninput="searchListing(this)">
-      
+
       <!-- Desktop table -->
       <div class="table-wrap listing-desktop">
         <table class="data-table">
@@ -157,236 +173,453 @@
             <th onclick="sortTable(this)"># <span class="sort-icon">↕</span></th>
             <th onclick="sortTable(this)">Bookmaker <span class="sort-icon">↕</span></th>
             <th>Welcome Bonus &amp; T&amp;Cs</th>
+            <th onclick="sortTable(this)">Value <span class="sort-icon">↕</span></th>
             <th onclick="sortTable(this)" style="text-align:center">Rating <span class="sort-icon">↕</span></th>
             <th style="text-align:center">Review</th>
           </tr></thead>
-          <tbody><tr data-name="zarbet">
+          <tbody><tr data-name="zarbet" data-brand-id="zarbet" data-bonus-val="3750">
           <td data-sort="1" style="font-weight:600;color:var(--text-muted)">1</td>
-          <td data-sort="Zarbet"><a href="betting-site-review/zarbet.html" class="table-link" style="font-weight:600">Zarbet</a></td>
+          <td data-sort="Zarbet" style="white-space:nowrap">
+            <div style="display:flex;align-items:center;gap:8px">
+              <button class="star-btn" data-brand="zarbet" onclick="event.stopPropagation();toggleStar('zarbet')" aria-label="Add to favourites"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg></button>
+              <a href="betting-site-review/zarbet.html" class="table-link" style="font-weight:600">Zarbet</a>
+            </div>
+          </td>
           <td><span style="color:var(--bonus);font-weight:600">Get up to R3,750 + 25FS</span><br><span style="font-size:11px;color:var(--text-muted)">18+ T&amp;Cs apply.</span></td>
+          <td data-sort="3750" style="text-align:center;font-weight:700;color:var(--bonus)">R3,750</td>
           <td data-sort="5" style="text-align:center"><span class="rating-badge high sm">5.0/5.0</span></td>
           <td style="text-align:center"><a href="betting-site-review/zarbet.html" class="btn-outline btn-sm">Review</a></td>
-        </tr><tr data-name="easybet south africa">
+        </tr><tr data-name="easybet south africa" data-brand-id="easybet-south-africa" data-bonus-val="50">
           <td data-sort="2" style="font-weight:600;color:var(--text-muted)">2</td>
-          <td data-sort="Easybet South Africa"><a href="betting-site-review/easybet-south-africa.html" class="table-link" style="font-weight:600">Easybet South Africa</a></td>
+          <td data-sort="Easybet South Africa" style="white-space:nowrap">
+            <div style="display:flex;align-items:center;gap:8px">
+              <button class="star-btn" data-brand="easybet-south-africa" onclick="event.stopPropagation();toggleStar('easybet-south-africa')" aria-label="Add to favourites"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg></button>
+              <a href="betting-site-review/easybet-south-africa.html" class="table-link" style="font-weight:600">Easybet South Africa</a>
+            </div>
+          </td>
           <td><span style="color:var(--bonus);font-weight:600">Free R50 + 150% MATCH to R1500</span><br><span style="font-size:11px;color:var(--text-muted)">18+ T&amp;Cs apply.</span></td>
+          <td data-sort="50" style="text-align:center;font-weight:700;color:var(--bonus)">R50</td>
           <td data-sort="4.9" style="text-align:center"><span class="rating-badge high sm">4.9/5.0</span></td>
           <td style="text-align:center"><a href="betting-site-review/easybet-south-africa.html" class="btn-outline btn-sm">Review</a></td>
-        </tr><tr data-name="10bet south africa">
+        </tr><tr data-name="10bet south africa" data-brand-id="10bet-south-africa" data-bonus-val="3000">
           <td data-sort="3" style="font-weight:600;color:var(--text-muted)">3</td>
-          <td data-sort="10Bet South Africa"><a href="betting-site-review/10bet-south-africa.html" class="table-link" style="font-weight:600">10Bet South Africa</a></td>
+          <td data-sort="10Bet South Africa" style="white-space:nowrap">
+            <div style="display:flex;align-items:center;gap:8px">
+              <button class="star-btn" data-brand="10bet-south-africa" onclick="event.stopPropagation();toggleStar('10bet-south-africa')" aria-label="Add to favourites"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg></button>
+              <a href="betting-site-review/10bet-south-africa.html" class="table-link" style="font-weight:600">10Bet South Africa</a>
+            </div>
+          </td>
           <td><span style="color:var(--bonus);font-weight:600">Deposit R3,000 Get R3,000</span><br><span style="font-size:11px;color:var(--text-muted)">First deposit at least R20. 18+ T&amp;Cs and wagering requirements apply.</span></td>
+          <td data-sort="3000" style="text-align:center;font-weight:700;color:var(--bonus)">R3,000</td>
           <td data-sort="4.9" style="text-align:center"><span class="rating-badge high sm">4.9/5.0</span></td>
           <td style="text-align:center"><a href="betting-site-review/10bet-south-africa.html" class="btn-outline btn-sm">Review</a></td>
-        </tr><tr data-name="betway south africa">
+        </tr><tr data-name="betway south africa" data-brand-id="betway-south-africa" data-bonus-val="10">
           <td data-sort="4" style="font-weight:600;color:var(--text-muted)">4</td>
-          <td data-sort="Betway South Africa"><a href="betting-site-review/betway-south-africa.html" class="table-link" style="font-weight:600">Betway South Africa</a></td>
+          <td data-sort="Betway South Africa" style="white-space:nowrap">
+            <div style="display:flex;align-items:center;gap:8px">
+              <button class="star-btn" data-brand="betway-south-africa" onclick="event.stopPropagation();toggleStar('betway-south-africa')" aria-label="Add to favourites"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg></button>
+              <a href="betting-site-review/betway-south-africa.html" class="table-link" style="font-weight:600">Betway South Africa</a>
+            </div>
+          </td>
           <td><span style="color:var(--bonus);font-weight:600">R10 Free Bet &amp; 10 Aviator Flights</span><br><span style="font-size:11px;color:var(--text-muted)">Welcome package includes flights and free bet. 18+ T&amp;Cs apply.</span></td>
+          <td data-sort="10" style="text-align:center;font-weight:700;color:var(--bonus)">R10</td>
           <td data-sort="4.8" style="text-align:center"><span class="rating-badge high sm">4.8/5.0</span></td>
           <td style="text-align:center"><a href="betting-site-review/betway-south-africa.html" class="btn-outline btn-sm">Review</a></td>
-        </tr><tr data-name="mzansibet">
+        </tr><tr data-name="mzansibet" data-brand-id="mzansibet" data-bonus-val="50">
           <td data-sort="5" style="font-weight:600;color:var(--text-muted)">5</td>
-          <td data-sort="Mzansibet"><a href="betting-site-review/mzansibet.html" class="table-link" style="font-weight:600">Mzansibet</a></td>
+          <td data-sort="Mzansibet" style="white-space:nowrap">
+            <div style="display:flex;align-items:center;gap:8px">
+              <button class="star-btn" data-brand="mzansibet" onclick="event.stopPropagation();toggleStar('mzansibet')" aria-label="Add to favourites"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg></button>
+              <a href="betting-site-review/mzansibet.html" class="table-link" style="font-weight:600">Mzansibet</a>
+            </div>
+          </td>
           <td><span style="color:var(--bonus);font-weight:600">Bet R50, Get R50 Extra Bet</span><br><span style="font-size:11px;color:var(--text-muted)">No requirement to use a code for the sports bonus. 18+ T&amp;Cs apply.</span></td>
+          <td data-sort="50" style="text-align:center;font-weight:700;color:var(--bonus)">R50</td>
           <td data-sort="4.8" style="text-align:center"><span class="rating-badge high sm">4.8/5.0</span></td>
           <td style="text-align:center"><a href="betting-site-review/mzansibet.html" class="btn-outline btn-sm">Review</a></td>
-        </tr><tr data-name="yesplay">
+        </tr><tr data-name="yesplay" data-brand-id="yesplay" data-bonus-val="3000">
           <td data-sort="6" style="font-weight:600;color:var(--text-muted)">6</td>
-          <td data-sort="YesPlay"><a href="betting-site-review/yesplay.html" class="table-link" style="font-weight:600">YesPlay</a></td>
+          <td data-sort="YesPlay" style="white-space:nowrap">
+            <div style="display:flex;align-items:center;gap:8px">
+              <button class="star-btn" data-brand="yesplay" onclick="event.stopPropagation();toggleStar('yesplay')" aria-label="Add to favourites"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg></button>
+              <a href="betting-site-review/yesplay.html" class="table-link" style="font-weight:600">YesPlay</a>
+            </div>
+          </td>
           <td><span style="color:var(--bonus);font-weight:600">Deposit R3000 Get R3000</span><br><span style="font-size:11px;color:var(--text-muted)">18+ T&amp;Cs apply.</span></td>
+          <td data-sort="3000" style="text-align:center;font-weight:700;color:var(--bonus)">R3,000</td>
           <td data-sort="4.8" style="text-align:center"><span class="rating-badge high sm">4.8/5.0</span></td>
           <td style="text-align:center"><a href="betting-site-review/yesplay.html" class="btn-outline btn-sm">Review</a></td>
-        </tr><tr data-name="pantherbet">
+        </tr><tr data-name="pantherbet" data-brand-id="pantherbet" data-bonus-val="14000">
           <td data-sort="7" style="font-weight:600;color:var(--text-muted)">7</td>
-          <td data-sort="Pantherbet"><a href="betting-site-review/pantherbet.html" class="table-link" style="font-weight:600">Pantherbet</a></td>
+          <td data-sort="Pantherbet" style="white-space:nowrap">
+            <div style="display:flex;align-items:center;gap:8px">
+              <button class="star-btn" data-brand="pantherbet" onclick="event.stopPropagation();toggleStar('pantherbet')" aria-label="Add to favourites"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg></button>
+              <a href="betting-site-review/pantherbet.html" class="table-link" style="font-weight:600">Pantherbet</a>
+            </div>
+          </td>
           <td><span style="color:var(--bonus);font-weight:600">Get up to R14,000 (170%)</span><br><span style="font-size:11px;color:var(--text-muted)">18+ T&amp;Cs apply.</span></td>
+          <td data-sort="14000" style="text-align:center;font-weight:700;color:var(--bonus)">R14,000</td>
           <td data-sort="4.7" style="text-align:center"><span class="rating-badge high sm">4.7/5.0</span></td>
           <td style="text-align:center"><a href="betting-site-review/pantherbet.html" class="btn-outline btn-sm">Review</a></td>
-        </tr><tr data-name="world sports betting">
+        </tr><tr data-name="world sports betting" data-brand-id="world-sports-betting" data-bonus-val="20000">
           <td data-sort="8" style="font-weight:600;color:var(--text-muted)">8</td>
-          <td data-sort="World Sports Betting"><a href="betting-site-review/world-sports-betting.html" class="table-link" style="font-weight:600">World Sports Betting</a></td>
+          <td data-sort="World Sports Betting" style="white-space:nowrap">
+            <div style="display:flex;align-items:center;gap:8px">
+              <button class="star-btn" data-brand="world-sports-betting" onclick="event.stopPropagation();toggleStar('world-sports-betting')" aria-label="Add to favourites"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg></button>
+              <a href="betting-site-review/world-sports-betting.html" class="table-link" style="font-weight:600">World Sports Betting</a>
+            </div>
+          </td>
           <td><span style="color:var(--bonus);font-weight:600">R20,000 Bonus (100%)</span><br><span style="font-size:11px;color:var(--text-muted)">18+ only. T&amp;Cs apply. Winners know when to stop.</span></td>
+          <td data-sort="20000" style="text-align:center;font-weight:700;color:var(--bonus)">R20,000</td>
           <td data-sort="4.7" style="text-align:center"><span class="rating-badge high sm">4.7/5.0</span></td>
           <td style="text-align:center"><a href="betting-site-review/world-sports-betting.html" class="btn-outline btn-sm">Review</a></td>
-        </tr><tr data-name="jabula bets">
+        </tr><tr data-name="jabula bets" data-brand-id="jabula-bets" data-bonus-val="15000">
           <td data-sort="9" style="font-weight:600;color:var(--text-muted)">9</td>
-          <td data-sort="Jabula Bets"><a href="betting-site-review/jabula-bets.html" class="table-link" style="font-weight:600">Jabula Bets</a></td>
+          <td data-sort="Jabula Bets" style="white-space:nowrap">
+            <div style="display:flex;align-items:center;gap:8px">
+              <button class="star-btn" data-brand="jabula-bets" onclick="event.stopPropagation();toggleStar('jabula-bets')" aria-label="Add to favourites"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg></button>
+              <a href="betting-site-review/jabula-bets.html" class="table-link" style="font-weight:600">Jabula Bets</a>
+            </div>
+          </td>
           <td><span style="color:var(--bonus);font-weight:600">Get 150% up to R15,000</span><br><span style="font-size:11px;color:var(--text-muted)">18+ T&amp;Cs apply.</span></td>
+          <td data-sort="15000" style="text-align:center;font-weight:700;color:var(--bonus)">R15,000</td>
           <td data-sort="4.6" style="text-align:center"><span class="rating-badge high sm">4.6/5.0</span></td>
           <td style="text-align:center"><a href="betting-site-review/jabula-bets.html" class="btn-outline btn-sm">Review</a></td>
-        </tr><tr data-name="hollywoodbets">
+        </tr><tr data-name="hollywoodbets" data-brand-id="hollywoodbets" data-bonus-val="25">
           <td data-sort="10" style="font-weight:600;color:var(--text-muted)">10</td>
-          <td data-sort="Hollywoodbets"><a href="betting-site-review/hollywoodbets.html" class="table-link" style="font-weight:600">Hollywoodbets</a></td>
+          <td data-sort="Hollywoodbets" style="white-space:nowrap">
+            <div style="display:flex;align-items:center;gap:8px">
+              <button class="star-btn" data-brand="hollywoodbets" onclick="event.stopPropagation();toggleStar('hollywoodbets')" aria-label="Add to favourites"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg></button>
+              <a href="betting-site-review/hollywoodbets.html" class="table-link" style="font-weight:600">Hollywoodbets</a>
+            </div>
+          </td>
           <td><span style="color:var(--bonus);font-weight:600">R25 + 50 spins</span><br><span style="font-size:11px;color:var(--text-muted)">R25 sign up bonus + 50 free spins once account is activated. 18+ T&amp;Cs apply.</span></td>
+          <td data-sort="25" style="text-align:center;font-weight:700;color:var(--bonus)">R25</td>
           <td data-sort="4.5" style="text-align:center"><span class="rating-badge high sm">4.5/5.0</span></td>
           <td style="text-align:center"><a href="betting-site-review/hollywoodbets.html" class="btn-outline btn-sm">Review</a></td>
-        </tr><tr data-name="topbet">
+        </tr><tr data-name="topbet" data-brand-id="topbet" data-bonus-val="1000">
           <td data-sort="11" style="font-weight:600;color:var(--text-muted)">11</td>
-          <td data-sort="Topbet"><a href="betting-site-review/topbet.html" class="table-link" style="font-weight:600">Topbet</a></td>
+          <td data-sort="Topbet" style="white-space:nowrap">
+            <div style="display:flex;align-items:center;gap:8px">
+              <button class="star-btn" data-brand="topbet" onclick="event.stopPropagation();toggleStar('topbet')" aria-label="Add to favourites"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg></button>
+              <a href="betting-site-review/topbet.html" class="table-link" style="font-weight:600">Topbet</a>
+            </div>
+          </td>
           <td><span style="color:var(--bonus);font-weight:600">Deposit R1000 Get R1000</span><br><span style="font-size:11px;color:var(--text-muted)">100% welcome match bonus up to R1000. 18+ T&amp;Cs apply.</span></td>
+          <td data-sort="1000" style="text-align:center;font-weight:700;color:var(--bonus)">R1,000</td>
           <td data-sort="4.5" style="text-align:center"><span class="rating-badge high sm">4.5/5.0</span></td>
           <td style="text-align:center"><a href="betting-site-review/topbet.html" class="btn-outline btn-sm">Review</a></td>
-        </tr><tr data-name="bet.co.za">
+        </tr><tr data-name="bet.co.za" data-brand-id="bet-co-za" data-bonus-val="5000">
           <td data-sort="12" style="font-weight:600;color:var(--text-muted)">12</td>
-          <td data-sort="BET.co.za"><a href="betting-site-review/bet-co-za.html" class="table-link" style="font-weight:600">BET.co.za</a></td>
+          <td data-sort="BET.co.za" style="white-space:nowrap">
+            <div style="display:flex;align-items:center;gap:8px">
+              <button class="star-btn" data-brand="bet-co-za" onclick="event.stopPropagation();toggleStar('bet-co-za')" aria-label="Add to favourites"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg></button>
+              <a href="betting-site-review/bet-co-za.html" class="table-link" style="font-weight:600">BET.co.za</a>
+            </div>
+          </td>
           <td><span style="color:var(--bonus);font-weight:600">R5,000 bonus</span><br><span style="font-size:11px;color:var(--text-muted)">18+ only. T&amp;Cs apply. New customers only. Email must be verified.</span></td>
+          <td data-sort="5000" style="text-align:center;font-weight:700;color:var(--bonus)">R5,000</td>
           <td data-sort="4.4" style="text-align:center"><span class="rating-badge high sm">4.4/5.0</span></td>
           <td style="text-align:center"><a href="betting-site-review/bet-co-za.html" class="btn-outline btn-sm">Review</a></td>
-        </tr><tr data-name="saffaluck">
+        </tr><tr data-name="saffaluck" data-brand-id="saffaluck" data-bonus-val="0">
           <td data-sort="13" style="font-weight:600;color:var(--text-muted)">13</td>
-          <td data-sort="SaffaLuck"><a href="betting-site-review/saffaluck.html" class="table-link" style="font-weight:600">SaffaLuck</a></td>
+          <td data-sort="SaffaLuck" style="white-space:nowrap">
+            <div style="display:flex;align-items:center;gap:8px">
+              <button class="star-btn" data-brand="saffaluck" onclick="event.stopPropagation();toggleStar('saffaluck')" aria-label="Add to favourites"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg></button>
+              <a href="betting-site-review/saffaluck.html" class="table-link" style="font-weight:600">SaffaLuck</a>
+            </div>
+          </td>
           <td><span style="color:var(--bonus);font-weight:600">Get a 100% First Deposit Bonus</span><br><span style="font-size:11px;color:var(--text-muted)">No requirement to use a code when signing up. 18+ T&amp;Cs apply.</span></td>
+          <td data-sort="0" style="text-align:center;font-weight:700;color:var(--bonus)">-</td>
           <td data-sort="4.4" style="text-align:center"><span class="rating-badge high sm">4.4/5.0</span></td>
           <td style="text-align:center"><a href="betting-site-review/saffaluck.html" class="btn-outline btn-sm">Review</a></td>
-        </tr><tr data-name="playabets">
+        </tr><tr data-name="playabets" data-brand-id="playabets" data-bonus-val="0">
           <td data-sort="14" style="font-weight:600;color:var(--text-muted)">14</td>
-          <td data-sort="PlayaBets"><a href="betting-site-review/playabets.html" class="table-link" style="font-weight:600">PlayaBets</a></td>
+          <td data-sort="PlayaBets" style="white-space:nowrap">
+            <div style="display:flex;align-items:center;gap:8px">
+              <button class="star-btn" data-brand="playabets" onclick="event.stopPropagation();toggleStar('playabets')" aria-label="Add to favourites"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg></button>
+              <a href="betting-site-review/playabets.html" class="table-link" style="font-weight:600">PlayaBets</a>
+            </div>
+          </td>
           <td><span style="color:var(--bonus);font-weight:600">100% Sign-Up Bonus</span><br><span style="font-size:11px;color:var(--text-muted)">100% deposit bonus up to R5000. 18+ T&amp;Cs apply.</span></td>
+          <td data-sort="0" style="text-align:center;font-weight:700;color:var(--bonus)">-</td>
           <td data-sort="4.3" style="text-align:center"><span class="rating-badge high sm">4.3/5.0</span></td>
           <td style="text-align:center"><a href="betting-site-review/playabets.html" class="btn-outline btn-sm">Review</a></td>
-        </tr><tr data-name="playtsogo">
+        </tr><tr data-name="playtsogo" data-brand-id="playtsogo" data-bonus-val="10000">
           <td data-sort="15" style="font-weight:600;color:var(--text-muted)">15</td>
-          <td data-sort="PlayTsogo"><a href="betting-site-review/playtsogo.html" class="table-link" style="font-weight:600">PlayTsogo</a></td>
+          <td data-sort="PlayTsogo" style="white-space:nowrap">
+            <div style="display:flex;align-items:center;gap:8px">
+              <button class="star-btn" data-brand="playtsogo" onclick="event.stopPropagation();toggleStar('playtsogo')" aria-label="Add to favourites"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg></button>
+              <a href="betting-site-review/playtsogo.html" class="table-link" style="font-weight:600">PlayTsogo</a>
+            </div>
+          </td>
           <td><span style="color:var(--bonus);font-weight:600">Exclusive: R10,000 + 25 Bet, 50 Spins + 25 Flights</span><br><span style="font-size:11px;color:var(--text-muted)">No Deposit 50 Bonus Spins included. 18+ T&amp;Cs apply.</span></td>
+          <td data-sort="10000" style="text-align:center;font-weight:700;color:var(--bonus)">R10,000</td>
           <td data-sort="4.2" style="text-align:center"><span class="rating-badge high sm">4.2/5.0</span></td>
           <td style="text-align:center"><a href="betting-site-review/playtsogo.html" class="btn-outline btn-sm">Review</a></td>
-        </tr><tr data-name="playbet.co.za">
+        </tr><tr data-name="playbet.co.za" data-brand-id="playbet-co-za" data-bonus-val="50">
           <td data-sort="16" style="font-weight:600;color:var(--text-muted)">16</td>
-          <td data-sort="Playbet.co.za"><a href="betting-site-review/playbet-co-za.html" class="table-link" style="font-weight:600">Playbet.co.za</a></td>
+          <td data-sort="Playbet.co.za" style="white-space:nowrap">
+            <div style="display:flex;align-items:center;gap:8px">
+              <button class="star-btn" data-brand="playbet-co-za" onclick="event.stopPropagation();toggleStar('playbet-co-za')" aria-label="Add to favourites"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg></button>
+              <a href="betting-site-review/playbet-co-za.html" class="table-link" style="font-weight:600">Playbet.co.za</a>
+            </div>
+          </td>
           <td><span style="color:var(--bonus);font-weight:600">R50 +50 Spins on Signup</span><br><span style="font-size:11px;color:var(--text-muted)">18+ T&amp;Cs apply.</span></td>
+          <td data-sort="50" style="text-align:center;font-weight:700;color:var(--bonus)">R50</td>
           <td data-sort="4.2" style="text-align:center"><span class="rating-badge high sm">4.2/5.0</span></td>
           <td style="text-align:center"><a href="betting-site-review/playbet-co-za.html" class="btn-outline btn-sm">Review</a></td>
-        </tr><tr data-name="wanejo bets">
+        </tr><tr data-name="wanejo bets" data-brand-id="wanejo-bets" data-bonus-val="10000">
           <td data-sort="17" style="font-weight:600;color:var(--text-muted)">17</td>
-          <td data-sort="Wanejo Bets"><a href="betting-site-review/wanejo-bets.html" class="table-link" style="font-weight:600">Wanejo Bets</a></td>
+          <td data-sort="Wanejo Bets" style="white-space:nowrap">
+            <div style="display:flex;align-items:center;gap:8px">
+              <button class="star-btn" data-brand="wanejo-bets" onclick="event.stopPropagation();toggleStar('wanejo-bets')" aria-label="Add to favourites"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg></button>
+              <a href="betting-site-review/wanejo-bets.html" class="table-link" style="font-weight:600">Wanejo Bets</a>
+            </div>
+          </td>
           <td><span style="color:var(--bonus);font-weight:600">Deposit R10,000 Get R10,000</span><br><span style="font-size:11px;color:var(--text-muted)">18+ T&amp;Cs apply.</span></td>
+          <td data-sort="10000" style="text-align:center;font-weight:700;color:var(--bonus)">R10,000</td>
           <td data-sort="4.2" style="text-align:center"><span class="rating-badge high sm">4.2/5.0</span></td>
           <td style="text-align:center"><a href="betting-site-review/wanejo-bets.html" class="btn-outline btn-sm">Review</a></td>
-        </tr><tr data-name="lucky fish">
+        </tr><tr data-name="lucky fish" data-brand-id="lucky-fish" data-bonus-val="50">
           <td data-sort="18" style="font-weight:600;color:var(--text-muted)">18</td>
-          <td data-sort="Lucky Fish"><a href="betting-site-review/lucky-fish.html" class="table-link" style="font-weight:600">Lucky Fish</a></td>
+          <td data-sort="Lucky Fish" style="white-space:nowrap">
+            <div style="display:flex;align-items:center;gap:8px">
+              <button class="star-btn" data-brand="lucky-fish" onclick="event.stopPropagation();toggleStar('lucky-fish')" aria-label="Add to favourites"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg></button>
+              <a href="betting-site-review/lucky-fish.html" class="table-link" style="font-weight:600">Lucky Fish</a>
+            </div>
+          </td>
           <td><span style="color:var(--bonus);font-weight:600">R50 Sign Up Bonus</span><br><span style="font-size:11px;color:var(--text-muted)">18+ T&amp;Cs apply.</span></td>
+          <td data-sort="50" style="text-align:center;font-weight:700;color:var(--bonus)">R50</td>
           <td data-sort="4.1" style="text-align:center"><span class="rating-badge mid sm">4.1/5.0</span></td>
           <td style="text-align:center"><a href="betting-site-review/lucky-fish.html" class="btn-outline btn-sm">Review</a></td>
-        </tr><tr data-name="betxchange">
+        </tr><tr data-name="betxchange" data-brand-id="betxchange" data-bonus-val="20000">
           <td data-sort="19" style="font-weight:600;color:var(--text-muted)">19</td>
-          <td data-sort="betXchange"><a href="betting-site-review/betxchange.html" class="table-link" style="font-weight:600">betXchange</a></td>
+          <td data-sort="betXchange" style="white-space:nowrap">
+            <div style="display:flex;align-items:center;gap:8px">
+              <button class="star-btn" data-brand="betxchange" onclick="event.stopPropagation();toggleStar('betxchange')" aria-label="Add to favourites"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg></button>
+              <a href="betting-site-review/betxchange.html" class="table-link" style="font-weight:600">betXchange</a>
+            </div>
+          </td>
           <td><span style="color:var(--bonus);font-weight:600">R20,000 Money Back</span><br><span style="font-size:11px;color:var(--text-muted)">18+ T&amp;Cs apply.</span></td>
+          <td data-sort="20000" style="text-align:center;font-weight:700;color:var(--bonus)">R20,000</td>
           <td data-sort="4.1" style="text-align:center"><span class="rating-badge mid sm">4.1/5.0</span></td>
           <td style="text-align:center"><a href="betting-site-review/betxchange.html" class="btn-outline btn-sm">Review</a></td>
-        </tr><tr data-name="soccershop">
+        </tr><tr data-name="soccershop" data-brand-id="soccershop" data-bonus-val="7500">
           <td data-sort="20" style="font-weight:600;color:var(--text-muted)">20</td>
-          <td data-sort="Soccershop"><a href="betting-site-review/soccershop.html" class="table-link" style="font-weight:600">Soccershop</a></td>
+          <td data-sort="Soccershop" style="white-space:nowrap">
+            <div style="display:flex;align-items:center;gap:8px">
+              <button class="star-btn" data-brand="soccershop" onclick="event.stopPropagation();toggleStar('soccershop')" aria-label="Add to favourites"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg></button>
+              <a href="betting-site-review/soccershop.html" class="table-link" style="font-weight:600">Soccershop</a>
+            </div>
+          </td>
           <td><span style="color:var(--bonus);font-weight:600">Deposit R7500 Get R7500</span><br><span style="font-size:11px;color:var(--text-muted)">18+ T&amp;Cs apply.</span></td>
+          <td data-sort="7500" style="text-align:center;font-weight:700;color:var(--bonus)">R7,500</td>
           <td data-sort="4" style="text-align:center"><span class="rating-badge mid sm">4.0/5.0</span></td>
           <td style="text-align:center"><a href="betting-site-review/soccershop.html" class="btn-outline btn-sm">Review</a></td>
-        </tr><tr data-name="swifty">
+        </tr><tr data-name="swifty" data-brand-id="swifty" data-bonus-val="3000">
           <td data-sort="21" style="font-weight:600;color:var(--text-muted)">21</td>
-          <td data-sort="Swifty"><a href="betting-site-review/swifty.html" class="table-link" style="font-weight:600">Swifty</a></td>
+          <td data-sort="Swifty" style="white-space:nowrap">
+            <div style="display:flex;align-items:center;gap:8px">
+              <button class="star-btn" data-brand="swifty" onclick="event.stopPropagation();toggleStar('swifty')" aria-label="Add to favourites"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg></button>
+              <a href="betting-site-review/swifty.html" class="table-link" style="font-weight:600">Swifty</a>
+            </div>
+          </td>
           <td><span style="color:var(--bonus);font-weight:600">Deposit R3000 Get R3000</span><br><span style="font-size:11px;color:var(--text-muted)">18+ T&amp;Cs apply.</span></td>
+          <td data-sort="3000" style="text-align:center;font-weight:700;color:var(--bonus)">R3,000</td>
           <td data-sort="3.9" style="text-align:center"><span class="rating-badge mid sm">3.9/5.0</span></td>
           <td style="text-align:center"><a href="betting-site-review/swifty.html" class="btn-outline btn-sm">Review</a></td>
-        </tr><tr data-name="betjets">
+        </tr><tr data-name="betjets" data-brand-id="betjets" data-bonus-val="2000">
           <td data-sort="22" style="font-weight:600;color:var(--text-muted)">22</td>
-          <td data-sort="Betjets"><a href="betting-site-review/betjets.html" class="table-link" style="font-weight:600">Betjets</a></td>
+          <td data-sort="Betjets" style="white-space:nowrap">
+            <div style="display:flex;align-items:center;gap:8px">
+              <button class="star-btn" data-brand="betjets" onclick="event.stopPropagation();toggleStar('betjets')" aria-label="Add to favourites"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg></button>
+              <a href="betting-site-review/betjets.html" class="table-link" style="font-weight:600">Betjets</a>
+            </div>
+          </td>
           <td><span style="color:var(--bonus);font-weight:600">Deposit R2,000 Get R2,000</span><br><span style="font-size:11px;color:var(--text-muted)">18+ T&amp;Cs apply.</span></td>
+          <td data-sort="2000" style="text-align:center;font-weight:700;color:var(--bonus)">R2,000</td>
           <td data-sort="3.9" style="text-align:center"><span class="rating-badge mid sm">3.9/5.0</span></td>
           <td style="text-align:center"><a href="betting-site-review/betjets.html" class="btn-outline btn-sm">Review</a></td>
-        </tr><tr data-name="gbets">
+        </tr><tr data-name="gbets" data-brand-id="gbets" data-bonus-val="1000">
           <td data-sort="23" style="font-weight:600;color:var(--text-muted)">23</td>
-          <td data-sort="Gbets"><a href="betting-site-review/gbets.html" class="table-link" style="font-weight:600">Gbets</a></td>
+          <td data-sort="Gbets" style="white-space:nowrap">
+            <div style="display:flex;align-items:center;gap:8px">
+              <button class="star-btn" data-brand="gbets" onclick="event.stopPropagation();toggleStar('gbets')" aria-label="Add to favourites"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg></button>
+              <a href="betting-site-review/gbets.html" class="table-link" style="font-weight:600">Gbets</a>
+            </div>
+          </td>
           <td><span style="color:var(--bonus);font-weight:600">R1,000 Bonus</span><br><span style="font-size:11px;color:var(--text-muted)">18+ only. T&amp;Cs apply. Winners know when to stop.</span></td>
+          <td data-sort="1000" style="text-align:center;font-weight:700;color:var(--bonus)">R1,000</td>
           <td data-sort="3.8" style="text-align:center"><span class="rating-badge mid sm">3.8/5.0</span></td>
           <td style="text-align:center"><a href="betting-site-review/gbets.html" class="btn-outline btn-sm">Review</a></td>
-        </tr><tr data-name="supersportbet">
+        </tr><tr data-name="supersportbet" data-brand-id="supersportbet" data-bonus-val="5000">
           <td data-sort="24" style="font-weight:600;color:var(--text-muted)">24</td>
-          <td data-sort="Supersportbet"><a href="betting-site-review/supersportbet.html" class="table-link" style="font-weight:600">Supersportbet</a></td>
+          <td data-sort="Supersportbet" style="white-space:nowrap">
+            <div style="display:flex;align-items:center;gap:8px">
+              <button class="star-btn" data-brand="supersportbet" onclick="event.stopPropagation();toggleStar('supersportbet')" aria-label="Add to favourites"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg></button>
+              <a href="betting-site-review/supersportbet.html" class="table-link" style="font-weight:600">Supersportbet</a>
+            </div>
+          </td>
           <td><span style="color:var(--bonus);font-weight:600">Deposit R5000 Get R5000</span><br><span style="font-size:11px;color:var(--text-muted)">18+ T&amp;Cs apply.</span></td>
+          <td data-sort="5000" style="text-align:center;font-weight:700;color:var(--bonus)">R5,000</td>
           <td data-sort="3.8" style="text-align:center"><span class="rating-badge mid sm">3.8/5.0</span></td>
           <td style="text-align:center"><a href="betting-site-review/supersportbet.html" class="btn-outline btn-sm">Review</a></td>
-        </tr><tr data-name="pokerbet">
+        </tr><tr data-name="pokerbet" data-brand-id="pokerbet" data-bonus-val="100">
           <td data-sort="25" style="font-weight:600;color:var(--text-muted)">25</td>
-          <td data-sort="Pokerbet"><a href="betting-site-review/pokerbet.html" class="table-link" style="font-weight:600">Pokerbet</a></td>
+          <td data-sort="Pokerbet" style="white-space:nowrap">
+            <div style="display:flex;align-items:center;gap:8px">
+              <button class="star-btn" data-brand="pokerbet" onclick="event.stopPropagation();toggleStar('pokerbet')" aria-label="Add to favourites"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg></button>
+              <a href="betting-site-review/pokerbet.html" class="table-link" style="font-weight:600">Pokerbet</a>
+            </div>
+          </td>
           <td><span style="color:var(--bonus);font-weight:600">Get R100 free + R2000 (100%)</span><br><span style="font-size:11px;color:var(--text-muted)">R100 free is no deposit. 18+ T&amp;Cs apply.</span></td>
+          <td data-sort="100" style="text-align:center;font-weight:700;color:var(--bonus)">R100</td>
           <td data-sort="3.7" style="text-align:center"><span class="rating-badge mid sm">3.7/5.0</span></td>
           <td style="text-align:center"><a href="betting-site-review/pokerbet.html" class="btn-outline btn-sm">Review</a></td>
-        </tr><tr data-name="sportingbet">
+        </tr><tr data-name="sportingbet" data-brand-id="sportingbet" data-bonus-val="3000">
           <td data-sort="26" style="font-weight:600;color:var(--text-muted)">26</td>
-          <td data-sort="Sportingbet"><a href="betting-site-review/sportingbet.html" class="table-link" style="font-weight:600">Sportingbet</a></td>
+          <td data-sort="Sportingbet" style="white-space:nowrap">
+            <div style="display:flex;align-items:center;gap:8px">
+              <button class="star-btn" data-brand="sportingbet" onclick="event.stopPropagation();toggleStar('sportingbet')" aria-label="Add to favourites"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg></button>
+              <a href="betting-site-review/sportingbet.html" class="table-link" style="font-weight:600">Sportingbet</a>
+            </div>
+          </td>
           <td><span style="color:var(--bonus);font-weight:600">Up to R3,000 + 300 Spins</span><br><span style="font-size:11px;color:var(--text-muted)">Earn bonus and spins on first three deposits. 18+ T&amp;Cs apply.</span></td>
+          <td data-sort="3000" style="text-align:center;font-weight:700;color:var(--bonus)">R3,000</td>
           <td data-sort="3.6" style="text-align:center"><span class="rating-badge mid sm">3.6/5.0</span></td>
           <td style="text-align:center"><a href="betting-site-review/sportingbet.html" class="btn-outline btn-sm">Review</a></td>
-        </tr><tr data-name="lulabet">
+        </tr><tr data-name="lulabet" data-brand-id="lulabet" data-bonus-val="50">
           <td data-sort="27" style="font-weight:600;color:var(--text-muted)">27</td>
-          <td data-sort="Lulabet"><a href="betting-site-review/lulabet.html" class="table-link" style="font-weight:600">Lulabet</a></td>
+          <td data-sort="Lulabet" style="white-space:nowrap">
+            <div style="display:flex;align-items:center;gap:8px">
+              <button class="star-btn" data-brand="lulabet" onclick="event.stopPropagation();toggleStar('lulabet')" aria-label="Add to favourites"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg></button>
+              <a href="betting-site-review/lulabet.html" class="table-link" style="font-weight:600">Lulabet</a>
+            </div>
+          </td>
           <td><span style="color:var(--bonus);font-weight:600">Bet R50 Get R50</span><br><span style="font-size:11px;color:var(--text-muted)">18+ T&amp;Cs apply.</span></td>
+          <td data-sort="50" style="text-align:center;font-weight:700;color:var(--bonus)">R50</td>
           <td data-sort="3.6" style="text-align:center"><span class="rating-badge mid sm">3.6/5.0</span></td>
           <td style="text-align:center"><a href="betting-site-review/lulabet.html" class="btn-outline btn-sm">Review</a></td>
-        </tr><tr data-name="betfred">
+        </tr><tr data-name="betfred" data-brand-id="betfred" data-bonus-val="21000">
           <td data-sort="28" style="font-weight:600;color:var(--text-muted)">28</td>
-          <td data-sort="Betfred"><a href="betting-site-review/betfred.html" class="table-link" style="font-weight:600">Betfred</a></td>
+          <td data-sort="Betfred" style="white-space:nowrap">
+            <div style="display:flex;align-items:center;gap:8px">
+              <button class="star-btn" data-brand="betfred" onclick="event.stopPropagation();toggleStar('betfred')" aria-label="Add to favourites"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg></button>
+              <a href="betting-site-review/betfred.html" class="table-link" style="font-weight:600">Betfred</a>
+            </div>
+          </td>
           <td><span style="color:var(--bonus);font-weight:600">up to R21,000 + 750 Spins</span><br><span style="font-size:11px;color:var(--text-muted)">Earn bonus funds and free spins over first deposits. 18+ T&amp;Cs apply.</span></td>
+          <td data-sort="21000" style="text-align:center;font-weight:700;color:var(--bonus)">R21,000</td>
           <td data-sort="3.6" style="text-align:center"><span class="rating-badge mid sm">3.6/5.0</span></td>
           <td style="text-align:center"><a href="betting-site-review/betfred.html" class="btn-outline btn-sm">Review</a></td>
-        </tr><tr data-name="tictacbets">
+        </tr><tr data-name="tictacbets" data-brand-id="tictacbets" data-bonus-val="5000">
           <td data-sort="29" style="font-weight:600;color:var(--text-muted)">29</td>
-          <td data-sort="Tictacbets"><a href="betting-site-review/tictacbets.html" class="table-link" style="font-weight:600">Tictacbets</a></td>
+          <td data-sort="Tictacbets" style="white-space:nowrap">
+            <div style="display:flex;align-items:center;gap:8px">
+              <button class="star-btn" data-brand="tictacbets" onclick="event.stopPropagation();toggleStar('tictacbets')" aria-label="Add to favourites"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg></button>
+              <a href="betting-site-review/tictacbets.html" class="table-link" style="font-weight:600">Tictacbets</a>
+            </div>
+          </td>
           <td><span style="color:var(--bonus);font-weight:600">100% up to R5,000 + 50 spins</span><br><span style="font-size:11px;color:var(--text-muted)">18+ T&amp;Cs apply.</span></td>
+          <td data-sort="5000" style="text-align:center;font-weight:700;color:var(--bonus)">R5,000</td>
           <td data-sort="3.5" style="text-align:center"><span class="rating-badge mid sm">3.5/5.0</span></td>
           <td style="text-align:center"><a href="betting-site-review/tictacbets.html" class="btn-outline btn-sm">Review</a></td>
-        </tr><tr data-name="bettabets">
+        </tr><tr data-name="bettabets" data-brand-id="bettabets" data-bonus-val="2500">
           <td data-sort="30" style="font-weight:600;color:var(--text-muted)">30</td>
-          <td data-sort="Bettabets"><a href="betting-site-review/bettabets.html" class="table-link" style="font-weight:600">Bettabets</a></td>
+          <td data-sort="Bettabets" style="white-space:nowrap">
+            <div style="display:flex;align-items:center;gap:8px">
+              <button class="star-btn" data-brand="bettabets" onclick="event.stopPropagation();toggleStar('bettabets')" aria-label="Add to favourites"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg></button>
+              <a href="betting-site-review/bettabets.html" class="table-link" style="font-weight:600">Bettabets</a>
+            </div>
+          </td>
           <td><span style="color:var(--bonus);font-weight:600">R2500 (100% match)</span><br><span style="font-size:11px;color:var(--text-muted)">100% match on first deposit, up to R2500. 18+ T&amp;Cs apply.</span></td>
+          <td data-sort="2500" style="text-align:center;font-weight:700;color:var(--bonus)">R2,500</td>
           <td data-sort="3.5" style="text-align:center"><span class="rating-badge mid sm">3.5/5.0</span></td>
           <td style="text-align:center"><a href="betting-site-review/bettabets.html" class="btn-outline btn-sm">Review</a></td>
-        </tr><tr data-name="betshezi">
+        </tr><tr data-name="betshezi" data-brand-id="betshezi" data-bonus-val="2000">
           <td data-sort="31" style="font-weight:600;color:var(--text-muted)">31</td>
-          <td data-sort="Betshezi"><a href="betting-site-review/betshezi.html" class="table-link" style="font-weight:600">Betshezi</a></td>
+          <td data-sort="Betshezi" style="white-space:nowrap">
+            <div style="display:flex;align-items:center;gap:8px">
+              <button class="star-btn" data-brand="betshezi" onclick="event.stopPropagation();toggleStar('betshezi')" aria-label="Add to favourites"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg></button>
+              <a href="betting-site-review/betshezi.html" class="table-link" style="font-weight:600">Betshezi</a>
+            </div>
+          </td>
           <td><span style="color:var(--bonus);font-weight:600">Deposit R2000 Get R2000</span><br><span style="font-size:11px;color:var(--text-muted)">18+ T&amp;Cs apply.</span></td>
+          <td data-sort="2000" style="text-align:center;font-weight:700;color:var(--bonus)">R2,000</td>
           <td data-sort="3.5" style="text-align:center"><span class="rating-badge mid sm">3.5/5.0</span></td>
           <td style="text-align:center"><a href="betting-site-review/betshezi.html" class="btn-outline btn-sm">Review</a></td>
-        </tr><tr data-name="supabets">
+        </tr><tr data-name="supabets" data-brand-id="supabets" data-bonus-val="50">
           <td data-sort="32" style="font-weight:600;color:var(--text-muted)">32</td>
-          <td data-sort="Supabets"><a href="betting-site-review/supabets.html" class="table-link" style="font-weight:600">Supabets</a></td>
+          <td data-sort="Supabets" style="white-space:nowrap">
+            <div style="display:flex;align-items:center;gap:8px">
+              <button class="star-btn" data-brand="supabets" onclick="event.stopPropagation();toggleStar('supabets')" aria-label="Add to favourites"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg></button>
+              <a href="betting-site-review/supabets.html" class="table-link" style="font-weight:600">Supabets</a>
+            </div>
+          </td>
           <td><span style="color:var(--bonus);font-weight:600">Free R50 bonus sign up</span><br><span style="font-size:11px;color:var(--text-muted)">New customers receive R50 + 100 Free Spins + deposit bonuses. 18+ T&amp;Cs apply.</span></td>
+          <td data-sort="50" style="text-align:center;font-weight:700;color:var(--bonus)">R50</td>
           <td data-sort="3.5" style="text-align:center"><span class="rating-badge mid sm">3.5/5.0</span></td>
           <td style="text-align:center"><a href="betting-site-review/supabets.html" class="btn-outline btn-sm">Review</a></td>
-        </tr><tr data-name="jackpot city">
+        </tr><tr data-name="jackpot city" data-brand-id="jackpot-city" data-bonus-val="4000">
           <td data-sort="33" style="font-weight:600;color:var(--text-muted)">33</td>
-          <td data-sort="Jackpot City"><a href="betting-site-review/jackpot-city.html" class="table-link" style="font-weight:600">Jackpot City</a></td>
+          <td data-sort="Jackpot City" style="white-space:nowrap">
+            <div style="display:flex;align-items:center;gap:8px">
+              <button class="star-btn" data-brand="jackpot-city" onclick="event.stopPropagation();toggleStar('jackpot-city')" aria-label="Add to favourites"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg></button>
+              <a href="betting-site-review/jackpot-city.html" class="table-link" style="font-weight:600">Jackpot City</a>
+            </div>
+          </td>
           <td><span style="color:var(--bonus);font-weight:600">100% up to R4000 + Spins</span><br><span style="font-size:11px;color:var(--text-muted)">18+ only. Gamble responsibly. T&amp;Cs apply.</span></td>
+          <td data-sort="4000" style="text-align:center;font-weight:700;color:var(--bonus)">R4,000</td>
           <td data-sort="3.3" style="text-align:center"><span class="rating-badge low sm">3.3/5.0</span></td>
           <td style="text-align:center"><a href="betting-site-review/jackpot-city.html" class="btn-outline btn-sm">Review</a></td>
-        </tr><tr data-name="luckystake">
+        </tr><tr data-name="luckystake" data-brand-id="luckystake" data-bonus-val="0">
           <td data-sort="34" style="font-weight:600;color:var(--text-muted)">34</td>
-          <td data-sort="Luckystake"><a href="betting-site-review/luckystake.html" class="table-link" style="font-weight:600">Luckystake</a></td>
+          <td data-sort="Luckystake" style="white-space:nowrap">
+            <div style="display:flex;align-items:center;gap:8px">
+              <button class="star-btn" data-brand="luckystake" onclick="event.stopPropagation();toggleStar('luckystake')" aria-label="Add to favourites"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg></button>
+              <a href="betting-site-review/luckystake.html" class="table-link" style="font-weight:600">Luckystake</a>
+            </div>
+          </td>
           <td><span style="color:var(--bonus);font-weight:600">Luckystake Loyalty Program</span><br><span style="font-size:11px;color:var(--text-muted)">18+ T&amp;Cs apply.</span></td>
+          <td data-sort="0" style="text-align:center;font-weight:700;color:var(--bonus)">-</td>
           <td data-sort="3.3" style="text-align:center"><span class="rating-badge low sm">3.3/5.0</span></td>
           <td style="text-align:center"><a href="betting-site-review/luckystake.html" class="btn-outline btn-sm">Review</a></td>
-        </tr><tr data-name="betbus">
+        </tr><tr data-name="betbus" data-brand-id="betbus" data-bonus-val="5000">
           <td data-sort="35" style="font-weight:600;color:var(--text-muted)">35</td>
-          <td data-sort="betbus"><a href="betting-site-review/betbus.html" class="table-link" style="font-weight:600">betbus</a></td>
+          <td data-sort="betbus" style="white-space:nowrap">
+            <div style="display:flex;align-items:center;gap:8px">
+              <button class="star-btn" data-brand="betbus" onclick="event.stopPropagation();toggleStar('betbus')" aria-label="Add to favourites"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg></button>
+              <a href="betting-site-review/betbus.html" class="table-link" style="font-weight:600">betbus</a>
+            </div>
+          </td>
           <td><span style="color:var(--bonus);font-weight:600">Deposit R5,000 Get R5,000</span><br><span style="font-size:11px;color:var(--text-muted)">18+ T&amp;Cs apply.</span></td>
+          <td data-sort="5000" style="text-align:center;font-weight:700;color:var(--bonus)">R5,000</td>
           <td data-sort="3.3" style="text-align:center"><span class="rating-badge low sm">3.3/5.0</span></td>
           <td style="text-align:center"><a href="betting-site-review/betbus.html" class="btn-outline btn-sm">Review</a></td>
         </tr></tbody>
         </table>
       </div>
-      
+
       <!-- Mobile cards -->
-      <div class="listing-mobile"><div class="listing-card" data-name="zarbet">
-          <div style="display:flex;align-items:flex-start;justify-content:space-between;gap:12px;margin-bottom:10px">
-            <div style="min-width:0">
-              <div style="display:flex;align-items:center;gap:8px">
-                <span style="font-size:13px;font-weight:700;color:var(--text-muted)">#1</span>
-                <a href="betting-site-review/zarbet.html" style="font-size:16px;font-weight:700;color:var(--text-primary)">Zarbet</a>
+      <div class="listing-mobile"><div class="listing-card" data-name="zarbet" data-brand-id="zarbet" data-bonus-val="3750">
+          <div style="display:flex;align-items:flex-start;justify-content:space-between;gap:8px;margin-bottom:10px">
+            <div style="display:flex;align-items:center;gap:8px;min-width:0">
+              <button class="star-btn" data-brand="zarbet" onclick="event.stopPropagation();toggleStar('zarbet')" aria-label="Add to favourites"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg></button>
+              <div style="min-width:0">
+                <div style="display:flex;align-items:center;gap:6px">
+                  <span style="font-size:13px;font-weight:700;color:var(--text-muted)">#1</span>
+                  <a href="betting-site-review/zarbet.html" style="font-size:16px;font-weight:700;color:var(--text-primary)">Zarbet</a>
+                </div>
               </div>
             </div>
             <span class="rating-badge high sm">5.0/5.0</span>
           </div>
           <div style="background:var(--accent-light);border-radius:8px;padding:10px 14px;margin-bottom:10px">
-            <p style="font-size:15px;font-weight:700;color:var(--bonus)">Get up to R3,750 + 25FS</p>
+            <div style="display:flex;align-items:center;justify-content:space-between">
+              <p style="font-size:15px;font-weight:700;color:var(--bonus)">Get up to R3,750 + 25FS</p>
+              <span style="font-size:14px;font-weight:700;color:var(--bonus)">R3,750</span>
+            </div>
             <span style="font-size:12px;color:var(--text-muted)">Min deposit: R20</span>
           </div>
           <p style="font-size:11px;color:var(--text-muted);margin-bottom:12px;line-height:1.5">18+ T&amp;Cs apply.</p>
@@ -394,18 +627,24 @@
             <a href="betting-site-review/zarbet.html" class="btn-outline btn-sm" style="flex:1;text-align:center">Review</a>
             <a href="https://www.bets.co.za/link/53abeed4250711122151/" target="_blank" rel="noopener noreferrer nofollow" class="btn-primary btn-sm" style="flex:1;text-align:center">Visit Site</a>
           </div>
-        </div><div class="listing-card" data-name="easybet south africa">
-          <div style="display:flex;align-items:flex-start;justify-content:space-between;gap:12px;margin-bottom:10px">
-            <div style="min-width:0">
-              <div style="display:flex;align-items:center;gap:8px">
-                <span style="font-size:13px;font-weight:700;color:var(--text-muted)">#2</span>
-                <a href="betting-site-review/easybet-south-africa.html" style="font-size:16px;font-weight:700;color:var(--text-primary)">Easybet South Africa</a>
+        </div><div class="listing-card" data-name="easybet south africa" data-brand-id="easybet-south-africa" data-bonus-val="50">
+          <div style="display:flex;align-items:flex-start;justify-content:space-between;gap:8px;margin-bottom:10px">
+            <div style="display:flex;align-items:center;gap:8px;min-width:0">
+              <button class="star-btn" data-brand="easybet-south-africa" onclick="event.stopPropagation();toggleStar('easybet-south-africa')" aria-label="Add to favourites"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg></button>
+              <div style="min-width:0">
+                <div style="display:flex;align-items:center;gap:6px">
+                  <span style="font-size:13px;font-weight:700;color:var(--text-muted)">#2</span>
+                  <a href="betting-site-review/easybet-south-africa.html" style="font-size:16px;font-weight:700;color:var(--text-primary)">Easybet South Africa</a>
+                </div>
               </div>
             </div>
             <span class="rating-badge high sm">4.9/5.0</span>
           </div>
           <div style="background:var(--accent-light);border-radius:8px;padding:10px 14px;margin-bottom:10px">
-            <p style="font-size:15px;font-weight:700;color:var(--bonus)">Free R50 + 150% MATCH to R1500</p>
+            <div style="display:flex;align-items:center;justify-content:space-between">
+              <p style="font-size:15px;font-weight:700;color:var(--bonus)">Free R50 + 150% MATCH to R1500</p>
+              <span style="font-size:14px;font-weight:700;color:var(--bonus)">R50</span>
+            </div>
             <span style="font-size:12px;color:var(--text-muted)">Min deposit: R5 (R20 to be eligible for bonus)</span>
           </div>
           <p style="font-size:11px;color:var(--text-muted);margin-bottom:12px;line-height:1.5">18+ T&amp;Cs apply.</p>
@@ -413,18 +652,24 @@
             <a href="betting-site-review/easybet-south-africa.html" class="btn-outline btn-sm" style="flex:1;text-align:center">Review</a>
             <a href="https://www.bets.co.za/link/9b577ef9230623171008/" target="_blank" rel="noopener noreferrer nofollow" class="btn-primary btn-sm" style="flex:1;text-align:center">Visit Site</a>
           </div>
-        </div><div class="listing-card" data-name="10bet south africa">
-          <div style="display:flex;align-items:flex-start;justify-content:space-between;gap:12px;margin-bottom:10px">
-            <div style="min-width:0">
-              <div style="display:flex;align-items:center;gap:8px">
-                <span style="font-size:13px;font-weight:700;color:var(--text-muted)">#3</span>
-                <a href="betting-site-review/10bet-south-africa.html" style="font-size:16px;font-weight:700;color:var(--text-primary)">10Bet South Africa</a>
+        </div><div class="listing-card" data-name="10bet south africa" data-brand-id="10bet-south-africa" data-bonus-val="3000">
+          <div style="display:flex;align-items:flex-start;justify-content:space-between;gap:8px;margin-bottom:10px">
+            <div style="display:flex;align-items:center;gap:8px;min-width:0">
+              <button class="star-btn" data-brand="10bet-south-africa" onclick="event.stopPropagation();toggleStar('10bet-south-africa')" aria-label="Add to favourites"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg></button>
+              <div style="min-width:0">
+                <div style="display:flex;align-items:center;gap:6px">
+                  <span style="font-size:13px;font-weight:700;color:var(--text-muted)">#3</span>
+                  <a href="betting-site-review/10bet-south-africa.html" style="font-size:16px;font-weight:700;color:var(--text-primary)">10Bet South Africa</a>
+                </div>
               </div>
             </div>
             <span class="rating-badge high sm">4.9/5.0</span>
           </div>
           <div style="background:var(--accent-light);border-radius:8px;padding:10px 14px;margin-bottom:10px">
-            <p style="font-size:15px;font-weight:700;color:var(--bonus)">Deposit R3,000 Get R3,000</p>
+            <div style="display:flex;align-items:center;justify-content:space-between">
+              <p style="font-size:15px;font-weight:700;color:var(--bonus)">Deposit R3,000 Get R3,000</p>
+              <span style="font-size:14px;font-weight:700;color:var(--bonus)">R3,000</span>
+            </div>
             <span style="font-size:12px;color:var(--text-muted)">Min deposit: R5 (R50 for bonus eligibility)</span>
           </div>
           <p style="font-size:11px;color:var(--text-muted);margin-bottom:12px;line-height:1.5">First deposit at least R20. 18+ T&amp;Cs and wagering requirements apply.</p>
@@ -432,18 +677,24 @@
             <a href="betting-site-review/10bet-south-africa.html" class="btn-outline btn-sm" style="flex:1;text-align:center">Review</a>
             <a href="https://www.bets.co.za/link/a82c3234190213122144/" target="_blank" rel="noopener noreferrer nofollow" class="btn-primary btn-sm" style="flex:1;text-align:center">Visit Site</a>
           </div>
-        </div><div class="listing-card" data-name="betway south africa">
-          <div style="display:flex;align-items:flex-start;justify-content:space-between;gap:12px;margin-bottom:10px">
-            <div style="min-width:0">
-              <div style="display:flex;align-items:center;gap:8px">
-                <span style="font-size:13px;font-weight:700;color:var(--text-muted)">#4</span>
-                <a href="betting-site-review/betway-south-africa.html" style="font-size:16px;font-weight:700;color:var(--text-primary)">Betway South Africa</a>
+        </div><div class="listing-card" data-name="betway south africa" data-brand-id="betway-south-africa" data-bonus-val="10">
+          <div style="display:flex;align-items:flex-start;justify-content:space-between;gap:8px;margin-bottom:10px">
+            <div style="display:flex;align-items:center;gap:8px;min-width:0">
+              <button class="star-btn" data-brand="betway-south-africa" onclick="event.stopPropagation();toggleStar('betway-south-africa')" aria-label="Add to favourites"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg></button>
+              <div style="min-width:0">
+                <div style="display:flex;align-items:center;gap:6px">
+                  <span style="font-size:13px;font-weight:700;color:var(--text-muted)">#4</span>
+                  <a href="betting-site-review/betway-south-africa.html" style="font-size:16px;font-weight:700;color:var(--text-primary)">Betway South Africa</a>
+                </div>
               </div>
             </div>
             <span class="rating-badge high sm">4.8/5.0</span>
           </div>
           <div style="background:var(--accent-light);border-radius:8px;padding:10px 14px;margin-bottom:10px">
-            <p style="font-size:15px;font-weight:700;color:var(--bonus)">R10 Free Bet &amp; 10 Aviator Flights</p>
+            <div style="display:flex;align-items:center;justify-content:space-between">
+              <p style="font-size:15px;font-weight:700;color:var(--bonus)">R10 Free Bet &amp; 10 Aviator Flights</p>
+              <span style="font-size:14px;font-weight:700;color:var(--bonus)">R10</span>
+            </div>
             <span style="font-size:12px;color:var(--text-muted)">Min deposit: R10</span>
           </div>
           <p style="font-size:11px;color:var(--text-muted);margin-bottom:12px;line-height:1.5">Welcome package includes flights and free bet. 18+ T&amp;Cs apply.</p>
@@ -451,18 +702,24 @@
             <a href="betting-site-review/betway-south-africa.html" class="btn-outline btn-sm" style="flex:1;text-align:center">Review</a>
             <a href="https://www.bets.co.za/link/65974d59190114175723/" target="_blank" rel="noopener noreferrer nofollow" class="btn-primary btn-sm" style="flex:1;text-align:center">Visit Site</a>
           </div>
-        </div><div class="listing-card" data-name="mzansibet">
-          <div style="display:flex;align-items:flex-start;justify-content:space-between;gap:12px;margin-bottom:10px">
-            <div style="min-width:0">
-              <div style="display:flex;align-items:center;gap:8px">
-                <span style="font-size:13px;font-weight:700;color:var(--text-muted)">#5</span>
-                <a href="betting-site-review/mzansibet.html" style="font-size:16px;font-weight:700;color:var(--text-primary)">Mzansibet</a>
+        </div><div class="listing-card" data-name="mzansibet" data-brand-id="mzansibet" data-bonus-val="50">
+          <div style="display:flex;align-items:flex-start;justify-content:space-between;gap:8px;margin-bottom:10px">
+            <div style="display:flex;align-items:center;gap:8px;min-width:0">
+              <button class="star-btn" data-brand="mzansibet" onclick="event.stopPropagation();toggleStar('mzansibet')" aria-label="Add to favourites"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg></button>
+              <div style="min-width:0">
+                <div style="display:flex;align-items:center;gap:6px">
+                  <span style="font-size:13px;font-weight:700;color:var(--text-muted)">#5</span>
+                  <a href="betting-site-review/mzansibet.html" style="font-size:16px;font-weight:700;color:var(--text-primary)">Mzansibet</a>
+                </div>
               </div>
             </div>
             <span class="rating-badge high sm">4.8/5.0</span>
           </div>
           <div style="background:var(--accent-light);border-radius:8px;padding:10px 14px;margin-bottom:10px">
-            <p style="font-size:15px;font-weight:700;color:var(--bonus)">Bet R50, Get R50 Extra Bet</p>
+            <div style="display:flex;align-items:center;justify-content:space-between">
+              <p style="font-size:15px;font-weight:700;color:var(--bonus)">Bet R50, Get R50 Extra Bet</p>
+              <span style="font-size:14px;font-weight:700;color:var(--bonus)">R50</span>
+            </div>
             <span style="font-size:12px;color:var(--text-muted)">Min deposit: R10</span>
           </div>
           <p style="font-size:11px;color:var(--text-muted);margin-bottom:12px;line-height:1.5">No requirement to use a code for the sports bonus. 18+ T&amp;Cs apply.</p>
@@ -470,18 +727,24 @@
             <a href="betting-site-review/mzansibet.html" class="btn-outline btn-sm" style="flex:1;text-align:center">Review</a>
             <a href="https://www.bets.co.za/link/4e6a1c8250506082921/" target="_blank" rel="noopener noreferrer nofollow" class="btn-primary btn-sm" style="flex:1;text-align:center">Visit Site</a>
           </div>
-        </div><div class="listing-card" data-name="yesplay">
-          <div style="display:flex;align-items:flex-start;justify-content:space-between;gap:12px;margin-bottom:10px">
-            <div style="min-width:0">
-              <div style="display:flex;align-items:center;gap:8px">
-                <span style="font-size:13px;font-weight:700;color:var(--text-muted)">#6</span>
-                <a href="betting-site-review/yesplay.html" style="font-size:16px;font-weight:700;color:var(--text-primary)">YesPlay</a>
+        </div><div class="listing-card" data-name="yesplay" data-brand-id="yesplay" data-bonus-val="3000">
+          <div style="display:flex;align-items:flex-start;justify-content:space-between;gap:8px;margin-bottom:10px">
+            <div style="display:flex;align-items:center;gap:8px;min-width:0">
+              <button class="star-btn" data-brand="yesplay" onclick="event.stopPropagation();toggleStar('yesplay')" aria-label="Add to favourites"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg></button>
+              <div style="min-width:0">
+                <div style="display:flex;align-items:center;gap:6px">
+                  <span style="font-size:13px;font-weight:700;color:var(--text-muted)">#6</span>
+                  <a href="betting-site-review/yesplay.html" style="font-size:16px;font-weight:700;color:var(--text-primary)">YesPlay</a>
+                </div>
               </div>
             </div>
             <span class="rating-badge high sm">4.8/5.0</span>
           </div>
           <div style="background:var(--accent-light);border-radius:8px;padding:10px 14px;margin-bottom:10px">
-            <p style="font-size:15px;font-weight:700;color:var(--bonus)">Deposit R3000 Get R3000</p>
+            <div style="display:flex;align-items:center;justify-content:space-between">
+              <p style="font-size:15px;font-weight:700;color:var(--bonus)">Deposit R3000 Get R3000</p>
+              <span style="font-size:14px;font-weight:700;color:var(--bonus)">R3,000</span>
+            </div>
             <span style="font-size:12px;color:var(--text-muted)">Min deposit: R1</span>
           </div>
           <p style="font-size:11px;color:var(--text-muted);margin-bottom:12px;line-height:1.5">18+ T&amp;Cs apply.</p>
@@ -489,18 +752,24 @@
             <a href="betting-site-review/yesplay.html" class="btn-outline btn-sm" style="flex:1;text-align:center">Review</a>
             <a href="https://www.bets.co.za/link/22c78280220928083006/" target="_blank" rel="noopener noreferrer nofollow" class="btn-primary btn-sm" style="flex:1;text-align:center">Visit Site</a>
           </div>
-        </div><div class="listing-card" data-name="pantherbet">
-          <div style="display:flex;align-items:flex-start;justify-content:space-between;gap:12px;margin-bottom:10px">
-            <div style="min-width:0">
-              <div style="display:flex;align-items:center;gap:8px">
-                <span style="font-size:13px;font-weight:700;color:var(--text-muted)">#7</span>
-                <a href="betting-site-review/pantherbet.html" style="font-size:16px;font-weight:700;color:var(--text-primary)">Pantherbet</a>
+        </div><div class="listing-card" data-name="pantherbet" data-brand-id="pantherbet" data-bonus-val="14000">
+          <div style="display:flex;align-items:flex-start;justify-content:space-between;gap:8px;margin-bottom:10px">
+            <div style="display:flex;align-items:center;gap:8px;min-width:0">
+              <button class="star-btn" data-brand="pantherbet" onclick="event.stopPropagation();toggleStar('pantherbet')" aria-label="Add to favourites"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg></button>
+              <div style="min-width:0">
+                <div style="display:flex;align-items:center;gap:6px">
+                  <span style="font-size:13px;font-weight:700;color:var(--text-muted)">#7</span>
+                  <a href="betting-site-review/pantherbet.html" style="font-size:16px;font-weight:700;color:var(--text-primary)">Pantherbet</a>
+                </div>
               </div>
             </div>
             <span class="rating-badge high sm">4.7/5.0</span>
           </div>
           <div style="background:var(--accent-light);border-radius:8px;padding:10px 14px;margin-bottom:10px">
-            <p style="font-size:15px;font-weight:700;color:var(--bonus)">Get up to R14,000 (170%)</p>
+            <div style="display:flex;align-items:center;justify-content:space-between">
+              <p style="font-size:15px;font-weight:700;color:var(--bonus)">Get up to R14,000 (170%)</p>
+              <span style="font-size:14px;font-weight:700;color:var(--bonus)">R14,000</span>
+            </div>
             <span style="font-size:12px;color:var(--text-muted)">Min deposit: R10</span>
           </div>
           <p style="font-size:11px;color:var(--text-muted);margin-bottom:12px;line-height:1.5">18+ T&amp;Cs apply.</p>
@@ -508,18 +777,24 @@
             <a href="betting-site-review/pantherbet.html" class="btn-outline btn-sm" style="flex:1;text-align:center">Review</a>
             <a href="https://www.bets.co.za/link/f21fedfc250912164402/" target="_blank" rel="noopener noreferrer nofollow" class="btn-primary btn-sm" style="flex:1;text-align:center">Visit Site</a>
           </div>
-        </div><div class="listing-card" data-name="world sports betting">
-          <div style="display:flex;align-items:flex-start;justify-content:space-between;gap:12px;margin-bottom:10px">
-            <div style="min-width:0">
-              <div style="display:flex;align-items:center;gap:8px">
-                <span style="font-size:13px;font-weight:700;color:var(--text-muted)">#8</span>
-                <a href="betting-site-review/world-sports-betting.html" style="font-size:16px;font-weight:700;color:var(--text-primary)">World Sports Betting</a>
+        </div><div class="listing-card" data-name="world sports betting" data-brand-id="world-sports-betting" data-bonus-val="20000">
+          <div style="display:flex;align-items:flex-start;justify-content:space-between;gap:8px;margin-bottom:10px">
+            <div style="display:flex;align-items:center;gap:8px;min-width:0">
+              <button class="star-btn" data-brand="world-sports-betting" onclick="event.stopPropagation();toggleStar('world-sports-betting')" aria-label="Add to favourites"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg></button>
+              <div style="min-width:0">
+                <div style="display:flex;align-items:center;gap:6px">
+                  <span style="font-size:13px;font-weight:700;color:var(--text-muted)">#8</span>
+                  <a href="betting-site-review/world-sports-betting.html" style="font-size:16px;font-weight:700;color:var(--text-primary)">World Sports Betting</a>
+                </div>
               </div>
             </div>
             <span class="rating-badge high sm">4.7/5.0</span>
           </div>
           <div style="background:var(--accent-light);border-radius:8px;padding:10px 14px;margin-bottom:10px">
-            <p style="font-size:15px;font-weight:700;color:var(--bonus)">R20,000 Bonus (100%)</p>
+            <div style="display:flex;align-items:center;justify-content:space-between">
+              <p style="font-size:15px;font-weight:700;color:var(--bonus)">R20,000 Bonus (100%)</p>
+              <span style="font-size:14px;font-weight:700;color:var(--bonus)">R20,000</span>
+            </div>
             <span style="font-size:12px;color:var(--text-muted)">Min deposit: R10</span>
           </div>
           <p style="font-size:11px;color:var(--text-muted);margin-bottom:12px;line-height:1.5">18+ only. T&amp;Cs apply. Winners know when to stop.</p>
@@ -527,18 +802,24 @@
             <a href="betting-site-review/world-sports-betting.html" class="btn-outline btn-sm" style="flex:1;text-align:center">Review</a>
             <a href="https://www.bets.co.za/link/6f4efc2a190222151445/" target="_blank" rel="noopener noreferrer nofollow" class="btn-primary btn-sm" style="flex:1;text-align:center">Visit Site</a>
           </div>
-        </div><div class="listing-card" data-name="jabula bets">
-          <div style="display:flex;align-items:flex-start;justify-content:space-between;gap:12px;margin-bottom:10px">
-            <div style="min-width:0">
-              <div style="display:flex;align-items:center;gap:8px">
-                <span style="font-size:13px;font-weight:700;color:var(--text-muted)">#9</span>
-                <a href="betting-site-review/jabula-bets.html" style="font-size:16px;font-weight:700;color:var(--text-primary)">Jabula Bets</a>
+        </div><div class="listing-card" data-name="jabula bets" data-brand-id="jabula-bets" data-bonus-val="15000">
+          <div style="display:flex;align-items:flex-start;justify-content:space-between;gap:8px;margin-bottom:10px">
+            <div style="display:flex;align-items:center;gap:8px;min-width:0">
+              <button class="star-btn" data-brand="jabula-bets" onclick="event.stopPropagation();toggleStar('jabula-bets')" aria-label="Add to favourites"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg></button>
+              <div style="min-width:0">
+                <div style="display:flex;align-items:center;gap:6px">
+                  <span style="font-size:13px;font-weight:700;color:var(--text-muted)">#9</span>
+                  <a href="betting-site-review/jabula-bets.html" style="font-size:16px;font-weight:700;color:var(--text-primary)">Jabula Bets</a>
+                </div>
               </div>
             </div>
             <span class="rating-badge high sm">4.6/5.0</span>
           </div>
           <div style="background:var(--accent-light);border-radius:8px;padding:10px 14px;margin-bottom:10px">
-            <p style="font-size:15px;font-weight:700;color:var(--bonus)">Get 150% up to R15,000</p>
+            <div style="display:flex;align-items:center;justify-content:space-between">
+              <p style="font-size:15px;font-weight:700;color:var(--bonus)">Get 150% up to R15,000</p>
+              <span style="font-size:14px;font-weight:700;color:var(--bonus)">R15,000</span>
+            </div>
             <span style="font-size:12px;color:var(--text-muted)">Min deposit: R10</span>
           </div>
           <p style="font-size:11px;color:var(--text-muted);margin-bottom:12px;line-height:1.5">18+ T&amp;Cs apply.</p>
@@ -546,18 +827,24 @@
             <a href="betting-site-review/jabula-bets.html" class="btn-outline btn-sm" style="flex:1;text-align:center">Review</a>
             <a href="https://www.bets.co.za/link/cc9032a0250318120530/" target="_blank" rel="noopener noreferrer nofollow" class="btn-primary btn-sm" style="flex:1;text-align:center">Visit Site</a>
           </div>
-        </div><div class="listing-card" data-name="hollywoodbets">
-          <div style="display:flex;align-items:flex-start;justify-content:space-between;gap:12px;margin-bottom:10px">
-            <div style="min-width:0">
-              <div style="display:flex;align-items:center;gap:8px">
-                <span style="font-size:13px;font-weight:700;color:var(--text-muted)">#10</span>
-                <a href="betting-site-review/hollywoodbets.html" style="font-size:16px;font-weight:700;color:var(--text-primary)">Hollywoodbets</a>
+        </div><div class="listing-card" data-name="hollywoodbets" data-brand-id="hollywoodbets" data-bonus-val="25">
+          <div style="display:flex;align-items:flex-start;justify-content:space-between;gap:8px;margin-bottom:10px">
+            <div style="display:flex;align-items:center;gap:8px;min-width:0">
+              <button class="star-btn" data-brand="hollywoodbets" onclick="event.stopPropagation();toggleStar('hollywoodbets')" aria-label="Add to favourites"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg></button>
+              <div style="min-width:0">
+                <div style="display:flex;align-items:center;gap:6px">
+                  <span style="font-size:13px;font-weight:700;color:var(--text-muted)">#10</span>
+                  <a href="betting-site-review/hollywoodbets.html" style="font-size:16px;font-weight:700;color:var(--text-primary)">Hollywoodbets</a>
+                </div>
               </div>
             </div>
             <span class="rating-badge high sm">4.5/5.0</span>
           </div>
           <div style="background:var(--accent-light);border-radius:8px;padding:10px 14px;margin-bottom:10px">
-            <p style="font-size:15px;font-weight:700;color:var(--bonus)">R25 + 50 spins</p>
+            <div style="display:flex;align-items:center;justify-content:space-between">
+              <p style="font-size:15px;font-weight:700;color:var(--bonus)">R25 + 50 spins</p>
+              <span style="font-size:14px;font-weight:700;color:var(--bonus)">R25</span>
+            </div>
             <span style="font-size:12px;color:var(--text-muted)">Min deposit: R5</span>
           </div>
           <p style="font-size:11px;color:var(--text-muted);margin-bottom:12px;line-height:1.5">R25 sign up bonus + 50 free spins once account is activated. 18+ T&amp;Cs apply.</p>
@@ -565,18 +852,24 @@
             <a href="betting-site-review/hollywoodbets.html" class="btn-outline btn-sm" style="flex:1;text-align:center">Review</a>
             <a href="https://www.bets.co.za/link/96a5aad0181116205024/" target="_blank" rel="noopener noreferrer nofollow" class="btn-primary btn-sm" style="flex:1;text-align:center">Visit Site</a>
           </div>
-        </div><div class="listing-card" data-name="topbet">
-          <div style="display:flex;align-items:flex-start;justify-content:space-between;gap:12px;margin-bottom:10px">
-            <div style="min-width:0">
-              <div style="display:flex;align-items:center;gap:8px">
-                <span style="font-size:13px;font-weight:700;color:var(--text-muted)">#11</span>
-                <a href="betting-site-review/topbet.html" style="font-size:16px;font-weight:700;color:var(--text-primary)">Topbet</a>
+        </div><div class="listing-card" data-name="topbet" data-brand-id="topbet" data-bonus-val="1000">
+          <div style="display:flex;align-items:flex-start;justify-content:space-between;gap:8px;margin-bottom:10px">
+            <div style="display:flex;align-items:center;gap:8px;min-width:0">
+              <button class="star-btn" data-brand="topbet" onclick="event.stopPropagation();toggleStar('topbet')" aria-label="Add to favourites"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg></button>
+              <div style="min-width:0">
+                <div style="display:flex;align-items:center;gap:6px">
+                  <span style="font-size:13px;font-weight:700;color:var(--text-muted)">#11</span>
+                  <a href="betting-site-review/topbet.html" style="font-size:16px;font-weight:700;color:var(--text-primary)">Topbet</a>
+                </div>
               </div>
             </div>
             <span class="rating-badge high sm">4.5/5.0</span>
           </div>
           <div style="background:var(--accent-light);border-radius:8px;padding:10px 14px;margin-bottom:10px">
-            <p style="font-size:15px;font-weight:700;color:var(--bonus)">Deposit R1000 Get R1000</p>
+            <div style="display:flex;align-items:center;justify-content:space-between">
+              <p style="font-size:15px;font-weight:700;color:var(--bonus)">Deposit R1000 Get R1000</p>
+              <span style="font-size:14px;font-weight:700;color:var(--bonus)">R1,000</span>
+            </div>
             <span style="font-size:12px;color:var(--text-muted)">Min deposit: R10</span>
           </div>
           <p style="font-size:11px;color:var(--text-muted);margin-bottom:12px;line-height:1.5">100% welcome match bonus up to R1000. 18+ T&amp;Cs apply.</p>
@@ -584,18 +877,24 @@
             <a href="betting-site-review/topbet.html" class="btn-outline btn-sm" style="flex:1;text-align:center">Review</a>
             <a href="https://www.freetips.com/link/680f3cc0190222145659/" target="_blank" rel="noopener noreferrer nofollow" class="btn-primary btn-sm" style="flex:1;text-align:center">Visit Site</a>
           </div>
-        </div><div class="listing-card" data-name="bet.co.za">
-          <div style="display:flex;align-items:flex-start;justify-content:space-between;gap:12px;margin-bottom:10px">
-            <div style="min-width:0">
-              <div style="display:flex;align-items:center;gap:8px">
-                <span style="font-size:13px;font-weight:700;color:var(--text-muted)">#12</span>
-                <a href="betting-site-review/bet-co-za.html" style="font-size:16px;font-weight:700;color:var(--text-primary)">BET.co.za</a>
+        </div><div class="listing-card" data-name="bet.co.za" data-brand-id="bet-co-za" data-bonus-val="5000">
+          <div style="display:flex;align-items:flex-start;justify-content:space-between;gap:8px;margin-bottom:10px">
+            <div style="display:flex;align-items:center;gap:8px;min-width:0">
+              <button class="star-btn" data-brand="bet-co-za" onclick="event.stopPropagation();toggleStar('bet-co-za')" aria-label="Add to favourites"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg></button>
+              <div style="min-width:0">
+                <div style="display:flex;align-items:center;gap:6px">
+                  <span style="font-size:13px;font-weight:700;color:var(--text-muted)">#12</span>
+                  <a href="betting-site-review/bet-co-za.html" style="font-size:16px;font-weight:700;color:var(--text-primary)">BET.co.za</a>
+                </div>
               </div>
             </div>
             <span class="rating-badge high sm">4.4/5.0</span>
           </div>
           <div style="background:var(--accent-light);border-radius:8px;padding:10px 14px;margin-bottom:10px">
-            <p style="font-size:15px;font-weight:700;color:var(--bonus)">R5,000 bonus</p>
+            <div style="display:flex;align-items:center;justify-content:space-between">
+              <p style="font-size:15px;font-weight:700;color:var(--bonus)">R5,000 bonus</p>
+              <span style="font-size:14px;font-weight:700;color:var(--bonus)">R5,000</span>
+            </div>
             <span style="font-size:12px;color:var(--text-muted)">Min deposit: R1 (Note: R50 for welcome bonus)</span>
           </div>
           <p style="font-size:11px;color:var(--text-muted);margin-bottom:12px;line-height:1.5">18+ only. T&amp;Cs apply. New customers only. Email must be verified.</p>
@@ -603,18 +902,24 @@
             <a href="betting-site-review/bet-co-za.html" class="btn-outline btn-sm" style="flex:1;text-align:center">Review</a>
             <a href="https://www.bets.co.za/link/d1c723c2190201004641/" target="_blank" rel="noopener noreferrer nofollow" class="btn-primary btn-sm" style="flex:1;text-align:center">Visit Site</a>
           </div>
-        </div><div class="listing-card" data-name="saffaluck">
-          <div style="display:flex;align-items:flex-start;justify-content:space-between;gap:12px;margin-bottom:10px">
-            <div style="min-width:0">
-              <div style="display:flex;align-items:center;gap:8px">
-                <span style="font-size:13px;font-weight:700;color:var(--text-muted)">#13</span>
-                <a href="betting-site-review/saffaluck.html" style="font-size:16px;font-weight:700;color:var(--text-primary)">SaffaLuck</a>
+        </div><div class="listing-card" data-name="saffaluck" data-brand-id="saffaluck" data-bonus-val="0">
+          <div style="display:flex;align-items:flex-start;justify-content:space-between;gap:8px;margin-bottom:10px">
+            <div style="display:flex;align-items:center;gap:8px;min-width:0">
+              <button class="star-btn" data-brand="saffaluck" onclick="event.stopPropagation();toggleStar('saffaluck')" aria-label="Add to favourites"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg></button>
+              <div style="min-width:0">
+                <div style="display:flex;align-items:center;gap:6px">
+                  <span style="font-size:13px;font-weight:700;color:var(--text-muted)">#13</span>
+                  <a href="betting-site-review/saffaluck.html" style="font-size:16px;font-weight:700;color:var(--text-primary)">SaffaLuck</a>
+                </div>
               </div>
             </div>
             <span class="rating-badge high sm">4.4/5.0</span>
           </div>
           <div style="background:var(--accent-light);border-radius:8px;padding:10px 14px;margin-bottom:10px">
-            <p style="font-size:15px;font-weight:700;color:var(--bonus)">Get a 100% First Deposit Bonus</p>
+            <div style="display:flex;align-items:center;justify-content:space-between">
+              <p style="font-size:15px;font-weight:700;color:var(--bonus)">Get a 100% First Deposit Bonus</p>
+              <span style="font-size:14px;font-weight:700;color:var(--bonus)">-</span>
+            </div>
             <span style="font-size:12px;color:var(--text-muted)">Min deposit: R20</span>
           </div>
           <p style="font-size:11px;color:var(--text-muted);margin-bottom:12px;line-height:1.5">No requirement to use a code when signing up. 18+ T&amp;Cs apply.</p>
@@ -622,18 +927,24 @@
             <a href="betting-site-review/saffaluck.html" class="btn-outline btn-sm" style="flex:1;text-align:center">Review</a>
             <a href="https://www.bets.co.za/link/cc3c4dcd260111201048/" target="_blank" rel="noopener noreferrer nofollow" class="btn-primary btn-sm" style="flex:1;text-align:center">Visit Site</a>
           </div>
-        </div><div class="listing-card" data-name="playabets">
-          <div style="display:flex;align-items:flex-start;justify-content:space-between;gap:12px;margin-bottom:10px">
-            <div style="min-width:0">
-              <div style="display:flex;align-items:center;gap:8px">
-                <span style="font-size:13px;font-weight:700;color:var(--text-muted)">#14</span>
-                <a href="betting-site-review/playabets.html" style="font-size:16px;font-weight:700;color:var(--text-primary)">PlayaBets</a>
+        </div><div class="listing-card" data-name="playabets" data-brand-id="playabets" data-bonus-val="0">
+          <div style="display:flex;align-items:flex-start;justify-content:space-between;gap:8px;margin-bottom:10px">
+            <div style="display:flex;align-items:center;gap:8px;min-width:0">
+              <button class="star-btn" data-brand="playabets" onclick="event.stopPropagation();toggleStar('playabets')" aria-label="Add to favourites"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg></button>
+              <div style="min-width:0">
+                <div style="display:flex;align-items:center;gap:6px">
+                  <span style="font-size:13px;font-weight:700;color:var(--text-muted)">#14</span>
+                  <a href="betting-site-review/playabets.html" style="font-size:16px;font-weight:700;color:var(--text-primary)">PlayaBets</a>
+                </div>
               </div>
             </div>
             <span class="rating-badge high sm">4.3/5.0</span>
           </div>
           <div style="background:var(--accent-light);border-radius:8px;padding:10px 14px;margin-bottom:10px">
-            <p style="font-size:15px;font-weight:700;color:var(--bonus)">100% Sign-Up Bonus</p>
+            <div style="display:flex;align-items:center;justify-content:space-between">
+              <p style="font-size:15px;font-weight:700;color:var(--bonus)">100% Sign-Up Bonus</p>
+              <span style="font-size:14px;font-weight:700;color:var(--bonus)">-</span>
+            </div>
             <span style="font-size:12px;color:var(--text-muted)">Min deposit: R10</span>
           </div>
           <p style="font-size:11px;color:var(--text-muted);margin-bottom:12px;line-height:1.5">100% deposit bonus up to R5000. 18+ T&amp;Cs apply.</p>
@@ -641,18 +952,24 @@
             <a href="betting-site-review/playabets.html" class="btn-outline btn-sm" style="flex:1;text-align:center">Review</a>
             <a href="https://www.bets.co.za/link/9cfaf6cf190222182019/" target="_blank" rel="noopener noreferrer nofollow" class="btn-primary btn-sm" style="flex:1;text-align:center">Visit Site</a>
           </div>
-        </div><div class="listing-card" data-name="playtsogo">
-          <div style="display:flex;align-items:flex-start;justify-content:space-between;gap:12px;margin-bottom:10px">
-            <div style="min-width:0">
-              <div style="display:flex;align-items:center;gap:8px">
-                <span style="font-size:13px;font-weight:700;color:var(--text-muted)">#15</span>
-                <a href="betting-site-review/playtsogo.html" style="font-size:16px;font-weight:700;color:var(--text-primary)">PlayTsogo</a>
+        </div><div class="listing-card" data-name="playtsogo" data-brand-id="playtsogo" data-bonus-val="10000">
+          <div style="display:flex;align-items:flex-start;justify-content:space-between;gap:8px;margin-bottom:10px">
+            <div style="display:flex;align-items:center;gap:8px;min-width:0">
+              <button class="star-btn" data-brand="playtsogo" onclick="event.stopPropagation();toggleStar('playtsogo')" aria-label="Add to favourites"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg></button>
+              <div style="min-width:0">
+                <div style="display:flex;align-items:center;gap:6px">
+                  <span style="font-size:13px;font-weight:700;color:var(--text-muted)">#15</span>
+                  <a href="betting-site-review/playtsogo.html" style="font-size:16px;font-weight:700;color:var(--text-primary)">PlayTsogo</a>
+                </div>
               </div>
             </div>
             <span class="rating-badge high sm">4.2/5.0</span>
           </div>
           <div style="background:var(--accent-light);border-radius:8px;padding:10px 14px;margin-bottom:10px">
-            <p style="font-size:15px;font-weight:700;color:var(--bonus)">Exclusive: R10,000 + 25 Bet, 50 Spins + 25 Flights</p>
+            <div style="display:flex;align-items:center;justify-content:space-between">
+              <p style="font-size:15px;font-weight:700;color:var(--bonus)">Exclusive: R10,000 + 25 Bet, 50 Spins + 25 Flights</p>
+              <span style="font-size:14px;font-weight:700;color:var(--bonus)">R10,000</span>
+            </div>
             <span style="font-size:12px;color:var(--text-muted)">Min deposit: R2 (Minimum eligible for bonus is R50)</span>
           </div>
           <p style="font-size:11px;color:var(--text-muted);margin-bottom:12px;line-height:1.5">No Deposit 50 Bonus Spins included. 18+ T&amp;Cs apply.</p>
@@ -660,18 +977,24 @@
             <a href="betting-site-review/playtsogo.html" class="btn-outline btn-sm" style="flex:1;text-align:center">Review</a>
             <a href="https://www.bets.co.za/link/cea024e1250411234748/" target="_blank" rel="noopener noreferrer nofollow" class="btn-primary btn-sm" style="flex:1;text-align:center">Visit Site</a>
           </div>
-        </div><div class="listing-card" data-name="playbet.co.za">
-          <div style="display:flex;align-items:flex-start;justify-content:space-between;gap:12px;margin-bottom:10px">
-            <div style="min-width:0">
-              <div style="display:flex;align-items:center;gap:8px">
-                <span style="font-size:13px;font-weight:700;color:var(--text-muted)">#16</span>
-                <a href="betting-site-review/playbet-co-za.html" style="font-size:16px;font-weight:700;color:var(--text-primary)">Playbet.co.za</a>
+        </div><div class="listing-card" data-name="playbet.co.za" data-brand-id="playbet-co-za" data-bonus-val="50">
+          <div style="display:flex;align-items:flex-start;justify-content:space-between;gap:8px;margin-bottom:10px">
+            <div style="display:flex;align-items:center;gap:8px;min-width:0">
+              <button class="star-btn" data-brand="playbet-co-za" onclick="event.stopPropagation();toggleStar('playbet-co-za')" aria-label="Add to favourites"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg></button>
+              <div style="min-width:0">
+                <div style="display:flex;align-items:center;gap:6px">
+                  <span style="font-size:13px;font-weight:700;color:var(--text-muted)">#16</span>
+                  <a href="betting-site-review/playbet-co-za.html" style="font-size:16px;font-weight:700;color:var(--text-primary)">Playbet.co.za</a>
+                </div>
               </div>
             </div>
             <span class="rating-badge high sm">4.2/5.0</span>
           </div>
           <div style="background:var(--accent-light);border-radius:8px;padding:10px 14px;margin-bottom:10px">
-            <p style="font-size:15px;font-weight:700;color:var(--bonus)">R50 +50 Spins on Signup</p>
+            <div style="display:flex;align-items:center;justify-content:space-between">
+              <p style="font-size:15px;font-weight:700;color:var(--bonus)">R50 +50 Spins on Signup</p>
+              <span style="font-size:14px;font-weight:700;color:var(--bonus)">R50</span>
+            </div>
             <span style="font-size:12px;color:var(--text-muted)">Min deposit: R5</span>
           </div>
           <p style="font-size:11px;color:var(--text-muted);margin-bottom:12px;line-height:1.5">18+ T&amp;Cs apply.</p>
@@ -679,18 +1002,24 @@
             <a href="betting-site-review/playbet-co-za.html" class="btn-outline btn-sm" style="flex:1;text-align:center">Review</a>
             <a href="https://www.bets.co.za/link/d396cd75251113093940/" target="_blank" rel="noopener noreferrer nofollow" class="btn-primary btn-sm" style="flex:1;text-align:center">Visit Site</a>
           </div>
-        </div><div class="listing-card" data-name="wanejo bets">
-          <div style="display:flex;align-items:flex-start;justify-content:space-between;gap:12px;margin-bottom:10px">
-            <div style="min-width:0">
-              <div style="display:flex;align-items:center;gap:8px">
-                <span style="font-size:13px;font-weight:700;color:var(--text-muted)">#17</span>
-                <a href="betting-site-review/wanejo-bets.html" style="font-size:16px;font-weight:700;color:var(--text-primary)">Wanejo Bets</a>
+        </div><div class="listing-card" data-name="wanejo bets" data-brand-id="wanejo-bets" data-bonus-val="10000">
+          <div style="display:flex;align-items:flex-start;justify-content:space-between;gap:8px;margin-bottom:10px">
+            <div style="display:flex;align-items:center;gap:8px;min-width:0">
+              <button class="star-btn" data-brand="wanejo-bets" onclick="event.stopPropagation();toggleStar('wanejo-bets')" aria-label="Add to favourites"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg></button>
+              <div style="min-width:0">
+                <div style="display:flex;align-items:center;gap:6px">
+                  <span style="font-size:13px;font-weight:700;color:var(--text-muted)">#17</span>
+                  <a href="betting-site-review/wanejo-bets.html" style="font-size:16px;font-weight:700;color:var(--text-primary)">Wanejo Bets</a>
+                </div>
               </div>
             </div>
             <span class="rating-badge high sm">4.2/5.0</span>
           </div>
           <div style="background:var(--accent-light);border-radius:8px;padding:10px 14px;margin-bottom:10px">
-            <p style="font-size:15px;font-weight:700;color:var(--bonus)">Deposit R10,000 Get R10,000</p>
+            <div style="display:flex;align-items:center;justify-content:space-between">
+              <p style="font-size:15px;font-weight:700;color:var(--bonus)">Deposit R10,000 Get R10,000</p>
+              <span style="font-size:14px;font-weight:700;color:var(--bonus)">R10,000</span>
+            </div>
             <span style="font-size:12px;color:var(--text-muted)">Min deposit: R5</span>
           </div>
           <p style="font-size:11px;color:var(--text-muted);margin-bottom:12px;line-height:1.5">18+ T&amp;Cs apply.</p>
@@ -698,18 +1027,24 @@
             <a href="betting-site-review/wanejo-bets.html" class="btn-outline btn-sm" style="flex:1;text-align:center">Review</a>
             <a href="https://www.bets.co.za/link/d7d4ec31251106143909/" target="_blank" rel="noopener noreferrer nofollow" class="btn-primary btn-sm" style="flex:1;text-align:center">Visit Site</a>
           </div>
-        </div><div class="listing-card" data-name="lucky fish">
-          <div style="display:flex;align-items:flex-start;justify-content:space-between;gap:12px;margin-bottom:10px">
-            <div style="min-width:0">
-              <div style="display:flex;align-items:center;gap:8px">
-                <span style="font-size:13px;font-weight:700;color:var(--text-muted)">#18</span>
-                <a href="betting-site-review/lucky-fish.html" style="font-size:16px;font-weight:700;color:var(--text-primary)">Lucky Fish</a>
+        </div><div class="listing-card" data-name="lucky fish" data-brand-id="lucky-fish" data-bonus-val="50">
+          <div style="display:flex;align-items:flex-start;justify-content:space-between;gap:8px;margin-bottom:10px">
+            <div style="display:flex;align-items:center;gap:8px;min-width:0">
+              <button class="star-btn" data-brand="lucky-fish" onclick="event.stopPropagation();toggleStar('lucky-fish')" aria-label="Add to favourites"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg></button>
+              <div style="min-width:0">
+                <div style="display:flex;align-items:center;gap:6px">
+                  <span style="font-size:13px;font-weight:700;color:var(--text-muted)">#18</span>
+                  <a href="betting-site-review/lucky-fish.html" style="font-size:16px;font-weight:700;color:var(--text-primary)">Lucky Fish</a>
+                </div>
               </div>
             </div>
             <span class="rating-badge mid sm">4.1/5.0</span>
           </div>
           <div style="background:var(--accent-light);border-radius:8px;padding:10px 14px;margin-bottom:10px">
-            <p style="font-size:15px;font-weight:700;color:var(--bonus)">R50 Sign Up Bonus</p>
+            <div style="display:flex;align-items:center;justify-content:space-between">
+              <p style="font-size:15px;font-weight:700;color:var(--bonus)">R50 Sign Up Bonus</p>
+              <span style="font-size:14px;font-weight:700;color:var(--bonus)">R50</span>
+            </div>
             <span style="font-size:12px;color:var(--text-muted)">Min deposit: R1</span>
           </div>
           <p style="font-size:11px;color:var(--text-muted);margin-bottom:12px;line-height:1.5">18+ T&amp;Cs apply.</p>
@@ -717,18 +1052,24 @@
             <a href="betting-site-review/lucky-fish.html" class="btn-outline btn-sm" style="flex:1;text-align:center">Review</a>
             <a href="https://www.bets.co.za/link/5d0cc690260212095127/" target="_blank" rel="noopener noreferrer nofollow" class="btn-primary btn-sm" style="flex:1;text-align:center">Visit Site</a>
           </div>
-        </div><div class="listing-card" data-name="betxchange">
-          <div style="display:flex;align-items:flex-start;justify-content:space-between;gap:12px;margin-bottom:10px">
-            <div style="min-width:0">
-              <div style="display:flex;align-items:center;gap:8px">
-                <span style="font-size:13px;font-weight:700;color:var(--text-muted)">#19</span>
-                <a href="betting-site-review/betxchange.html" style="font-size:16px;font-weight:700;color:var(--text-primary)">betXchange</a>
+        </div><div class="listing-card" data-name="betxchange" data-brand-id="betxchange" data-bonus-val="20000">
+          <div style="display:flex;align-items:flex-start;justify-content:space-between;gap:8px;margin-bottom:10px">
+            <div style="display:flex;align-items:center;gap:8px;min-width:0">
+              <button class="star-btn" data-brand="betxchange" onclick="event.stopPropagation();toggleStar('betxchange')" aria-label="Add to favourites"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg></button>
+              <div style="min-width:0">
+                <div style="display:flex;align-items:center;gap:6px">
+                  <span style="font-size:13px;font-weight:700;color:var(--text-muted)">#19</span>
+                  <a href="betting-site-review/betxchange.html" style="font-size:16px;font-weight:700;color:var(--text-primary)">betXchange</a>
+                </div>
               </div>
             </div>
             <span class="rating-badge mid sm">4.1/5.0</span>
           </div>
           <div style="background:var(--accent-light);border-radius:8px;padding:10px 14px;margin-bottom:10px">
-            <p style="font-size:15px;font-weight:700;color:var(--bonus)">R20,000 Money Back</p>
+            <div style="display:flex;align-items:center;justify-content:space-between">
+              <p style="font-size:15px;font-weight:700;color:var(--bonus)">R20,000 Money Back</p>
+              <span style="font-size:14px;font-weight:700;color:var(--bonus)">R20,000</span>
+            </div>
             <span style="font-size:12px;color:var(--text-muted)">Min deposit: R10</span>
           </div>
           <p style="font-size:11px;color:var(--text-muted);margin-bottom:12px;line-height:1.5">18+ T&amp;Cs apply.</p>
@@ -736,18 +1077,24 @@
             <a href="betting-site-review/betxchange.html" class="btn-outline btn-sm" style="flex:1;text-align:center">Review</a>
             <a href="https://www.bets.co.za/link/4dbe84a5251015082400/" target="_blank" rel="noopener noreferrer nofollow" class="btn-primary btn-sm" style="flex:1;text-align:center">Visit Site</a>
           </div>
-        </div><div class="listing-card" data-name="soccershop">
-          <div style="display:flex;align-items:flex-start;justify-content:space-between;gap:12px;margin-bottom:10px">
-            <div style="min-width:0">
-              <div style="display:flex;align-items:center;gap:8px">
-                <span style="font-size:13px;font-weight:700;color:var(--text-muted)">#20</span>
-                <a href="betting-site-review/soccershop.html" style="font-size:16px;font-weight:700;color:var(--text-primary)">Soccershop</a>
+        </div><div class="listing-card" data-name="soccershop" data-brand-id="soccershop" data-bonus-val="7500">
+          <div style="display:flex;align-items:flex-start;justify-content:space-between;gap:8px;margin-bottom:10px">
+            <div style="display:flex;align-items:center;gap:8px;min-width:0">
+              <button class="star-btn" data-brand="soccershop" onclick="event.stopPropagation();toggleStar('soccershop')" aria-label="Add to favourites"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg></button>
+              <div style="min-width:0">
+                <div style="display:flex;align-items:center;gap:6px">
+                  <span style="font-size:13px;font-weight:700;color:var(--text-muted)">#20</span>
+                  <a href="betting-site-review/soccershop.html" style="font-size:16px;font-weight:700;color:var(--text-primary)">Soccershop</a>
+                </div>
               </div>
             </div>
             <span class="rating-badge mid sm">4.0/5.0</span>
           </div>
           <div style="background:var(--accent-light);border-radius:8px;padding:10px 14px;margin-bottom:10px">
-            <p style="font-size:15px;font-weight:700;color:var(--bonus)">Deposit R7500 Get R7500</p>
+            <div style="display:flex;align-items:center;justify-content:space-between">
+              <p style="font-size:15px;font-weight:700;color:var(--bonus)">Deposit R7500 Get R7500</p>
+              <span style="font-size:14px;font-weight:700;color:var(--bonus)">R7,500</span>
+            </div>
             <span style="font-size:12px;color:var(--text-muted)">Min deposit: R5</span>
           </div>
           <p style="font-size:11px;color:var(--text-muted);margin-bottom:12px;line-height:1.5">18+ T&amp;Cs apply.</p>
@@ -755,18 +1102,24 @@
             <a href="betting-site-review/soccershop.html" class="btn-outline btn-sm" style="flex:1;text-align:center">Review</a>
             <a href="https://www.bets.co.za/link/9ebdf908240402101657/" target="_blank" rel="noopener noreferrer nofollow" class="btn-primary btn-sm" style="flex:1;text-align:center">Visit Site</a>
           </div>
-        </div><div class="listing-card" data-name="swifty">
-          <div style="display:flex;align-items:flex-start;justify-content:space-between;gap:12px;margin-bottom:10px">
-            <div style="min-width:0">
-              <div style="display:flex;align-items:center;gap:8px">
-                <span style="font-size:13px;font-weight:700;color:var(--text-muted)">#21</span>
-                <a href="betting-site-review/swifty.html" style="font-size:16px;font-weight:700;color:var(--text-primary)">Swifty</a>
+        </div><div class="listing-card" data-name="swifty" data-brand-id="swifty" data-bonus-val="3000">
+          <div style="display:flex;align-items:flex-start;justify-content:space-between;gap:8px;margin-bottom:10px">
+            <div style="display:flex;align-items:center;gap:8px;min-width:0">
+              <button class="star-btn" data-brand="swifty" onclick="event.stopPropagation();toggleStar('swifty')" aria-label="Add to favourites"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg></button>
+              <div style="min-width:0">
+                <div style="display:flex;align-items:center;gap:6px">
+                  <span style="font-size:13px;font-weight:700;color:var(--text-muted)">#21</span>
+                  <a href="betting-site-review/swifty.html" style="font-size:16px;font-weight:700;color:var(--text-primary)">Swifty</a>
+                </div>
               </div>
             </div>
             <span class="rating-badge mid sm">3.9/5.0</span>
           </div>
           <div style="background:var(--accent-light);border-radius:8px;padding:10px 14px;margin-bottom:10px">
-            <p style="font-size:15px;font-weight:700;color:var(--bonus)">Deposit R3000 Get R3000</p>
+            <div style="display:flex;align-items:center;justify-content:space-between">
+              <p style="font-size:15px;font-weight:700;color:var(--bonus)">Deposit R3000 Get R3000</p>
+              <span style="font-size:14px;font-weight:700;color:var(--bonus)">R3,000</span>
+            </div>
             <span style="font-size:12px;color:var(--text-muted)">Min deposit: R50</span>
           </div>
           <p style="font-size:11px;color:var(--text-muted);margin-bottom:12px;line-height:1.5">18+ T&amp;Cs apply.</p>
@@ -774,18 +1127,24 @@
             <a href="betting-site-review/swifty.html" class="btn-outline btn-sm" style="flex:1;text-align:center">Review</a>
             <a href="https://www.bets.co.za/link/7f57b3bb251121120813/" target="_blank" rel="noopener noreferrer nofollow" class="btn-primary btn-sm" style="flex:1;text-align:center">Visit Site</a>
           </div>
-        </div><div class="listing-card" data-name="betjets">
-          <div style="display:flex;align-items:flex-start;justify-content:space-between;gap:12px;margin-bottom:10px">
-            <div style="min-width:0">
-              <div style="display:flex;align-items:center;gap:8px">
-                <span style="font-size:13px;font-weight:700;color:var(--text-muted)">#22</span>
-                <a href="betting-site-review/betjets.html" style="font-size:16px;font-weight:700;color:var(--text-primary)">Betjets</a>
+        </div><div class="listing-card" data-name="betjets" data-brand-id="betjets" data-bonus-val="2000">
+          <div style="display:flex;align-items:flex-start;justify-content:space-between;gap:8px;margin-bottom:10px">
+            <div style="display:flex;align-items:center;gap:8px;min-width:0">
+              <button class="star-btn" data-brand="betjets" onclick="event.stopPropagation();toggleStar('betjets')" aria-label="Add to favourites"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg></button>
+              <div style="min-width:0">
+                <div style="display:flex;align-items:center;gap:6px">
+                  <span style="font-size:13px;font-weight:700;color:var(--text-muted)">#22</span>
+                  <a href="betting-site-review/betjets.html" style="font-size:16px;font-weight:700;color:var(--text-primary)">Betjets</a>
+                </div>
               </div>
             </div>
             <span class="rating-badge mid sm">3.9/5.0</span>
           </div>
           <div style="background:var(--accent-light);border-radius:8px;padding:10px 14px;margin-bottom:10px">
-            <p style="font-size:15px;font-weight:700;color:var(--bonus)">Deposit R2,000 Get R2,000</p>
+            <div style="display:flex;align-items:center;justify-content:space-between">
+              <p style="font-size:15px;font-weight:700;color:var(--bonus)">Deposit R2,000 Get R2,000</p>
+              <span style="font-size:14px;font-weight:700;color:var(--bonus)">R2,000</span>
+            </div>
             <span style="font-size:12px;color:var(--text-muted)">Min deposit: R1</span>
           </div>
           <p style="font-size:11px;color:var(--text-muted);margin-bottom:12px;line-height:1.5">18+ T&amp;Cs apply.</p>
@@ -793,18 +1152,24 @@
             <a href="betting-site-review/betjets.html" class="btn-outline btn-sm" style="flex:1;text-align:center">Review</a>
             <a href="https://www.bets.co.za/link/cb8b024250912114850/" target="_blank" rel="noopener noreferrer nofollow" class="btn-primary btn-sm" style="flex:1;text-align:center">Visit Site</a>
           </div>
-        </div><div class="listing-card" data-name="gbets">
-          <div style="display:flex;align-items:flex-start;justify-content:space-between;gap:12px;margin-bottom:10px">
-            <div style="min-width:0">
-              <div style="display:flex;align-items:center;gap:8px">
-                <span style="font-size:13px;font-weight:700;color:var(--text-muted)">#23</span>
-                <a href="betting-site-review/gbets.html" style="font-size:16px;font-weight:700;color:var(--text-primary)">Gbets</a>
+        </div><div class="listing-card" data-name="gbets" data-brand-id="gbets" data-bonus-val="1000">
+          <div style="display:flex;align-items:flex-start;justify-content:space-between;gap:8px;margin-bottom:10px">
+            <div style="display:flex;align-items:center;gap:8px;min-width:0">
+              <button class="star-btn" data-brand="gbets" onclick="event.stopPropagation();toggleStar('gbets')" aria-label="Add to favourites"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg></button>
+              <div style="min-width:0">
+                <div style="display:flex;align-items:center;gap:6px">
+                  <span style="font-size:13px;font-weight:700;color:var(--text-muted)">#23</span>
+                  <a href="betting-site-review/gbets.html" style="font-size:16px;font-weight:700;color:var(--text-primary)">Gbets</a>
+                </div>
               </div>
             </div>
             <span class="rating-badge mid sm">3.8/5.0</span>
           </div>
           <div style="background:var(--accent-light);border-radius:8px;padding:10px 14px;margin-bottom:10px">
-            <p style="font-size:15px;font-weight:700;color:var(--bonus)">R1,000 Bonus</p>
+            <div style="display:flex;align-items:center;justify-content:space-between">
+              <p style="font-size:15px;font-weight:700;color:var(--bonus)">R1,000 Bonus</p>
+              <span style="font-size:14px;font-weight:700;color:var(--bonus)">R1,000</span>
+            </div>
             <span style="font-size:12px;color:var(--text-muted)">Min deposit: R10</span>
           </div>
           <p style="font-size:11px;color:var(--text-muted);margin-bottom:12px;line-height:1.5">18+ only. T&amp;Cs apply. Winners know when to stop.</p>
@@ -812,18 +1177,24 @@
             <a href="betting-site-review/gbets.html" class="btn-outline btn-sm" style="flex:1;text-align:center">Review</a>
             <a href="https://www.bets.co.za/link/9947adce190222182544/" target="_blank" rel="noopener noreferrer nofollow" class="btn-primary btn-sm" style="flex:1;text-align:center">Visit Site</a>
           </div>
-        </div><div class="listing-card" data-name="supersportbet">
-          <div style="display:flex;align-items:flex-start;justify-content:space-between;gap:12px;margin-bottom:10px">
-            <div style="min-width:0">
-              <div style="display:flex;align-items:center;gap:8px">
-                <span style="font-size:13px;font-weight:700;color:var(--text-muted)">#24</span>
-                <a href="betting-site-review/supersportbet.html" style="font-size:16px;font-weight:700;color:var(--text-primary)">Supersportbet</a>
+        </div><div class="listing-card" data-name="supersportbet" data-brand-id="supersportbet" data-bonus-val="5000">
+          <div style="display:flex;align-items:flex-start;justify-content:space-between;gap:8px;margin-bottom:10px">
+            <div style="display:flex;align-items:center;gap:8px;min-width:0">
+              <button class="star-btn" data-brand="supersportbet" onclick="event.stopPropagation();toggleStar('supersportbet')" aria-label="Add to favourites"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg></button>
+              <div style="min-width:0">
+                <div style="display:flex;align-items:center;gap:6px">
+                  <span style="font-size:13px;font-weight:700;color:var(--text-muted)">#24</span>
+                  <a href="betting-site-review/supersportbet.html" style="font-size:16px;font-weight:700;color:var(--text-primary)">Supersportbet</a>
+                </div>
               </div>
             </div>
             <span class="rating-badge mid sm">3.8/5.0</span>
           </div>
           <div style="background:var(--accent-light);border-radius:8px;padding:10px 14px;margin-bottom:10px">
-            <p style="font-size:15px;font-weight:700;color:var(--bonus)">Deposit R5000 Get R5000</p>
+            <div style="display:flex;align-items:center;justify-content:space-between">
+              <p style="font-size:15px;font-weight:700;color:var(--bonus)">Deposit R5000 Get R5000</p>
+              <span style="font-size:14px;font-weight:700;color:var(--bonus)">R5,000</span>
+            </div>
             <span style="font-size:12px;color:var(--text-muted)">Min deposit: R10</span>
           </div>
           <p style="font-size:11px;color:var(--text-muted);margin-bottom:12px;line-height:1.5">18+ T&amp;Cs apply.</p>
@@ -831,18 +1202,24 @@
             <a href="betting-site-review/supersportbet.html" class="btn-outline btn-sm" style="flex:1;text-align:center">Review</a>
             <a href="https://www.bets.co.za/link/ca597872250913133852/" target="_blank" rel="noopener noreferrer nofollow" class="btn-primary btn-sm" style="flex:1;text-align:center">Visit Site</a>
           </div>
-        </div><div class="listing-card" data-name="pokerbet">
-          <div style="display:flex;align-items:flex-start;justify-content:space-between;gap:12px;margin-bottom:10px">
-            <div style="min-width:0">
-              <div style="display:flex;align-items:center;gap:8px">
-                <span style="font-size:13px;font-weight:700;color:var(--text-muted)">#25</span>
-                <a href="betting-site-review/pokerbet.html" style="font-size:16px;font-weight:700;color:var(--text-primary)">Pokerbet</a>
+        </div><div class="listing-card" data-name="pokerbet" data-brand-id="pokerbet" data-bonus-val="100">
+          <div style="display:flex;align-items:flex-start;justify-content:space-between;gap:8px;margin-bottom:10px">
+            <div style="display:flex;align-items:center;gap:8px;min-width:0">
+              <button class="star-btn" data-brand="pokerbet" onclick="event.stopPropagation();toggleStar('pokerbet')" aria-label="Add to favourites"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg></button>
+              <div style="min-width:0">
+                <div style="display:flex;align-items:center;gap:6px">
+                  <span style="font-size:13px;font-weight:700;color:var(--text-muted)">#25</span>
+                  <a href="betting-site-review/pokerbet.html" style="font-size:16px;font-weight:700;color:var(--text-primary)">Pokerbet</a>
+                </div>
               </div>
             </div>
             <span class="rating-badge mid sm">3.7/5.0</span>
           </div>
           <div style="background:var(--accent-light);border-radius:8px;padding:10px 14px;margin-bottom:10px">
-            <p style="font-size:15px;font-weight:700;color:var(--bonus)">Get R100 free + R2000 (100%)</p>
+            <div style="display:flex;align-items:center;justify-content:space-between">
+              <p style="font-size:15px;font-weight:700;color:var(--bonus)">Get R100 free + R2000 (100%)</p>
+              <span style="font-size:14px;font-weight:700;color:var(--bonus)">R100</span>
+            </div>
             <span style="font-size:12px;color:var(--text-muted)">Min deposit: R1</span>
           </div>
           <p style="font-size:11px;color:var(--text-muted);margin-bottom:12px;line-height:1.5">R100 free is no deposit. 18+ T&amp;Cs apply.</p>
@@ -850,18 +1227,24 @@
             <a href="betting-site-review/pokerbet.html" class="btn-outline btn-sm" style="flex:1;text-align:center">Review</a>
             <a href="https://www.bets.co.za/link/2675704c230119095924/" target="_blank" rel="noopener noreferrer nofollow" class="btn-primary btn-sm" style="flex:1;text-align:center">Visit Site</a>
           </div>
-        </div><div class="listing-card" data-name="sportingbet">
-          <div style="display:flex;align-items:flex-start;justify-content:space-between;gap:12px;margin-bottom:10px">
-            <div style="min-width:0">
-              <div style="display:flex;align-items:center;gap:8px">
-                <span style="font-size:13px;font-weight:700;color:var(--text-muted)">#26</span>
-                <a href="betting-site-review/sportingbet.html" style="font-size:16px;font-weight:700;color:var(--text-primary)">Sportingbet</a>
+        </div><div class="listing-card" data-name="sportingbet" data-brand-id="sportingbet" data-bonus-val="3000">
+          <div style="display:flex;align-items:flex-start;justify-content:space-between;gap:8px;margin-bottom:10px">
+            <div style="display:flex;align-items:center;gap:8px;min-width:0">
+              <button class="star-btn" data-brand="sportingbet" onclick="event.stopPropagation();toggleStar('sportingbet')" aria-label="Add to favourites"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg></button>
+              <div style="min-width:0">
+                <div style="display:flex;align-items:center;gap:6px">
+                  <span style="font-size:13px;font-weight:700;color:var(--text-muted)">#26</span>
+                  <a href="betting-site-review/sportingbet.html" style="font-size:16px;font-weight:700;color:var(--text-primary)">Sportingbet</a>
+                </div>
               </div>
             </div>
             <span class="rating-badge mid sm">3.6/5.0</span>
           </div>
           <div style="background:var(--accent-light);border-radius:8px;padding:10px 14px;margin-bottom:10px">
-            <p style="font-size:15px;font-weight:700;color:var(--bonus)">Up to R3,000 + 300 Spins</p>
+            <div style="display:flex;align-items:center;justify-content:space-between">
+              <p style="font-size:15px;font-weight:700;color:var(--bonus)">Up to R3,000 + 300 Spins</p>
+              <span style="font-size:14px;font-weight:700;color:var(--bonus)">R3,000</span>
+            </div>
             <span style="font-size:12px;color:var(--text-muted)">Min deposit: R10</span>
           </div>
           <p style="font-size:11px;color:var(--text-muted);margin-bottom:12px;line-height:1.5">Earn bonus and spins on first three deposits. 18+ T&amp;Cs apply.</p>
@@ -869,18 +1252,24 @@
             <a href="betting-site-review/sportingbet.html" class="btn-outline btn-sm" style="flex:1;text-align:center">Review</a>
             <a href="https://www.bets.co.za/link/24faf4f7190201004832/" target="_blank" rel="noopener noreferrer nofollow" class="btn-primary btn-sm" style="flex:1;text-align:center">Visit Site</a>
           </div>
-        </div><div class="listing-card" data-name="lulabet">
-          <div style="display:flex;align-items:flex-start;justify-content:space-between;gap:12px;margin-bottom:10px">
-            <div style="min-width:0">
-              <div style="display:flex;align-items:center;gap:8px">
-                <span style="font-size:13px;font-weight:700;color:var(--text-muted)">#27</span>
-                <a href="betting-site-review/lulabet.html" style="font-size:16px;font-weight:700;color:var(--text-primary)">Lulabet</a>
+        </div><div class="listing-card" data-name="lulabet" data-brand-id="lulabet" data-bonus-val="50">
+          <div style="display:flex;align-items:flex-start;justify-content:space-between;gap:8px;margin-bottom:10px">
+            <div style="display:flex;align-items:center;gap:8px;min-width:0">
+              <button class="star-btn" data-brand="lulabet" onclick="event.stopPropagation();toggleStar('lulabet')" aria-label="Add to favourites"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg></button>
+              <div style="min-width:0">
+                <div style="display:flex;align-items:center;gap:6px">
+                  <span style="font-size:13px;font-weight:700;color:var(--text-muted)">#27</span>
+                  <a href="betting-site-review/lulabet.html" style="font-size:16px;font-weight:700;color:var(--text-primary)">Lulabet</a>
+                </div>
               </div>
             </div>
             <span class="rating-badge mid sm">3.6/5.0</span>
           </div>
           <div style="background:var(--accent-light);border-radius:8px;padding:10px 14px;margin-bottom:10px">
-            <p style="font-size:15px;font-weight:700;color:var(--bonus)">Bet R50 Get R50</p>
+            <div style="display:flex;align-items:center;justify-content:space-between">
+              <p style="font-size:15px;font-weight:700;color:var(--bonus)">Bet R50 Get R50</p>
+              <span style="font-size:14px;font-weight:700;color:var(--bonus)">R50</span>
+            </div>
             <span style="font-size:12px;color:var(--text-muted)">Min deposit: R10</span>
           </div>
           <p style="font-size:11px;color:var(--text-muted);margin-bottom:12px;line-height:1.5">18+ T&amp;Cs apply.</p>
@@ -888,18 +1277,24 @@
             <a href="betting-site-review/lulabet.html" class="btn-outline btn-sm" style="flex:1;text-align:center">Review</a>
             <a href="https://www.bets.co.za/link/d383b695221010094649/" target="_blank" rel="noopener noreferrer nofollow" class="btn-primary btn-sm" style="flex:1;text-align:center">Visit Site</a>
           </div>
-        </div><div class="listing-card" data-name="betfred">
-          <div style="display:flex;align-items:flex-start;justify-content:space-between;gap:12px;margin-bottom:10px">
-            <div style="min-width:0">
-              <div style="display:flex;align-items:center;gap:8px">
-                <span style="font-size:13px;font-weight:700;color:var(--text-muted)">#28</span>
-                <a href="betting-site-review/betfred.html" style="font-size:16px;font-weight:700;color:var(--text-primary)">Betfred</a>
+        </div><div class="listing-card" data-name="betfred" data-brand-id="betfred" data-bonus-val="21000">
+          <div style="display:flex;align-items:flex-start;justify-content:space-between;gap:8px;margin-bottom:10px">
+            <div style="display:flex;align-items:center;gap:8px;min-width:0">
+              <button class="star-btn" data-brand="betfred" onclick="event.stopPropagation();toggleStar('betfred')" aria-label="Add to favourites"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg></button>
+              <div style="min-width:0">
+                <div style="display:flex;align-items:center;gap:6px">
+                  <span style="font-size:13px;font-weight:700;color:var(--text-muted)">#28</span>
+                  <a href="betting-site-review/betfred.html" style="font-size:16px;font-weight:700;color:var(--text-primary)">Betfred</a>
+                </div>
               </div>
             </div>
             <span class="rating-badge mid sm">3.6/5.0</span>
           </div>
           <div style="background:var(--accent-light);border-radius:8px;padding:10px 14px;margin-bottom:10px">
-            <p style="font-size:15px;font-weight:700;color:var(--bonus)">up to R21,000 + 750 Spins</p>
+            <div style="display:flex;align-items:center;justify-content:space-between">
+              <p style="font-size:15px;font-weight:700;color:var(--bonus)">up to R21,000 + 750 Spins</p>
+              <span style="font-size:14px;font-weight:700;color:var(--bonus)">R21,000</span>
+            </div>
             <span style="font-size:12px;color:var(--text-muted)">Min deposit: R20</span>
           </div>
           <p style="font-size:11px;color:var(--text-muted);margin-bottom:12px;line-height:1.5">Earn bonus funds and free spins over first deposits. 18+ T&amp;Cs apply.</p>
@@ -907,18 +1302,24 @@
             <a href="betting-site-review/betfred.html" class="btn-outline btn-sm" style="flex:1;text-align:center">Review</a>
             <a href="https://www.bets.co.za/link/4d0a9382190213123654/" target="_blank" rel="noopener noreferrer nofollow" class="btn-primary btn-sm" style="flex:1;text-align:center">Visit Site</a>
           </div>
-        </div><div class="listing-card" data-name="tictacbets">
-          <div style="display:flex;align-items:flex-start;justify-content:space-between;gap:12px;margin-bottom:10px">
-            <div style="min-width:0">
-              <div style="display:flex;align-items:center;gap:8px">
-                <span style="font-size:13px;font-weight:700;color:var(--text-muted)">#29</span>
-                <a href="betting-site-review/tictacbets.html" style="font-size:16px;font-weight:700;color:var(--text-primary)">Tictacbets</a>
+        </div><div class="listing-card" data-name="tictacbets" data-brand-id="tictacbets" data-bonus-val="5000">
+          <div style="display:flex;align-items:flex-start;justify-content:space-between;gap:8px;margin-bottom:10px">
+            <div style="display:flex;align-items:center;gap:8px;min-width:0">
+              <button class="star-btn" data-brand="tictacbets" onclick="event.stopPropagation();toggleStar('tictacbets')" aria-label="Add to favourites"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg></button>
+              <div style="min-width:0">
+                <div style="display:flex;align-items:center;gap:6px">
+                  <span style="font-size:13px;font-weight:700;color:var(--text-muted)">#29</span>
+                  <a href="betting-site-review/tictacbets.html" style="font-size:16px;font-weight:700;color:var(--text-primary)">Tictacbets</a>
+                </div>
               </div>
             </div>
             <span class="rating-badge mid sm">3.5/5.0</span>
           </div>
           <div style="background:var(--accent-light);border-radius:8px;padding:10px 14px;margin-bottom:10px">
-            <p style="font-size:15px;font-weight:700;color:var(--bonus)">100% up to R5,000 + 50 spins</p>
+            <div style="display:flex;align-items:center;justify-content:space-between">
+              <p style="font-size:15px;font-weight:700;color:var(--bonus)">100% up to R5,000 + 50 spins</p>
+              <span style="font-size:14px;font-weight:700;color:var(--bonus)">R5,000</span>
+            </div>
             <span style="font-size:12px;color:var(--text-muted)">Min deposit: R5 (Minimum for bonus is R50)</span>
           </div>
           <p style="font-size:11px;color:var(--text-muted);margin-bottom:12px;line-height:1.5">18+ T&amp;Cs apply.</p>
@@ -926,18 +1327,24 @@
             <a href="betting-site-review/tictacbets.html" class="btn-outline btn-sm" style="flex:1;text-align:center">Review</a>
             <a href="https://www.bets.co.za/link/49302a5d260212114831/" target="_blank" rel="noopener noreferrer nofollow" class="btn-primary btn-sm" style="flex:1;text-align:center">Visit Site</a>
           </div>
-        </div><div class="listing-card" data-name="bettabets">
-          <div style="display:flex;align-items:flex-start;justify-content:space-between;gap:12px;margin-bottom:10px">
-            <div style="min-width:0">
-              <div style="display:flex;align-items:center;gap:8px">
-                <span style="font-size:13px;font-weight:700;color:var(--text-muted)">#30</span>
-                <a href="betting-site-review/bettabets.html" style="font-size:16px;font-weight:700;color:var(--text-primary)">Bettabets</a>
+        </div><div class="listing-card" data-name="bettabets" data-brand-id="bettabets" data-bonus-val="2500">
+          <div style="display:flex;align-items:flex-start;justify-content:space-between;gap:8px;margin-bottom:10px">
+            <div style="display:flex;align-items:center;gap:8px;min-width:0">
+              <button class="star-btn" data-brand="bettabets" onclick="event.stopPropagation();toggleStar('bettabets')" aria-label="Add to favourites"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg></button>
+              <div style="min-width:0">
+                <div style="display:flex;align-items:center;gap:6px">
+                  <span style="font-size:13px;font-weight:700;color:var(--text-muted)">#30</span>
+                  <a href="betting-site-review/bettabets.html" style="font-size:16px;font-weight:700;color:var(--text-primary)">Bettabets</a>
+                </div>
               </div>
             </div>
             <span class="rating-badge mid sm">3.5/5.0</span>
           </div>
           <div style="background:var(--accent-light);border-radius:8px;padding:10px 14px;margin-bottom:10px">
-            <p style="font-size:15px;font-weight:700;color:var(--bonus)">R2500 (100% match)</p>
+            <div style="display:flex;align-items:center;justify-content:space-between">
+              <p style="font-size:15px;font-weight:700;color:var(--bonus)">R2500 (100% match)</p>
+              <span style="font-size:14px;font-weight:700;color:var(--bonus)">R2,500</span>
+            </div>
             <span style="font-size:12px;color:var(--text-muted)">Min deposit: R5</span>
           </div>
           <p style="font-size:11px;color:var(--text-muted);margin-bottom:12px;line-height:1.5">100% match on first deposit, up to R2500. 18+ T&amp;Cs apply.</p>
@@ -945,18 +1352,24 @@
             <a href="betting-site-review/bettabets.html" class="btn-outline btn-sm" style="flex:1;text-align:center">Review</a>
             
           </div>
-        </div><div class="listing-card" data-name="betshezi">
-          <div style="display:flex;align-items:flex-start;justify-content:space-between;gap:12px;margin-bottom:10px">
-            <div style="min-width:0">
-              <div style="display:flex;align-items:center;gap:8px">
-                <span style="font-size:13px;font-weight:700;color:var(--text-muted)">#31</span>
-                <a href="betting-site-review/betshezi.html" style="font-size:16px;font-weight:700;color:var(--text-primary)">Betshezi</a>
+        </div><div class="listing-card" data-name="betshezi" data-brand-id="betshezi" data-bonus-val="2000">
+          <div style="display:flex;align-items:flex-start;justify-content:space-between;gap:8px;margin-bottom:10px">
+            <div style="display:flex;align-items:center;gap:8px;min-width:0">
+              <button class="star-btn" data-brand="betshezi" onclick="event.stopPropagation();toggleStar('betshezi')" aria-label="Add to favourites"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg></button>
+              <div style="min-width:0">
+                <div style="display:flex;align-items:center;gap:6px">
+                  <span style="font-size:13px;font-weight:700;color:var(--text-muted)">#31</span>
+                  <a href="betting-site-review/betshezi.html" style="font-size:16px;font-weight:700;color:var(--text-primary)">Betshezi</a>
+                </div>
               </div>
             </div>
             <span class="rating-badge mid sm">3.5/5.0</span>
           </div>
           <div style="background:var(--accent-light);border-radius:8px;padding:10px 14px;margin-bottom:10px">
-            <p style="font-size:15px;font-weight:700;color:var(--bonus)">Deposit R2000 Get R2000</p>
+            <div style="display:flex;align-items:center;justify-content:space-between">
+              <p style="font-size:15px;font-weight:700;color:var(--bonus)">Deposit R2000 Get R2000</p>
+              <span style="font-size:14px;font-weight:700;color:var(--bonus)">R2,000</span>
+            </div>
             <span style="font-size:12px;color:var(--text-muted)">Min deposit: R10</span>
           </div>
           <p style="font-size:11px;color:var(--text-muted);margin-bottom:12px;line-height:1.5">18+ T&amp;Cs apply.</p>
@@ -964,18 +1377,24 @@
             <a href="betting-site-review/betshezi.html" class="btn-outline btn-sm" style="flex:1;text-align:center">Review</a>
             <a href="https://www.bets.co.za/link/9a796eb9221107160023/" target="_blank" rel="noopener noreferrer nofollow" class="btn-primary btn-sm" style="flex:1;text-align:center">Visit Site</a>
           </div>
-        </div><div class="listing-card" data-name="supabets">
-          <div style="display:flex;align-items:flex-start;justify-content:space-between;gap:12px;margin-bottom:10px">
-            <div style="min-width:0">
-              <div style="display:flex;align-items:center;gap:8px">
-                <span style="font-size:13px;font-weight:700;color:var(--text-muted)">#32</span>
-                <a href="betting-site-review/supabets.html" style="font-size:16px;font-weight:700;color:var(--text-primary)">Supabets</a>
+        </div><div class="listing-card" data-name="supabets" data-brand-id="supabets" data-bonus-val="50">
+          <div style="display:flex;align-items:flex-start;justify-content:space-between;gap:8px;margin-bottom:10px">
+            <div style="display:flex;align-items:center;gap:8px;min-width:0">
+              <button class="star-btn" data-brand="supabets" onclick="event.stopPropagation();toggleStar('supabets')" aria-label="Add to favourites"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg></button>
+              <div style="min-width:0">
+                <div style="display:flex;align-items:center;gap:6px">
+                  <span style="font-size:13px;font-weight:700;color:var(--text-muted)">#32</span>
+                  <a href="betting-site-review/supabets.html" style="font-size:16px;font-weight:700;color:var(--text-primary)">Supabets</a>
+                </div>
               </div>
             </div>
             <span class="rating-badge mid sm">3.5/5.0</span>
           </div>
           <div style="background:var(--accent-light);border-radius:8px;padding:10px 14px;margin-bottom:10px">
-            <p style="font-size:15px;font-weight:700;color:var(--bonus)">Free R50 bonus sign up</p>
+            <div style="display:flex;align-items:center;justify-content:space-between">
+              <p style="font-size:15px;font-weight:700;color:var(--bonus)">Free R50 bonus sign up</p>
+              <span style="font-size:14px;font-weight:700;color:var(--bonus)">R50</span>
+            </div>
             <span style="font-size:12px;color:var(--text-muted)">Min deposit: R1</span>
           </div>
           <p style="font-size:11px;color:var(--text-muted);margin-bottom:12px;line-height:1.5">New customers receive R50 + 100 Free Spins + deposit bonuses. 18+ T&amp;Cs apply.</p>
@@ -983,18 +1402,24 @@
             <a href="betting-site-review/supabets.html" class="btn-outline btn-sm" style="flex:1;text-align:center">Review</a>
             <a href="https://www.bets.co.za/link/83a75fb3190222144052/" target="_blank" rel="noopener noreferrer nofollow" class="btn-primary btn-sm" style="flex:1;text-align:center">Visit Site</a>
           </div>
-        </div><div class="listing-card" data-name="jackpot city">
-          <div style="display:flex;align-items:flex-start;justify-content:space-between;gap:12px;margin-bottom:10px">
-            <div style="min-width:0">
-              <div style="display:flex;align-items:center;gap:8px">
-                <span style="font-size:13px;font-weight:700;color:var(--text-muted)">#33</span>
-                <a href="betting-site-review/jackpot-city.html" style="font-size:16px;font-weight:700;color:var(--text-primary)">Jackpot City</a>
+        </div><div class="listing-card" data-name="jackpot city" data-brand-id="jackpot-city" data-bonus-val="4000">
+          <div style="display:flex;align-items:flex-start;justify-content:space-between;gap:8px;margin-bottom:10px">
+            <div style="display:flex;align-items:center;gap:8px;min-width:0">
+              <button class="star-btn" data-brand="jackpot-city" onclick="event.stopPropagation();toggleStar('jackpot-city')" aria-label="Add to favourites"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg></button>
+              <div style="min-width:0">
+                <div style="display:flex;align-items:center;gap:6px">
+                  <span style="font-size:13px;font-weight:700;color:var(--text-muted)">#33</span>
+                  <a href="betting-site-review/jackpot-city.html" style="font-size:16px;font-weight:700;color:var(--text-primary)">Jackpot City</a>
+                </div>
               </div>
             </div>
             <span class="rating-badge low sm">3.3/5.0</span>
           </div>
           <div style="background:var(--accent-light);border-radius:8px;padding:10px 14px;margin-bottom:10px">
-            <p style="font-size:15px;font-weight:700;color:var(--bonus)">100% up to R4000 + Spins</p>
+            <div style="display:flex;align-items:center;justify-content:space-between">
+              <p style="font-size:15px;font-weight:700;color:var(--bonus)">100% up to R4000 + Spins</p>
+              <span style="font-size:14px;font-weight:700;color:var(--bonus)">R4,000</span>
+            </div>
             <span style="font-size:12px;color:var(--text-muted)">Min deposit: R10</span>
           </div>
           <p style="font-size:11px;color:var(--text-muted);margin-bottom:12px;line-height:1.5">18+ only. Gamble responsibly. T&amp;Cs apply.</p>
@@ -1002,18 +1427,24 @@
             <a href="betting-site-review/jackpot-city.html" class="btn-outline btn-sm" style="flex:1;text-align:center">Review</a>
             
           </div>
-        </div><div class="listing-card" data-name="luckystake">
-          <div style="display:flex;align-items:flex-start;justify-content:space-between;gap:12px;margin-bottom:10px">
-            <div style="min-width:0">
-              <div style="display:flex;align-items:center;gap:8px">
-                <span style="font-size:13px;font-weight:700;color:var(--text-muted)">#34</span>
-                <a href="betting-site-review/luckystake.html" style="font-size:16px;font-weight:700;color:var(--text-primary)">Luckystake</a>
+        </div><div class="listing-card" data-name="luckystake" data-brand-id="luckystake" data-bonus-val="0">
+          <div style="display:flex;align-items:flex-start;justify-content:space-between;gap:8px;margin-bottom:10px">
+            <div style="display:flex;align-items:center;gap:8px;min-width:0">
+              <button class="star-btn" data-brand="luckystake" onclick="event.stopPropagation();toggleStar('luckystake')" aria-label="Add to favourites"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg></button>
+              <div style="min-width:0">
+                <div style="display:flex;align-items:center;gap:6px">
+                  <span style="font-size:13px;font-weight:700;color:var(--text-muted)">#34</span>
+                  <a href="betting-site-review/luckystake.html" style="font-size:16px;font-weight:700;color:var(--text-primary)">Luckystake</a>
+                </div>
               </div>
             </div>
             <span class="rating-badge low sm">3.3/5.0</span>
           </div>
           <div style="background:var(--accent-light);border-radius:8px;padding:10px 14px;margin-bottom:10px">
-            <p style="font-size:15px;font-weight:700;color:var(--bonus)">Luckystake Loyalty Program</p>
+            <div style="display:flex;align-items:center;justify-content:space-between">
+              <p style="font-size:15px;font-weight:700;color:var(--bonus)">Luckystake Loyalty Program</p>
+              <span style="font-size:14px;font-weight:700;color:var(--bonus)">-</span>
+            </div>
             <span style="font-size:12px;color:var(--text-muted)">Min deposit: R20</span>
           </div>
           <p style="font-size:11px;color:var(--text-muted);margin-bottom:12px;line-height:1.5">18+ T&amp;Cs apply.</p>
@@ -1021,18 +1452,24 @@
             <a href="betting-site-review/luckystake.html" class="btn-outline btn-sm" style="flex:1;text-align:center">Review</a>
             
           </div>
-        </div><div class="listing-card" data-name="betbus">
-          <div style="display:flex;align-items:flex-start;justify-content:space-between;gap:12px;margin-bottom:10px">
-            <div style="min-width:0">
-              <div style="display:flex;align-items:center;gap:8px">
-                <span style="font-size:13px;font-weight:700;color:var(--text-muted)">#35</span>
-                <a href="betting-site-review/betbus.html" style="font-size:16px;font-weight:700;color:var(--text-primary)">betbus</a>
+        </div><div class="listing-card" data-name="betbus" data-brand-id="betbus" data-bonus-val="5000">
+          <div style="display:flex;align-items:flex-start;justify-content:space-between;gap:8px;margin-bottom:10px">
+            <div style="display:flex;align-items:center;gap:8px;min-width:0">
+              <button class="star-btn" data-brand="betbus" onclick="event.stopPropagation();toggleStar('betbus')" aria-label="Add to favourites"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg></button>
+              <div style="min-width:0">
+                <div style="display:flex;align-items:center;gap:6px">
+                  <span style="font-size:13px;font-weight:700;color:var(--text-muted)">#35</span>
+                  <a href="betting-site-review/betbus.html" style="font-size:16px;font-weight:700;color:var(--text-primary)">betbus</a>
+                </div>
               </div>
             </div>
             <span class="rating-badge low sm">3.3/5.0</span>
           </div>
           <div style="background:var(--accent-light);border-radius:8px;padding:10px 14px;margin-bottom:10px">
-            <p style="font-size:15px;font-weight:700;color:var(--bonus)">Deposit R5,000 Get R5,000</p>
+            <div style="display:flex;align-items:center;justify-content:space-between">
+              <p style="font-size:15px;font-weight:700;color:var(--bonus)">Deposit R5,000 Get R5,000</p>
+              <span style="font-size:14px;font-weight:700;color:var(--bonus)">R5,000</span>
+            </div>
             <span style="font-size:12px;color:var(--text-muted)">Min deposit: R1</span>
           </div>
           <p style="font-size:11px;color:var(--text-muted);margin-bottom:12px;line-height:1.5">18+ T&amp;Cs apply.</p>
@@ -1041,7 +1478,8 @@
             
           </div>
         </div></div>
-    </div></main>
+    </div>
+    <script>var brandBonusData = [{"id": "zarbet", "name": "Zarbet", "bonus": 3750}, {"id": "easybet-south-africa", "name": "Easybet South Africa", "bonus": 50}, {"id": "10bet-south-africa", "name": "10Bet South Africa", "bonus": 3000}, {"id": "betway-south-africa", "name": "Betway South Africa", "bonus": 10}, {"id": "mzansibet", "name": "Mzansibet", "bonus": 50}, {"id": "yesplay", "name": "YesPlay", "bonus": 3000}, {"id": "pantherbet", "name": "Pantherbet", "bonus": 14000}, {"id": "world-sports-betting", "name": "World Sports Betting", "bonus": 20000}, {"id": "jabula-bets", "name": "Jabula Bets", "bonus": 15000}, {"id": "hollywoodbets", "name": "Hollywoodbets", "bonus": 25}, {"id": "topbet", "name": "Topbet", "bonus": 1000}, {"id": "bet-co-za", "name": "BET.co.za", "bonus": 5000}, {"id": "saffaluck", "name": "SaffaLuck", "bonus": 0}, {"id": "playabets", "name": "PlayaBets", "bonus": 0}, {"id": "playtsogo", "name": "PlayTsogo", "bonus": 10000}, {"id": "playbet-co-za", "name": "Playbet.co.za", "bonus": 50}, {"id": "wanejo-bets", "name": "Wanejo Bets", "bonus": 10000}, {"id": "lucky-fish", "name": "Lucky Fish", "bonus": 50}, {"id": "betxchange", "name": "betXchange", "bonus": 20000}, {"id": "soccershop", "name": "Soccershop", "bonus": 7500}, {"id": "swifty", "name": "Swifty", "bonus": 3000}, {"id": "betjets", "name": "Betjets", "bonus": 2000}, {"id": "gbets", "name": "Gbets", "bonus": 1000}, {"id": "supersportbet", "name": "Supersportbet", "bonus": 5000}, {"id": "pokerbet", "name": "Pokerbet", "bonus": 100}, {"id": "sportingbet", "name": "Sportingbet", "bonus": 3000}, {"id": "lulabet", "name": "Lulabet", "bonus": 50}, {"id": "betfred", "name": "Betfred", "bonus": 21000}, {"id": "tictacbets", "name": "Tictacbets", "bonus": 5000}, {"id": "bettabets", "name": "Bettabets", "bonus": 2500}, {"id": "betshezi", "name": "Betshezi", "bonus": 2000}, {"id": "supabets", "name": "Supabets", "bonus": 50}, {"id": "jackpot-city", "name": "Jackpot City", "bonus": 4000}, {"id": "luckystake", "name": "Luckystake", "bonus": 0}, {"id": "betbus", "name": "betbus", "bonus": 5000}];</script></main>
   <footer class="site-footer">
   <div class="container">
     <div class="footer-grid">
