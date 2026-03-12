@@ -131,18 +131,53 @@
   }
   function reorderStarred() {
     var starred = getStarred();
-    var container = document.querySelector('.bookmaker-grid');
-    if (!container) return;
-    var cards = Array.from(container.children);
-    cards.sort(function(a, b) {
+
+    // Reorder homepage card grid
+    var cardGrid = document.querySelector('.bookmaker-grid');
+    if (cardGrid) {
+      var cards = Array.from(cardGrid.children);
+      stableSortStarred(cards, starred);
+      cards.forEach(function(c) { cardGrid.appendChild(c); });
+    }
+
+    // Reorder desktop table rows (betting-sites / casino-sites)
+    var tbody = document.querySelector('.data-table tbody');
+    if (tbody) {
+      var rows = Array.from(tbody.querySelectorAll('tr[data-brand-id]'));
+      stableSortStarred(rows, starred);
+      rows.forEach(function(r, i) {
+        tbody.appendChild(r);
+        // Update rank number in first cell
+        var rankCell = r.querySelector('td:first-child');
+        if (rankCell && rankCell.getAttribute('data-sort')) {
+          rankCell.textContent = i + 1;
+          rankCell.setAttribute('data-sort', i + 1);
+        }
+        // Update row striping
+        r.style.background = '';
+      });
+    }
+
+    // Reorder mobile listing cards
+    var mobileList = document.querySelector('.listing-mobile');
+    if (mobileList) {
+      var mCards = Array.from(mobileList.querySelectorAll('.listing-card[data-brand-id]'));
+      stableSortStarred(mCards, starred);
+      mCards.forEach(function(c) { mobileList.appendChild(c); });
+    }
+  }
+
+  function stableSortStarred(items, starred) {
+    // Tag each item with its original index for stable sort
+    items.forEach(function(el, i) { el._origIdx = i; });
+    items.sort(function(a, b) {
       var aId = a.getAttribute('data-brand-id') || '';
       var bId = b.getAttribute('data-brand-id') || '';
-      var aStarred = starred.indexOf(aId) >= 0 ? 0 : 1;
-      var bStarred = starred.indexOf(bId) >= 0 ? 0 : 1;
-      if (aStarred !== bStarred) return aStarred - bStarred;
-      return 0; // Keep original order otherwise
+      var aS = starred.indexOf(aId) >= 0 ? 0 : 1;
+      var bS = starred.indexOf(bId) >= 0 ? 0 : 1;
+      if (aS !== bS) return aS - bS;
+      return a._origIdx - b._origIdx;
     });
-    cards.forEach(function(c) { container.appendChild(c); });
   }
   /* ===== BONUS COUNTER (listing pages) ===== */
   function updateBonusCounter() {
