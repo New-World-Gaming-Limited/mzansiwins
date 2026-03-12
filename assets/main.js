@@ -236,4 +236,37 @@
     items.forEach(function(i) { container.appendChild(i); });
   };
 
+
+  /* ===== SEARCH TABLE (for listing pages) ===== */
+  window.searchTable = function(input) {
+    var val = input.value.toLowerCase();
+    var table = document.querySelector('.data-table');
+    if (!table) return;
+    var rows = table.querySelectorAll('tbody tr');
+    rows.forEach(function(row) {
+      var name = '';
+      row.querySelectorAll('td').forEach(function(td) { name += ' ' + td.textContent.toLowerCase(); });
+      row.style.display = name.indexOf(val) >= 0 ? '' : 'none';
+    });
+  };
+
+  /* ===== SEARCH LISTING (table + cards) ===== */
+  window.searchListing = function(input) {
+    var val = input.value.toLowerCase();
+    // Search desktop table rows
+    var table = document.querySelector('.data-table');
+    if (table) {
+      var rows = table.querySelectorAll('tbody tr');
+      rows.forEach(function(row) {
+        var name = (row.getAttribute('data-name') || '').toLowerCase();
+        var text = row.textContent.toLowerCase();
+        row.style.display = (name.indexOf(val) >= 0 || text.indexOf(val) >= 0) ? '' : 'none';
+      });
+    }
+    // Search mobile cards
+    document.querySelectorAll('.listing-card').forEach(function(card) {
+      var name = (card.getAttribute('data-name') || '').toLowerCase();
+      card.style.display = name.indexOf(val) >= 0 ? '' : 'none';
+    });
+  };
 })();
