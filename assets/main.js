@@ -224,18 +224,26 @@
     tabs.forEach(function(t) { t.classList.remove('active'); });
     btn.classList.add('active');
 
-    // Filter cards
-    var container = btn.closest('.section, section')?.querySelector('.filterable-grid, .bookmaker-grid');
+    // Filter cards - search up through section, then container, then page
+    var container = btn.closest('.section, section')?.querySelector('.filterable-grid, .bookmaker-grid')
+      || btn.closest('.container')?.querySelector('.filterable-grid, .bookmaker-grid')
+      || document.querySelector('.filterable-grid, .bookmaker-grid');
     if (!container) return;
+    var visible = 0;
     var cards = container.querySelectorAll('[data-filter]');
     cards.forEach(function(card) {
       if (filterVal === 'all') {
-        card.style.display = '';
+        card.style.display = ''; visible++;
       } else {
         var val = card.getAttribute('data-filter') || '';
-        card.style.display = val.indexOf(filterVal) >= 0 ? '' : 'none';
+        var show = val.indexOf(filterVal) >= 0;
+        card.style.display = show ? '' : 'none';
+        if (show) visible++;
       }
     });
+    // Update count display
+    var countEl = document.querySelector('.sort-count');
+    if (countEl) countEl.textContent = visible + ' method' + (visible !== 1 ? 's' : '');
   };
 
   /* ===== SORTABLE TABLES ===== */
