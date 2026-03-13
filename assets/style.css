@@ -303,10 +303,34 @@ a.payment-pill:hover { background: var(--accent); color: #fff; border-color: var
   background: var(--accent-light); color: var(--accent);
   padding: 4px 12px; border-radius: 4px; font-size: 12px; font-weight: 600; margin-bottom: 20px;
 }
+.hero-layout { display: grid; grid-template-columns: 1fr 340px; gap: 48px; align-items: start; }
+@media (max-width: 899px) { .hero-layout { grid-template-columns: 1fr; gap: 32px; } }
+.hero-text { }
+.hero-sidebar { position: sticky; top: 80px; }
+.hero-picks-box {
+  background: var(--surface); border: 1px solid var(--border); border-radius: 12px; padding: 20px;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.04);
+}
+.hero-pick-card {
+  display: flex; align-items: center; justify-content: space-between; gap: 12px;
+  padding: 12px; border-radius: 8px; border: 1px solid var(--border);
+  background: var(--surface-2); transition: border-color 0.15s, box-shadow 0.15s;
+}
+.hero-pick-card:hover { border-color: var(--accent); box-shadow: 0 2px 8px rgba(22,65,180,0.08); }
 .hero-stats { display: flex; gap: 32px; margin-top: 40px; flex-wrap: wrap; }
 .hero-stat-num { font-size: clamp(1.5rem, 3vw, 2rem); font-weight: 800; color: var(--accent); letter-spacing: -0.02em; }
 .hero-stat-label { font-size: 13px; color: var(--text-muted); margin-top: 2px; }
 .hero-btns { display: flex; gap: 12px; flex-wrap: wrap; }
+
+/* ===== NEWS CARDS ===== */
+.news-cards-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 20px; }
+@media (max-width: 1023px) { .news-cards-grid { grid-template-columns: repeat(2, 1fr); } }
+@media (max-width: 639px) { .news-cards-grid { grid-template-columns: 1fr; } }
+.news-card-item {
+  display: block; padding: 20px; background: var(--surface); border: 1px solid var(--border);
+  border-radius: 10px; transition: border-color 0.15s, box-shadow 0.15s;
+}
+.news-card-item:hover { border-color: var(--accent); box-shadow: 0 2px 8px rgba(22,65,180,0.08); }
 
 /* ===== SECTION HEADERS ===== */
 .section-header { display: flex; align-items: baseline; justify-content: space-between; gap: 16px; margin-bottom: 32px; flex-wrap: wrap; }
