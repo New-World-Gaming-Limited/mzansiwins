@@ -679,7 +679,9 @@ a.payment-pill:hover { background: var(--accent); color: #fff; border-color: var
 .article-body p { margin-bottom: 20px; color: var(--text-secondary); }
 .article-body ul, .article-body ol { margin-bottom: 20px; padding-left: 24px; color: var(--text-secondary); }
 .article-body li { margin-bottom: 8px; line-height: 1.75; }
-.article-meta { display: flex; align-items: center; gap: 12px; font-size: 14px; color: var(--text-muted); margin-bottom: 32px; }
+.article-meta { display: flex; align-items: center; gap: 12px; font-size: 14px; color: var(--text-muted); margin-bottom: 32px; flex-wrap: wrap; }
+.article-author-byline { display: inline-flex; align-items: center; gap: 8px; }
+.news-card-author { display: flex; align-items: center; gap: 8px; margin-top: 4px; }
 
 /* ===== CONTENT PAGE (about, fica, methodology) ===== */
 .content-page { max-width: 800px; }
