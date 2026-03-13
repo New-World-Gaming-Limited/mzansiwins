@@ -165,6 +165,14 @@
       stableSortStarred(mCards, starred);
       mCards.forEach(function(c) { mobileList.appendChild(c); });
     }
+
+    // Reorder promo code cards
+    var promoGrid = document.querySelector('.promo-card-grid');
+    if (promoGrid) {
+      var pCards = Array.from(promoGrid.querySelectorAll('.promo-card[data-brand-id]'));
+      stableSortStarred(pCards, starred);
+      pCards.forEach(function(c) { promoGrid.appendChild(c); });
+    }
   }
 
   function stableSortStarred(items, starred) {
