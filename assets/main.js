@@ -355,12 +355,46 @@
   };
 })();
 
-/* ===== SPORTS CALENDAR TAB SWITCHING ===== */
-function switchCalMonth(month) {
-  document.querySelectorAll('.cal-tab').forEach(function(t) {
-    t.classList.toggle('active', t.getAttribute('data-month') === month);
+/* ===== NEWS CATEGORY FILTER ===== */
+function filterNews(btn, cat) {
+  // Update active tab
+  document.querySelectorAll('.news-filter-tab').forEach(function(t) {
+    t.classList.remove('active');
   });
-  document.querySelectorAll('.cal-panel').forEach(function(p) {
-    p.style.display = p.getAttribute('data-month') === month ? '' : 'none';
+  btn.classList.add('active');
+
+  // Filter cards
+  var cards = document.querySelectorAll('.news-grid .news-card');
+  var visible = 0;
+  cards.forEach(function(card) {
+    if (cat === 'all' || card.getAttribute('data-category') === cat) {
+      card.style.display = '';
+      visible++;
+    } else {
+      card.style.display = 'none';
+    }
   });
+
+  // Show/hide empty state
+  var empty = document.querySelector('.news-empty-state');
+  if (empty) empty.style.display = visible === 0 ? '' : 'none';
+
+  // Update URL without reload
+  if (cat === 'all') {
+    history.replaceState(null, '', window.location.pathname);
+  } else {
+    history.replaceState(null, '', '?cat=' + encodeURIComponent(cat));
+  }
 }
+
+// On page load, check for ?cat= param
+(function() {
+  var params = new URLSearchParams(window.location.search);
+  var cat = params.get('cat');
+  if (cat) {
+    var tab = document.querySelector('.news-filter-tab[data-cat="' + cat + '"]');
+    if (tab) {
+      filterNews(tab, cat);
+    }
+  }
+})();
