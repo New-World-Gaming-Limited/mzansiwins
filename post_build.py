@@ -1,101 +1,150 @@
-IyEvdXNyL2Jpbi9lbnYgcHl0aG9uMwoiIiIKUG9zdC1idWlsZCBmaXh1cHM6CjEuIEFkZCBub29w
-ZW5lciBub3JlZmVycmVyIHRvIEFMTCBleHRlcm5hbCBsaW5rcwoyLiBGaXggbWlzc2luZyBhbHQg
-dGV4dCBvbiBpbWFnZXMKMy4gRW0tZGFzaCBjbGVhbnVwCjQuIE1pbmlmeSBDU1MKNS4gT3B0aW1p
-emUgd2FuZWpvLWJldHMucG5nIGlmIGV4aXN0cwoiIiIKaW1wb3J0IHJlLCBvcywgZ2xvYgoKT1VU
-ID0gJy9ob21lL3VzZXIvd29ya3NwYWNlL216YW5zaXdpbnMtaHRtbCcKCiMgPT09PT09PT09PT09
-PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09CiMgMS4gQURE
-IE5PT1BFTkVSIE5PUkVGRVJSRVIgVE8gRVhURVJOQUwgTElOS1MKIyA9PT09PT09PT09PT09PT09
-PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT0KcHJpbnQoIjEuIEFk
-ZGluZyBub29wZW5lciBub3JlZmVycmVyIHRvIGV4dGVybmFsIGxpbmtzLi4uIikKZXh0X2NvdW50
-ID0gMApmb3IgaHRtbF9maWxlIGluIGdsb2IuZ2xvYihmJ3tPVVR9LyoqLyouaHRtbCcsIHJlY3Vy
-c2l2ZT1UcnVlKToKICAgIHdpdGggb3BlbihodG1sX2ZpbGUsICdyJywgZW5jb2Rpbmc9J3V0Zi04
-JykgYXMgZjoKICAgICAgICBjb250ZW50ID0gZi5yZWFkKCkKICAgIAogICAgb3JpZ2luYWwgPSBj
-b250ZW50CiAgICAKICAgICMgTWF0Y2ggPGE+IHRhZ3Mgd2l0aCB0YXJnZXQ9Il9ibGFuayIgdGhh
-dCBkb24ndCBhbHJlYWR5IGhhdmUgbm9vcGVuZXIKICAgIGRlZiBhZGRfbm9vcGVuZXIobWF0Y2gp
-OgogICAgICAgIHRhZyA9IG1hdGNoLmdyb3VwKDApCiAgICAgICAgaWYgJ25vb3BlbmVyJyBpbiB0
-YWc6CiAgICAgICAgICAgIHJldHVybiB0YWcKICAgICAgICBpZiAncmVsPSInIGluIHRhZzoKICAg
-ICAgICAgICAgIyBBcHBlbmQgdG8gZXhpc3RpbmcgcmVsCiAgICAgICAgICAgIHRhZyA9IHJlLnN1
-YihyJ3JlbD0iKFteIl0qKSInLCBsYW1iZGEgbTogZidyZWw9InttLmdyb3VwKDEpfSBub29wZW5l
-ciBub3JlZmVycmVyIicgaWYgJ25vb3BlbmVyJyBub3QgaW4gbS5ncm91cCgxKSBlbHNlIG0uZ3Jv
-dXAoMCksIHRhZykKICAgICAgICBlbHNlOgogICAgICAgICAgICAjIEFkZCByZWwgYXR0cmlidXRl
-CiAgICAgICAgICAgIHRhZyA9IHRhZy5yZXBsYWNlKCd0YXJnZXQ9Il9ibGFuayInLCAndGFyZ2V0
-PSJfYmxhbmsiIHJlbD0ibm9vcGVuZXIgbm9yZWZlcnJlciInKQogICAgICAgIHJldHVybiB0YWcK
-ICAgIAogICAgY29udGVudCA9IHJlLnN1YihyJzxhXHNbXj5dKnRhcmdldD0iX2JsYW5rIltePl0q
-PicsIGFkZF9ub29wZW5lciwgY29udGVudCkKICAgIAogICAgaWYgY29udGVudCAhPSBvcmlnaW5h
-bDoKICAgICAgICB3aXRoIG9wZW4oaHRtbF9maWxlLCAndycsIGVuY29kaW5nPSd1dGYtOCcpIGFz
-IGY6CiAgICAgICAgICAgIGYud3JpdGUoY29udGVudCkKICAgICAgICBleHRfY291bnQgKz0gMQoK
-cHJpbnQoZiIgICBGaXhlZCBleHRlcm5hbCBsaW5rcyBpbiB7ZXh0X2NvdW50fSBmaWxlcyIpCgoj
-ID09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09
-PT09PQojIDIuIEZJWCBNSVNTSU5HIEFMVCBURVhUIE9OIElNQUdFUwojID09PT09PT09PT09PT09
-PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PQpwcmludCgiMi4g
-Rml4aW5nIG1pc3NpbmcgYWx0IHRleHQgb24gaW1hZ2VzLi4uIikKYWx0X2NvdW50ID0gMApmb3Ig
-aHRtbF9maWxlIGluIGdsb2IuZ2xvYihmJ3tPVVR9LyoqLyouaHRtbCcsIHJlY3Vyc2l2ZT1UcnVl
-KToKICAgIHdpdGggb3BlbihodG1sX2ZpbGUsICdyJywgZW5jb2Rpbmc9J3V0Zi04JykgYXMgZjoK
-ICAgICAgICBjb250ZW50ID0gZi5yZWFkKCkKICAgIAogICAgb3JpZ2luYWwgPSBjb250ZW50CiAg
-ICAKICAgICMgRml4IGVtcHR5IGFsdD0iIiBvbiBub24tZGVjb3JhdGl2ZSBpbWFnZXMgKHNraXAg
-YXJpYS1oaWRkZW4gb25lcykKICAgIGRlZiBmaXhfYWx0KG1hdGNoKToKICAgICAgICB0YWcgPSBt
-YXRjaC5ncm91cCgwKQogICAgICAgIGlmICdhcmlhLWhpZGRlbicgaW4gdGFnOgogICAgICAgICAg
-ICByZXR1cm4gdGFnICAjIERlY29yYXRpdmUsIGxlYXZlIGVtcHR5CiAgICAgICAgIyBUcnkgdG8g
-ZXh0cmFjdCBicmFuZC9jb250ZXh0IGZyb20gc3JjCiAgICAgICAgc3JjX21hdGNoID0gcmUuc2Vh
-cmNoKHInc3JjPSJbXiJdKj8vKFteLyJdKz8pXC4oPzpzdmd8cG5nfGpwZ3x3ZWJwKScsIHRhZykK
-ICAgICAgICBpZiBzcmNfbWF0Y2g6CiAgICAgICAgICAgIG5hbWUgPSBzcmNfbWF0Y2guZ3JvdXAo
-MSkucmVwbGFjZSgnLScsICcgJykucmVwbGFjZSgnXycsICcgJykudGl0bGUoKQogICAgICAgICAg
-ICByZXR1cm4gdGFnLnJlcGxhY2UoJ2FsdD0iIicsIGYnYWx0PSJ7bmFtZX0gbG9nbyInKQogICAg
-ICAgIHJldHVybiB0YWcKICAgIAogICAgY29udGVudCA9IHJlLnN1YihyJzxpbWdcc1tePl0qYWx0
-PSIiW14+XSo+JywgZml4X2FsdCwgY29udGVudCkKICAgIAogICAgaWYgY29udGVudCAhPSBvcmln
-aW5hbDoKICAgICAgICB3aXRoIG9wZW4oaHRtbF9maWxlLCAndycsIGVuY29kaW5nPSd1dGYtOCcp
-IGFzIGY6CiAgICAgICAgICAgIGYud3JpdGUoY29udGVudCkKICAgICAgICBhbHRfY291bnQgKz0g
-MQoKcHJpbnQoZiIgICBGaXhlZCBhbHQgdGV4dCBpbiB7YWx0X2NvdW50fSBmaWxlcyIpCgojID09
-PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09
-PQojIDMuIEVNLURBU0ggQ0xFQU5VUAojID09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09
-PT09PT09PT09PT09PT09PT09PT09PT09PT09PQpwcmludCgiMy4gUmVtb3ZpbmcgZW0tZGFzaGVz
-Li4uIikKZGFzaF9jb3VudCA9IDAKZm9yIGh0bWxfZmlsZSBpbiBnbG9iLmdsb2IoZid7T1VUfS8q
-Ki8qLmh0bWwnLCByZWN1cnNpdmU9VHJ1ZSk6CiAgICB3aXRoIG9wZW4oaHRtbF9maWxlLCAncics
-IGVuY29kaW5nPSd1dGYtOCcpIGFzIGY6CiAgICAgICAgY29udGVudCA9IGYucmVhZCgpCiAgICAK
-ICAgIG9yaWdpbmFsID0gY29udGVudAogICAgY29udGVudCA9IGNvbnRlbnQucmVwbGFjZSgnXHUy
-MDEzJywgJy0nKSAgIyBlbi1kYXNoCiAgICBjb250ZW50ID0gY29udGVudC5yZXBsYWNlKCdcdTIw
-MTQnLCAnLScpICAjIGVtLWRhc2gKICAgIGNvbnRlbnQgPSBjb250ZW50LnJlcGxhY2UoJyZtZGFz
-aDsnLCAnLScpCiAgICBjb250ZW50ID0gY29udGVudC5yZXBsYWNlKCcmbmRhc2g7JywgJy0nKQog
-ICAgCiAgICBpZiBjb250ZW50ICE9IG9yaWdpbmFsOgogICAgICAgIHdpdGggb3BlbihodG1sX2Zp
-bGUsICd3JywgZW5jb2Rpbmc9J3V0Zi04JykgYXMgZjoKICAgICAgICAgICAgZi53cml0ZShjb250
-ZW50KQogICAgICAgIGRhc2hfY291bnQgKz0gMQoKcHJpbnQoZiIgICBDbGVhbmVkIGRhc2hlcyBp
-biB7ZGFzaF9jb3VudH0gZmlsZXMiKQoKIyA9PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09
-PT09PT09PT09PT09PT09PT09PT09PT09PT09PT0KIyA0LiBNSU5JRlkgQ1NTCiMgPT09PT09PT09
-PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09CnByaW50
-KCI0LiBNaW5pZnlpbmcgQ1NTLi4uIikKY3NzX2ZpbGUgPSBmJ3tPVVR9L2Fzc2V0cy9zdHlsZS5j
-c3MnCndpdGggb3Blbihjc3NfZmlsZSwgJ3InKSBhcyBmOgogICAgY3NzID0gZi5yZWFkKCkKCm9y
-aWdpbmFsX3NpemUgPSBsZW4oY3NzKQoKIyBCYXNpYyBDU1MgbWluaWZpY2F0aW9uIC0gcmVtb3Zl
-IGNvbW1lbnRzLCBleGNlc3Mgd2hpdGVzcGFjZQpjc3NfbWluID0gcmUuc3ViKHInL1wqLio/XCov
-JywgJycsIGNzcywgZmxhZ3M9cmUuRE9UQUxMKSAgIyBSZW1vdmUgY29tbWVudHMKY3NzX21pbiA9
-IHJlLnN1YihyJ1xzKlxuXHMqJywgJ1xuJywgY3NzX21pbikgICMgUmVtb3ZlIGxlYWRpbmcvdHJh
-aWxpbmcgd2hpdGVzcGFjZSBwZXIgbGluZQpjc3NfbWluID0gcmUuc3ViKHInXG4rJywgJ1xuJywg
-Y3NzX21pbikgICMgQ29sbGFwc2UgbXVsdGlwbGUgbmV3bGluZXMKY3NzX21pbiA9IHJlLnN1Yihy
-J1xzKntccyonLCAneycsIGNzc19taW4pICAjIFJlbW92ZSBzcGFjZSBhcm91bmQgewpjc3NfbWlu
-ID0gcmUuc3ViKHInXHMqfVxzKicsICd9JywgY3NzX21pbikgICMgUmVtb3ZlIHNwYWNlIGFyb3Vu
-ZCB9CmNzc19taW4gPSByZS5zdWIocidccyo7XHMqJywgJzsnLCBjc3NfbWluKSAgIyBSZW1vdmUg
-c3BhY2UgYXJvdW5kIDsKY3NzX21pbiA9IHJlLnN1YihyJ1xzKjpccyonLCAnOicsIGNzc19taW4p
-ICAjIFJlbW92ZSBzcGFjZSBhcm91bmQgOgpjc3NfbWluID0gcmUuc3ViKHInXHMqLFxzKicsICcs
-JywgY3NzX21pbikgICMgUmVtb3ZlIHNwYWNlIGFyb3VuZCAsCmNzc19taW4gPSBjc3NfbWluLnN0
-cmlwKCkKCm5ld19zaXplID0gbGVuKGNzc19taW4pCnNhdmVkID0gb3JpZ2luYWxfc2l6ZSAtIG5l
-d19zaXplCnByaW50KGYiICAgQ1NTOiB7b3JpZ2luYWxfc2l6ZTosfSAtPiB7bmV3X3NpemU6LH0g
-Ynl0ZXMgKHNhdmVkIHtzYXZlZDosfSBieXRlcywge3NhdmVkL29yaWdpbmFsX3NpemUqMTAwOi4x
-Zn0lKSIpCgp3aXRoIG9wZW4oY3NzX2ZpbGUsICd3JykgYXMgZjoKICAgIGYud3JpdGUoY3NzX21p
-bikKCiMgPT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09
-PT09PT09PT09CiMgNS4gT1BUSU1JU0UgSU1BR0VTIChjb252ZXJ0IHRvIFdlYlAgaWYgcG9zc2li
-bGUpCiMgPT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09
-PT09PT09PT09CnByaW50KCI1LiBDaGVja2luZyBmb3IgaW1hZ2Ugb3B0aW1pc2F0aW9uIG9wcG9y
-dHVuaXRpZXMuLi4iKQp3YW5lam8gPSBmJ3tPVVR9L2Fzc2V0cy9sb2dvcy93YW5lam8tYmV0cy5w
-bmcnCmlmIG9zLnBhdGguZXhpc3RzKHdhbmVqbyk6CiAgICBzaXplID0gb3MucGF0aC5nZXRzaXpl
-KHdhbmVqbykKICAgIHByaW50KGYiICAgd2FuZWpvLWJldHMucG5nOiB7c2l6ZTosfSBieXRlcyIp
-CiAgICAjIENhbid0IGNvbnZlcnQgd2l0aG91dCBQSUwsIGJ1dCBmbGFnIGl0CiAgICBpZiBzaXpl
-ID4gNTAwMDoKICAgICAgICBwcmludChmIiAgIENvbnNpZGVyIGNvbnZlcnRpbmcgdG8gV2ViUCBm
-b3IgZnVydGhlciBzYXZpbmdzIikKZWxzZToKICAgIHByaW50KCIgICBObyB3YW5lam8tYmV0cy5w
-bmcgZm91bmQiKQoKIyA9PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09
-PT09PT09PT09PT09PT09PT0KIyA2LiBBREQgQ0FURUdPUlkgTElOS1MgRlJPTSBCRVRUSU5HL0NB
-U0lOTyBUTyBTVUJDQVRFR09SSUVTCiMgPT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09
-PT09PT09PT09PT09PT09PT09PT09PT09PT09CiMgVGhpcyB3YXMgYSB1c2VyIHJlcXVlc3Q6ICJ3
-ZSBzaG91bGQgaGF2ZSBsaW5rcyBmcm9tIGJldHRpbmctc2l0ZXMgdG8gc3ViY2F0ZWdvcmllcyIK
-cHJpbnQoIjYuIENoZWNraW5nIGNhdGVnb3J5LXRvLXN1YmNhdGVnb3J5IGNyb3NzIGxpbmtzLi4u
-IikKIyBUaGVzZSBhcmUgbm93IGhhbmRsZWQgaW4gdGhlIGJ1aWxkIGl0c2VsZiB2aWEgdGhlIGV4
-cGFuc2lvbiBtb2R1bGUKCnByaW50KCJcbj09PSBQT1NULUJVSUxEIEZJWFVQUyBDT01QTEVURSA9
-PT0iKQo=
+#!/usr/bin/env python3
+"""
+Post-build fixups:
+1. Add noopener noreferrer to ALL external links
+2. Fix missing alt text on images
+3. Em-dash cleanup
+4. Minify CSS
+5. Optimize wanejo-bets.png if exists
+"""
+import re, os, glob
+
+OUT = '/home/user/workspace/mzansiwins-html'
+
+# ============================================================
+# 1. ADD NOOPENER NOREFERRER TO EXTERNAL LINKS
+# ============================================================
+print("1. Adding noopener noreferrer to external links...")
+ext_count = 0
+for html_file in glob.glob(f'{OUT}/**/*.html', recursive=True):
+    with open(html_file, 'r', encoding='utf-8') as f:
+        content = f.read()
+    
+    original = content
+    
+    # Match <a> tags with target="_blank" that don't already have noopener
+    def add_noopener(match):
+        tag = match.group(0)
+        if 'noopener' in tag:
+            return tag
+        if 'rel="' in tag:
+            # Append to existing rel
+            tag = re.sub(r'rel="([^"]*)"', lambda m: f'rel="{m.group(1)} noopener noreferrer"' if 'noopener' not in m.group(1) else m.group(0), tag)
+        else:
+            # Add rel attribute
+            tag = tag.replace('target="_blank"', 'target="_blank" rel="noopener noreferrer"')
+        return tag
+    
+    content = re.sub(r'<a\s[^>]*target="_blank"[^>]*>', add_noopener, content)
+    
+    if content != original:
+        with open(html_file, 'w', encoding='utf-8') as f:
+            f.write(content)
+        ext_count += 1
+
+print(f"   Fixed external links in {ext_count} files")
+
+# ============================================================
+# 2. FIX MISSING ALT TEXT ON IMAGES
+# ============================================================
+print("2. Fixing missing alt text on images...")
+alt_count = 0
+for html_file in glob.glob(f'{OUT}/**/*.html', recursive=True):
+    with open(html_file, 'r', encoding='utf-8') as f:
+        content = f.read()
+    
+    original = content
+    
+    # Fix empty alt="" on non-decorative images (skip aria-hidden ones)
+    def fix_alt(match):
+        tag = match.group(0)
+        if 'aria-hidden' in tag:
+            return tag  # Decorative, leave empty
+        # Try to extract brand/context from src
+        src_match = re.search(r'src="[^"]*?/([^/"]+?)\.(?:svg|png|jpg|webp)', tag)
+        if src_match:
+            name = src_match.group(1).replace('-', ' ').replace('_', ' ').title()
+            return tag.replace('alt=""', f'alt="{name} logo"')
+        return tag
+    
+    content = re.sub(r'<img\s[^>]*alt=""[^>]*>', fix_alt, content)
+    
+    if content != original:
+        with open(html_file, 'w', encoding='utf-8') as f:
+            f.write(content)
+        alt_count += 1
+
+print(f"   Fixed alt text in {alt_count} files")
+
+# ============================================================
+# 3. EM-DASH CLEANUP
+# ============================================================
+print("3. Removing em-dashes...")
+dash_count = 0
+for html_file in glob.glob(f'{OUT}/**/*.html', recursive=True):
+    with open(html_file, 'r', encoding='utf-8') as f:
+        content = f.read()
+    
+    original = content
+    content = content.replace('\u2013', '-')  # en-dash
+    content = content.replace('\u2014', '-')  # em-dash
+    content = content.replace('&mdash;', '-')
+    content = content.replace('&ndash;', '-')
+    
+    if content != original:
+        with open(html_file, 'w', encoding='utf-8') as f:
+            f.write(content)
+        dash_count += 1
+
+print(f"   Cleaned dashes in {dash_count} files")
+
+# ============================================================
+# 4. MINIFY CSS
+# ============================================================
+print("4. Minifying CSS...")
+css_file = f'{OUT}/assets/style.css'
+with open(css_file, 'r') as f:
+    css = f.read()
+
+original_size = len(css)
+
+# Basic CSS minification - remove comments, excess whitespace
+css_min = re.sub(r'/\*.*?\*/', '', css, flags=re.DOTALL)  # Remove comments
+css_min = re.sub(r'\s*\n\s*', '\n', css_min)  # Remove leading/trailing whitespace per line
+css_min = re.sub(r'\n+', '\n', css_min)  # Collapse multiple newlines
+css_min = re.sub(r'\s*{\s*', '{', css_min)  # Remove space around {
+css_min = re.sub(r'\s*}\s*', '}', css_min)  # Remove space around }
+css_min = re.sub(r'\s*;\s*', ';', css_min)  # Remove space around ;
+css_min = re.sub(r'\s*:\s*', ':', css_min)  # Remove space around :
+css_min = re.sub(r'\s*,\s*', ',', css_min)  # Remove space around ,
+css_min = css_min.strip()
+
+new_size = len(css_min)
+saved = original_size - new_size
+print(f"   CSS: {original_size:,} -> {new_size:,} bytes (saved {saved:,} bytes, {saved/original_size*100:.1f}%)")
+
+with open(css_file, 'w') as f:
+    f.write(css_min)
+
+# ============================================================
+# 5. OPTIMISE IMAGES (convert to WebP if possible)
+# ============================================================
+print("5. Checking for image optimisation opportunities...")
+wanejo = f'{OUT}/assets/logos/wanejo-bets.png'
+if os.path.exists(wanejo):
+    size = os.path.getsize(wanejo)
+    print(f"   wanejo-bets.png: {size:,} bytes")
+    # Can't convert without PIL, but flag it
+    if size > 5000:
+        print(f"   Consider converting to WebP for further savings")
+else:
+    print("   No wanejo-bets.png found")
+
+# ============================================================
+# 6. ADD CATEGORY LINKS FROM BETTING/CASINO TO SUBCATEGORIES
+# ============================================================
+# This was a user request: "we should have links from betting-sites to subcategories"
+print("6. Checking category-to-subcategory cross links...")
+# These are now handled in the build itself via the expansion module
+
+print("\n=== POST-BUILD FIXUPS COMPLETE ===")
