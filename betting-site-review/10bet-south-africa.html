@@ -102,8 +102,14 @@
       </nav>
       <div class="header-right">
         <button class="theme-btn" onclick="toggleTheme()" aria-label="Toggle theme"></button>
+        <div class="starred-nav-badge" id="starredNavBadge">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2L15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2z"/></svg>
+          <span class="starred-nav-count" id="starredCount" style="display:none">0</span>
+          <div class="starred-dropdown" id="starredDropdown">
+            <div class="starred-dropdown-empty">Star a bookmaker to track it here</div>
+          </div>
+        </div>
         <a href="../betting-sites.html" class="betting-sites-btn">Betting Sites</a>
-        <a href="../promo-codes.html" class="get-bonus-btn">Get Bonus</a>
       </div>
     </div>
   </header>
@@ -455,7 +461,7 @@
       </div>
       <div class="footer-col">
         <p class="footer-heading">Top Bookmakers</p>
-        <a href="../betting-site-review/zarbet.html">Zarbet</a>
+        <div class="footer-links"><a href="../betting-site-review/zarbet.html">Zarbet</a>
 <a href="../betting-site-review/easybet-south-africa.html">Easybet South Africa</a>
 <a href="../betting-site-review/10bet-south-africa.html">10Bet South Africa</a>
 <a href="../betting-site-review/betway-south-africa.html">Betway South Africa</a>
@@ -465,10 +471,11 @@
 <a href="../betting-site-review/world-sports-betting.html">World Sports Betting</a>
 <a href="../betting-site-review/jabula-bets.html">Jabula Bets</a>
 <a href="../betting-site-review/hollywoodbets.html">Hollywoodbets</a>
-
+</div>
       </div>
       <div class="footer-col">
         <p class="footer-heading">Categories</p>
+        <div class="footer-links">
         <a href="../betting-sites.html">Best Betting Sites</a>
         <a href="../casino-sites.html">Best Casino Sites</a>
         <a href="../promo-codes.html">All Promo Codes</a>
@@ -479,9 +486,11 @@
         <a href="../betting-calculators.html">Betting Calculators</a>
         <a href="../payment-methods.html">Payment Methods</a>
         <a href="../our-authors.html">Our Authors</a>
+        </div>
       </div>
       <div class="footer-col">
         <p class="footer-heading">Transparency</p>
+        <div class="footer-links">
         <a href="../code-of-ethics.html">Code of Ethics</a>
         <a href="../editorial-policy.html">Editorial Policy</a>
         <a href="../fact-checking.html">Fact Checking</a>
@@ -489,16 +498,20 @@
         <a href="../affiliate-disclosure.html">Affiliate Disclosure</a>
         <a href="../advertising-disclosure.html">Advertising Disclosure</a>
         <a href="../complaints-policy.html">Complaints Policy</a>
+        </div>
       </div>
       <div class="footer-col">
         <p class="footer-heading">Responsible Gambling</p>
+        <div class="footer-links">
         <a href="../responsible-gambling-policy.html">Responsible Gambling Policy</a>
         <a href="../support-organisations.html">Support Organisations</a>
         <a href="../betting-risk-awareness.html">Betting Risk Awareness</a>
         <a href="../self-exclusion-resources.html">Self-Exclusion Resources</a>
+        </div>
       </div>
       <div class="footer-col">
         <p class="footer-heading">Corporate</p>
+        <div class="footer-links">
         <a href="../about-us.html">Company Information</a>
         <a href="../management-team.html">Management Team</a>
         <a href="../partnerships.html">Partnerships</a>
@@ -510,6 +523,7 @@
         <a href="../cookie-policy.html">Cookie Policy</a>
         <a href="../terms-and-conditions.html">Terms &amp; Conditions</a>
         <a href="../sitemap.xml">Sitemap</a>
+        </div>
       </div>
     </div>
     <div class="rg-notice">
@@ -522,6 +536,9 @@
     <p class="footer-disclaimer">Disclaimer: MzansiWins is an independent review site. Ja, we earn affiliate commissions when you sign up through our links - that is how we keep the lights on. But it never influences our rankings or what we write. All bonus offers and odds are subject to change. Always read the T&amp;Cs, even the boring bits.</p>
   </div>
 </footer>
+  <button class="back-to-top" id="backToTop" aria-label="Back to top">
+    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M18 15l-6-6-6 6"/></svg>
+  </button>
   <script src="../assets/main.js"></script>
 </body>
 </html>

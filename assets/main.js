@@ -414,3 +414,79 @@ function filterNews(btn, cat) {
     }
   }
 })();
+
+/* ===== BACK TO TOP BUTTON ===== */
+(function() {
+  var btn = document.querySelector('.back-to-top');
+  if (!btn) return;
+  var shown = false;
+  function checkScroll() {
+    var shouldShow = window.scrollY > 600;
+    if (shouldShow !== shown) {
+      shown = shouldShow;
+      btn.classList.toggle('visible', shown);
+    }
+  }
+  window.addEventListener('scroll', checkScroll, {passive: true});
+  btn.addEventListener('click', function() {
+    window.scrollTo({top: 0, behavior: 'smooth'});
+  });
+})();
+
+/* ===== FOOTER COLLAPSIBLE ON MOBILE ===== */
+(function() {
+  if (window.innerWidth > 767) return;
+  document.querySelectorAll('.footer-col').forEach(function(col) {
+    var heading = col.querySelector('.footer-heading, h4');
+    if (!heading) return;
+    heading.addEventListener('click', function() {
+      col.classList.toggle('open');
+    });
+  });
+})();
+
+/* ===== STARRED NAV BADGE + DROPDOWN ===== */
+(function() {
+  function getStarred() {
+    try {
+      var raw = (typeof memStore !== 'undefined' ? memStore['mw-starred'] : null);
+      return JSON.parse(raw || '[]');
+    } catch(e) { return []; }
+  }
+  function updateStarredNav() {
+    var badge = document.querySelector('.starred-nav-badge');
+    if (!badge) return;
+    var starred = getStarred();
+    var countEl = badge.querySelector('.starred-nav-count');
+    var dropdown = badge.querySelector('.starred-dropdown');
+    if (countEl) {
+      countEl.textContent = starred.length;
+      countEl.style.display = starred.length > 0 ? 'flex' : 'none';
+    }
+    if (dropdown) {
+      if (starred.length === 0) {
+        dropdown.innerHTML = '<div class="starred-dropdown-empty">No favourites yet - star brands to track them here</div>';
+      } else {
+        var html = '';
+        starred.forEach(function(id) {
+          // Find brand info from page data attributes or use ID
+          var el = document.querySelector('[data-brand-id="' + id + '"]');
+          var name = el ? (el.getAttribute('data-name') || id) : id;
+          html += '<a href="promo-codes/' + id + '.html" class="starred-dropdown-item">' +
+            '<span style="font-size:14px;font-weight:600">' + name + '</span>' +
+            '</a>';
+        });
+        dropdown.innerHTML = html;
+      }
+    }
+  }
+  // Hook into existing toggleStar
+  var origToggleStar = window.toggleStar;
+  if (origToggleStar) {
+    window.toggleStar = function(brandId) {
+      origToggleStar(brandId);
+      updateStarredNav();
+    };
+  }
+  document.addEventListener('DOMContentLoaded', updateStarredNav);
+})();
