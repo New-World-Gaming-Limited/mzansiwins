@@ -422,15 +422,19 @@
     var table = document.querySelector('.data-table');
     if (table) {
       var rows = table.querySelectorAll('tbody tr');
-      rows.forEach(function(row) {
-        var name = (row.getAttribute('data-name') || '').toLowerCase();
-        var text = row.textContent.toLowerCase();
-        row.style.display = (name.indexOf(val) >= 0 || text.indexOf(val) >= 0) ? '' : 'none';
+      requestAnimationFrame(function() {
+        rows.forEach(function(row) {
+          var name = (row.getAttribute('data-name') || '').toLowerCase();
+          var text = row.textContent.toLowerCase();
+          row.style.display = (name.indexOf(val) >= 0 || text.indexOf(val) >= 0) ? '' : 'none';
+        });
       });
     }
-    document.querySelectorAll('.listing-card').forEach(function(card) {
-      var name = (card.getAttribute('data-name') || '').toLowerCase();
-      card.style.display = name.indexOf(val) >= 0 ? '' : 'none';
+    requestAnimationFrame(function() {
+      document.querySelectorAll('.listing-card').forEach(function(card) {
+        var name = (card.getAttribute('data-name') || '').toLowerCase();
+        card.style.display = name.indexOf(val) >= 0 ? '' : 'none';
+      });
     });
   };
 })();
@@ -442,19 +446,20 @@ function filterNews(btn, cat) {
   });
   btn.classList.add('active');
 
-  var cards = document.querySelectorAll('.news-grid .news-card');
-  var visible = 0;
-  cards.forEach(function(card) {
-    if (cat === 'all' || card.getAttribute('data-category') === cat) {
-      card.style.display = '';
-      visible++;
-    } else {
-      card.style.display = 'none';
-    }
+  requestAnimationFrame(function() {
+    var cards = document.querySelectorAll('.news-grid .news-card');
+    var visible = 0;
+    cards.forEach(function(card) {
+      if (cat === 'all' || card.getAttribute('data-category') === cat) {
+        card.style.display = '';
+        visible++;
+      } else {
+        card.style.display = 'none';
+      }
+    });
+    var empty = document.querySelector('.news-empty-state');
+    if (empty) empty.style.display = visible === 0 ? '' : 'none';
   });
-
-  var empty = document.querySelector('.news-empty-state');
-  if (empty) empty.style.display = visible === 0 ? '' : 'none';
 
   if (cat === 'all') {
     history.replaceState(null, '', window.location.pathname);

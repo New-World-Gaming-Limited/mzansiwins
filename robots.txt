@@ -1,0 +1,5 @@
+User-agent: *
+Allow: /
+Disallow: /link/
+
+Sitemap: https://mzansiwins.co.za/sitemap.xml
