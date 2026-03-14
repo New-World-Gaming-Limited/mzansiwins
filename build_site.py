@@ -1280,7 +1280,7 @@ def build_homepage():
               <span>Licensed &amp; Verified</span>
             </div>
             <div class="hero-trust-item">
-              <svg width="22" height="15" viewBox="0 0 900 600" fill="none"><rect width="900" height="600" fill="#002395"/><rect y="0" width="900" height="200" fill="#DE3831"/><path d="M0,0 L0,200 300,300 0,400 0,600 450,300Z" fill="#007A4D"/><path d="M0,0 L0,150 250,300 0,450 0,600 60,600 360,300 60,0Z" fill="#FFF"/><path d="M0,0 L0,100 200,300 0,500 0,600 25,600 325,300 25,0Z" fill="#007A4D"/><path d="M0,75 L175,300 0,525 0,475 125,300 0,125Z" fill="#FFB612"/><path d="M0,100 L150,300 0,500 0,450 100,300 0,150Z" fill="#000"/></svg>
+              <svg width="22" height="15" viewBox="0 0 900 600" style="border-radius:2px"><rect width="900" height="200" fill="#DE3831"/><rect y="200" width="900" height="200" fill="#FFF"/><rect y="400" width="900" height="200" fill="#002395"/><path d="M0,0 L0,128 L360,300 L0,472 L0,600 L180,600 L540,300 L180,0Z" fill="#FFB612"/><path d="M0,28 L0,160 L340,300 L0,440 L0,572 L152,572 L510,300 L152,28Z" fill="#007A4D"/><path d="M0,80 L0,192 L300,300 L0,408 L0,520 L100,520 L430,300 L100,80Z" fill="#FFF"/><path d="M0,112 L0,210 L270,300 L0,390 L0,488 L68,488 L390,300 L68,112Z" fill="#000"/></svg>
               <span>100% South African</span>
             </div>
             <div class="hero-trust-item">
@@ -1685,7 +1685,7 @@ def build_promo_detail(brand):
 
     # Check icon
     check_sm = '<svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#16a34a" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>'
-    flag_icon = '<svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 15s1-1 4-1 5 2 8 2 4-1 4-1V3s-1 1-4 1-5-2-8-2-4 1-4 1z"/><line x1="4" y1="22" x2="4" y2="15"/></svg>'
+    flag_icon = '<svg width="20" height="14" viewBox="0 0 900 600" aria-label="South African flag" style="border-radius:2px;vertical-align:middle"><rect width="900" height="200" fill="#DE3831"/><rect y="200" width="900" height="200" fill="#FFF"/><rect y="400" width="900" height="200" fill="#002395"/><path d="M0,0 L0,128 L360,300 L0,472 L0,600 L180,600 L540,300 L180,0Z" fill="#FFB612"/><path d="M0,28 L0,160 L340,300 L0,440 L0,572 L152,572 L510,300 L152,28Z" fill="#007A4D"/><path d="M0,80 L0,192 L300,300 L0,408 L0,520 L100,520 L430,300 L100,80Z" fill="#FFF"/><path d="M0,112 L0,210 L270,300 L0,390 L0,488 L68,488 L390,300 L68,112Z" fill="#000"/></svg>'
 
     # Badge for top-rated brand
     badge = ''
