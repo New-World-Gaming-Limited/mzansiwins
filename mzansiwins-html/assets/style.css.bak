@@ -1033,6 +1033,184 @@ a.payment-pill:hover { background: var(--accent); color: #fff; border-color: var
 }
 .listing-card:hover { box-shadow: 0 4px 16px rgba(0,0,0,0.08); }
 
+/* ===== FREETIPS-STYLE TOP LIST CARDS ===== */
+.toplist-card {
+  position: relative;
+  background: var(--card-bg);
+  border: 1px solid var(--border);
+  border-radius: 14px;
+  padding: 28px 24px 20px;
+  margin-bottom: 16px;
+  transition: box-shadow 200ms, border-color 200ms;
+}
+.toplist-card:hover {
+  box-shadow: 0 6px 24px rgba(0,0,0,0.08);
+  border-color: var(--accent);
+}
+.toplist-rank {
+  position: absolute;
+  top: -12px;
+  left: 20px;
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  background: #dc2626;
+  color: #fff;
+  font-size: 13px;
+  font-weight: 800;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 2;
+  box-shadow: 0 2px 6px rgba(220,38,38,0.3);
+}
+.toplist-header {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  margin-bottom: 16px;
+}
+.toplist-logo {
+  width: 72px;
+  height: 44px;
+  object-fit: contain;
+  border-radius: 8px;
+  padding: 4px;
+  border: 1px solid var(--border);
+  flex-shrink: 0;
+}
+.toplist-info {
+  flex: 1;
+  min-width: 0;
+}
+.toplist-bonus {
+  font-size: 20px;
+  font-weight: 800;
+  color: var(--text-primary);
+  line-height: 1.3;
+  letter-spacing: -0.01em;
+}
+.toplist-reward {
+  font-size: 15px;
+  font-weight: 700;
+  color: var(--bonus);
+  margin-top: 2px;
+}
+.toplist-rating-circle {
+  width: 56px;
+  height: 56px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, #16a34a, #22c55e);
+  color: #fff;
+  font-size: 18px;
+  font-weight: 800;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  box-shadow: 0 2px 8px rgba(22,163,74,0.25);
+}
+.toplist-promo-box {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 8px 16px;
+  background: #FFF8E7;
+  border: 1.5px dashed #d4a843;
+  border-radius: 8px;
+  font-family: 'Inter', monospace;
+  font-size: 13px;
+  font-weight: 700;
+  color: #92400e;
+  margin-bottom: 12px;
+  cursor: pointer;
+  transition: background 150ms;
+}
+.toplist-promo-box:hover { background: #FEF3C7; }
+[data-theme="dark"] .toplist-promo-box {
+  background: rgba(217,168,67,0.15);
+  border-color: rgba(217,168,67,0.4);
+  color: #fbbf24;
+}
+.toplist-stars {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 13px;
+  color: var(--text-muted);
+  margin-bottom: 14px;
+}
+.toplist-stars svg { color: #f59e0b; }
+.toplist-cta {
+  display: block;
+  width: 100%;
+  padding: 14px 24px;
+  background: #16a34a;
+  color: #fff;
+  font-size: 16px;
+  font-weight: 700;
+  text-align: center;
+  border-radius: 10px;
+  border: none;
+  cursor: pointer;
+  text-decoration: none;
+  transition: background 150ms, transform 100ms;
+  letter-spacing: 0.01em;
+}
+.toplist-cta:hover { background: #15803d; transform: translateY(-1px); }
+.toplist-cta:active { transform: translateY(0); }
+.toplist-review-link {
+  display: block;
+  text-align: center;
+  margin-top: 10px;
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--accent);
+  text-decoration: none;
+}
+.toplist-review-link:hover { text-decoration: underline; }
+.toplist-tcs {
+  font-size: 12px;
+  line-height: 1.6;
+  color: var(--text-muted);
+  margin-top: 14px;
+  padding-top: 14px;
+  border-top: 1px solid var(--sep);
+}
+.toplist-bullets {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px 12px;
+  margin-bottom: 14px;
+  padding: 0;
+  list-style: none;
+}
+.toplist-bullets li {
+  font-size: 13px;
+  color: var(--text-secondary);
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+.toplist-bullets li::before {
+  content: '';
+  display: inline-block;
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: var(--accent);
+  flex-shrink: 0;
+}
+@media (min-width: 768px) {
+  .toplist-card { padding: 32px 28px 24px; }
+  .toplist-header { gap: 20px; }
+  .toplist-logo { width: 80px; height: 48px; }
+  .toplist-bonus { font-size: 22px; }
+}
+[data-theme="dark"] .toplist-card { background: var(--card-bg); }
+[data-theme="dark"] .toplist-card:hover { box-shadow: 0 6px 24px rgba(0,0,0,0.3); }
+[data-theme="dark"] .toplist-rank { box-shadow: 0 2px 6px rgba(220,38,38,0.5); }
+
 /* ===== BONUS COUNTER BANNER ===== */
 .bonus-counter-banner {
   display: flex; align-items: center; gap: 24px;
@@ -1891,6 +2069,7 @@ a.payment-pill:hover { background: var(--accent); color: #fff; border-color: var
 /* ===== DARK MODE FIXES ===== */
 [data-theme="dark"] .listing-card { background: var(--card-bg); border-color: var(--border); }
 [data-theme="dark"] .listing-card:hover { box-shadow: 0 4px 16px rgba(0,0,0,0.3); }
+[data-theme="dark"] .toplist-rating-circle { box-shadow: 0 2px 8px rgba(22,163,74,0.4); }
 [data-theme="dark"] .bonus-counter-banner { background: var(--card-bg); border-color: var(--border); }
 [data-theme="dark"] .method-row { background: var(--card-bg); border-color: var(--border); }
 [data-theme="dark"] .method-row:hover { background: var(--surface-2); }

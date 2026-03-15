@@ -1526,6 +1526,346 @@ def _generate_guide_content(guides, category, DATA, BRANDS, brands_map):
 
             <h3 style="font-size:16px;font-weight:600;margin-top:24px;margin-bottom:8px">Responsible Play</h3>
             <p style="font-size:15px;line-height:1.75;color:var(--text-secondary)">Crash games are fast and can be addictive. The speed of rounds means you can go through your bankroll quickly if you are not careful. Always set limits, use the auto cash-out feature, and never chase losses. If you need help, visit our <a href="../responsible-gambling-policy.html" style="color:var(--accent);font-weight:600">responsible gambling</a> page for SA support resources.</p>'''
+        elif gid == 'odds-explained-south-africa':
+            h2s = 'style="font-size:18px;font-weight:700;margin-bottom:12px"'
+            h3s = 'style="font-size:16px;font-weight:600;margin-top:24px;margin-bottom:8px"'
+            ps = 'style="font-size:15px;line-height:1.75;color:var(--text-secondary);margin-bottom:16px"'
+            li_s = 'style="padding:6px 0;padding-left:20px;position:relative;font-size:14px;line-height:1.75;color:var(--text-secondary)"'
+            bullet = '<span style="position:absolute;left:0;color:var(--accent)">&#8226;</span>'
+            xmark = '<span style="position:absolute;left:0;color:#dc2626">&#10007;</span>'
+            uls = 'style="padding-left:0;list-style:none;margin-bottom:16px"'
+            tbl = 'style="width:100%;border-collapse:collapse;font-size:14px;margin-bottom:20px"'
+            ths = 'style="text-align:left;padding:10px 14px;background:var(--accent);color:#fff;font-size:13px;font-weight:600"'
+            tds = 'style="padding:10px 14px;border-bottom:1px solid var(--border);color:var(--text-secondary)"'
+            tip_box = 'style="background:var(--surface-2);border-radius:12px;padding:20px;margin-bottom:16px;border-left:4px solid var(--accent)"'
+            content[gid] = f'''
+            <h2 {h2s}>Understanding Betting Odds</h2>
+            <p {ps}>Betting odds tell you two things: how likely a bookmaker thinks an outcome is, and how much you stand to win if your bet is successful. Every bet you place at a South African bookmaker uses odds to calculate your potential return. Understanding them is the single most important skill in sports betting.</p>
+
+            <h3 {h3s}>Decimal Odds (Standard in South Africa)</h3>
+            <p {ps}>South African bookmakers display odds in decimal format by default. Decimal odds show your total return per R1 wagered, including your original stake. For example, odds of 2.50 mean a R100 bet returns R250 (R150 profit + R100 stake). The calculation is simple: Stake x Odds = Total Return.</p>
+            <table {tbl}>
+              <thead><tr><th {ths}>Odds</th><th {ths}>R100 Stake</th><th {ths}>Total Return</th><th {ths}>Profit</th><th {ths}>Implied Probability</th></tr></thead>
+              <tbody>
+                <tr><td {tds}>1.20</td><td {tds}>R100</td><td {tds}>R120</td><td {tds}>R20</td><td {tds}>83.3% (strong favourite)</td></tr>
+                <tr><td {tds}>1.50</td><td {tds}>R100</td><td {tds}>R150</td><td {tds}>R50</td><td {tds}>66.7%</td></tr>
+                <tr><td {tds}>2.00</td><td {tds}>R100</td><td {tds}>R200</td><td {tds}>R100</td><td {tds}>50.0% (even chance)</td></tr>
+                <tr><td {tds}>3.00</td><td {tds}>R100</td><td {tds}>R300</td><td {tds}>R200</td><td {tds}>33.3%</td></tr>
+                <tr><td {tds}>5.00</td><td {tds}>R100</td><td {tds}>R500</td><td {tds}>R400</td><td {tds}>20.0%</td></tr>
+                <tr><td {tds}>10.00</td><td {tds}>R100</td><td {tds}>R1,000</td><td {tds}>R900</td><td {tds}>10.0% (outsider)</td></tr>
+                <tr><td {tds}>51.00</td><td {tds}>R100</td><td {tds}>R5,100</td><td {tds}>R5,000</td><td {tds}>2.0% (long shot)</td></tr>
+              </tbody>
+            </table>
+
+            <h3 {h3s}>Fractional Odds (UK Style)</h3>
+            <p {ps}>You may see fractional odds on international sites or in horse racing. Fractional odds show profit relative to stake. Odds of 3/1 (spoken "three to one") mean you win R3 for every R1 staked. To convert fractional to decimal: divide the fraction and add 1. So 3/1 = 3.0 + 1 = 4.00 decimal.</p>
+            <table {tbl}>
+              <thead><tr><th {ths}>Fractional</th><th {ths}>Decimal</th><th {ths}>Meaning</th></tr></thead>
+              <tbody>
+                <tr><td {tds}>1/5</td><td {tds}>1.20</td><td {tds}>Win R1 for every R5 staked (heavy favourite)</td></tr>
+                <tr><td {tds}>1/2</td><td {tds}>1.50</td><td {tds}>Win R1 for every R2 staked</td></tr>
+                <tr><td {tds}>Evens (1/1)</td><td {tds}>2.00</td><td {tds}>Win R1 for every R1 staked</td></tr>
+                <tr><td {tds}>2/1</td><td {tds}>3.00</td><td {tds}>Win R2 for every R1 staked</td></tr>
+                <tr><td {tds}>5/1</td><td {tds}>6.00</td><td {tds}>Win R5 for every R1 staked</td></tr>
+                <tr><td {tds}>10/1</td><td {tds}>11.00</td><td {tds}>Win R10 for every R1 staked</td></tr>
+              </tbody>
+            </table>
+
+            <h3 {h3s}>American Odds (Moneyline)</h3>
+            <p {ps}>American odds use + and - symbols. A minus sign (e.g. -150) shows how much you need to stake to win R100. A plus sign (e.g. +200) shows how much you win from a R100 stake. You will mainly see these on American sports. Most SA bookmakers let you switch display format in your account settings.</p>
+
+            <h3 {h3s}>Implied Probability: The Key Concept</h3>
+            <p {ps}>Every set of odds implies a probability. The formula is: Implied Probability = 1 / Decimal Odds x 100. Odds of 2.00 imply a 50% chance (1/2.00 = 0.50). This matters because the bookmaker adds a margin (called "overround" or "vig") to every market. If the true probability of an outcome is 50%, the bookmaker might price it at 1.90 instead of 2.00 - that difference is their profit margin.</p>
+
+            <div {tip_box}>
+              <h4 style="font-size:15px;font-weight:700;margin-bottom:6px">&#128161; Worked Example: PSL Match</h4>
+              <p style="font-size:14px;line-height:1.75;color:var(--text-secondary);margin-bottom:8px">Orlando Pirates vs Kaizer Chiefs. Odds: Pirates 1.80 | Draw 3.40 | Chiefs 4.50</p>
+              <p style="font-size:14px;line-height:1.75;color:var(--text-secondary);margin-bottom:4px">Implied probabilities: Pirates 55.6% + Draw 29.4% + Chiefs 22.2% = <strong>107.2%</strong></p>
+              <p style="font-size:14px;line-height:1.75;color:var(--text-secondary)">The total exceeds 100% by 7.2% - that is the bookmaker margin. A lower margin means better value for punters. Compare margins across SA bookmakers to find the best odds.</p>
+            </div>
+
+            <h3 {h3s}>How Bookmakers Set Odds</h3>
+            <p {ps}>Bookmakers employ teams of traders and algorithms to set odds. They start with statistical models based on team form, head-to-head records, injuries, and other data. Then they adjust based on where the money is flowing. If too many punters back one outcome, the odds shorten to balance the book.</p>
+
+            <h3 {h3s}>Finding Value in the Odds</h3>
+            <p {ps}>Value betting is the foundation of profitable long-term betting. A bet has value when the probability you assign to an outcome is higher than what the odds imply. If you believe Orlando Pirates have a 60% chance of winning but the odds imply only 50%, that is a value bet.</p>
+            <ul {uls}>
+              <li {li_s}>{bullet}<strong>Step 1:</strong> Estimate the probability based on your research</li>
+              <li {li_s}>{bullet}<strong>Step 2:</strong> Calculate the implied probability from the bookmaker odds</li>
+              <li {li_s}>{bullet}<strong>Step 3:</strong> If your estimate is higher, place the bet</li>
+              <li {li_s}>{bullet}<strong>Step 4:</strong> Keep detailed records to track if your estimates are accurate</li>
+            </ul>
+
+            <h3 {h3s}>Odds Movement and Line Shopping</h3>
+            <p {ps}>Odds are not fixed - they move based on market conditions. Line shopping (comparing odds across bookmakers) is one of the easiest ways to increase your returns. The difference between odds of 2.00 and 2.10 might seem small, but over 100 bets of R100 each, that is an extra R1,000 in returns.</p>
+
+            <h3 {h3s}>Common Odds Mistakes</h3>
+            <ul {uls}>
+              <li {li_s}>{xmark}Assuming shorter odds always win (they do not - upsets happen)</li>
+              <li {li_s}>{xmark}Ignoring the bookmaker margin when comparing value</li>
+              <li {li_s}>{xmark}Betting on long shots for the thrill without considering probability</li>
+              <li {li_s}>{xmark}Not comparing odds across different SA bookmakers before placing a bet</li>
+            </ul>
+
+            <h3 {h3s}>Recommended Bookmakers for Best Odds</h3>
+            <p style="font-size:15px;line-height:1.75;color:var(--text-secondary)">For consistently competitive odds on South African sports, we recommend {top3[0]}, {top3[1]}, and {top3[2]}. Check our <a href="../betting-sites.html" style="color:var(--accent);font-weight:600">betting sites comparison</a> for a full breakdown of which bookmakers offer the best odds by sport.</p>'''
+
+        elif gid == 'betting-strategies-south-africa':
+            h2s = 'style="font-size:18px;font-weight:700;margin-bottom:12px"'
+            h3s = 'style="font-size:16px;font-weight:600;margin-top:24px;margin-bottom:8px"'
+            ps = 'style="font-size:15px;line-height:1.75;color:var(--text-secondary);margin-bottom:16px"'
+            li_s = 'style="padding:6px 0;padding-left:20px;position:relative;font-size:14px;line-height:1.75;color:var(--text-secondary)"'
+            bullet = '<span style="position:absolute;left:0;color:var(--accent)">&#8226;</span>'
+            xmark = '<span style="position:absolute;left:0;color:#dc2626">&#10007;</span>'
+            uls = 'style="padding-left:0;list-style:none;margin-bottom:16px"'
+            tbl = 'style="width:100%;border-collapse:collapse;font-size:14px;margin-bottom:20px"'
+            ths = 'style="text-align:left;padding:10px 14px;background:var(--accent);color:#fff;font-size:13px;font-weight:600"'
+            tds = 'style="padding:10px 14px;border-bottom:1px solid var(--border);color:var(--text-secondary)"'
+            tip_box = 'style="background:var(--surface-2);border-radius:12px;padding:20px;margin-bottom:16px;border-left:4px solid var(--accent)"'
+            content[gid] = f'''
+            <h2 {h2s}>Betting Strategies That Work for SA Punters</h2>
+            <p {ps}>There is no magic formula that guarantees profit from betting. Anyone who tells you otherwise is selling something. But there are proven strategies that tilt the odds in your favour over time. This guide covers approaches used by successful South African punters - from basic bankroll management to advanced staking systems.</p>
+
+            <h3 {h3s}>1. Value Betting</h3>
+            <p {ps}>Value betting is the single most important concept in profitable sports betting. A value bet exists when the bookmaker odds overestimate the probability of an outcome not happening. In other words, the odds are higher than they should be.</p>
+            <div {tip_box}>
+              <h4 style="font-size:15px;font-weight:700;margin-bottom:6px">&#128161; Example</h4>
+              <p style="font-size:14px;line-height:1.75;color:var(--text-secondary)">Mamelodi Sundowns at home to Stellenbosch. You believe Sundowns have a 70% chance of winning. The bookmaker offers odds of 1.55 (implying 64.5%). Since your estimate (70%) exceeds the implied probability (64.5%), this is a value bet.</p>
+            </div>
+
+            <h3 {h3s}>2. Bankroll Management</h3>
+            <p {ps}>Your bankroll is the total amount you have set aside specifically for betting. It should be money you can afford to lose completely. The most common approach is the percentage method: never bet more than 1-5% of your bankroll on a single bet.</p>
+            <table {tbl}>
+              <thead><tr><th {ths}>Bankroll Size</th><th {ths}>Conservative (1%)</th><th {ths}>Moderate (2%)</th><th {ths}>Aggressive (5%)</th></tr></thead>
+              <tbody>
+                <tr><td {tds}>R1,000</td><td {tds}>R10 per bet</td><td {tds}>R20 per bet</td><td {tds}>R50 per bet</td></tr>
+                <tr><td {tds}>R5,000</td><td {tds}>R50 per bet</td><td {tds}>R100 per bet</td><td {tds}>R250 per bet</td></tr>
+                <tr><td {tds}>R10,000</td><td {tds}>R100 per bet</td><td {tds}>R200 per bet</td><td {tds}>R500 per bet</td></tr>
+              </tbody>
+            </table>
+
+            <h3 {h3s}>3. Specialisation</h3>
+            <p {ps}>The best bettors specialise. Instead of betting on every sport and every league, pick one or two areas and become an expert. If you follow the PSL religiously, you probably know more about Polokwane City home form than most bookmaker traders do. That knowledge is your edge.</p>
+
+            <h3 {h3s}>4. Staking Plans</h3>
+            <ul {uls}>
+              <li {li_s}>{bullet}<strong>Flat staking</strong> - Same amount on every bet regardless of confidence. Simple and effective. Best for beginners.</li>
+              <li {li_s}>{bullet}<strong>Proportional staking</strong> - Bet a fixed percentage of your current bankroll. Bets grow when you win, shrink when you lose.</li>
+              <li {li_s}>{bullet}<strong>Kelly Criterion</strong> - A mathematical formula for optimal stake based on your edge: Stake = (bp - q) / b. Most use quarter or half Kelly to reduce variance.</li>
+              <li {li_s}>{bullet}<strong>Level confidence</strong> - Assign 1-5 star ratings to bets. 1-star = 1% bankroll, 5-star = 5% bankroll.</li>
+            </ul>
+
+            <h3 {h3s}>5. Line Shopping</h3>
+            <p {ps}>Different SA bookmakers offer different odds on the same event. Checking 3-4 bookmakers before placing a bet takes 30 seconds and can increase your long-term returns by 10-15%. Keep accounts with at least three of the top SA bookmakers: {top3[0]}, {top3[1]}, and {top3[2]}.</p>
+
+            <h3 {h3s}>6. Record Keeping</h3>
+            <p {ps}>If you do not track your bets, you cannot improve. At minimum, record: date, event, market, odds, stake, result, and profit/loss.</p>
+            <div {tip_box}>
+              <h4 style="font-size:15px;font-weight:700;margin-bottom:6px">&#128202; Key Metrics to Track</h4>
+              <ul style="padding-left:0;list-style:none;margin:0">
+                <li {li_s}>{bullet}<strong>ROI</strong> - Total profit / total staked x 100. Anything above 5% long-term is excellent.</li>
+                <li {li_s}>{bullet}<strong>Strike rate</strong> - Percentage of bets that win. A 40% strike rate at average odds of 3.00 is very profitable.</li>
+                <li {li_s}>{bullet}<strong>Yield</strong> - Profit per bet as a percentage. A 10% yield means R10 profit per R100 bet on average.</li>
+              </ul>
+            </div>
+
+            <h3 {h3s}>7. In-Play Betting Strategy</h3>
+            <p {ps}>Live betting offers opportunities that pre-match markets miss. Watch for: early goals that inflate odds on the losing team to come back, red cards that shift the dynamic, and late-game scenarios where bookmakers overreact. The key is to watch the match rather than betting blind on in-play stats.</p>
+
+            <h3 {h3s}>Strategies to Avoid</h3>
+            <ul {uls}>
+              <li {li_s}>{xmark}<strong>Martingale</strong> - Doubling your stake after every loss. Mathematically flawed and will eventually destroy your bankroll.</li>
+              <li {li_s}>{xmark}<strong>Paid betting systems</strong> - If someone had a guaranteed profitable system, they would not sell it for R500.</li>
+              <li {li_s}>{xmark}<strong>Chasing losses</strong> - Increasing stakes to recover previous losses. The maths is against you.</li>
+              <li {li_s}>{xmark}<strong>Following tipsters blindly</strong> - Most tipsters cherry-pick their results. Track their actual performance first.</li>
+            </ul>
+
+            <h3 {h3s}>Long-Term Mindset</h3>
+            <p style="font-size:15px;line-height:1.75;color:var(--text-secondary)">Profitable betting is a marathon, not a sprint. Even the best strategies go through losing streaks. What matters is making good decisions consistently. Set realistic expectations: a 5-10% return on investment is what professional bettors target.</p>'''
+
+        elif gid == 'how-to-bet-on-psl':
+            h2s = 'style="font-size:18px;font-weight:700;margin-bottom:12px"'
+            h3s = 'style="font-size:16px;font-weight:600;margin-top:24px;margin-bottom:8px"'
+            ps = 'style="font-size:15px;line-height:1.75;color:var(--text-secondary);margin-bottom:16px"'
+            li_s = 'style="padding:6px 0;padding-left:20px;position:relative;font-size:14px;line-height:1.75;color:var(--text-secondary)"'
+            bullet = '<span style="position:absolute;left:0;color:var(--accent)">&#8226;</span>'
+            check = '<span style="position:absolute;left:0;color:#16a34a">&#10003;</span>'
+            uls = 'style="padding-left:0;list-style:none;margin-bottom:16px"'
+            tbl = 'style="width:100%;border-collapse:collapse;font-size:14px;margin-bottom:20px"'
+            ths = 'style="text-align:left;padding:10px 14px;background:var(--accent);color:#fff;font-size:13px;font-weight:600"'
+            tds = 'style="padding:10px 14px;border-bottom:1px solid var(--border);color:var(--text-secondary)"'
+            tip_box = 'style="background:var(--surface-2);border-radius:12px;padding:20px;margin-bottom:16px;border-left:4px solid var(--accent)"'
+            content[gid] = f'''
+            <h2 {h2s}>The Definitive Guide to Betting on the PSL</h2>
+            <p {ps}>The Betway Premiership (Premier Soccer League) is the top tier of South African football and one of the most bet-on leagues in Africa. With 16 teams competing across a 30-match season from August to May, there are over 240 league matches per season to bet on. This guide covers everything you need to know using real data from the 2025/2026 season.</p>
+
+            <h3 {h3s}>2025/2026 Season Overview</h3>
+            <p {ps}>The 2025/2026 Betway Premiership season has been one of the most competitive in recent memory, with a fierce title race between two of South Africa's biggest clubs. As of March 2026:</p>
+            <table {tbl}>
+              <thead><tr><th {ths}>Pos</th><th {ths}>Team</th><th {ths}>P</th><th {ths}>W</th><th {ths}>D</th><th {ths}>L</th><th {ths}>GF</th><th {ths}>GA</th><th {ths}>GD</th><th {ths}>Pts</th></tr></thead>
+              <tbody>
+                <tr><td {tds}><strong>1</strong></td><td {tds}><strong>Orlando Pirates</strong></td><td {tds}>21</td><td {tds}>15</td><td {tds}>3</td><td {tds}>3</td><td {tds}>34</td><td {tds}>9</td><td {tds}>+25</td><td {tds}><strong>48</strong></td></tr>
+                <tr><td {tds}><strong>2</strong></td><td {tds}><strong>Mamelodi Sundowns</strong></td><td {tds}>20</td><td {tds}>14</td><td {tds}>5</td><td {tds}>1</td><td {tds}>34</td><td {tds}>10</td><td {tds}>+24</td><td {tds}><strong>47</strong></td></tr>
+                <tr><td {tds}>3</td><td {tds}>Sekhukhune United</td><td {tds}>21</td><td {tds}>9</td><td {tds}>7</td><td {tds}>5</td><td {tds}>21</td><td {tds}>14</td><td {tds}>+7</td><td {tds}>34</td></tr>
+                <tr><td {tds}>4</td><td {tds}>AmaZulu FC</td><td {tds}>21</td><td {tds}>10</td><td {tds}>4</td><td {tds}>7</td><td {tds}>21</td><td {tds}>19</td><td {tds}>+2</td><td {tds}>34</td></tr>
+                <tr><td {tds}>5</td><td {tds}>Durban City FC</td><td {tds}>20</td><td {tds}>9</td><td {tds}>5</td><td {tds}>6</td><td {tds}>19</td><td {tds}>14</td><td {tds}>+5</td><td {tds}>32</td></tr>
+                <tr><td {tds}>6</td><td {tds}>Kaizer Chiefs</td><td {tds}>18</td><td {tds}>8</td><td {tds}>6</td><td {tds}>4</td><td {tds}>16</td><td {tds}>12</td><td {tds}>+4</td><td {tds}>30</td></tr>
+                <tr><td {tds}>7</td><td {tds}>Polokwane City</td><td {tds}>20</td><td {tds}>7</td><td {tds}>8</td><td {tds}>5</td><td {tds}>16</td><td {tds}>13</td><td {tds}>+3</td><td {tds}>29</td></tr>
+              </tbody>
+            </table>
+
+            <h3 {h3s}>The Title Race: Pirates vs Sundowns</h3>
+            <p {ps}>Orlando Pirates lead with 48 points from 21 matches, with Mamelodi Sundowns just one point behind on 47 from 20 matches (with a game in hand). Pirates have the league's best defence (just 9 goals conceded). Sundowns remain unbeaten away and have dropped only one match all season.</p>
+
+            <div {tip_box}>
+              <h4 style="font-size:15px;font-weight:700;margin-bottom:6px">&#9917; Betting Angle: Title Outright Market</h4>
+              <p style="font-size:14px;line-height:1.75;color:var(--text-secondary)">With Sundowns having a game in hand, the outright title market is essentially a coin flip. Look for value in the "winning margin" market. Historically, Sundowns are strong finishers, winning 7 of their last 8 titles.</p>
+            </div>
+
+            <h3 {h3s}>Top Scorers 2025/2026</h3>
+            <table {tbl}>
+              <thead><tr><th {ths}>Player</th><th {ths}>Team</th><th {ths}>Goals</th><th {ths}>Matches</th><th {ths}>Goals/Match</th></tr></thead>
+              <tbody>
+                <tr><td {tds}><strong>J. Dion</strong></td><td {tds}>Golden Arrows</td><td {tds}>12</td><td {tds}>18</td><td {tds}>0.67</td></tr>
+                <tr><td {tds}><strong>I. Rayners</strong></td><td {tds}>Mamelodi Sundowns</td><td {tds}>10</td><td {tds}>16</td><td {tds}>0.63</td></tr>
+                <tr><td {tds}>B. Grobler</td><td {tds}>Sekhukhune United</td><td {tds}>8</td><td {tds}>19</td><td {tds}>0.42</td></tr>
+                <tr><td {tds}>L. Phili</td><td {tds}>Stellenbosch FC</td><td {tds}>7</td><td {tds}>17</td><td {tds}>0.41</td></tr>
+                <tr><td {tds}>P. Maswanganyi</td><td {tds}>Orlando Pirates</td><td {tds}>6</td><td {tds}>17</td><td {tds}>0.35</td></tr>
+              </tbody>
+            </table>
+
+            <h3 {h3s}>Understanding PSL Teams</h3>
+
+            <div {tip_box}>
+              <h4 style="font-size:15px;font-weight:700;margin-bottom:6px">&#128640; Orlando Pirates</h4>
+              <p style="font-size:14px;line-height:1.75;color:var(--text-secondary)">The Buccaneers have a 71% win rate (15W, 3D, 3L). Their defence concedes just 0.43 goals per match. <strong>Betting angle:</strong> Pirates under 1.5 goals conceded has hit in over 80% of matches. "Pirates to win to nil" offers consistent value at home.</p>
+            </div>
+
+            <div {tip_box}>
+              <h4 style="font-size:15px;font-weight:700;margin-bottom:6px">&#9728;&#65039; Mamelodi Sundowns</h4>
+              <p style="font-size:14px;line-height:1.75;color:var(--text-secondary)">The defending champions have only lost once this season. Loftus Versfeld remains a fortress. <strong>Betting angle:</strong> Sundowns Double Chance (win or draw) has hit in 19 of 20 matches. Their games tend to have fewer goals - Under 2.5 is profitable.</p>
+            </div>
+
+            <div {tip_box}>
+              <h4 style="font-size:15px;font-weight:700;margin-bottom:6px">&#128293; Kaizer Chiefs</h4>
+              <p style="font-size:14px;line-height:1.75;color:var(--text-secondary)">Amakhosi sit 6th with 30 points from 18 matches, still within reach of the top 4. Chiefs are the most backed team by SA punters which often means shorter odds than warranted. <strong>Betting angle:</strong> Look for value fading Chiefs away. Their draw rate (33%) suggests BTTS is worth considering.</p>
+            </div>
+
+            <h3 {h3s}>Relegation Battle</h3>
+            <p {ps}>Magesi FC (14 points from 20 matches), Orbit College (18 points), and Marumo Gallants (18 points) are in serious danger. The relegation market is often overlooked and can offer excellent value.</p>
+
+            <h3 {h3s}>PSL Betting Markets</h3>
+            <table {tbl}>
+              <thead><tr><th {ths}>Market</th><th {ths}>Description</th><th {ths}>Best For</th></tr></thead>
+              <tbody>
+                <tr><td {tds}><strong>1X2</strong></td><td {tds}>Home win, draw, or away win</td><td {tds}>Straightforward bets</td></tr>
+                <tr><td {tds}><strong>Double Chance</strong></td><td {tds}>Cover two of three outcomes</td><td {tds}>Safer bets at lower odds</td></tr>
+                <tr><td {tds}><strong>Over/Under 2.5</strong></td><td {tds}>Will there be 3+ goals?</td><td {tds}>PSL averages 2.3 goals/match</td></tr>
+                <tr><td {tds}><strong>BTTS</strong></td><td {tds}>Will both sides score?</td><td {tds}>BTTS hits ~50% in PSL</td></tr>
+                <tr><td {tds}><strong>Asian Handicap</strong></td><td {tds}>Virtual goal head start</td><td {tds}>Eliminating the draw</td></tr>
+                <tr><td {tds}><strong>Correct Score</strong></td><td {tds}>Predict the exact final score</td><td {tds}>High odds, low probability</td></tr>
+                <tr><td {tds}><strong>Goalscorer</strong></td><td {tds}>Which player scores?</td><td {tds}>Top scorer markets</td></tr>
+                <tr><td {tds}><strong>Corners</strong></td><td {tds}>Total corners in the match</td><td {tds}>Niche market with value</td></tr>
+              </tbody>
+            </table>
+
+            <h3 {h3s}>PSL-Specific Betting Tips</h3>
+            <ul {uls}>
+              <li {li_s}>{check}<strong>Home advantage is real</strong> - Home teams win approximately 44% of PSL matches. Travel distances in SA are significant.</li>
+              <li {li_s}>{check}<strong>The draw is undervalued</strong> - Draws occur in roughly 26% of PSL matches, often at odds of 3.00+. That is value.</li>
+              <li {li_s}>{check}<strong>Under 2.5 goals is profitable</strong> - The PSL averages around 2.3 goals per match.</li>
+              <li {li_s}>{check}<strong>Follow team news</strong> - Player suspensions and injuries have an outsized impact in the PSL. Squads are thinner.</li>
+              <li {li_s}>{check}<strong>Midweek matches favour big clubs</strong> - Smaller clubs with thinner squads struggle with fixture congestion.</li>
+              <li {li_s}>{check}<strong>Derby matches are unpredictable</strong> - Soweto Derby (Chiefs vs Pirates) and the Tshwane Derby often produce shock results.</li>
+            </ul>
+
+            <h3 {h3s}>Key Fixtures to Watch</h3>
+            <ul {uls}>
+              <li {li_s}>{bullet}<strong>Pirates vs Sundowns</strong> - The biggest match of the season. The winner likely takes the title.</li>
+              <li {li_s}>{bullet}<strong>Chiefs vs Pirates (Soweto Derby)</strong> - The biggest derby in African football. Form goes out the window.</li>
+              <li {li_s}>{bullet}<strong>Bottom 3 clashes</strong> - Magesi, Orbit College, and Gallants playing each other - motivation is at 100%.</li>
+            </ul>
+
+            <h3 {h3s}>Where to Bet on the PSL</h3>
+            <p style="font-size:15px;line-height:1.75;color:var(--text-secondary)">All licensed SA bookmakers cover the PSL. {top3[0]}, {top3[1]}, and {top3[2]} typically offer the best odds and deepest markets. For welcome bonuses, check our <a href="../promo-codes.html" style="color:var(--accent);font-weight:600">promo codes page</a>. Remember to bet responsibly.</p>'''
+
+        elif gid == 'sports-betting-markets-explained':
+            h2s = 'style="font-size:18px;font-weight:700;margin-bottom:12px"'
+            h3s = 'style="font-size:16px;font-weight:600;margin-top:24px;margin-bottom:8px"'
+            ps = 'style="font-size:15px;line-height:1.75;color:var(--text-secondary);margin-bottom:16px"'
+            li_s = 'style="padding:6px 0;padding-left:20px;position:relative;font-size:14px;line-height:1.75;color:var(--text-secondary)"'
+            bullet = '<span style="position:absolute;left:0;color:var(--accent)">&#8226;</span>'
+            uls = 'style="padding-left:0;list-style:none;margin-bottom:16px"'
+            tbl = 'style="width:100%;border-collapse:collapse;font-size:14px;margin-bottom:20px"'
+            ths = 'style="text-align:left;padding:10px 14px;background:var(--accent);color:#fff;font-size:13px;font-weight:600"'
+            tds = 'style="padding:10px 14px;border-bottom:1px solid var(--border);color:var(--text-secondary)"'
+            content[gid] = f'''
+            <h2 {h2s}>Sports Betting Markets Explained</h2>
+            <p {ps}>A betting market is a specific outcome you can bet on within a sporting event. A single football match might have 100+ markets available. Understanding the main markets is essential for finding value. This guide explains every major market available at South African bookmakers.</p>
+
+            <h3 {h3s}>Match Result (1X2)</h3>
+            <p {ps}>The most basic market. You back the home team to win (1), the draw (X), or the away team to win (2). In PSL football, the draw is undervalued - it occurs in about 26% of matches but is rarely the public's first choice.</p>
+
+            <h3 {h3s}>Double Chance</h3>
+            <p {ps}>Double Chance lets you cover two of three outcomes: 1X (home or draw), X2 (away or draw), or 12 (either team wins). Odds are lower because your chance of winning is around 66%. For example, backing Mamelodi Sundowns Double Chance (1X) this season would have won 95% of the time.</p>
+
+            <h3 {h3s}>Over/Under Goals</h3>
+            <p {ps}>You bet on whether the total goals will be over or under a specified line. The most common is 2.5 goals.</p>
+            <table {tbl}>
+              <thead><tr><th {ths}>Line</th><th {ths}>Over Wins If</th><th {ths}>Under Wins If</th><th {ths}>PSL Hit Rate (Over)</th></tr></thead>
+              <tbody>
+                <tr><td {tds}>0.5</td><td {tds}>1+ goals</td><td {tds}>0 goals</td><td {tds}>~92%</td></tr>
+                <tr><td {tds}>1.5</td><td {tds}>2+ goals</td><td {tds}>0-1 goals</td><td {tds}>~68%</td></tr>
+                <tr><td {tds}>2.5</td><td {tds}>3+ goals</td><td {tds}>0-2 goals</td><td {tds}>~45%</td></tr>
+                <tr><td {tds}>3.5</td><td {tds}>4+ goals</td><td {tds}>0-3 goals</td><td {tds}>~25%</td></tr>
+                <tr><td {tds}>4.5</td><td {tds}>5+ goals</td><td {tds}>0-4 goals</td><td {tds}>~12%</td></tr>
+              </tbody>
+            </table>
+
+            <h3 {h3s}>Both Teams to Score (BTTS)</h3>
+            <p {ps}>A simple yes/no market: will both teams score at least one goal? BTTS Yes hits roughly 50% of the time in the PSL. It is popular because it keeps you invested for the full 90 minutes.</p>
+
+            <h3 {h3s}>Handicap Betting (Asian and European)</h3>
+            <p {ps}>Handicap betting gives one team a virtual advantage. If you bet Orlando Pirates -1.5, they need to win by 2+ goals. If you bet Orbit College +1.5, they need to win, draw, or lose by just one goal. Asian Handicaps use quarter-goal increments to eliminate dead-heat scenarios.</p>
+
+            <h3 {h3s}>Goalscorer Markets</h3>
+            <ul {uls}>
+              <li {li_s}>{bullet}<strong>First Goalscorer</strong> - Highest odds. Your player must score the first goal.</li>
+              <li {li_s}>{bullet}<strong>Last Goalscorer</strong> - Similar but less popular. Often slightly better value.</li>
+              <li {li_s}>{bullet}<strong>Anytime Goalscorer</strong> - Your player scores at any point. Lower odds, higher hit rate.</li>
+              <li {li_s}>{bullet}<strong>2+ Goals</strong> - Your player scores two or more. Good odds on prolific strikers like Iqraam Rayners or J. Dion.</li>
+            </ul>
+
+            <h3 {h3s}>Correct Score</h3>
+            <p {ps}>Predict the exact final score. High-risk, high-reward. Odds range from 5.00 for common scores (1-0, 1-1) to 100+ for unusual results. In the PSL, the most common scorelines are 1-0, 1-1, and 2-1. Some punters place small stakes across 3-4 likely scorelines.</p>
+
+            <h3 {h3s}>Corners, Cards, and Specials</h3>
+            <ul {uls}>
+              <li {li_s}>{bullet}<strong>Total Corners Over/Under</strong> - Usually set around 9.5-10.5 for PSL matches</li>
+              <li {li_s}>{bullet}<strong>Total Cards Over/Under</strong> - PSL matches tend to be physical; over 3.5 cards is common</li>
+              <li {li_s}>{bullet}<strong>Half-time/Full-time</strong> - Predict the result at both half-time and full-time</li>
+              <li {li_s}>{bullet}<strong>Winning margin</strong> - By how many goals will the winning team win?</li>
+            </ul>
+
+            <h3 {h3s}>Accumulator Markets</h3>
+            <p {ps}>An accumulator (acca) combines multiple selections into one bet. All must win to pay out. The odds multiply: three 2.00 selections become 8.00. While returns are exciting, the probability drops fast. A 4-fold acca at 50% per leg has only a 6.25% chance of winning. Stick to doubles and trebles.</p>
+
+            <h3 {h3s}>Outright and Futures Markets</h3>
+            <ul {uls}>
+              <li {li_s}>{bullet}<strong>League Winner</strong> - Who wins the Betway Premiership?</li>
+              <li {li_s}>{bullet}<strong>Top Goalscorer</strong> - Who finishes as the season top scorer?</li>
+              <li {li_s}>{bullet}<strong>Relegation</strong> - Which team(s) will be relegated?</li>
+              <li {li_s}>{bullet}<strong>Top 4 Finish</strong> - Will a specific team finish in the top 4?</li>
+            </ul>
+            <p {ps}>Outright markets offer the best value early in the season before the picture becomes clear.</p>
+
+            <h3 {h3s}>Live (In-Play) Markets</h3>
+            <p {ps}>In-play markets are available once a match kicks off. Odds update in real time. Popular live markets include: next goal, match result, total goals, and next corner. In-play betting requires discipline - the speed can lead to impulsive decisions.</p>
+
+            <h3 {h3s}>Which Markets Are Best for Beginners?</h3>
+            <p style="font-size:15px;line-height:1.75;color:var(--text-secondary)">Start with Match Result, Over/Under 2.5, and BTTS. These are easy to understand and have competitive odds. As you gain experience, explore Asian Handicaps and goalscorer markets. For the best odds, compare {top3[0]}, {top3[1]}, and {top3[2]} before placing your bets.</p>'''
+
+
         else:
             # Generic guide content template
             title = g['title']
@@ -1535,25 +1875,13 @@ def _generate_guide_content(guides, category, DATA, BRANDS, brands_map):
             <p style="font-size:15px;line-height:1.75;color:var(--text-secondary);margin-bottom:16px">{e(short)} This guide breaks down everything South African punters need to know, from the basics to more advanced strategies. Whether you are completely new to betting or looking to level up your game, we have got you covered.</p>
 
             <h3 style="font-size:16px;font-weight:600;margin-top:24px;margin-bottom:8px">Why This Matters for SA Punters</h3>
-            <p style="font-size:15px;line-height:1.75;color:var(--text-secondary);margin-bottom:16px">South Africa's betting market has grown massively in recent years, with over 36 licensed operators competing for your business. Understanding the fundamentals gives you an edge - not just over the bookmakers, but over other punters who bet on gut feeling alone. Knowledge is your best tool.</p>
+            <p style="font-size:15px;line-height:1.75;color:var(--text-secondary);margin-bottom:16px">South Africa\'s betting market has grown massively in recent years, with over 36 licensed operators competing for your business. Understanding the fundamentals gives you an edge - not just over the bookmakers, but over other punters who bet on gut feeling alone. Knowledge is your best tool.</p>
 
             <h3 style="font-size:16px;font-weight:600;margin-top:24px;margin-bottom:8px">Getting Started</h3>
             <p style="font-size:15px;line-height:1.75;color:var(--text-secondary);margin-bottom:16px">First, make sure you are signed up with a licensed South African bookmaker. We recommend starting with {top3[0]} or {top3[1]} for the best combination of odds, bonuses, and user experience. Once you have an account, take time to explore the platform before placing your first bet.</p>
 
-            <h3 style="font-size:16px;font-weight:600;margin-top:24px;margin-bottom:8px">Key Tips</h3>
-            <ul style="padding-left:0;list-style:none;margin-bottom:16px">
-              <li style="padding:6px 0;padding-left:20px;position:relative;font-size:14px;line-height:1.75;color:var(--text-secondary)"><span style="position:absolute;left:0;color:var(--accent)">&#8226;</span>Start small and learn the ropes before increasing your stakes</li>
-              <li style="padding:6px 0;padding-left:20px;position:relative;font-size:14px;line-height:1.75;color:var(--text-secondary)"><span style="position:absolute;left:0;color:var(--accent)">&#8226;</span>Compare odds across multiple SA bookmakers before placing a bet</li>
-              <li style="padding:6px 0;padding-left:20px;position:relative;font-size:14px;line-height:1.75;color:var(--text-secondary)"><span style="position:absolute;left:0;color:var(--accent)">&#8226;</span>Set a monthly budget and never bet more than you can afford to lose</li>
-              <li style="padding:6px 0;padding-left:20px;position:relative;font-size:14px;line-height:1.75;color:var(--text-secondary)"><span style="position:absolute;left:0;color:var(--accent)">&#8226;</span>Use the welcome bonus to your advantage, but always read the T&Cs</li>
-              <li style="padding:6px 0;padding-left:20px;position:relative;font-size:14px;line-height:1.75;color:var(--text-secondary)"><span style="position:absolute;left:0;color:var(--accent)">&#8226;</span>Keep records of your bets to track what works and what does not</li>
-            </ul>
-
-            <h3 style="font-size:16px;font-weight:600;margin-top:24px;margin-bottom:8px">Common Mistakes to Avoid</h3>
-            <p style="font-size:15px;line-height:1.75;color:var(--text-secondary);margin-bottom:16px">The biggest mistake new punters make is chasing losses. If you have had a bad run, take a break. The bookmakers will still be there tomorrow. Also avoid putting too many legs in your accumulators - the maths works against you exponentially with each additional selection.</p>
-
             <h3 style="font-size:16px;font-weight:600;margin-top:24px;margin-bottom:8px">Recommended Bookmakers</h3>
-            <p style="font-size:15px;line-height:1.75;color:var(--text-secondary)">For the best experience, we recommend {top3[0]}, {top3[1]}, and {top3[2]}. All three are licensed, well-established, and offer competitive odds across a wide range of markets. Check our individual reviews for detailed breakdowns.</p>'''
+            <p style="font-size:15px;line-height:1.75;color:var(--text-secondary)">For the best experience, we recommend {top3[0]}, {top3[1]}, and {top3[2]}. All three are licensed, well-established, and offer competitive odds across a wide range of markets.</p>'''
 
     return content
 

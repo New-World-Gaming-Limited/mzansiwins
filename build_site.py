@@ -2331,24 +2331,27 @@ def build_listing_page(page_type):
     # Build brand data JSON for JS starred calculation
     brand_data_json = json.dumps([{"id": b["id"], "name": e(b["name"]), "bonus": bonus_val(b)} for b in brands])
 
-    # Build responsive mobile cards + desktop table
+    # Build freetips-style top list cards + desktop table
     rows = ''
     mobile_cards = ''
+    copy_icon_card = '<svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"/><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/></svg>'
+    star_svg_full = '<svg width="14" height="14" viewBox="0 0 24 24" fill="#f59e0b" stroke="#f59e0b" stroke-width="1"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>'
     for i, b in enumerate(brands):
         tc_text = e(b.get('tcs', '18+ T&Cs apply.'))
+        mcp_tc = e(b.get('mcpTerms', '') or b.get('tcs', '18+ T&Cs apply.'))
         min_dep = e(b.get('minDeposit', ''))
         bv = bonus_val(b)
         bv_display = f'R{bv:,}' if bv > 0 else '-'
         star_icon = ICON_STAR
         logo = logo_path(b, 0)
         logo_img_sm = f'<img src="{logo}" alt="{e(b["name"])}" style="width:28px;height:28px;object-fit:contain;border-radius:4px;background:{brand_bg(b)};padding:2px;border:1px solid var(--border);flex-shrink:0" loading="lazy">' if logo else ''
-        logo_img_mobile = f'<img src="{logo}" alt="{e(b["name"])}" style="width:36px;height:36px;object-fit:contain;border-radius:6px;background:{brand_bg(b)};padding:3px;border:1px solid var(--border);flex-shrink:0" loading="lazy">' if logo else ''
 
+        # Desktop table row
         rows += f'''<tr data-name="{e(b['name']).lower()}" data-brand-id="{b['id']}" data-bonus-val="{bv}">
           <td data-sort="{i+1}" style="font-weight:600;color:var(--text-muted)">{i+1}</td>
           <td data-sort="{e(b['name'])}" style="white-space:nowrap">
             <div style="display:flex;align-items:center;gap:8px">
-              <button class="star-btn" data-brand="{b['id']}" onclick="event.stopPropagation();toggleStar('{b['id']}')" aria-label="Add to favourites">{star_icon}</button>
+              <button class="star-btn" data-brand="{b['id']}" onclick="event.stopPropagation();toggleStar(\'{b['id']}\')" aria-label="Add to favourites">{star_icon}</button>
               {logo_img_sm}
               <a href="betting-site-review/{b['id']}.html" class="table-link" style="font-weight:600">{e(b['name'])}</a>
             </div>
@@ -2359,36 +2362,37 @@ def build_listing_page(page_type):
           <td style="text-align:center"><a href="betting-site-review/{b['id']}.html" class="btn-outline btn-sm">Review</a></td>
         </tr>'''
 
-        # Mobile card version
+        # Freetips-style top list card
         m_exit = masked_exit(b, 0)
-        visit_btn = f'<a href="{m_exit}" target="_blank" rel="noopener noreferrer nofollow" class="btn-primary btn-sm" style="flex:1;text-align:center">Visit Site</a>' if m_exit else ''
-        mobile_cards += f'''<div class="listing-card" data-name="{e(b['name']).lower()}" data-brand-id="{b['id']}" data-bonus-val="{bv}">
-          <div style="display:flex;align-items:flex-start;justify-content:space-between;gap:8px;margin-bottom:10px">
-            <div style="display:flex;align-items:center;gap:8px;min-width:0">
-              <button class="star-btn" data-brand="{b['id']}" onclick="event.stopPropagation();toggleStar('{b['id']}')" aria-label="Add to favourites">{star_icon}</button>
-              {logo_img_mobile}
-              <div style="min-width:0">
-                <div style="display:flex;align-items:center;gap:6px">
-                  <span style="font-size:13px;font-weight:700;color:var(--text-muted)">#{i+1}</span>
-                  <a href="betting-site-review/{b['id']}.html" style="font-size:16px;font-weight:700;color:var(--text-primary)">{e(b['name'])}</a>
-                </div>
-              </div>
+        code = get_promo(b)
+        rating_10 = f'{float(b["overallRating"]) * 2:.1f}'
+        logo_card = f'<img src="{logo}" alt="{e(b["name"])}" class="toplist-logo" style="background:{brand_bg(b)}" loading="lazy">' if logo else ''
+        bullets_data = get_brand_bullets(b)
+        bullets_html = ''.join(f'<li>{e(bp)}</li>' for bp in bullets_data)
+        full_stars = int(round(float(b['overallRating'])))
+        stars_html = (star_svg_full * full_stars)
+        promo_html = f'<div class="toplist-promo-box" onclick="navigator.clipboard.writeText(\'{e(code)}\');this.innerHTML=\'&#10003; Copied!\'"><span>Promo Code: {e(code)}</span> {copy_icon_card}</div>' if code and code not in ('None', 'N/A', '') else ''
+        visit_cta = f'<a href="{m_exit}" target="_blank" rel="noopener noreferrer nofollow" class="toplist-cta">Visit {e(b["name"])} &#8594;</a>' if m_exit else ''
+        review_link = f'<a href="betting-site-review/{b["id"]}.html" class="toplist-review-link">Read Full Review</a>'
+
+        mobile_cards += f'''<div class="toplist-card" data-name="{e(b['name']).lower()}" data-brand-id="{b['id']}" data-bonus-val="{bv}">
+          <div class="toplist-rank">{i+1}</div>
+          <div class="toplist-header">
+            {logo_card}
+            <div class="toplist-info">
+              <div class="toplist-bonus">{e(b['welcomeBonusAmount'])}</div>
+              <div class="toplist-reward">{bv_display} Bonus Value</div>
             </div>
-            {rating_badge(b['overallRating'], 'sm')}
+            <div class="toplist-rating-circle">{rating_10}</div>
           </div>
-          <div style="background:var(--accent-light);border-radius:8px;padding:10px 14px;margin-bottom:10px">
-            <div style="display:flex;align-items:center;justify-content:space-between">
-              <p style="font-size:15px;font-weight:700;color:var(--bonus)">{e(b['welcomeBonusAmount'])}</p>
-              <span style="font-size:14px;font-weight:700;color:var(--bonus)">{bv_display}</span>
-            </div>
-            {f'<span style="font-size:12px;color:var(--text-muted)">Min deposit: {min_dep}</span>' if min_dep else ''}
-          </div>
-          <p style="font-size:11px;color:var(--text-muted);margin-bottom:12px;line-height:1.5">{tc_text}</p>
-          <div style="display:flex;gap:8px">
-            <a href="betting-site-review/{b['id']}.html" class="btn-outline btn-sm" style="flex:1;text-align:center">Review</a>
-            {visit_btn}
-          </div>
+          <ul class="toplist-bullets">{bullets_html}</ul>
+          {promo_html}
+          <div class="toplist-stars">{stars_html} <span>{full_stars}.0 / 5.0</span></div>
+          {visit_cta}
+          {review_link}
+          <div class="toplist-tcs">{mcp_tc}</div>
         </div>'''
+
 
     # SEO content for listing pages
     if page_type == 'betting-sites':
