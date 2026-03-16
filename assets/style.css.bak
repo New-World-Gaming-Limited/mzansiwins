@@ -1796,6 +1796,119 @@ a:focus-visible, button:focus-visible {
   color: var(--text-muted);
 }
 .slot-table tbody tr:hover { background: var(--accent-light); }
+.slot-table-compact { margin-bottom: 8px; }
+.slot-table-compact td { font-size: 14px; padding: 8px 12px; }
+.slot-table-compact td:first-child { color: var(--text-muted); font-size: 13px; width: 40%; }
+
+/* SA Slot review layout */
+.slot-review-layout {
+  display: grid;
+  grid-template-columns: 1fr 300px;
+  gap: 32px;
+  align-items: start;
+}
+.slot-review-main { min-width: 0; }
+.slot-review-sidebar { position: sticky; top: 24px; }
+@media (max-width: 899px) {
+  .slot-review-layout { grid-template-columns: 1fr; }
+  .slot-review-sidebar { position: static; }
+}
+
+/* Where to play CTA section */
+.slot-where-to-play {
+  background: var(--surface-2);
+  border: 1px solid var(--border);
+  border-radius: 14px;
+  padding: 20px;
+  margin-bottom: 28px;
+}
+.slot-casino-cta {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 14px 16px;
+  border-radius: 10px;
+  text-decoration: none;
+  transition: transform 0.15s ease, box-shadow 0.15s ease;
+  overflow: hidden;
+}
+.slot-casino-cta:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+}
+.slot-casino-cta img {
+  width: 40px;
+  height: 40px;
+  border-radius: 8px;
+  object-fit: contain;
+  background: #fff;
+  flex-shrink: 0;
+}
+.slot-casino-cta .slot-cta-btn {
+  display: inline-block;
+  background: rgba(255,255,255,0.22);
+  color: inherit;
+  font-size: 13px;
+  font-weight: 700;
+  padding: 7px 16px;
+  border-radius: 6px;
+  white-space: nowrap;
+  transition: background 0.15s ease;
+}
+.slot-casino-cta:hover .slot-cta-btn {
+  background: rgba(255,255,255,0.35);
+}
+
+/* Quick facts box */
+.slot-quick-facts {
+  background: var(--surface-2);
+  border: 1px solid var(--border);
+  border-radius: 14px;
+  padding: 20px;
+  margin-bottom: 28px;
+}
+
+/* Section titles */
+.slot-section-title {
+  font-size: 20px;
+  font-weight: 700;
+  margin-top: 32px;
+  margin-bottom: 14px;
+  letter-spacing: -0.01em;
+}
+
+/* Symbol list */
+.slot-symbol-list {
+  list-style: none;
+  padding: 0;
+  margin: 14px 0;
+}
+.slot-symbol-list li {
+  position: relative;
+  padding: 8px 0 8px 24px;
+  font-size: 15px;
+  line-height: 1.6;
+  color: var(--text-secondary);
+  border-bottom: 1px solid var(--sep);
+}
+.slot-symbol-list li:last-child { border-bottom: none; }
+.slot-symbol-list li::before {
+  content: '\2022';
+  position: absolute;
+  left: 6px;
+  color: var(--accent);
+  font-weight: 700;
+}
+
+/* Inline sub-headers in slot body (strong used as headings) */
+.slot-review-main .slot-subheader {
+  display: block;
+  font-size: 16px;
+  font-weight: 700;
+  margin-top: 20px;
+  margin-bottom: 6px;
+  color: var(--text-primary);
+}
 
 /* SA Slots grid cards - ensure images don't break */
 .grid-2 .card img { display: block; width: 100%; height: auto; }
