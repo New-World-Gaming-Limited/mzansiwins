@@ -327,6 +327,7 @@
           var d=parseFloat(document.getElementById('decimal').value);if(isNaN(d)||d<1.01)return;
           var num=d-1;var frac=toFraction(num);document.getElementById('fractional').value=frac;
           document.getElementById('american').value=d>=2?('+'+((d-1)*100).toFixed(0)):((-100/(d-1)).toFixed(0));
+          document.getElementById('calc-results').style.display='block';
           document.getElementById('results').style.display='block';
           document.getElementById('totalReturn').textContent=d.toFixed(2);
           document.getElementById('profit').textContent=frac;
