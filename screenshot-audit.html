@@ -1,0 +1,723 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+  <title>Screenshot Audit | MzansiWins</title>
+  <meta name="robots" content="noindex, nofollow">
+  <link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/style.css">
+  <style>
+    .audit-container { max-width: 1200px; margin: 0 auto; padding: 32px 20px; }
+    .audit-header { margin-bottom: 32px; }
+    .audit-header h1 { font-size: 28px; font-weight: 800; margin: 0 0 8px; color: var(--text-primary); }
+    .audit-header p { font-size: 15px; color: var(--text-secondary); margin: 0; }
+    .audit-stats { display: flex; gap: 24px; margin: 20px 0 32px; flex-wrap: wrap; }
+    .audit-stat { background: var(--card-bg); border: 1px solid var(--border); border-radius: 10px; padding: 16px 24px; }
+    .audit-stat-num { font-size: 28px; font-weight: 800; color: var(--accent); }
+    .audit-stat-label { font-size: 13px; color: var(--text-secondary); margin-top: 2px; }
+    .audit-grid { display: flex; flex-direction: column; gap: 24px; }
+    .audit-card { background: var(--card-bg); border: 1px solid var(--border); border-radius: 12px; overflow: hidden; }
+    .audit-card-header { display: flex; align-items: center; gap: 12px; padding: 16px 20px; border-bottom: 1px solid var(--border); }
+    .audit-logo { height: 28px; width: auto; max-width: 120px; object-fit: contain; }
+    .audit-brand-name { font-weight: 700; font-size: 16px; color: var(--text-primary); }
+    .audit-brand-name-only { font-weight: 700; font-size: 16px; color: var(--text-primary); }
+    .audit-review-link { margin-left: auto; font-size: 13px; font-weight: 600; color: var(--accent); text-decoration: none; white-space: nowrap; }
+    .audit-review-link:hover { text-decoration: underline; }
+    .audit-screenshots { display: grid; grid-template-columns: 1fr 280px; gap: 16px; padding: 16px 20px; align-items: start; }
+    .audit-desktop img { width: 100%; border-radius: 8px; border: 1px solid var(--border); cursor: pointer; transition: transform 0.15s; }
+    .audit-desktop img:hover { transform: scale(1.01); }
+    .audit-mobile { max-width: 280px; }
+    .audit-mobile img { width: 100%; border-radius: 8px; border: 1px solid var(--border); cursor: pointer; transition: transform 0.15s; }
+    .audit-mobile img:hover { transform: scale(1.01); }
+    .audit-label { display: block; text-align: center; font-size: 12px; font-weight: 600; color: var(--text-secondary); margin-top: 6px; text-transform: uppercase; letter-spacing: 0.5px; }
+    .audit-filter { display: flex; gap: 8px; margin-bottom: 24px; flex-wrap: wrap; }
+    .audit-filter input { flex: 1; min-width: 200px; padding: 10px 16px; border: 1px solid var(--border); border-radius: 8px; font-size: 14px; font-family: inherit; background: var(--card-bg); color: var(--text-primary); }
+    .audit-filter input:focus { outline: none; border-color: var(--accent); }
+    .audit-missing { background: #fff3cd; border-color: #ffc107; }
+    .audit-missing .audit-card-header { background: #fff8e1; }
+
+    /* Lightbox */
+    .audit-lightbox { display: none; position: fixed; inset: 0; background: rgba(0,0,0,0.9); z-index: 9999; justify-content: center; align-items: center; cursor: zoom-out; }
+    .audit-lightbox.active { display: flex; }
+    .audit-lightbox img { max-width: 95vw; max-height: 95vh; border-radius: 8px; object-fit: contain; }
+
+    @media (max-width: 768px) {
+      .audit-screenshots { grid-template-columns: 1fr; }
+      .audit-mobile { max-width: 100%; }
+      .audit-stats { gap: 12px; }
+      .audit-stat { padding: 12px 16px; flex: 1; min-width: 120px; }
+    }
+  </style>
+</head>
+<body>
+  <header class="site-header">
+    <div class="header-inner">
+      <div class="header-left">
+        <a href="index.html" class="logo-link"><svg width="28" height="28" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+  <rect width="200" height="200" rx="36" fill="#1641B4"/>
+  <g transform="translate(30,28)">
+    <path d="M0 10 Q0 0 10 0 L45 0 L70 50 L95 0 L130 0 Q140 0 140 10 L140 90 Q140 100 130 100 L105 100 L105 40 L80 85 Q75 93 70 93 Q65 93 60 85 L35 40 L35 100 L10 100 Q0 100 0 90 Z" fill="#ffffff"/>
+  </g>
+  <text x="100" y="172" text-anchor="middle" font-family="Inter,sans-serif" font-weight="800" font-size="34" letter-spacing="2" fill="rgba(255,255,255,0.85)">WINS</text>
+</svg><span class="logo-text">MzansiWins</span></a>
+      </div>
+      <nav class="desktop-nav">
+        <a href="index.html" class="nav-link">Home</a>
+        <a href="betting-sites.html" class="nav-link">Betting</a>
+        <a href="casino-sites.html" class="nav-link">Casino</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <div class="audit-container">
+      <div class="audit-header">
+        <h1>Screenshot Audit</h1>
+        <p>Visual review of all brand screenshots used across the site. Click any image to enlarge. This page is noindex.</p>
+      </div>
+
+      <div class="audit-stats">
+        <div class="audit-stat">
+          <div class="audit-stat-num">35</div>
+          <div class="audit-stat-label">Brands with screenshots</div>
+        </div>
+        <div class="audit-stat">
+          <div class="audit-stat-num">70</div>
+          <div class="audit-stat-label">Total images</div>
+        </div>
+      </div>
+
+      <div class="audit-filter">
+        <input type="text" id="auditSearch" placeholder="Filter brands..." oninput="filterAuditCards()">
+      </div>
+
+      <div class="audit-grid" id="auditGrid">
+        
+        <div class="audit-card">
+          <div class="audit-card-header">
+            <img src="assets/logos/10bet-south-africa.svg" alt="10Bet South Africa" class="audit-logo">
+            <span class="audit-brand-name">10Bet South Africa</span>
+            <a href="betting-site-review/10bet-south-africa.html" class="audit-review-link">View Review &rarr;</a>
+          </div>
+          <div class="audit-screenshots">
+            <div class="audit-desktop">
+              <img src="assets/screenshots/10bet-south-africa-desktop.jpg" alt="10Bet South Africa desktop" loading="lazy" onclick="openAuditLightbox(this.src)">
+              <span class="audit-label">Desktop</span>
+            </div>
+            <div class="audit-mobile">
+              <img src="assets/screenshots/10bet-south-africa-mobile.jpg" alt="10Bet South Africa mobile" loading="lazy" onclick="openAuditLightbox(this.src)">
+              <span class="audit-label">Mobile</span>
+            </div>
+          </div>
+        </div>
+        <div class="audit-card">
+          <div class="audit-card-header">
+            <img src="assets/logos/bet-co-za.svg" alt="BET.co.za" class="audit-logo">
+            <span class="audit-brand-name">BET.co.za</span>
+            <a href="betting-site-review/bet-co-za.html" class="audit-review-link">View Review &rarr;</a>
+          </div>
+          <div class="audit-screenshots">
+            <div class="audit-desktop">
+              <img src="assets/screenshots/bet-co-za-desktop.jpg" alt="BET.co.za desktop" loading="lazy" onclick="openAuditLightbox(this.src)">
+              <span class="audit-label">Desktop</span>
+            </div>
+            <div class="audit-mobile">
+              <img src="assets/screenshots/bet-co-za-mobile.jpg" alt="BET.co.za mobile" loading="lazy" onclick="openAuditLightbox(this.src)">
+              <span class="audit-label">Mobile</span>
+            </div>
+          </div>
+        </div>
+        <div class="audit-card">
+          <div class="audit-card-header">
+            <img src="assets/logos/betbus.svg" alt="betbus" class="audit-logo">
+            <span class="audit-brand-name">betbus</span>
+            <a href="betting-site-review/betbus.html" class="audit-review-link">View Review &rarr;</a>
+          </div>
+          <div class="audit-screenshots">
+            <div class="audit-desktop">
+              <img src="assets/screenshots/betbus-desktop.jpg" alt="betbus desktop" loading="lazy" onclick="openAuditLightbox(this.src)">
+              <span class="audit-label">Desktop</span>
+            </div>
+            <div class="audit-mobile">
+              <img src="assets/screenshots/betbus-mobile.jpg" alt="betbus mobile" loading="lazy" onclick="openAuditLightbox(this.src)">
+              <span class="audit-label">Mobile</span>
+            </div>
+          </div>
+        </div>
+        <div class="audit-card">
+          <div class="audit-card-header">
+            <img src="assets/logos/betfred.svg" alt="Betfred" class="audit-logo">
+            <span class="audit-brand-name">Betfred</span>
+            <a href="betting-site-review/betfred.html" class="audit-review-link">View Review &rarr;</a>
+          </div>
+          <div class="audit-screenshots">
+            <div class="audit-desktop">
+              <img src="assets/screenshots/betfred-desktop.jpg" alt="Betfred desktop" loading="lazy" onclick="openAuditLightbox(this.src)">
+              <span class="audit-label">Desktop</span>
+            </div>
+            <div class="audit-mobile">
+              <img src="assets/screenshots/betfred-mobile.jpg" alt="Betfred mobile" loading="lazy" onclick="openAuditLightbox(this.src)">
+              <span class="audit-label">Mobile</span>
+            </div>
+          </div>
+        </div>
+        <div class="audit-card">
+          <div class="audit-card-header">
+            <img src="assets/logos/betjets.svg" alt="Betjets" class="audit-logo">
+            <span class="audit-brand-name">Betjets</span>
+            <a href="betting-site-review/betjets.html" class="audit-review-link">View Review &rarr;</a>
+          </div>
+          <div class="audit-screenshots">
+            <div class="audit-desktop">
+              <img src="assets/screenshots/betjets-desktop.jpg" alt="Betjets desktop" loading="lazy" onclick="openAuditLightbox(this.src)">
+              <span class="audit-label">Desktop</span>
+            </div>
+            <div class="audit-mobile">
+              <img src="assets/screenshots/betjets-mobile.jpg" alt="Betjets mobile" loading="lazy" onclick="openAuditLightbox(this.src)">
+              <span class="audit-label">Mobile</span>
+            </div>
+          </div>
+        </div>
+        <div class="audit-card">
+          <div class="audit-card-header">
+            <img src="assets/logos/betshezi.svg" alt="Betshezi" class="audit-logo">
+            <span class="audit-brand-name">Betshezi</span>
+            <a href="betting-site-review/betshezi.html" class="audit-review-link">View Review &rarr;</a>
+          </div>
+          <div class="audit-screenshots">
+            <div class="audit-desktop">
+              <img src="assets/screenshots/betshezi-desktop.jpg" alt="Betshezi desktop" loading="lazy" onclick="openAuditLightbox(this.src)">
+              <span class="audit-label">Desktop</span>
+            </div>
+            <div class="audit-mobile">
+              <img src="assets/screenshots/betshezi-mobile.jpg" alt="Betshezi mobile" loading="lazy" onclick="openAuditLightbox(this.src)">
+              <span class="audit-label">Mobile</span>
+            </div>
+          </div>
+        </div>
+        <div class="audit-card">
+          <div class="audit-card-header">
+            <img src="assets/logos/bettabets.svg" alt="Bettabets" class="audit-logo">
+            <span class="audit-brand-name">Bettabets</span>
+            <a href="betting-site-review/bettabets.html" class="audit-review-link">View Review &rarr;</a>
+          </div>
+          <div class="audit-screenshots">
+            <div class="audit-desktop">
+              <img src="assets/screenshots/bettabets-desktop.jpg" alt="Bettabets desktop" loading="lazy" onclick="openAuditLightbox(this.src)">
+              <span class="audit-label">Desktop</span>
+            </div>
+            <div class="audit-mobile">
+              <img src="assets/screenshots/bettabets-mobile.jpg" alt="Bettabets mobile" loading="lazy" onclick="openAuditLightbox(this.src)">
+              <span class="audit-label">Mobile</span>
+            </div>
+          </div>
+        </div>
+        <div class="audit-card">
+          <div class="audit-card-header">
+            <img src="assets/logos/betway-south-africa.svg" alt="Betway South Africa" class="audit-logo">
+            <span class="audit-brand-name">Betway South Africa</span>
+            <a href="betting-site-review/betway-south-africa.html" class="audit-review-link">View Review &rarr;</a>
+          </div>
+          <div class="audit-screenshots">
+            <div class="audit-desktop">
+              <img src="assets/screenshots/betway-south-africa-desktop.jpg" alt="Betway South Africa desktop" loading="lazy" onclick="openAuditLightbox(this.src)">
+              <span class="audit-label">Desktop</span>
+            </div>
+            <div class="audit-mobile">
+              <img src="assets/screenshots/betway-south-africa-mobile.jpg" alt="Betway South Africa mobile" loading="lazy" onclick="openAuditLightbox(this.src)">
+              <span class="audit-label">Mobile</span>
+            </div>
+          </div>
+        </div>
+        <div class="audit-card">
+          <div class="audit-card-header">
+            <img src="assets/logos/betxchange.svg" alt="betXchange" class="audit-logo">
+            <span class="audit-brand-name">betXchange</span>
+            <a href="betting-site-review/betxchange.html" class="audit-review-link">View Review &rarr;</a>
+          </div>
+          <div class="audit-screenshots">
+            <div class="audit-desktop">
+              <img src="assets/screenshots/betxchange-desktop.jpg" alt="betXchange desktop" loading="lazy" onclick="openAuditLightbox(this.src)">
+              <span class="audit-label">Desktop</span>
+            </div>
+            <div class="audit-mobile">
+              <img src="assets/screenshots/betxchange-mobile.jpg" alt="betXchange mobile" loading="lazy" onclick="openAuditLightbox(this.src)">
+              <span class="audit-label">Mobile</span>
+            </div>
+          </div>
+        </div>
+        <div class="audit-card">
+          <div class="audit-card-header">
+            <img src="assets/logos/easybet-south-africa.svg" alt="Easybet South Africa" class="audit-logo">
+            <span class="audit-brand-name">Easybet South Africa</span>
+            <a href="betting-site-review/easybet-south-africa.html" class="audit-review-link">View Review &rarr;</a>
+          </div>
+          <div class="audit-screenshots">
+            <div class="audit-desktop">
+              <img src="assets/screenshots/easybet-south-africa-desktop.jpg" alt="Easybet South Africa desktop" loading="lazy" onclick="openAuditLightbox(this.src)">
+              <span class="audit-label">Desktop</span>
+            </div>
+            <div class="audit-mobile">
+              <img src="assets/screenshots/easybet-south-africa-mobile.jpg" alt="Easybet South Africa mobile" loading="lazy" onclick="openAuditLightbox(this.src)">
+              <span class="audit-label">Mobile</span>
+            </div>
+          </div>
+        </div>
+        <div class="audit-card">
+          <div class="audit-card-header">
+            <img src="assets/logos/gbets.svg" alt="Gbets" class="audit-logo">
+            <span class="audit-brand-name">Gbets</span>
+            <a href="betting-site-review/gbets.html" class="audit-review-link">View Review &rarr;</a>
+          </div>
+          <div class="audit-screenshots">
+            <div class="audit-desktop">
+              <img src="assets/screenshots/gbets-desktop.jpg" alt="Gbets desktop" loading="lazy" onclick="openAuditLightbox(this.src)">
+              <span class="audit-label">Desktop</span>
+            </div>
+            <div class="audit-mobile">
+              <img src="assets/screenshots/gbets-mobile.jpg" alt="Gbets mobile" loading="lazy" onclick="openAuditLightbox(this.src)">
+              <span class="audit-label">Mobile</span>
+            </div>
+          </div>
+        </div>
+        <div class="audit-card">
+          <div class="audit-card-header">
+            <img src="assets/logos/hollywoodbets.svg" alt="Hollywoodbets" class="audit-logo">
+            <span class="audit-brand-name">Hollywoodbets</span>
+            <a href="betting-site-review/hollywoodbets.html" class="audit-review-link">View Review &rarr;</a>
+          </div>
+          <div class="audit-screenshots">
+            <div class="audit-desktop">
+              <img src="assets/screenshots/hollywoodbets-desktop.jpg" alt="Hollywoodbets desktop" loading="lazy" onclick="openAuditLightbox(this.src)">
+              <span class="audit-label">Desktop</span>
+            </div>
+            <div class="audit-mobile">
+              <img src="assets/screenshots/hollywoodbets-mobile.jpg" alt="Hollywoodbets mobile" loading="lazy" onclick="openAuditLightbox(this.src)">
+              <span class="audit-label">Mobile</span>
+            </div>
+          </div>
+        </div>
+        <div class="audit-card">
+          <div class="audit-card-header">
+            <img src="assets/logos/jabula-bets.svg" alt="Jabula Bets" class="audit-logo">
+            <span class="audit-brand-name">Jabula Bets</span>
+            <a href="betting-site-review/jabula-bets.html" class="audit-review-link">View Review &rarr;</a>
+          </div>
+          <div class="audit-screenshots">
+            <div class="audit-desktop">
+              <img src="assets/screenshots/jabula-bets-desktop.jpg" alt="Jabula Bets desktop" loading="lazy" onclick="openAuditLightbox(this.src)">
+              <span class="audit-label">Desktop</span>
+            </div>
+            <div class="audit-mobile">
+              <img src="assets/screenshots/jabula-bets-mobile.jpg" alt="Jabula Bets mobile" loading="lazy" onclick="openAuditLightbox(this.src)">
+              <span class="audit-label">Mobile</span>
+            </div>
+          </div>
+        </div>
+        <div class="audit-card">
+          <div class="audit-card-header">
+            <img src="assets/logos/jackpot-city.svg" alt="Jackpot City" class="audit-logo">
+            <span class="audit-brand-name">Jackpot City</span>
+            <a href="betting-site-review/jackpot-city.html" class="audit-review-link">View Review &rarr;</a>
+          </div>
+          <div class="audit-screenshots">
+            <div class="audit-desktop">
+              <img src="assets/screenshots/jackpot-city-desktop.jpg" alt="Jackpot City desktop" loading="lazy" onclick="openAuditLightbox(this.src)">
+              <span class="audit-label">Desktop</span>
+            </div>
+            <div class="audit-mobile">
+              <img src="assets/screenshots/jackpot-city-mobile.jpg" alt="Jackpot City mobile" loading="lazy" onclick="openAuditLightbox(this.src)">
+              <span class="audit-label">Mobile</span>
+            </div>
+          </div>
+        </div>
+        <div class="audit-card">
+          <div class="audit-card-header">
+            <img src="assets/logos/lucky-fish.svg" alt="Lucky Fish" class="audit-logo">
+            <span class="audit-brand-name">Lucky Fish</span>
+            <a href="betting-site-review/lucky-fish.html" class="audit-review-link">View Review &rarr;</a>
+          </div>
+          <div class="audit-screenshots">
+            <div class="audit-desktop">
+              <img src="assets/screenshots/lucky-fish-desktop.jpg" alt="Lucky Fish desktop" loading="lazy" onclick="openAuditLightbox(this.src)">
+              <span class="audit-label">Desktop</span>
+            </div>
+            <div class="audit-mobile">
+              <img src="assets/screenshots/lucky-fish-mobile.jpg" alt="Lucky Fish mobile" loading="lazy" onclick="openAuditLightbox(this.src)">
+              <span class="audit-label">Mobile</span>
+            </div>
+          </div>
+        </div>
+        <div class="audit-card">
+          <div class="audit-card-header">
+            <img src="assets/logos/luckystake.svg" alt="Luckystake" class="audit-logo">
+            <span class="audit-brand-name">Luckystake</span>
+            <a href="betting-site-review/luckystake.html" class="audit-review-link">View Review &rarr;</a>
+          </div>
+          <div class="audit-screenshots">
+            <div class="audit-desktop">
+              <img src="assets/screenshots/luckystake-desktop.jpg" alt="Luckystake desktop" loading="lazy" onclick="openAuditLightbox(this.src)">
+              <span class="audit-label">Desktop</span>
+            </div>
+            <div class="audit-mobile">
+              <img src="assets/screenshots/luckystake-mobile.jpg" alt="Luckystake mobile" loading="lazy" onclick="openAuditLightbox(this.src)">
+              <span class="audit-label">Mobile</span>
+            </div>
+          </div>
+        </div>
+        <div class="audit-card">
+          <div class="audit-card-header">
+            <img src="assets/logos/lulabet.svg" alt="Lulabet" class="audit-logo">
+            <span class="audit-brand-name">Lulabet</span>
+            <a href="betting-site-review/lulabet.html" class="audit-review-link">View Review &rarr;</a>
+          </div>
+          <div class="audit-screenshots">
+            <div class="audit-desktop">
+              <img src="assets/screenshots/lulabet-desktop.jpg" alt="Lulabet desktop" loading="lazy" onclick="openAuditLightbox(this.src)">
+              <span class="audit-label">Desktop</span>
+            </div>
+            <div class="audit-mobile">
+              <img src="assets/screenshots/lulabet-mobile.jpg" alt="Lulabet mobile" loading="lazy" onclick="openAuditLightbox(this.src)">
+              <span class="audit-label">Mobile</span>
+            </div>
+          </div>
+        </div>
+        <div class="audit-card">
+          <div class="audit-card-header">
+            <img src="assets/logos/mzansibet.svg" alt="Mzansibet" class="audit-logo">
+            <span class="audit-brand-name">Mzansibet</span>
+            <a href="betting-site-review/mzansibet.html" class="audit-review-link">View Review &rarr;</a>
+          </div>
+          <div class="audit-screenshots">
+            <div class="audit-desktop">
+              <img src="assets/screenshots/mzansibet-desktop.jpg" alt="Mzansibet desktop" loading="lazy" onclick="openAuditLightbox(this.src)">
+              <span class="audit-label">Desktop</span>
+            </div>
+            <div class="audit-mobile">
+              <img src="assets/screenshots/mzansibet-mobile.jpg" alt="Mzansibet mobile" loading="lazy" onclick="openAuditLightbox(this.src)">
+              <span class="audit-label">Mobile</span>
+            </div>
+          </div>
+        </div>
+        <div class="audit-card">
+          <div class="audit-card-header">
+            <img src="assets/logos/pantherbet.svg" alt="Pantherbet" class="audit-logo">
+            <span class="audit-brand-name">Pantherbet</span>
+            <a href="betting-site-review/pantherbet.html" class="audit-review-link">View Review &rarr;</a>
+          </div>
+          <div class="audit-screenshots">
+            <div class="audit-desktop">
+              <img src="assets/screenshots/pantherbet-desktop.jpg" alt="Pantherbet desktop" loading="lazy" onclick="openAuditLightbox(this.src)">
+              <span class="audit-label">Desktop</span>
+            </div>
+            <div class="audit-mobile">
+              <img src="assets/screenshots/pantherbet-mobile.jpg" alt="Pantherbet mobile" loading="lazy" onclick="openAuditLightbox(this.src)">
+              <span class="audit-label">Mobile</span>
+            </div>
+          </div>
+        </div>
+        <div class="audit-card">
+          <div class="audit-card-header">
+            <img src="assets/logos/playabets.svg" alt="PlayaBets" class="audit-logo">
+            <span class="audit-brand-name">PlayaBets</span>
+            <a href="betting-site-review/playabets.html" class="audit-review-link">View Review &rarr;</a>
+          </div>
+          <div class="audit-screenshots">
+            <div class="audit-desktop">
+              <img src="assets/screenshots/playabets-desktop.jpg" alt="PlayaBets desktop" loading="lazy" onclick="openAuditLightbox(this.src)">
+              <span class="audit-label">Desktop</span>
+            </div>
+            <div class="audit-mobile">
+              <img src="assets/screenshots/playabets-mobile.jpg" alt="PlayaBets mobile" loading="lazy" onclick="openAuditLightbox(this.src)">
+              <span class="audit-label">Mobile</span>
+            </div>
+          </div>
+        </div>
+        <div class="audit-card">
+          <div class="audit-card-header">
+            <img src="assets/logos/playbet-co-za.svg" alt="Playbet.co.za" class="audit-logo">
+            <span class="audit-brand-name">Playbet.co.za</span>
+            <a href="betting-site-review/playbet-co-za.html" class="audit-review-link">View Review &rarr;</a>
+          </div>
+          <div class="audit-screenshots">
+            <div class="audit-desktop">
+              <img src="assets/screenshots/playbet-co-za-desktop.jpg" alt="Playbet.co.za desktop" loading="lazy" onclick="openAuditLightbox(this.src)">
+              <span class="audit-label">Desktop</span>
+            </div>
+            <div class="audit-mobile">
+              <img src="assets/screenshots/playbet-co-za-mobile.jpg" alt="Playbet.co.za mobile" loading="lazy" onclick="openAuditLightbox(this.src)">
+              <span class="audit-label">Mobile</span>
+            </div>
+          </div>
+        </div>
+        <div class="audit-card">
+          <div class="audit-card-header">
+            <img src="assets/logos/playtsogo.svg" alt="PlayTsogo" class="audit-logo">
+            <span class="audit-brand-name">PlayTsogo</span>
+            <a href="betting-site-review/playtsogo.html" class="audit-review-link">View Review &rarr;</a>
+          </div>
+          <div class="audit-screenshots">
+            <div class="audit-desktop">
+              <img src="assets/screenshots/playtsogo-desktop.jpg" alt="PlayTsogo desktop" loading="lazy" onclick="openAuditLightbox(this.src)">
+              <span class="audit-label">Desktop</span>
+            </div>
+            <div class="audit-mobile">
+              <img src="assets/screenshots/playtsogo-mobile.jpg" alt="PlayTsogo mobile" loading="lazy" onclick="openAuditLightbox(this.src)">
+              <span class="audit-label">Mobile</span>
+            </div>
+          </div>
+        </div>
+        <div class="audit-card">
+          <div class="audit-card-header">
+            <img src="assets/logos/pokerbet.svg" alt="Pokerbet" class="audit-logo">
+            <span class="audit-brand-name">Pokerbet</span>
+            <a href="betting-site-review/pokerbet.html" class="audit-review-link">View Review &rarr;</a>
+          </div>
+          <div class="audit-screenshots">
+            <div class="audit-desktop">
+              <img src="assets/screenshots/pokerbet-desktop.jpg" alt="Pokerbet desktop" loading="lazy" onclick="openAuditLightbox(this.src)">
+              <span class="audit-label">Desktop</span>
+            </div>
+            <div class="audit-mobile">
+              <img src="assets/screenshots/pokerbet-mobile.jpg" alt="Pokerbet mobile" loading="lazy" onclick="openAuditLightbox(this.src)">
+              <span class="audit-label">Mobile</span>
+            </div>
+          </div>
+        </div>
+        <div class="audit-card">
+          <div class="audit-card-header">
+            <img src="assets/logos/saffaluck.svg" alt="SaffaLuck" class="audit-logo">
+            <span class="audit-brand-name">SaffaLuck</span>
+            <a href="betting-site-review/saffaluck.html" class="audit-review-link">View Review &rarr;</a>
+          </div>
+          <div class="audit-screenshots">
+            <div class="audit-desktop">
+              <img src="assets/screenshots/saffaluck-desktop.jpg" alt="SaffaLuck desktop" loading="lazy" onclick="openAuditLightbox(this.src)">
+              <span class="audit-label">Desktop</span>
+            </div>
+            <div class="audit-mobile">
+              <img src="assets/screenshots/saffaluck-mobile.jpg" alt="SaffaLuck mobile" loading="lazy" onclick="openAuditLightbox(this.src)">
+              <span class="audit-label">Mobile</span>
+            </div>
+          </div>
+        </div>
+        <div class="audit-card">
+          <div class="audit-card-header">
+            <img src="assets/logos/soccershop.svg" alt="Soccershop" class="audit-logo">
+            <span class="audit-brand-name">Soccershop</span>
+            <a href="betting-site-review/soccershop.html" class="audit-review-link">View Review &rarr;</a>
+          </div>
+          <div class="audit-screenshots">
+            <div class="audit-desktop">
+              <img src="assets/screenshots/soccershop-desktop.jpg" alt="Soccershop desktop" loading="lazy" onclick="openAuditLightbox(this.src)">
+              <span class="audit-label">Desktop</span>
+            </div>
+            <div class="audit-mobile">
+              <img src="assets/screenshots/soccershop-mobile.jpg" alt="Soccershop mobile" loading="lazy" onclick="openAuditLightbox(this.src)">
+              <span class="audit-label">Mobile</span>
+            </div>
+          </div>
+        </div>
+        <div class="audit-card">
+          <div class="audit-card-header">
+            <img src="assets/logos/sportingbet.svg" alt="Sportingbet" class="audit-logo">
+            <span class="audit-brand-name">Sportingbet</span>
+            <a href="betting-site-review/sportingbet.html" class="audit-review-link">View Review &rarr;</a>
+          </div>
+          <div class="audit-screenshots">
+            <div class="audit-desktop">
+              <img src="assets/screenshots/sportingbet-desktop.jpg" alt="Sportingbet desktop" loading="lazy" onclick="openAuditLightbox(this.src)">
+              <span class="audit-label">Desktop</span>
+            </div>
+            <div class="audit-mobile">
+              <img src="assets/screenshots/sportingbet-mobile.jpg" alt="Sportingbet mobile" loading="lazy" onclick="openAuditLightbox(this.src)">
+              <span class="audit-label">Mobile</span>
+            </div>
+          </div>
+        </div>
+        <div class="audit-card">
+          <div class="audit-card-header">
+            <img src="assets/logos/supabets.svg" alt="Supabets" class="audit-logo">
+            <span class="audit-brand-name">Supabets</span>
+            <a href="betting-site-review/supabets.html" class="audit-review-link">View Review &rarr;</a>
+          </div>
+          <div class="audit-screenshots">
+            <div class="audit-desktop">
+              <img src="assets/screenshots/supabets-desktop.jpg" alt="Supabets desktop" loading="lazy" onclick="openAuditLightbox(this.src)">
+              <span class="audit-label">Desktop</span>
+            </div>
+            <div class="audit-mobile">
+              <img src="assets/screenshots/supabets-mobile.jpg" alt="Supabets mobile" loading="lazy" onclick="openAuditLightbox(this.src)">
+              <span class="audit-label">Mobile</span>
+            </div>
+          </div>
+        </div>
+        <div class="audit-card">
+          <div class="audit-card-header">
+            <img src="assets/logos/supersportbet.svg" alt="Supersportbet" class="audit-logo">
+            <span class="audit-brand-name">Supersportbet</span>
+            <a href="betting-site-review/supersportbet.html" class="audit-review-link">View Review &rarr;</a>
+          </div>
+          <div class="audit-screenshots">
+            <div class="audit-desktop">
+              <img src="assets/screenshots/supersportbet-desktop.jpg" alt="Supersportbet desktop" loading="lazy" onclick="openAuditLightbox(this.src)">
+              <span class="audit-label">Desktop</span>
+            </div>
+            <div class="audit-mobile">
+              <img src="assets/screenshots/supersportbet-mobile.jpg" alt="Supersportbet mobile" loading="lazy" onclick="openAuditLightbox(this.src)">
+              <span class="audit-label">Mobile</span>
+            </div>
+          </div>
+        </div>
+        <div class="audit-card">
+          <div class="audit-card-header">
+            <img src="assets/logos/swifty.png" alt="Swifty" class="audit-logo">
+            <span class="audit-brand-name">Swifty</span>
+            <a href="betting-site-review/swifty.html" class="audit-review-link">View Review &rarr;</a>
+          </div>
+          <div class="audit-screenshots">
+            <div class="audit-desktop">
+              <img src="assets/screenshots/swifty-desktop.jpg" alt="Swifty desktop" loading="lazy" onclick="openAuditLightbox(this.src)">
+              <span class="audit-label">Desktop</span>
+            </div>
+            <div class="audit-mobile">
+              <img src="assets/screenshots/swifty-mobile.jpg" alt="Swifty mobile" loading="lazy" onclick="openAuditLightbox(this.src)">
+              <span class="audit-label">Mobile</span>
+            </div>
+          </div>
+        </div>
+        <div class="audit-card">
+          <div class="audit-card-header">
+            <img src="assets/logos/tictacbets.svg" alt="Tictacbets" class="audit-logo">
+            <span class="audit-brand-name">Tictacbets</span>
+            <a href="betting-site-review/tictacbets.html" class="audit-review-link">View Review &rarr;</a>
+          </div>
+          <div class="audit-screenshots">
+            <div class="audit-desktop">
+              <img src="assets/screenshots/tictacbets-desktop.jpg" alt="Tictacbets desktop" loading="lazy" onclick="openAuditLightbox(this.src)">
+              <span class="audit-label">Desktop</span>
+            </div>
+            <div class="audit-mobile">
+              <img src="assets/screenshots/tictacbets-mobile.jpg" alt="Tictacbets mobile" loading="lazy" onclick="openAuditLightbox(this.src)">
+              <span class="audit-label">Mobile</span>
+            </div>
+          </div>
+        </div>
+        <div class="audit-card">
+          <div class="audit-card-header">
+            <img src="assets/logos/topbet.svg" alt="Topbet" class="audit-logo">
+            <span class="audit-brand-name">Topbet</span>
+            <a href="betting-site-review/topbet.html" class="audit-review-link">View Review &rarr;</a>
+          </div>
+          <div class="audit-screenshots">
+            <div class="audit-desktop">
+              <img src="assets/screenshots/topbet-desktop.jpg" alt="Topbet desktop" loading="lazy" onclick="openAuditLightbox(this.src)">
+              <span class="audit-label">Desktop</span>
+            </div>
+            <div class="audit-mobile">
+              <img src="assets/screenshots/topbet-mobile.jpg" alt="Topbet mobile" loading="lazy" onclick="openAuditLightbox(this.src)">
+              <span class="audit-label">Mobile</span>
+            </div>
+          </div>
+        </div>
+        <div class="audit-card">
+          <div class="audit-card-header">
+            <img src="assets/logos/wanejo-bets.png" alt="Wanejo Bets" class="audit-logo">
+            <span class="audit-brand-name">Wanejo Bets</span>
+            <a href="betting-site-review/wanejo-bets.html" class="audit-review-link">View Review &rarr;</a>
+          </div>
+          <div class="audit-screenshots">
+            <div class="audit-desktop">
+              <img src="assets/screenshots/wanejo-bets-desktop.jpg" alt="Wanejo Bets desktop" loading="lazy" onclick="openAuditLightbox(this.src)">
+              <span class="audit-label">Desktop</span>
+            </div>
+            <div class="audit-mobile">
+              <img src="assets/screenshots/wanejo-bets-mobile.jpg" alt="Wanejo Bets mobile" loading="lazy" onclick="openAuditLightbox(this.src)">
+              <span class="audit-label">Mobile</span>
+            </div>
+          </div>
+        </div>
+        <div class="audit-card">
+          <div class="audit-card-header">
+            <img src="assets/logos/world-sports-betting.svg" alt="World Sports Betting" class="audit-logo">
+            <span class="audit-brand-name">World Sports Betting</span>
+            <a href="betting-site-review/world-sports-betting.html" class="audit-review-link">View Review &rarr;</a>
+          </div>
+          <div class="audit-screenshots">
+            <div class="audit-desktop">
+              <img src="assets/screenshots/world-sports-betting-desktop.jpg" alt="World Sports Betting desktop" loading="lazy" onclick="openAuditLightbox(this.src)">
+              <span class="audit-label">Desktop</span>
+            </div>
+            <div class="audit-mobile">
+              <img src="assets/screenshots/world-sports-betting-mobile.jpg" alt="World Sports Betting mobile" loading="lazy" onclick="openAuditLightbox(this.src)">
+              <span class="audit-label">Mobile</span>
+            </div>
+          </div>
+        </div>
+        <div class="audit-card">
+          <div class="audit-card-header">
+            <img src="assets/logos/yesplay.svg" alt="YesPlay" class="audit-logo">
+            <span class="audit-brand-name">YesPlay</span>
+            <a href="betting-site-review/yesplay.html" class="audit-review-link">View Review &rarr;</a>
+          </div>
+          <div class="audit-screenshots">
+            <div class="audit-desktop">
+              <img src="assets/screenshots/yesplay-desktop.jpg" alt="YesPlay desktop" loading="lazy" onclick="openAuditLightbox(this.src)">
+              <span class="audit-label">Desktop</span>
+            </div>
+            <div class="audit-mobile">
+              <img src="assets/screenshots/yesplay-mobile.jpg" alt="YesPlay mobile" loading="lazy" onclick="openAuditLightbox(this.src)">
+              <span class="audit-label">Mobile</span>
+            </div>
+          </div>
+        </div>
+        <div class="audit-card">
+          <div class="audit-card-header">
+            <img src="assets/logos/zarbet.svg" alt="Zarbet" class="audit-logo">
+            <span class="audit-brand-name">Zarbet</span>
+            <a href="betting-site-review/zarbet.html" class="audit-review-link">View Review &rarr;</a>
+          </div>
+          <div class="audit-screenshots">
+            <div class="audit-desktop">
+              <img src="assets/screenshots/zarbet-desktop.jpg" alt="Zarbet desktop" loading="lazy" onclick="openAuditLightbox(this.src)">
+              <span class="audit-label">Desktop</span>
+            </div>
+            <div class="audit-mobile">
+              <img src="assets/screenshots/zarbet-mobile.jpg" alt="Zarbet mobile" loading="lazy" onclick="openAuditLightbox(this.src)">
+              <span class="audit-label">Mobile</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <div class="audit-lightbox" id="auditLightbox" onclick="closeAuditLightbox()">
+    <img id="auditLightboxImg" src="" alt="Enlarged screenshot">
+  </div>
+
+  <script>
+    function filterAuditCards() {
+      const q = document.getElementById('auditSearch').value.toLowerCase();
+      document.querySelectorAll('.audit-card').forEach(card => {
+        const name = card.querySelector('.audit-brand-name').textContent.toLowerCase();
+        card.style.display = name.includes(q) ? '' : 'none';
+      });
+    }
+    function openAuditLightbox(src) {
+      document.getElementById('auditLightboxImg').src = src;
+      document.getElementById('auditLightbox').classList.add('active');
+      document.body.style.overflow = 'hidden';
+    }
+    function closeAuditLightbox() {
+      document.getElementById('auditLightbox').classList.remove('active');
+      document.body.style.overflow = '';
+    }
+    document.addEventListener('keydown', e => { if (e.key === 'Escape') closeAuditLightbox(); });
+  </script>
+</body>
+</html>
