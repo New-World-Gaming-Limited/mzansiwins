@@ -1846,17 +1846,20 @@ a:focus-visible, button:focus-visible {
 }
 .slot-casino-cta .slot-cta-btn {
   display: inline-block;
-  background: rgba(255,255,255,0.22);
-  color: inherit;
+  background: #fff;
+  color: #111;
   font-size: 13px;
   font-weight: 700;
-  padding: 7px 16px;
+  padding: 8px 20px;
   border-radius: 6px;
   white-space: nowrap;
-  transition: background 0.15s ease;
+  transition: transform 0.15s ease, box-shadow 0.15s ease;
+  box-shadow: 0 1px 4px rgba(0,0,0,0.15);
+  flex-shrink: 0;
 }
 .slot-casino-cta:hover .slot-cta-btn {
-  background: rgba(255,255,255,0.35);
+  transform: scale(1.04);
+  box-shadow: 0 2px 8px rgba(0,0,0,0.2);
 }
 
 /* Quick facts box */
