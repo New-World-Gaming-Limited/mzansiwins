@@ -24,10 +24,12 @@
   <meta name="twitter:image" content="https://mzansiwins.co.za/assets/og-casino.png">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link rel="preload" href="assets/style.css" as="style">
+  
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" media="print" onload="this.media='all'">
-  <noscript><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet"></noscript>
-  <link rel="stylesheet" href="assets/style.css">
+  <style>*{margin:0;padding:0;box-sizing:border-box;-webkit-tap-highlight-color:transparent}:root{--accent:#1641B4;--accent-hover:#1233A0;--accent-light:#EEF2FF;--surface:#fff;--surface-2:#F0F0F2;--border:#e5e5e5;--text-primary:#111;--text-secondary:#555;--text-muted:#888;--bonus:#16a34a;--bg:#F9FAFC;--card-bg:#fff;--card-border:1px solid #e5e5e5;--sep:rgba(0,0,0,0.06)}[data-theme="dark"]{--accent-light:rgba(22,65,180,0.2);--surface:#1c1c1c;--surface-2:#1a1f2e;--border:rgba(255,255,255,0.12);--text-primary:#f5f5f5;--text-secondary:#b0b0b0;--text-muted:#888;--bg:#111;--card-bg:#1c1c1c;--card-border:1px solid rgba(255,255,255,0.1);--sep:rgba(255,255,255,0.08)}html{scroll-behavior:smooth;-webkit-font-smoothing:antialiased}body{font-family:'Inter',system-ui,sans-serif;background:var(--bg);color:var(--text-primary);font-size:16px;line-height:1.75;margin:0}a{color:inherit;text-decoration:none}img{max-width:100%;height:auto}.top-bar{position:sticky;top:0;z-index:100;background:var(--surface);border-bottom:1px solid var(--border);backdrop-filter:blur(12px)}.nav-inner{max-width:1200px;margin:0 auto;padding:0 20px;display:flex;align-items:center;justify-content:space-between;height:60px}.container{max-width:1200px;margin:0 auto;padding:0 20px}.hero{padding:64px 0 48px;border-bottom:1px solid var(--border)}.hero h1{font-size:clamp(2rem,5vw,2.75rem);font-weight:800;letter-spacing:-0.03em;line-height:1.15;margin-bottom:20px}.affiliate-disclosure{font-size:11px;color:var(--text-muted);text-align:center;padding:6px 20px;background:var(--surface-2);border-bottom:1px solid var(--sep)}@media(max-width:768px){.hero{padding:40px 0 32px}.container{padding:0 16px}}</style>
+  <link rel="preload" href="assets/style.css" as="style">
+  <link rel="stylesheet" href="assets/style.css" media="print" onload="this.media='all'">
+  <noscript><link rel="stylesheet" href="assets/style.css"></noscript>
   <script type="application/ld+json">{
   "@context": "https://schema.org",
   "@type": "ItemList",
@@ -420,9 +422,7 @@
         Online casino games such as slots, blackjack and roulette are not licensed under standalone casino licences in South Africa. Instead, licensed bookmakers offer these games through their betting platforms under provincial bookmaker licences. Below are the top-rated platforms for casino games in 2026, ranked by game selection, payout speed and bonus value.
       </p>
     </div>
-    
 
-      <!-- Bonus counter banner -->
       <div class="bonus-counter-banner">
         <div class="bonus-counter-item">
           <div class="bonus-counter-label">Total bonuses available</div>
@@ -439,7 +439,6 @@
 
       <input type="text" class="search-box" placeholder="Search bookmakers..." oninput="searchListing(this)">
 
-      <!-- Desktop table -->
       <div class="table-wrap listing-desktop">
         <table class="data-table">
           <thead><tr>
@@ -455,7 +454,7 @@
           <td data-sort="Apexbets" style="white-space:nowrap">
             <div style="display:flex;align-items:center;gap:8px">
               <button class="star-btn" data-brand="apexbets" onclick="event.stopPropagation();toggleStar('apexbets')" aria-label="Add to favourites"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg></button>
-              <img src="assets/logos/apexbets.svg" alt="Apexbets" style="width:28px;height:28px;object-fit:contain;border-radius:4px;background:#1b1a1f;padding:2px;border:1px solid var(--border);flex-shrink:0" loading="lazy">
+              <img decoding="async" src="assets/logos/apexbets.svg" alt="Apexbets" style="width:28px;height:28px;object-fit:contain;border-radius:4px;background:#1b1a1f;padding:2px;border:1px solid var(--border);flex-shrink:0" loading="lazy">
               <a href="betting-site-review/apexbets.html" class="table-link" style="font-weight:600">Apexbets</a>
             </div>
           </td>
@@ -468,7 +467,7 @@
           <td data-sort="Zarbet" style="white-space:nowrap">
             <div style="display:flex;align-items:center;gap:8px">
               <button class="star-btn" data-brand="zarbet" onclick="event.stopPropagation();toggleStar('zarbet')" aria-label="Add to favourites"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg></button>
-              <img src="assets/logos/zarbet.svg" alt="Zarbet" style="width:28px;height:28px;object-fit:contain;border-radius:4px;background:#000000;padding:2px;border:1px solid var(--border);flex-shrink:0" loading="lazy">
+              <img decoding="async" src="assets/logos/zarbet.svg" alt="Zarbet" style="width:28px;height:28px;object-fit:contain;border-radius:4px;background:#000000;padding:2px;border:1px solid var(--border);flex-shrink:0" loading="lazy">
               <a href="betting-site-review/zarbet.html" class="table-link" style="font-weight:600">Zarbet</a>
             </div>
           </td>
@@ -481,7 +480,7 @@
           <td data-sort="Easybet South Africa" style="white-space:nowrap">
             <div style="display:flex;align-items:center;gap:8px">
               <button class="star-btn" data-brand="easybet-south-africa" onclick="event.stopPropagation();toggleStar('easybet-south-africa')" aria-label="Add to favourites"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg></button>
-              <img src="assets/logos/easybet-south-africa.svg" alt="Easybet South Africa" style="width:28px;height:28px;object-fit:contain;border-radius:4px;background:#FED702;padding:2px;border:1px solid var(--border);flex-shrink:0" loading="lazy">
+              <img decoding="async" src="assets/logos/easybet-south-africa.svg" alt="Easybet South Africa" style="width:28px;height:28px;object-fit:contain;border-radius:4px;background:#FED702;padding:2px;border:1px solid var(--border);flex-shrink:0" loading="lazy">
               <a href="betting-site-review/easybet-south-africa.html" class="table-link" style="font-weight:600">Easybet South Africa</a>
             </div>
           </td>
@@ -494,7 +493,7 @@
           <td data-sort="Tictacbets" style="white-space:nowrap">
             <div style="display:flex;align-items:center;gap:8px">
               <button class="star-btn" data-brand="tictacbets" onclick="event.stopPropagation();toggleStar('tictacbets')" aria-label="Add to favourites"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg></button>
-              <img src="assets/logos/tictacbets.svg" alt="Tictacbets" style="width:28px;height:28px;object-fit:contain;border-radius:4px;background:#cc0100;padding:2px;border:1px solid var(--border);flex-shrink:0" loading="lazy">
+              <img decoding="async" src="assets/logos/tictacbets.svg" alt="Tictacbets" style="width:28px;height:28px;object-fit:contain;border-radius:4px;background:#cc0100;padding:2px;border:1px solid var(--border);flex-shrink:0" loading="lazy">
               <a href="betting-site-review/tictacbets.html" class="table-link" style="font-weight:600">Tictacbets</a>
             </div>
           </td>
@@ -507,7 +506,7 @@
           <td data-sort="Betway South Africa" style="white-space:nowrap">
             <div style="display:flex;align-items:center;gap:8px">
               <button class="star-btn" data-brand="betway-south-africa" onclick="event.stopPropagation();toggleStar('betway-south-africa')" aria-label="Add to favourites"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg></button>
-              <img src="assets/logos/betway-south-africa.svg" alt="Betway South Africa" style="width:28px;height:28px;object-fit:contain;border-radius:4px;background:#181818;padding:2px;border:1px solid var(--border);flex-shrink:0" loading="lazy">
+              <img decoding="async" src="assets/logos/betway-south-africa.svg" alt="Betway South Africa" style="width:28px;height:28px;object-fit:contain;border-radius:4px;background:#181818;padding:2px;border:1px solid var(--border);flex-shrink:0" loading="lazy">
               <a href="betting-site-review/betway-south-africa.html" class="table-link" style="font-weight:600">Betway South Africa</a>
             </div>
           </td>
@@ -520,7 +519,7 @@
           <td data-sort="10Bet South Africa" style="white-space:nowrap">
             <div style="display:flex;align-items:center;gap:8px">
               <button class="star-btn" data-brand="10bet-south-africa" onclick="event.stopPropagation();toggleStar('10bet-south-africa')" aria-label="Add to favourites"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg></button>
-              <img src="assets/logos/10bet-south-africa.svg" alt="10Bet South Africa" style="width:28px;height:28px;object-fit:contain;border-radius:4px;background:#ffffff;padding:2px;border:1px solid var(--border);flex-shrink:0" loading="lazy">
+              <img decoding="async" src="assets/logos/10bet-south-africa.svg" alt="10Bet South Africa" style="width:28px;height:28px;object-fit:contain;border-radius:4px;background:#ffffff;padding:2px;border:1px solid var(--border);flex-shrink:0" loading="lazy">
               <a href="betting-site-review/10bet-south-africa.html" class="table-link" style="font-weight:600">10Bet South Africa</a>
             </div>
           </td>
@@ -533,7 +532,7 @@
           <td data-sort="Bettabets" style="white-space:nowrap">
             <div style="display:flex;align-items:center;gap:8px">
               <button class="star-btn" data-brand="bettabets" onclick="event.stopPropagation();toggleStar('bettabets')" aria-label="Add to favourites"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg></button>
-              <img src="assets/logos/bettabets.svg" alt="Bettabets" style="width:28px;height:28px;object-fit:contain;border-radius:4px;background:#FAE80B;padding:2px;border:1px solid var(--border);flex-shrink:0" loading="lazy">
+              <img decoding="async" src="assets/logos/bettabets.svg" alt="Bettabets" style="width:28px;height:28px;object-fit:contain;border-radius:4px;background:#FAE80B;padding:2px;border:1px solid var(--border);flex-shrink:0" loading="lazy">
               <a href="betting-site-review/bettabets.html" class="table-link" style="font-weight:600">Bettabets</a>
             </div>
           </td>
@@ -546,7 +545,7 @@
           <td data-sort="Mzansibet" style="white-space:nowrap">
             <div style="display:flex;align-items:center;gap:8px">
               <button class="star-btn" data-brand="mzansibet" onclick="event.stopPropagation();toggleStar('mzansibet')" aria-label="Add to favourites"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg></button>
-              <img src="assets/logos/mzansibet.svg" alt="Mzansibet" style="width:28px;height:28px;object-fit:contain;border-radius:4px;background:#001F12;padding:2px;border:1px solid var(--border);flex-shrink:0" loading="lazy">
+              <img decoding="async" src="assets/logos/mzansibet.svg" alt="Mzansibet" style="width:28px;height:28px;object-fit:contain;border-radius:4px;background:#001F12;padding:2px;border:1px solid var(--border);flex-shrink:0" loading="lazy">
               <a href="betting-site-review/mzansibet.html" class="table-link" style="font-weight:600">Mzansibet</a>
             </div>
           </td>
@@ -559,7 +558,7 @@
           <td data-sort="Gbets" style="white-space:nowrap">
             <div style="display:flex;align-items:center;gap:8px">
               <button class="star-btn" data-brand="gbets" onclick="event.stopPropagation();toggleStar('gbets')" aria-label="Add to favourites"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg></button>
-              <img src="assets/logos/gbets.svg" alt="Gbets" style="width:28px;height:28px;object-fit:contain;border-radius:4px;background:#13372e;padding:2px;border:1px solid var(--border);flex-shrink:0" loading="lazy">
+              <img decoding="async" src="assets/logos/gbets.svg" alt="Gbets" style="width:28px;height:28px;object-fit:contain;border-radius:4px;background:#13372e;padding:2px;border:1px solid var(--border);flex-shrink:0" loading="lazy">
               <a href="betting-site-review/gbets.html" class="table-link" style="font-weight:600">Gbets</a>
             </div>
           </td>
@@ -572,7 +571,7 @@
           <td data-sort="Soccershop" style="white-space:nowrap">
             <div style="display:flex;align-items:center;gap:8px">
               <button class="star-btn" data-brand="soccershop" onclick="event.stopPropagation();toggleStar('soccershop')" aria-label="Add to favourites"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg></button>
-              <img src="assets/logos/soccershop.svg" alt="Soccershop" style="width:28px;height:28px;object-fit:contain;border-radius:4px;background:#0578B4;padding:2px;border:1px solid var(--border);flex-shrink:0" loading="lazy">
+              <img decoding="async" src="assets/logos/soccershop.svg" alt="Soccershop" style="width:28px;height:28px;object-fit:contain;border-radius:4px;background:#0578B4;padding:2px;border:1px solid var(--border);flex-shrink:0" loading="lazy">
               <a href="betting-site-review/soccershop.html" class="table-link" style="font-weight:600">Soccershop</a>
             </div>
           </td>
@@ -585,7 +584,7 @@
           <td data-sort="PlayTsogo" style="white-space:nowrap">
             <div style="display:flex;align-items:center;gap:8px">
               <button class="star-btn" data-brand="playtsogo" onclick="event.stopPropagation();toggleStar('playtsogo')" aria-label="Add to favourites"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg></button>
-              <img src="assets/logos/playtsogo.svg" alt="PlayTsogo" style="width:28px;height:28px;object-fit:contain;border-radius:4px;background:#0F2D84;padding:2px;border:1px solid var(--border);flex-shrink:0" loading="lazy">
+              <img decoding="async" src="assets/logos/playtsogo.svg" alt="PlayTsogo" style="width:28px;height:28px;object-fit:contain;border-radius:4px;background:#0F2D84;padding:2px;border:1px solid var(--border);flex-shrink:0" loading="lazy">
               <a href="betting-site-review/playtsogo.html" class="table-link" style="font-weight:600">PlayTsogo</a>
             </div>
           </td>
@@ -598,7 +597,7 @@
           <td data-sort="PlayaBets" style="white-space:nowrap">
             <div style="display:flex;align-items:center;gap:8px">
               <button class="star-btn" data-brand="playabets" onclick="event.stopPropagation();toggleStar('playabets')" aria-label="Add to favourites"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg></button>
-              <img src="assets/logos/playabets.svg" alt="PlayaBets" style="width:28px;height:28px;object-fit:contain;border-radius:4px;background:#7DB913;padding:2px;border:1px solid var(--border);flex-shrink:0" loading="lazy">
+              <img decoding="async" src="assets/logos/playabets.svg" alt="PlayaBets" style="width:28px;height:28px;object-fit:contain;border-radius:4px;background:#7DB913;padding:2px;border:1px solid var(--border);flex-shrink:0" loading="lazy">
               <a href="betting-site-review/playabets.html" class="table-link" style="font-weight:600">PlayaBets</a>
             </div>
           </td>
@@ -611,7 +610,7 @@
           <td data-sort="Hollywoodbets" style="white-space:nowrap">
             <div style="display:flex;align-items:center;gap:8px">
               <button class="star-btn" data-brand="hollywoodbets" onclick="event.stopPropagation();toggleStar('hollywoodbets')" aria-label="Add to favourites"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg></button>
-              <img src="assets/logos/hollywoodbets.svg" alt="Hollywoodbets" style="width:28px;height:28px;object-fit:contain;border-radius:4px;background:#52287b;padding:2px;border:1px solid var(--border);flex-shrink:0" loading="lazy">
+              <img decoding="async" src="assets/logos/hollywoodbets.svg" alt="Hollywoodbets" style="width:28px;height:28px;object-fit:contain;border-radius:4px;background:#52287b;padding:2px;border:1px solid var(--border);flex-shrink:0" loading="lazy">
               <a href="betting-site-review/hollywoodbets.html" class="table-link" style="font-weight:600">Hollywoodbets</a>
             </div>
           </td>
@@ -624,7 +623,7 @@
           <td data-sort="YesPlay" style="white-space:nowrap">
             <div style="display:flex;align-items:center;gap:8px">
               <button class="star-btn" data-brand="yesplay" onclick="event.stopPropagation();toggleStar('yesplay')" aria-label="Add to favourites"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg></button>
-              <img src="assets/logos/yesplay.svg" alt="YesPlay" style="width:28px;height:28px;object-fit:contain;border-radius:4px;background:#fd7a01;padding:2px;border:1px solid var(--border);flex-shrink:0" loading="lazy">
+              <img decoding="async" src="assets/logos/yesplay.svg" alt="YesPlay" style="width:28px;height:28px;object-fit:contain;border-radius:4px;background:#fd7a01;padding:2px;border:1px solid var(--border);flex-shrink:0" loading="lazy">
               <a href="betting-site-review/yesplay.html" class="table-link" style="font-weight:600">YesPlay</a>
             </div>
           </td>
@@ -637,7 +636,7 @@
           <td data-sort="Betshezi" style="white-space:nowrap">
             <div style="display:flex;align-items:center;gap:8px">
               <button class="star-btn" data-brand="betshezi" onclick="event.stopPropagation();toggleStar('betshezi')" aria-label="Add to favourites"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg></button>
-              <img src="assets/logos/betshezi.svg" alt="Betshezi" style="width:28px;height:28px;object-fit:contain;border-radius:4px;background:#000000;padding:2px;border:1px solid var(--border);flex-shrink:0" loading="lazy">
+              <img decoding="async" src="assets/logos/betshezi.svg" alt="Betshezi" style="width:28px;height:28px;object-fit:contain;border-radius:4px;background:#000000;padding:2px;border:1px solid var(--border);flex-shrink:0" loading="lazy">
               <a href="betting-site-review/betshezi.html" class="table-link" style="font-weight:600">Betshezi</a>
             </div>
           </td>
@@ -650,7 +649,7 @@
           <td data-sort="Sportingbet" style="white-space:nowrap">
             <div style="display:flex;align-items:center;gap:8px">
               <button class="star-btn" data-brand="sportingbet" onclick="event.stopPropagation();toggleStar('sportingbet')" aria-label="Add to favourites"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg></button>
-              <img src="assets/logos/sportingbet.svg" alt="Sportingbet" style="width:28px;height:28px;object-fit:contain;border-radius:4px;background:#0988d1;padding:2px;border:1px solid var(--border);flex-shrink:0" loading="lazy">
+              <img decoding="async" src="assets/logos/sportingbet.svg" alt="Sportingbet" style="width:28px;height:28px;object-fit:contain;border-radius:4px;background:#0988d1;padding:2px;border:1px solid var(--border);flex-shrink:0" loading="lazy">
               <a href="betting-site-review/sportingbet.html" class="table-link" style="font-weight:600">Sportingbet</a>
             </div>
           </td>
@@ -663,7 +662,7 @@
           <td data-sort="Supabets" style="white-space:nowrap">
             <div style="display:flex;align-items:center;gap:8px">
               <button class="star-btn" data-brand="supabets" onclick="event.stopPropagation();toggleStar('supabets')" aria-label="Add to favourites"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg></button>
-              <img src="assets/logos/supabets.svg" alt="Supabets" style="width:28px;height:28px;object-fit:contain;border-radius:4px;background:#EB0028;padding:2px;border:1px solid var(--border);flex-shrink:0" loading="lazy">
+              <img decoding="async" src="assets/logos/supabets.svg" alt="Supabets" style="width:28px;height:28px;object-fit:contain;border-radius:4px;background:#EB0028;padding:2px;border:1px solid var(--border);flex-shrink:0" loading="lazy">
               <a href="betting-site-review/supabets.html" class="table-link" style="font-weight:600">Supabets</a>
             </div>
           </td>
@@ -676,7 +675,7 @@
           <td data-sort="BET.co.za" style="white-space:nowrap">
             <div style="display:flex;align-items:center;gap:8px">
               <button class="star-btn" data-brand="bet-co-za" onclick="event.stopPropagation();toggleStar('bet-co-za')" aria-label="Add to favourites"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg></button>
-              <img src="assets/logos/bet-co-za.svg" alt="BET.co.za" style="width:28px;height:28px;object-fit:contain;border-radius:4px;background:#000010;padding:2px;border:1px solid var(--border);flex-shrink:0" loading="lazy">
+              <img decoding="async" src="assets/logos/bet-co-za.svg" alt="BET.co.za" style="width:28px;height:28px;object-fit:contain;border-radius:4px;background:#000010;padding:2px;border:1px solid var(--border);flex-shrink:0" loading="lazy">
               <a href="betting-site-review/bet-co-za.html" class="table-link" style="font-weight:600">BET.co.za</a>
             </div>
           </td>
@@ -689,7 +688,7 @@
           <td data-sort="Pantherbet" style="white-space:nowrap">
             <div style="display:flex;align-items:center;gap:8px">
               <button class="star-btn" data-brand="pantherbet" onclick="event.stopPropagation();toggleStar('pantherbet')" aria-label="Add to favourites"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg></button>
-              <img src="assets/logos/pantherbet.svg" alt="Pantherbet" style="width:28px;height:28px;object-fit:contain;border-radius:4px;background:#000000;padding:2px;border:1px solid var(--border);flex-shrink:0" loading="lazy">
+              <img decoding="async" src="assets/logos/pantherbet.svg" alt="Pantherbet" style="width:28px;height:28px;object-fit:contain;border-radius:4px;background:#000000;padding:2px;border:1px solid var(--border);flex-shrink:0" loading="lazy">
               <a href="betting-site-review/pantherbet.html" class="table-link" style="font-weight:600">Pantherbet</a>
             </div>
           </td>
@@ -702,7 +701,7 @@
           <td data-sort="World Sports Betting" style="white-space:nowrap">
             <div style="display:flex;align-items:center;gap:8px">
               <button class="star-btn" data-brand="world-sports-betting" onclick="event.stopPropagation();toggleStar('world-sports-betting')" aria-label="Add to favourites"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg></button>
-              <img src="assets/logos/world-sports-betting.svg" alt="World Sports Betting" style="width:28px;height:28px;object-fit:contain;border-radius:4px;background:#041467;padding:2px;border:1px solid var(--border);flex-shrink:0" loading="lazy">
+              <img decoding="async" src="assets/logos/world-sports-betting.svg" alt="World Sports Betting" style="width:28px;height:28px;object-fit:contain;border-radius:4px;background:#041467;padding:2px;border:1px solid var(--border);flex-shrink:0" loading="lazy">
               <a href="betting-site-review/world-sports-betting.html" class="table-link" style="font-weight:600">World Sports Betting</a>
             </div>
           </td>
@@ -715,7 +714,7 @@
           <td data-sort="Jabula Bets" style="white-space:nowrap">
             <div style="display:flex;align-items:center;gap:8px">
               <button class="star-btn" data-brand="jabula-bets" onclick="event.stopPropagation();toggleStar('jabula-bets')" aria-label="Add to favourites"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg></button>
-              <img src="assets/logos/jabula-bets.svg" alt="Jabula Bets" style="width:28px;height:28px;object-fit:contain;border-radius:4px;background:#282625;padding:2px;border:1px solid var(--border);flex-shrink:0" loading="lazy">
+              <img decoding="async" src="assets/logos/jabula-bets.svg" alt="Jabula Bets" style="width:28px;height:28px;object-fit:contain;border-radius:4px;background:#282625;padding:2px;border:1px solid var(--border);flex-shrink:0" loading="lazy">
               <a href="betting-site-review/jabula-bets.html" class="table-link" style="font-weight:600">Jabula Bets</a>
             </div>
           </td>
@@ -728,7 +727,7 @@
           <td data-sort="Topbet" style="white-space:nowrap">
             <div style="display:flex;align-items:center;gap:8px">
               <button class="star-btn" data-brand="topbet" onclick="event.stopPropagation();toggleStar('topbet')" aria-label="Add to favourites"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg></button>
-              <img src="assets/logos/topbet.svg" alt="Topbet" style="width:28px;height:28px;object-fit:contain;border-radius:4px;background:#000000;padding:2px;border:1px solid var(--border);flex-shrink:0" loading="lazy">
+              <img decoding="async" src="assets/logos/topbet.svg" alt="Topbet" style="width:28px;height:28px;object-fit:contain;border-radius:4px;background:#000000;padding:2px;border:1px solid var(--border);flex-shrink:0" loading="lazy">
               <a href="betting-site-review/topbet.html" class="table-link" style="font-weight:600">Topbet</a>
             </div>
           </td>
@@ -741,7 +740,7 @@
           <td data-sort="SaffaLuck" style="white-space:nowrap">
             <div style="display:flex;align-items:center;gap:8px">
               <button class="star-btn" data-brand="saffaluck" onclick="event.stopPropagation();toggleStar('saffaluck')" aria-label="Add to favourites"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg></button>
-              <img src="assets/logos/saffaluck.svg" alt="SaffaLuck" style="width:28px;height:28px;object-fit:contain;border-radius:4px;background:#001F12;padding:2px;border:1px solid var(--border);flex-shrink:0" loading="lazy">
+              <img decoding="async" src="assets/logos/saffaluck.svg" alt="SaffaLuck" style="width:28px;height:28px;object-fit:contain;border-radius:4px;background:#001F12;padding:2px;border:1px solid var(--border);flex-shrink:0" loading="lazy">
               <a href="betting-site-review/saffaluck.html" class="table-link" style="font-weight:600">SaffaLuck</a>
             </div>
           </td>
@@ -754,7 +753,7 @@
           <td data-sort="Playbet.co.za" style="white-space:nowrap">
             <div style="display:flex;align-items:center;gap:8px">
               <button class="star-btn" data-brand="playbet-co-za" onclick="event.stopPropagation();toggleStar('playbet-co-za')" aria-label="Add to favourites"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg></button>
-              <img src="assets/logos/playbet-co-za.svg" alt="Playbet.co.za" style="width:28px;height:28px;object-fit:contain;border-radius:4px;background:#CB151A;padding:2px;border:1px solid var(--border);flex-shrink:0" loading="lazy">
+              <img decoding="async" src="assets/logos/playbet-co-za.svg" alt="Playbet.co.za" style="width:28px;height:28px;object-fit:contain;border-radius:4px;background:#CB151A;padding:2px;border:1px solid var(--border);flex-shrink:0" loading="lazy">
               <a href="betting-site-review/playbet-co-za.html" class="table-link" style="font-weight:600">Playbet.co.za</a>
             </div>
           </td>
@@ -767,7 +766,7 @@
           <td data-sort="Wanejo Bets" style="white-space:nowrap">
             <div style="display:flex;align-items:center;gap:8px">
               <button class="star-btn" data-brand="wanejo-bets" onclick="event.stopPropagation();toggleStar('wanejo-bets')" aria-label="Add to favourites"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg></button>
-              <img src="assets/logos/wanejo-bets.png" alt="Wanejo Bets" style="width:28px;height:28px;object-fit:contain;border-radius:4px;background:#202020;padding:2px;border:1px solid var(--border);flex-shrink:0" loading="lazy">
+              <img decoding="async" src="assets/logos/wanejo-bets.png" alt="Wanejo Bets" style="width:28px;height:28px;object-fit:contain;border-radius:4px;background:#202020;padding:2px;border:1px solid var(--border);flex-shrink:0" loading="lazy">
               <a href="betting-site-review/wanejo-bets.html" class="table-link" style="font-weight:600">Wanejo Bets</a>
             </div>
           </td>
@@ -780,7 +779,7 @@
           <td data-sort="Lucky Fish" style="white-space:nowrap">
             <div style="display:flex;align-items:center;gap:8px">
               <button class="star-btn" data-brand="lucky-fish" onclick="event.stopPropagation();toggleStar('lucky-fish')" aria-label="Add to favourites"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg></button>
-              <img src="assets/logos/lucky-fish.svg" alt="Lucky Fish" style="width:28px;height:28px;object-fit:contain;border-radius:4px;background:#00252b;padding:2px;border:1px solid var(--border);flex-shrink:0" loading="lazy">
+              <img decoding="async" src="assets/logos/lucky-fish.svg" alt="Lucky Fish" style="width:28px;height:28px;object-fit:contain;border-radius:4px;background:#00252b;padding:2px;border:1px solid var(--border);flex-shrink:0" loading="lazy">
               <a href="betting-site-review/lucky-fish.html" class="table-link" style="font-weight:600">Lucky Fish</a>
             </div>
           </td>
@@ -793,7 +792,7 @@
           <td data-sort="betXchange" style="white-space:nowrap">
             <div style="display:flex;align-items:center;gap:8px">
               <button class="star-btn" data-brand="betxchange" onclick="event.stopPropagation();toggleStar('betxchange')" aria-label="Add to favourites"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg></button>
-              <img src="assets/logos/betxchange.svg" alt="betXchange" style="width:28px;height:28px;object-fit:contain;border-radius:4px;background:#0033cc;padding:2px;border:1px solid var(--border);flex-shrink:0" loading="lazy">
+              <img decoding="async" src="assets/logos/betxchange.svg" alt="betXchange" style="width:28px;height:28px;object-fit:contain;border-radius:4px;background:#0033cc;padding:2px;border:1px solid var(--border);flex-shrink:0" loading="lazy">
               <a href="betting-site-review/betxchange.html" class="table-link" style="font-weight:600">betXchange</a>
             </div>
           </td>
@@ -806,7 +805,7 @@
           <td data-sort="Swifty" style="white-space:nowrap">
             <div style="display:flex;align-items:center;gap:8px">
               <button class="star-btn" data-brand="swifty" onclick="event.stopPropagation();toggleStar('swifty')" aria-label="Add to favourites"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg></button>
-              <img src="assets/logos/swifty.png" alt="Swifty" style="width:28px;height:28px;object-fit:contain;border-radius:4px;background:#001F12;padding:2px;border:1px solid var(--border);flex-shrink:0" loading="lazy">
+              <img decoding="async" src="assets/logos/swifty.png" alt="Swifty" style="width:28px;height:28px;object-fit:contain;border-radius:4px;background:#001F12;padding:2px;border:1px solid var(--border);flex-shrink:0" loading="lazy">
               <a href="betting-site-review/swifty.html" class="table-link" style="font-weight:600">Swifty</a>
             </div>
           </td>
@@ -819,7 +818,7 @@
           <td data-sort="Betjets" style="white-space:nowrap">
             <div style="display:flex;align-items:center;gap:8px">
               <button class="star-btn" data-brand="betjets" onclick="event.stopPropagation();toggleStar('betjets')" aria-label="Add to favourites"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg></button>
-              <img src="assets/logos/betjets.svg" alt="Betjets" style="width:28px;height:28px;object-fit:contain;border-radius:4px;background:#012169;padding:2px;border:1px solid var(--border);flex-shrink:0" loading="lazy">
+              <img decoding="async" src="assets/logos/betjets.svg" alt="Betjets" style="width:28px;height:28px;object-fit:contain;border-radius:4px;background:#012169;padding:2px;border:1px solid var(--border);flex-shrink:0" loading="lazy">
               <a href="betting-site-review/betjets.html" class="table-link" style="font-weight:600">Betjets</a>
             </div>
           </td>
@@ -832,7 +831,7 @@
           <td data-sort="Supersportbet" style="white-space:nowrap">
             <div style="display:flex;align-items:center;gap:8px">
               <button class="star-btn" data-brand="supersportbet" onclick="event.stopPropagation();toggleStar('supersportbet')" aria-label="Add to favourites"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg></button>
-              <img src="assets/logos/supersportbet.svg" alt="Supersportbet" style="width:28px;height:28px;object-fit:contain;border-radius:4px;background:#111fa3;padding:2px;border:1px solid var(--border);flex-shrink:0" loading="lazy">
+              <img decoding="async" src="assets/logos/supersportbet.svg" alt="Supersportbet" style="width:28px;height:28px;object-fit:contain;border-radius:4px;background:#111fa3;padding:2px;border:1px solid var(--border);flex-shrink:0" loading="lazy">
               <a href="betting-site-review/supersportbet.html" class="table-link" style="font-weight:600">Supersportbet</a>
             </div>
           </td>
@@ -845,7 +844,7 @@
           <td data-sort="Pokerbet" style="white-space:nowrap">
             <div style="display:flex;align-items:center;gap:8px">
               <button class="star-btn" data-brand="pokerbet" onclick="event.stopPropagation();toggleStar('pokerbet')" aria-label="Add to favourites"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg></button>
-              <img src="assets/logos/pokerbet.svg" alt="Pokerbet" style="width:28px;height:28px;object-fit:contain;border-radius:4px;background:#3C3D65;padding:2px;border:1px solid var(--border);flex-shrink:0" loading="lazy">
+              <img decoding="async" src="assets/logos/pokerbet.svg" alt="Pokerbet" style="width:28px;height:28px;object-fit:contain;border-radius:4px;background:#3C3D65;padding:2px;border:1px solid var(--border);flex-shrink:0" loading="lazy">
               <a href="betting-site-review/pokerbet.html" class="table-link" style="font-weight:600">Pokerbet</a>
             </div>
           </td>
@@ -858,7 +857,7 @@
           <td data-sort="Lulabet" style="white-space:nowrap">
             <div style="display:flex;align-items:center;gap:8px">
               <button class="star-btn" data-brand="lulabet" onclick="event.stopPropagation();toggleStar('lulabet')" aria-label="Add to favourites"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg></button>
-              <img src="assets/logos/lulabet.svg" alt="Lulabet" style="width:28px;height:28px;object-fit:contain;border-radius:4px;background:#171B38;padding:2px;border:1px solid var(--border);flex-shrink:0" loading="lazy">
+              <img decoding="async" src="assets/logos/lulabet.svg" alt="Lulabet" style="width:28px;height:28px;object-fit:contain;border-radius:4px;background:#171B38;padding:2px;border:1px solid var(--border);flex-shrink:0" loading="lazy">
               <a href="betting-site-review/lulabet.html" class="table-link" style="font-weight:600">Lulabet</a>
             </div>
           </td>
@@ -871,7 +870,7 @@
           <td data-sort="Betfred" style="white-space:nowrap">
             <div style="display:flex;align-items:center;gap:8px">
               <button class="star-btn" data-brand="betfred" onclick="event.stopPropagation();toggleStar('betfred')" aria-label="Add to favourites"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg></button>
-              <img src="assets/logos/betfred.svg" alt="Betfred" style="width:28px;height:28px;object-fit:contain;border-radius:4px;background:#005a99;padding:2px;border:1px solid var(--border);flex-shrink:0" loading="lazy">
+              <img decoding="async" src="assets/logos/betfred.svg" alt="Betfred" style="width:28px;height:28px;object-fit:contain;border-radius:4px;background:#005a99;padding:2px;border:1px solid var(--border);flex-shrink:0" loading="lazy">
               <a href="betting-site-review/betfred.html" class="table-link" style="font-weight:600">Betfred</a>
             </div>
           </td>
@@ -884,7 +883,7 @@
           <td data-sort="Jackpot City" style="white-space:nowrap">
             <div style="display:flex;align-items:center;gap:8px">
               <button class="star-btn" data-brand="jackpot-city" onclick="event.stopPropagation();toggleStar('jackpot-city')" aria-label="Add to favourites"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg></button>
-              <img src="assets/logos/jackpot-city.svg" alt="Jackpot City" style="width:28px;height:28px;object-fit:contain;border-radius:4px;background:#181818;padding:2px;border:1px solid var(--border);flex-shrink:0" loading="lazy">
+              <img decoding="async" src="assets/logos/jackpot-city.svg" alt="Jackpot City" style="width:28px;height:28px;object-fit:contain;border-radius:4px;background:#181818;padding:2px;border:1px solid var(--border);flex-shrink:0" loading="lazy">
               <a href="betting-site-review/jackpot-city.html" class="table-link" style="font-weight:600">Jackpot City</a>
             </div>
           </td>
@@ -897,7 +896,7 @@
           <td data-sort="Luckystake" style="white-space:nowrap">
             <div style="display:flex;align-items:center;gap:8px">
               <button class="star-btn" data-brand="luckystake" onclick="event.stopPropagation();toggleStar('luckystake')" aria-label="Add to favourites"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg></button>
-              <img src="assets/logos/luckystake.svg" alt="Luckystake" style="width:28px;height:28px;object-fit:contain;border-radius:4px;background:#292929;padding:2px;border:1px solid var(--border);flex-shrink:0" loading="lazy">
+              <img decoding="async" src="assets/logos/luckystake.svg" alt="Luckystake" style="width:28px;height:28px;object-fit:contain;border-radius:4px;background:#292929;padding:2px;border:1px solid var(--border);flex-shrink:0" loading="lazy">
               <a href="betting-site-review/luckystake.html" class="table-link" style="font-weight:600">Luckystake</a>
             </div>
           </td>
@@ -910,7 +909,7 @@
           <td data-sort="betbus" style="white-space:nowrap">
             <div style="display:flex;align-items:center;gap:8px">
               <button class="star-btn" data-brand="betbus" onclick="event.stopPropagation();toggleStar('betbus')" aria-label="Add to favourites"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg></button>
-              <img src="assets/logos/betbus.svg" alt="betbus" style="width:28px;height:28px;object-fit:contain;border-radius:4px;background:#401010;padding:2px;border:1px solid var(--border);flex-shrink:0" loading="lazy">
+              <img decoding="async" src="assets/logos/betbus.svg" alt="betbus" style="width:28px;height:28px;object-fit:contain;border-radius:4px;background:#401010;padding:2px;border:1px solid var(--border);flex-shrink:0" loading="lazy">
               <a href="betting-site-review/betbus.html" class="table-link" style="font-weight:600">betbus</a>
             </div>
           </td>
@@ -922,11 +921,10 @@
         </table>
       </div>
 
-      <!-- Mobile cards -->
       <div class="listing-mobile"><div class="toplist-card" data-name="apexbets" data-brand-id="apexbets" data-bonus-val="30000">
           <div class="toplist-rank">1</div>
           <div class="toplist-header">
-            <img src="assets/logos/apexbets.svg" alt="Apexbets" class="toplist-logo" style="background:#1b1a1f" loading="lazy">
+            <img decoding="async" src="assets/logos/apexbets.svg" alt="Apexbets" class="toplist-logo" style="background:#1b1a1f" loading="lazy">
             <div class="toplist-info">
               <div class="toplist-bonus">Get up to R30,000 + 50 Free Spins</div>
               <div class="toplist-reward">R30,000 Bonus Value</div>
@@ -944,7 +942,7 @@
         </div><div class="toplist-card" data-name="zarbet" data-brand-id="zarbet" data-bonus-val="3750">
           <div class="toplist-rank">2</div>
           <div class="toplist-header">
-            <img src="assets/logos/zarbet.svg" alt="Zarbet" class="toplist-logo" style="background:#000000" loading="lazy">
+            <img decoding="async" src="assets/logos/zarbet.svg" alt="Zarbet" class="toplist-logo" style="background:#000000" loading="lazy">
             <div class="toplist-info">
               <div class="toplist-bonus">Get up to R3,750 + 25FS</div>
               <div class="toplist-reward">R3,750 Bonus Value</div>
@@ -962,7 +960,7 @@
         </div><div class="toplist-card" data-name="easybet south africa" data-brand-id="easybet-south-africa" data-bonus-val="50">
           <div class="toplist-rank">3</div>
           <div class="toplist-header">
-            <img src="assets/logos/easybet-south-africa.svg" alt="Easybet South Africa" class="toplist-logo" style="background:#FED702" loading="lazy">
+            <img decoding="async" src="assets/logos/easybet-south-africa.svg" alt="Easybet South Africa" class="toplist-logo" style="background:#FED702" loading="lazy">
             <div class="toplist-info">
               <div class="toplist-bonus">Free R50 + 150% MATCH to R1500</div>
               <div class="toplist-reward">R50 Bonus Value</div>
@@ -980,7 +978,7 @@
         </div><div class="toplist-card" data-name="tictacbets" data-brand-id="tictacbets" data-bonus-val="5000">
           <div class="toplist-rank">4</div>
           <div class="toplist-header">
-            <img src="assets/logos/tictacbets.svg" alt="Tictacbets" class="toplist-logo" style="background:#cc0100" loading="lazy">
+            <img decoding="async" src="assets/logos/tictacbets.svg" alt="Tictacbets" class="toplist-logo" style="background:#cc0100" loading="lazy">
             <div class="toplist-info">
               <div class="toplist-bonus">100% up to R5,000 + 50 spins</div>
               <div class="toplist-reward">R5,000 Bonus Value</div>
@@ -998,7 +996,7 @@
         </div><div class="toplist-card" data-name="betway south africa" data-brand-id="betway-south-africa" data-bonus-val="10">
           <div class="toplist-rank">5</div>
           <div class="toplist-header">
-            <img src="assets/logos/betway-south-africa.svg" alt="Betway South Africa" class="toplist-logo" style="background:#181818" loading="lazy">
+            <img decoding="async" src="assets/logos/betway-south-africa.svg" alt="Betway South Africa" class="toplist-logo" style="background:#181818" loading="lazy">
             <div class="toplist-info">
               <div class="toplist-bonus">R10 Free Bet &amp; 10 Aviator Flights</div>
               <div class="toplist-reward">R10 Bonus Value</div>
@@ -1016,7 +1014,7 @@
         </div><div class="toplist-card" data-name="10bet south africa" data-brand-id="10bet-south-africa" data-bonus-val="3000">
           <div class="toplist-rank">6</div>
           <div class="toplist-header">
-            <img src="assets/logos/10bet-south-africa.svg" alt="10Bet South Africa" class="toplist-logo" style="background:#ffffff" loading="lazy">
+            <img decoding="async" src="assets/logos/10bet-south-africa.svg" alt="10Bet South Africa" class="toplist-logo" style="background:#ffffff" loading="lazy">
             <div class="toplist-info">
               <div class="toplist-bonus">Deposit R3,000 Get R3,000</div>
               <div class="toplist-reward">R3,000 Bonus Value</div>
@@ -1034,7 +1032,7 @@
         </div><div class="toplist-card" data-name="bettabets" data-brand-id="bettabets" data-bonus-val="2500">
           <div class="toplist-rank">7</div>
           <div class="toplist-header">
-            <img src="assets/logos/bettabets.svg" alt="Bettabets" class="toplist-logo" style="background:#FAE80B" loading="lazy">
+            <img decoding="async" src="assets/logos/bettabets.svg" alt="Bettabets" class="toplist-logo" style="background:#FAE80B" loading="lazy">
             <div class="toplist-info">
               <div class="toplist-bonus">R2500 Match Bonus + 155 Free Spins</div>
               <div class="toplist-reward">R2,500 Bonus Value</div>
@@ -1052,7 +1050,7 @@
         </div><div class="toplist-card" data-name="mzansibet" data-brand-id="mzansibet" data-bonus-val="50">
           <div class="toplist-rank">8</div>
           <div class="toplist-header">
-            <img src="assets/logos/mzansibet.svg" alt="Mzansibet" class="toplist-logo" style="background:#001F12" loading="lazy">
+            <img decoding="async" src="assets/logos/mzansibet.svg" alt="Mzansibet" class="toplist-logo" style="background:#001F12" loading="lazy">
             <div class="toplist-info">
               <div class="toplist-bonus">Bet R50, Get R50 Extra Bet</div>
               <div class="toplist-reward">R50 Bonus Value</div>
@@ -1070,7 +1068,7 @@
         </div><div class="toplist-card" data-name="gbets" data-brand-id="gbets" data-bonus-val="1000">
           <div class="toplist-rank">9</div>
           <div class="toplist-header">
-            <img src="assets/logos/gbets.svg" alt="Gbets" class="toplist-logo" style="background:#13372e" loading="lazy">
+            <img decoding="async" src="assets/logos/gbets.svg" alt="Gbets" class="toplist-logo" style="background:#13372e" loading="lazy">
             <div class="toplist-info">
               <div class="toplist-bonus">R1,000 Bonus</div>
               <div class="toplist-reward">R1,000 Bonus Value</div>
@@ -1088,7 +1086,7 @@
         </div><div class="toplist-card" data-name="soccershop" data-brand-id="soccershop" data-bonus-val="7500">
           <div class="toplist-rank">10</div>
           <div class="toplist-header">
-            <img src="assets/logos/soccershop.svg" alt="Soccershop" class="toplist-logo" style="background:#0578B4" loading="lazy">
+            <img decoding="async" src="assets/logos/soccershop.svg" alt="Soccershop" class="toplist-logo" style="background:#0578B4" loading="lazy">
             <div class="toplist-info">
               <div class="toplist-bonus">Deposit R7500 Get R7500</div>
               <div class="toplist-reward">R7,500 Bonus Value</div>
@@ -1107,7 +1105,7 @@ deposit at odds of 1/1 or more. Then email support@soccershop.bet to claim your 
         </div><div class="toplist-card" data-name="playtsogo" data-brand-id="playtsogo" data-bonus-val="10000">
           <div class="toplist-rank">11</div>
           <div class="toplist-header">
-            <img src="assets/logos/playtsogo.svg" alt="PlayTsogo" class="toplist-logo" style="background:#0F2D84" loading="lazy">
+            <img decoding="async" src="assets/logos/playtsogo.svg" alt="PlayTsogo" class="toplist-logo" style="background:#0F2D84" loading="lazy">
             <div class="toplist-info">
               <div class="toplist-bonus">Exclusive: R10,000 + 25 Bet, 50 Spins + 25 Flights</div>
               <div class="toplist-reward">R10,000 Bonus Value</div>
@@ -1125,7 +1123,7 @@ deposit at odds of 1/1 or more. Then email support@soccershop.bet to claim your 
         </div><div class="toplist-card" data-name="playabets" data-brand-id="playabets" data-bonus-val="0">
           <div class="toplist-rank">12</div>
           <div class="toplist-header">
-            <img src="assets/logos/playabets.svg" alt="PlayaBets" class="toplist-logo" style="background:#7DB913" loading="lazy">
+            <img decoding="async" src="assets/logos/playabets.svg" alt="PlayaBets" class="toplist-logo" style="background:#7DB913" loading="lazy">
             <div class="toplist-info">
               <div class="toplist-bonus">100% Sign-Up Bonus</div>
               <div class="toplist-reward">- Bonus Value</div>
@@ -1143,7 +1141,7 @@ deposit at odds of 1/1 or more. Then email support@soccershop.bet to claim your 
         </div><div class="toplist-card" data-name="hollywoodbets" data-brand-id="hollywoodbets" data-bonus-val="25">
           <div class="toplist-rank">13</div>
           <div class="toplist-header">
-            <img src="assets/logos/hollywoodbets.svg" alt="Hollywoodbets" class="toplist-logo" style="background:#52287b" loading="lazy">
+            <img decoding="async" src="assets/logos/hollywoodbets.svg" alt="Hollywoodbets" class="toplist-logo" style="background:#52287b" loading="lazy">
             <div class="toplist-info">
               <div class="toplist-bonus">R25 + 50 spins</div>
               <div class="toplist-reward">R25 Bonus Value</div>
@@ -1161,7 +1159,7 @@ deposit at odds of 1/1 or more. Then email support@soccershop.bet to claim your 
         </div><div class="toplist-card" data-name="yesplay" data-brand-id="yesplay" data-bonus-val="3000">
           <div class="toplist-rank">14</div>
           <div class="toplist-header">
-            <img src="assets/logos/yesplay.svg" alt="YesPlay" class="toplist-logo" style="background:#fd7a01" loading="lazy">
+            <img decoding="async" src="assets/logos/yesplay.svg" alt="YesPlay" class="toplist-logo" style="background:#fd7a01" loading="lazy">
             <div class="toplist-info">
               <div class="toplist-bonus">Deposit R3000 Get R3000</div>
               <div class="toplist-reward">R3,000 Bonus Value</div>
@@ -1179,7 +1177,7 @@ deposit at odds of 1/1 or more. Then email support@soccershop.bet to claim your 
         </div><div class="toplist-card" data-name="betshezi" data-brand-id="betshezi" data-bonus-val="2000">
           <div class="toplist-rank">15</div>
           <div class="toplist-header">
-            <img src="assets/logos/betshezi.svg" alt="Betshezi" class="toplist-logo" style="background:#000000" loading="lazy">
+            <img decoding="async" src="assets/logos/betshezi.svg" alt="Betshezi" class="toplist-logo" style="background:#000000" loading="lazy">
             <div class="toplist-info">
               <div class="toplist-bonus">Deposit R2000 Get R2000</div>
               <div class="toplist-reward">R2,000 Bonus Value</div>
@@ -1197,7 +1195,7 @@ deposit at odds of 1/1 or more. Then email support@soccershop.bet to claim your 
         </div><div class="toplist-card" data-name="sportingbet" data-brand-id="sportingbet" data-bonus-val="3000">
           <div class="toplist-rank">16</div>
           <div class="toplist-header">
-            <img src="assets/logos/sportingbet.svg" alt="Sportingbet" class="toplist-logo" style="background:#0988d1" loading="lazy">
+            <img decoding="async" src="assets/logos/sportingbet.svg" alt="Sportingbet" class="toplist-logo" style="background:#0988d1" loading="lazy">
             <div class="toplist-info">
               <div class="toplist-bonus">Up to R3,000 + 300 Spins</div>
               <div class="toplist-reward">R3,000 Bonus Value</div>
@@ -1215,7 +1213,7 @@ deposit at odds of 1/1 or more. Then email support@soccershop.bet to claim your 
         </div><div class="toplist-card" data-name="supabets" data-brand-id="supabets" data-bonus-val="50">
           <div class="toplist-rank">17</div>
           <div class="toplist-header">
-            <img src="assets/logos/supabets.svg" alt="Supabets" class="toplist-logo" style="background:#EB0028" loading="lazy">
+            <img decoding="async" src="assets/logos/supabets.svg" alt="Supabets" class="toplist-logo" style="background:#EB0028" loading="lazy">
             <div class="toplist-info">
               <div class="toplist-bonus">Free R50 bonus sign up</div>
               <div class="toplist-reward">R50 Bonus Value</div>
@@ -1233,7 +1231,7 @@ deposit at odds of 1/1 or more. Then email support@soccershop.bet to claim your 
         </div><div class="toplist-card" data-name="bet.co.za" data-brand-id="bet-co-za" data-bonus-val="5000">
           <div class="toplist-rank">18</div>
           <div class="toplist-header">
-            <img src="assets/logos/bet-co-za.svg" alt="BET.co.za" class="toplist-logo" style="background:#000010" loading="lazy">
+            <img decoding="async" src="assets/logos/bet-co-za.svg" alt="BET.co.za" class="toplist-logo" style="background:#000010" loading="lazy">
             <div class="toplist-info">
               <div class="toplist-bonus">R5,000 bonus</div>
               <div class="toplist-reward">R5,000 Bonus Value</div>
@@ -1251,7 +1249,7 @@ deposit at odds of 1/1 or more. Then email support@soccershop.bet to claim your 
         </div><div class="toplist-card" data-name="pantherbet" data-brand-id="pantherbet" data-bonus-val="14000">
           <div class="toplist-rank">19</div>
           <div class="toplist-header">
-            <img src="assets/logos/pantherbet.svg" alt="Pantherbet" class="toplist-logo" style="background:#000000" loading="lazy">
+            <img decoding="async" src="assets/logos/pantherbet.svg" alt="Pantherbet" class="toplist-logo" style="background:#000000" loading="lazy">
             <div class="toplist-info">
               <div class="toplist-bonus">Get up to R14,000 (170%)</div>
               <div class="toplist-reward">R14,000 Bonus Value</div>
@@ -1269,7 +1267,7 @@ deposit at odds of 1/1 or more. Then email support@soccershop.bet to claim your 
         </div><div class="toplist-card" data-name="world sports betting" data-brand-id="world-sports-betting" data-bonus-val="20000">
           <div class="toplist-rank">20</div>
           <div class="toplist-header">
-            <img src="assets/logos/world-sports-betting.svg" alt="World Sports Betting" class="toplist-logo" style="background:#041467" loading="lazy">
+            <img decoding="async" src="assets/logos/world-sports-betting.svg" alt="World Sports Betting" class="toplist-logo" style="background:#041467" loading="lazy">
             <div class="toplist-info">
               <div class="toplist-bonus">R20,000 Bonus (100%)</div>
               <div class="toplist-reward">R20,000 Bonus Value</div>
@@ -1287,7 +1285,7 @@ deposit at odds of 1/1 or more. Then email support@soccershop.bet to claim your 
         </div><div class="toplist-card" data-name="jabula bets" data-brand-id="jabula-bets" data-bonus-val="15000">
           <div class="toplist-rank">21</div>
           <div class="toplist-header">
-            <img src="assets/logos/jabula-bets.svg" alt="Jabula Bets" class="toplist-logo" style="background:#282625" loading="lazy">
+            <img decoding="async" src="assets/logos/jabula-bets.svg" alt="Jabula Bets" class="toplist-logo" style="background:#282625" loading="lazy">
             <div class="toplist-info">
               <div class="toplist-bonus">Get 150% up to R15,000</div>
               <div class="toplist-reward">R15,000 Bonus Value</div>
@@ -1305,7 +1303,7 @@ deposit at odds of 1/1 or more. Then email support@soccershop.bet to claim your 
         </div><div class="toplist-card" data-name="topbet" data-brand-id="topbet" data-bonus-val="1000">
           <div class="toplist-rank">22</div>
           <div class="toplist-header">
-            <img src="assets/logos/topbet.svg" alt="Topbet" class="toplist-logo" style="background:#000000" loading="lazy">
+            <img decoding="async" src="assets/logos/topbet.svg" alt="Topbet" class="toplist-logo" style="background:#000000" loading="lazy">
             <div class="toplist-info">
               <div class="toplist-bonus">Deposit R1000 Get R1000</div>
               <div class="toplist-reward">R1,000 Bonus Value</div>
@@ -1324,7 +1322,7 @@ deposit at odds of 1/1 or more. Then email support@soccershop.bet to claim your 
         </div><div class="toplist-card" data-name="saffaluck" data-brand-id="saffaluck" data-bonus-val="0">
           <div class="toplist-rank">23</div>
           <div class="toplist-header">
-            <img src="assets/logos/saffaluck.svg" alt="SaffaLuck" class="toplist-logo" style="background:#001F12" loading="lazy">
+            <img decoding="async" src="assets/logos/saffaluck.svg" alt="SaffaLuck" class="toplist-logo" style="background:#001F12" loading="lazy">
             <div class="toplist-info">
               <div class="toplist-bonus">Get a 100% First Deposit Bonus</div>
               <div class="toplist-reward">- Bonus Value</div>
@@ -1342,7 +1340,7 @@ deposit at odds of 1/1 or more. Then email support@soccershop.bet to claim your 
         </div><div class="toplist-card" data-name="playbet.co.za" data-brand-id="playbet-co-za" data-bonus-val="50">
           <div class="toplist-rank">24</div>
           <div class="toplist-header">
-            <img src="assets/logos/playbet-co-za.svg" alt="Playbet.co.za" class="toplist-logo" style="background:#CB151A" loading="lazy">
+            <img decoding="async" src="assets/logos/playbet-co-za.svg" alt="Playbet.co.za" class="toplist-logo" style="background:#CB151A" loading="lazy">
             <div class="toplist-info">
               <div class="toplist-bonus">R50 +50 Spins on Signup</div>
               <div class="toplist-reward">R50 Bonus Value</div>
@@ -1360,7 +1358,7 @@ deposit at odds of 1/1 or more. Then email support@soccershop.bet to claim your 
         </div><div class="toplist-card" data-name="wanejo bets" data-brand-id="wanejo-bets" data-bonus-val="10000">
           <div class="toplist-rank">25</div>
           <div class="toplist-header">
-            <img src="assets/logos/wanejo-bets.png" alt="Wanejo Bets" class="toplist-logo" style="background:#202020" loading="lazy">
+            <img decoding="async" src="assets/logos/wanejo-bets.png" alt="Wanejo Bets" class="toplist-logo" style="background:#202020" loading="lazy">
             <div class="toplist-info">
               <div class="toplist-bonus">Deposit R10,000 Get R10,000</div>
               <div class="toplist-reward">R10,000 Bonus Value</div>
@@ -1378,7 +1376,7 @@ deposit at odds of 1/1 or more. Then email support@soccershop.bet to claim your 
         </div><div class="toplist-card" data-name="lucky fish" data-brand-id="lucky-fish" data-bonus-val="50">
           <div class="toplist-rank">26</div>
           <div class="toplist-header">
-            <img src="assets/logos/lucky-fish.svg" alt="Lucky Fish" class="toplist-logo" style="background:#00252b" loading="lazy">
+            <img decoding="async" src="assets/logos/lucky-fish.svg" alt="Lucky Fish" class="toplist-logo" style="background:#00252b" loading="lazy">
             <div class="toplist-info">
               <div class="toplist-bonus">R50 Sign Up Bonus</div>
               <div class="toplist-reward">R50 Bonus Value</div>
@@ -1396,7 +1394,7 @@ deposit at odds of 1/1 or more. Then email support@soccershop.bet to claim your 
         </div><div class="toplist-card" data-name="betxchange" data-brand-id="betxchange" data-bonus-val="20000">
           <div class="toplist-rank">27</div>
           <div class="toplist-header">
-            <img src="assets/logos/betxchange.svg" alt="betXchange" class="toplist-logo" style="background:#0033cc" loading="lazy">
+            <img decoding="async" src="assets/logos/betxchange.svg" alt="betXchange" class="toplist-logo" style="background:#0033cc" loading="lazy">
             <div class="toplist-info">
               <div class="toplist-bonus">R20,000 Money Back</div>
               <div class="toplist-reward">R20,000 Bonus Value</div>
@@ -1414,7 +1412,7 @@ deposit at odds of 1/1 or more. Then email support@soccershop.bet to claim your 
         </div><div class="toplist-card" data-name="swifty" data-brand-id="swifty" data-bonus-val="3000">
           <div class="toplist-rank">28</div>
           <div class="toplist-header">
-            <img src="assets/logos/swifty.png" alt="Swifty" class="toplist-logo" style="background:#001F12" loading="lazy">
+            <img decoding="async" src="assets/logos/swifty.png" alt="Swifty" class="toplist-logo" style="background:#001F12" loading="lazy">
             <div class="toplist-info">
               <div class="toplist-bonus">Deposit R3000 Get R3000</div>
               <div class="toplist-reward">R3,000 Bonus Value</div>
@@ -1432,7 +1430,7 @@ deposit at odds of 1/1 or more. Then email support@soccershop.bet to claim your 
         </div><div class="toplist-card" data-name="betjets" data-brand-id="betjets" data-bonus-val="2000">
           <div class="toplist-rank">29</div>
           <div class="toplist-header">
-            <img src="assets/logos/betjets.svg" alt="Betjets" class="toplist-logo" style="background:#012169" loading="lazy">
+            <img decoding="async" src="assets/logos/betjets.svg" alt="Betjets" class="toplist-logo" style="background:#012169" loading="lazy">
             <div class="toplist-info">
               <div class="toplist-bonus">Deposit R2,000 Get R2,000</div>
               <div class="toplist-reward">R2,000 Bonus Value</div>
@@ -1450,7 +1448,7 @@ deposit at odds of 1/1 or more. Then email support@soccershop.bet to claim your 
         </div><div class="toplist-card" data-name="supersportbet" data-brand-id="supersportbet" data-bonus-val="5000">
           <div class="toplist-rank">30</div>
           <div class="toplist-header">
-            <img src="assets/logos/supersportbet.svg" alt="Supersportbet" class="toplist-logo" style="background:#111fa3" loading="lazy">
+            <img decoding="async" src="assets/logos/supersportbet.svg" alt="Supersportbet" class="toplist-logo" style="background:#111fa3" loading="lazy">
             <div class="toplist-info">
               <div class="toplist-bonus">Deposit R5000 Get R5000</div>
               <div class="toplist-reward">R5,000 Bonus Value</div>
@@ -1468,7 +1466,7 @@ deposit at odds of 1/1 or more. Then email support@soccershop.bet to claim your 
         </div><div class="toplist-card" data-name="pokerbet" data-brand-id="pokerbet" data-bonus-val="100">
           <div class="toplist-rank">31</div>
           <div class="toplist-header">
-            <img src="assets/logos/pokerbet.svg" alt="Pokerbet" class="toplist-logo" style="background:#3C3D65" loading="lazy">
+            <img decoding="async" src="assets/logos/pokerbet.svg" alt="Pokerbet" class="toplist-logo" style="background:#3C3D65" loading="lazy">
             <div class="toplist-info">
               <div class="toplist-bonus">Get R100 free + R2000 (100%)</div>
               <div class="toplist-reward">R100 Bonus Value</div>
@@ -1486,7 +1484,7 @@ deposit at odds of 1/1 or more. Then email support@soccershop.bet to claim your 
         </div><div class="toplist-card" data-name="lulabet" data-brand-id="lulabet" data-bonus-val="50">
           <div class="toplist-rank">32</div>
           <div class="toplist-header">
-            <img src="assets/logos/lulabet.svg" alt="Lulabet" class="toplist-logo" style="background:#171B38" loading="lazy">
+            <img decoding="async" src="assets/logos/lulabet.svg" alt="Lulabet" class="toplist-logo" style="background:#171B38" loading="lazy">
             <div class="toplist-info">
               <div class="toplist-bonus">Bet R50 Get R50</div>
               <div class="toplist-reward">R50 Bonus Value</div>
@@ -1504,7 +1502,7 @@ deposit at odds of 1/1 or more. Then email support@soccershop.bet to claim your 
         </div><div class="toplist-card" data-name="betfred" data-brand-id="betfred" data-bonus-val="21000">
           <div class="toplist-rank">33</div>
           <div class="toplist-header">
-            <img src="assets/logos/betfred.svg" alt="Betfred" class="toplist-logo" style="background:#005a99" loading="lazy">
+            <img decoding="async" src="assets/logos/betfred.svg" alt="Betfred" class="toplist-logo" style="background:#005a99" loading="lazy">
             <div class="toplist-info">
               <div class="toplist-bonus">up to R21,000 + 750 Spins</div>
               <div class="toplist-reward">R21,000 Bonus Value</div>
@@ -1522,7 +1520,7 @@ deposit at odds of 1/1 or more. Then email support@soccershop.bet to claim your 
         </div><div class="toplist-card" data-name="jackpot city" data-brand-id="jackpot-city" data-bonus-val="4000">
           <div class="toplist-rank">34</div>
           <div class="toplist-header">
-            <img src="assets/logos/jackpot-city.svg" alt="Jackpot City" class="toplist-logo" style="background:#181818" loading="lazy">
+            <img decoding="async" src="assets/logos/jackpot-city.svg" alt="Jackpot City" class="toplist-logo" style="background:#181818" loading="lazy">
             <div class="toplist-info">
               <div class="toplist-bonus">100% up to R4000 + Spins</div>
               <div class="toplist-reward">R4,000 Bonus Value</div>
@@ -1540,7 +1538,7 @@ deposit at odds of 1/1 or more. Then email support@soccershop.bet to claim your 
         </div><div class="toplist-card" data-name="luckystake" data-brand-id="luckystake" data-bonus-val="0">
           <div class="toplist-rank">35</div>
           <div class="toplist-header">
-            <img src="assets/logos/luckystake.svg" alt="Luckystake" class="toplist-logo" style="background:#292929" loading="lazy">
+            <img decoding="async" src="assets/logos/luckystake.svg" alt="Luckystake" class="toplist-logo" style="background:#292929" loading="lazy">
             <div class="toplist-info">
               <div class="toplist-bonus">Luckystake Loyalty Program</div>
               <div class="toplist-reward">- Bonus Value</div>
@@ -1558,7 +1556,7 @@ deposit at odds of 1/1 or more. Then email support@soccershop.bet to claim your 
         </div><div class="toplist-card" data-name="betbus" data-brand-id="betbus" data-bonus-val="5000">
           <div class="toplist-rank">36</div>
           <div class="toplist-header">
-            <img src="assets/logos/betbus.svg" alt="betbus" class="toplist-logo" style="background:#401010" loading="lazy">
+            <img decoding="async" src="assets/logos/betbus.svg" alt="betbus" class="toplist-logo" style="background:#401010" loading="lazy">
             <div class="toplist-info">
               <div class="toplist-bonus">Deposit R5,000 Get R5,000</div>
               <div class="toplist-reward">R5,000 Bonus Value</div>
@@ -1610,8 +1608,6 @@ deposit at odds of 1/1 or more. Then email support@soccershop.bet to claim your 
       </div>
     </nav>
 
-      
-      
     <div class="seo-below-table" style="margin-top:56px">
       
       <div style="margin-bottom:32px">
@@ -1623,8 +1619,7 @@ deposit at odds of 1/1 or more. Then email support@soccershop.bet to claim your 
           Below we break down how this works, what the law says, and what features matter most when choosing a platform.
         </p>
       </div>
-    
-      
+
     <div class="seo-section" style="margin-bottom:48px">
       <h2 style="font-size:1.5rem;font-weight:700;color:var(--text-primary);margin-bottom:8px">Top 5 Online Casino Sites for SA Players - Reviewed</h2>
       <p style="font-size:15px;color:var(--text-muted);margin-bottom:24px;line-height:1.75">
@@ -1778,8 +1773,7 @@ deposit at odds of 1/1 or more. Then email support@soccershop.bet to claim your 
     </div>
     
     </div>
-    
-      
+
     <div class="seo-section" style="margin-bottom:48px">
       <h2 style="font-size:1.5rem;font-weight:700;color:var(--text-primary);margin-bottom:16px">What the Best Casino Sites Have in Common</h2>
       <div style="display:grid;grid-template-columns:repeat(auto-fit, minmax(220px, 1fr));gap:16px">
@@ -1813,8 +1807,7 @@ deposit at odds of 1/1 or more. Then email support@soccershop.bet to claim your 
         </div>
       </div>
     </div>
-    
-      
+
     <div class="seo-section" style="margin-bottom:48px">
       <h2 style="font-size:1.5rem;font-weight:700;color:var(--text-primary);margin-bottom:16px">The Legal Framework</h2>
       <p style="font-size:15px;line-height:1.75;color:var(--text-secondary);margin-bottom:16px">
@@ -1909,8 +1902,7 @@ deposit at odds of 1/1 or more. Then email support@soccershop.bet to claim your 
         </p>
       </div>
     </div>
-    
-      
+
     <div class="seo-section" style="margin-bottom:48px">
       <h2 style="font-size:1.5rem;font-weight:700;color:var(--text-primary);margin-bottom:16px">What Makes a Good Casino Platform in South Africa?</h2>
       <p style="font-size:15px;line-height:1.75;color:var(--text-secondary);margin-bottom:20px">
@@ -1934,8 +1926,7 @@ deposit at odds of 1/1 or more. Then email support@soccershop.bet to claim your 
         <li>KYC and FICA verification procedures</li>
       </ul>
     </div>
-    
-      
+
     <div class="seo-section" style="margin-bottom:48px">
       <h2 style="font-size:1.5rem;font-weight:700;color:var(--text-primary);margin-bottom:16px">Payment Methods for SA Casino Players</h2>
       <p style="font-size:15px;line-height:1.75;color:var(--text-secondary);margin-bottom:20px">
@@ -1998,8 +1989,7 @@ deposit at odds of 1/1 or more. Then email support@soccershop.bet to claim your 
         for detailed comparisons across all SA gambling platforms.
       </p>
     </div>
-    
-      
+
     <div class="seo-section" style="margin-bottom:48px">
       <h2 style="font-size:1.5rem;font-weight:700;color:var(--text-primary);margin-bottom:16px">Casino Games Available to SA Players</h2>
       <p style="font-size:15px;line-height:1.75;color:var(--text-secondary);margin-bottom:24px">
@@ -2007,7 +1997,6 @@ deposit at odds of 1/1 or more. Then email support@soccershop.bet to claim your 
         Here's what you'll find at the best SA casino sites.
       </p>
 
-      <!-- Slots -->
       <div style="border:1px solid var(--border);border-radius:12px;padding:24px;margin-bottom:20px;background:var(--card-bg)">
         <h3 style="font-size:1.125rem;font-weight:700;color:var(--text-primary);margin-bottom:12px">Slot Games</h3>
         <p style="font-size:15px;line-height:1.75;color:var(--text-secondary);margin-bottom:16px">
@@ -2024,7 +2013,6 @@ deposit at odds of 1/1 or more. Then email support@soccershop.bet to claim your 
         </div>
       </div>
 
-      <!-- Table Games -->
       <div style="border:1px solid var(--border);border-radius:12px;padding:24px;margin-bottom:20px;background:var(--card-bg)">
         <h3 style="font-size:1.125rem;font-weight:700;color:var(--text-primary);margin-bottom:12px">Table Games</h3>
         <p style="font-size:15px;line-height:1.75;color:var(--text-secondary);margin-bottom:16px">
@@ -2047,7 +2035,6 @@ deposit at odds of 1/1 or more. Then email support@soccershop.bet to claim your 
         </div>
       </div>
 
-      <!-- Live Dealer -->
       <div style="border:1px solid var(--border);border-radius:12px;padding:24px;margin-bottom:20px;background:var(--card-bg)">
         <h3 style="font-size:1.125rem;font-weight:700;color:var(--text-primary);margin-bottom:12px">Live Dealer Casinos</h3>
         <p style="font-size:15px;line-height:1.75;color:var(--text-secondary);margin-bottom:12px">
@@ -2061,8 +2048,7 @@ deposit at odds of 1/1 or more. Then email support@soccershop.bet to claim your 
         </p>
       </div>
     </div>
-    
-      
+
     <div class="seo-section" style="margin-bottom:48px">
       <h2 style="font-size:1.5rem;font-weight:700;color:var(--text-primary);margin-bottom:16px">Casino Bonuses for South African Players</h2>
       <p style="font-size:15px;line-height:1.75;color:var(--text-secondary);margin-bottom:20px">
@@ -2116,8 +2102,7 @@ deposit at odds of 1/1 or more. Then email support@soccershop.bet to claim your 
         </p>
       </div>
     </div>
-    
-      
+
     <div class="seo-section" style="margin-bottom:48px">
       <h2 style="font-size:1.5rem;font-weight:700;color:var(--text-primary);margin-bottom:16px">Mobile Casino Gaming in South Africa</h2>
       <p style="font-size:15px;line-height:1.75;color:var(--text-secondary);margin-bottom:16px">
@@ -2140,8 +2125,7 @@ deposit at odds of 1/1 or more. Then email support@soccershop.bet to claim your 
         from their websites. For most other casinos, the mobile browser experience is just as smooth.
       </p>
     </div>
-    
-      
+
     <div class="seo-section" style="margin-bottom:48px">
       <h2 style="font-size:1.5rem;font-weight:700;color:var(--text-primary);margin-bottom:16px">Frequently Asked Questions</h2>
       <div style="display:flex;flex-direction:column;gap:8px">
@@ -2228,8 +2212,7 @@ deposit at odds of 1/1 or more. Then email support@soccershop.bet to claim your 
         
       </div>
     </div>
-    
-      
+
     <div class="seo-section" style="margin-bottom:48px;padding:28px;background:var(--surface);border-radius:12px;border:1px solid var(--border)">
       <h2 style="font-size:1.5rem;font-weight:700;color:var(--text-primary);margin-bottom:16px">Responsible Gambling</h2>
       <p style="font-size:15px;line-height:1.75;color:var(--text-secondary);margin-bottom:16px">

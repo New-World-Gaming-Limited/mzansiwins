@@ -24,10 +24,12 @@
   <meta name="twitter:image" content="https://mzansiwins.co.za/assets/og-default.png">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link rel="preload" href="../assets/style.css" as="style">
+  
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" media="print" onload="this.media='all'">
-  <noscript><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet"></noscript>
-  <link rel="stylesheet" href="../assets/style.css">
+  <style>*{margin:0;padding:0;box-sizing:border-box;-webkit-tap-highlight-color:transparent}:root{--accent:#1641B4;--accent-hover:#1233A0;--accent-light:#EEF2FF;--surface:#fff;--surface-2:#F0F0F2;--border:#e5e5e5;--text-primary:#111;--text-secondary:#555;--text-muted:#888;--bonus:#16a34a;--bg:#F9FAFC;--card-bg:#fff;--card-border:1px solid #e5e5e5;--sep:rgba(0,0,0,0.06)}[data-theme="dark"]{--accent-light:rgba(22,65,180,0.2);--surface:#1c1c1c;--surface-2:#1a1f2e;--border:rgba(255,255,255,0.12);--text-primary:#f5f5f5;--text-secondary:#b0b0b0;--text-muted:#888;--bg:#111;--card-bg:#1c1c1c;--card-border:1px solid rgba(255,255,255,0.1);--sep:rgba(255,255,255,0.08)}html{scroll-behavior:smooth;-webkit-font-smoothing:antialiased}body{font-family:'Inter',system-ui,sans-serif;background:var(--bg);color:var(--text-primary);font-size:16px;line-height:1.75;margin:0}a{color:inherit;text-decoration:none}img{max-width:100%;height:auto}.top-bar{position:sticky;top:0;z-index:100;background:var(--surface);border-bottom:1px solid var(--border);backdrop-filter:blur(12px)}.nav-inner{max-width:1200px;margin:0 auto;padding:0 20px;display:flex;align-items:center;justify-content:space-between;height:60px}.container{max-width:1200px;margin:0 auto;padding:0 20px}.hero{padding:64px 0 48px;border-bottom:1px solid var(--border)}.hero h1{font-size:clamp(2rem,5vw,2.75rem);font-weight:800;letter-spacing:-0.03em;line-height:1.15;margin-bottom:20px}.affiliate-disclosure{font-size:11px;color:var(--text-muted);text-align:center;padding:6px 20px;background:var(--surface-2);border-bottom:1px solid var(--sep)}@media(max-width:768px){.hero{padding:40px 0 32px}.container{padding:0 16px}}</style>
+  <link rel="preload" href="../assets/style.css" as="style">
+  <link rel="stylesheet" href="../assets/style.css" media="print" onload="this.media='all'">
+  <noscript><link rel="stylesheet" href="../assets/style.css"></noscript>
   
   <script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://mzansiwins.co.za/index"},{"@type":"ListItem","position":2,"name":"Payment Methods","item":"https://mzansiwins.co.za/payment-methods"},{"@type":"ListItem","position":3,"name":"SnapScan (South Africa)"}]}</script>
 </head>
@@ -185,7 +187,7 @@
       <nav class="breadcrumbs" aria-label="Breadcrumb"><a href="../index.html">Home</a><span class="sep"><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="9 18 15 12 9 6"/></svg></span><a href="../payment-methods.html">Payment Methods</a><span class="sep"><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="9 18 15 12 9 6"/></svg></span><span class="text-secondary">SnapScan (South Africa)</span></nav>
 
       <div style="display:flex;align-items:flex-start;gap:16px;margin-bottom:32px">
-        <div class="method-icon-box" style="width:56px;height:56px;font-size:28px"><img src="../assets/payment-icons/snapscan.svg" alt="SnapScan (South Africa)" width="28" height="28" style="border-radius:4px;vertical-align:middle" loading="lazy"></div>
+        <div class="method-icon-box" style="width:56px;height:56px;font-size:28px"><img decoding="async" src="../assets/payment-icons/snapscan.svg" alt="SnapScan (South Africa)" width="28" height="28" style="border-radius:4px;vertical-align:middle" loading="lazy"></div>
         <div>
           <h1 style="font-size:clamp(1.375rem,3vw,1.75rem);font-weight:700;letter-spacing:-0.02em;line-height:1.25">SnapScan (South Africa)</h1>
           <p style="font-size:14px;color:var(--text-muted);text-transform:capitalize;margin-top:4px">mobile wallet / QR scan-to-pay</p>
@@ -220,66 +222,65 @@
           <h2 style="font-size:18px;font-weight:700;margin-bottom:8px">Bookmakers Accepting SnapScan (South Africa)</h2>
           <p style="font-size:14px;color:var(--text-muted);margin-bottom:20px">10 licensed South African bookmakers support SnapScan (South Africa).</p>
 
-          <!-- Desktop table -->
           <div class="table-wrap sm-show" style="display:none;margin-bottom:32px">
             <table class="data-table">
               <thead><tr><th>Bookmaker</th><th>Rating</th><th>Welcome Bonus</th><th style="text-align:right">Action</th></tr></thead>
               <tbody><tr>
-          <td><a href="../betting-site-review/easybet-south-africa.html" style="font-weight:500;color:var(--text-primary);display:inline-flex;align-items:center;gap:8px"><img src="../assets/logos/easybet-south-africa.svg" alt="Easybet South Africa" style="width:28px;height:28px;object-fit:contain;border-radius:6px;background:#FED702;padding:2px;border:1px solid var(--border);vertical-align:middle;margin-right:8px" loading="lazy">Easybet South Africa</a></td>
+          <td><a href="../betting-site-review/easybet-south-africa.html" style="font-weight:500;color:var(--text-primary);display:inline-flex;align-items:center;gap:8px"><img decoding="async" src="../assets/logos/easybet-south-africa.svg" alt="Easybet South Africa" style="width:28px;height:28px;object-fit:contain;border-radius:6px;background:#FED702;padding:2px;border:1px solid var(--border);vertical-align:middle;margin-right:8px" loading="lazy">Easybet South Africa</a></td>
           <td><span class="rating-badge high sm">4.9/5.0</span></td>
           <td style="font-size:12px;color:var(--text-secondary)">Free R50 + 150% MATCH to R1500</td>
           <td style="text-align:right"><a href="../betting-site-review/easybet-south-africa.html" class="table-link text-xs">Review</a></td>
         </tr><tr>
-          <td><a href="../betting-site-review/tictacbets.html" style="font-weight:500;color:var(--text-primary);display:inline-flex;align-items:center;gap:8px"><img src="../assets/logos/tictacbets.svg" alt="Tictacbets" style="width:28px;height:28px;object-fit:contain;border-radius:6px;background:#cc0100;padding:2px;border:1px solid var(--border);vertical-align:middle;margin-right:8px" loading="lazy">Tictacbets</a></td>
+          <td><a href="../betting-site-review/tictacbets.html" style="font-weight:500;color:var(--text-primary);display:inline-flex;align-items:center;gap:8px"><img decoding="async" src="../assets/logos/tictacbets.svg" alt="Tictacbets" style="width:28px;height:28px;object-fit:contain;border-radius:6px;background:#cc0100;padding:2px;border:1px solid var(--border);vertical-align:middle;margin-right:8px" loading="lazy">Tictacbets</a></td>
           <td><span class="rating-badge high sm">4.9/5.0</span></td>
           <td style="font-size:12px;color:var(--text-secondary)">100% up to R5,000 + 50 spins</td>
           <td style="text-align:right"><a href="../betting-site-review/tictacbets.html" class="table-link text-xs">Review</a></td>
         </tr><tr>
-          <td><a href="../betting-site-review/yesplay.html" style="font-weight:500;color:var(--text-primary);display:inline-flex;align-items:center;gap:8px"><img src="../assets/logos/yesplay.svg" alt="YesPlay" style="width:28px;height:28px;object-fit:contain;border-radius:6px;background:#fd7a01;padding:2px;border:1px solid var(--border);vertical-align:middle;margin-right:8px" loading="lazy">YesPlay</a></td>
+          <td><a href="../betting-site-review/yesplay.html" style="font-weight:500;color:var(--text-primary);display:inline-flex;align-items:center;gap:8px"><img decoding="async" src="../assets/logos/yesplay.svg" alt="YesPlay" style="width:28px;height:28px;object-fit:contain;border-radius:6px;background:#fd7a01;padding:2px;border:1px solid var(--border);vertical-align:middle;margin-right:8px" loading="lazy">YesPlay</a></td>
           <td><span class="rating-badge high sm">4.8/5.0</span></td>
           <td style="font-size:12px;color:var(--text-secondary)">Deposit R3000 Get R3000</td>
           <td style="text-align:right"><a href="../betting-site-review/yesplay.html" class="table-link text-xs">Review</a></td>
         </tr><tr>
-          <td><a href="../betting-site-review/pantherbet.html" style="font-weight:500;color:var(--text-primary);display:inline-flex;align-items:center;gap:8px"><img src="../assets/logos/pantherbet.svg" alt="Pantherbet" style="width:28px;height:28px;object-fit:contain;border-radius:6px;background:#000000;padding:2px;border:1px solid var(--border);vertical-align:middle;margin-right:8px" loading="lazy">Pantherbet</a></td>
+          <td><a href="../betting-site-review/pantherbet.html" style="font-weight:500;color:var(--text-primary);display:inline-flex;align-items:center;gap:8px"><img decoding="async" src="../assets/logos/pantherbet.svg" alt="Pantherbet" style="width:28px;height:28px;object-fit:contain;border-radius:6px;background:#000000;padding:2px;border:1px solid var(--border);vertical-align:middle;margin-right:8px" loading="lazy">Pantherbet</a></td>
           <td><span class="rating-badge high sm">4.7/5.0</span></td>
           <td style="font-size:12px;color:var(--text-secondary)">Get up to R14,000 (170%)</td>
           <td style="text-align:right"><a href="../betting-site-review/pantherbet.html" class="table-link text-xs">Review</a></td>
         </tr><tr>
-          <td><a href="../betting-site-review/playabets.html" style="font-weight:500;color:var(--text-primary);display:inline-flex;align-items:center;gap:8px"><img src="../assets/logos/playabets.svg" alt="PlayaBets" style="width:28px;height:28px;object-fit:contain;border-radius:6px;background:#7DB913;padding:2px;border:1px solid var(--border);vertical-align:middle;margin-right:8px" loading="lazy">PlayaBets</a></td>
+          <td><a href="../betting-site-review/playabets.html" style="font-weight:500;color:var(--text-primary);display:inline-flex;align-items:center;gap:8px"><img decoding="async" src="../assets/logos/playabets.svg" alt="PlayaBets" style="width:28px;height:28px;object-fit:contain;border-radius:6px;background:#7DB913;padding:2px;border:1px solid var(--border);vertical-align:middle;margin-right:8px" loading="lazy">PlayaBets</a></td>
           <td><span class="rating-badge high sm">4.3/5.0</span></td>
           <td style="font-size:12px;color:var(--text-secondary)">100% Sign-Up Bonus</td>
           <td style="text-align:right"><a href="../betting-site-review/playabets.html" class="table-link text-xs">Review</a></td>
         </tr><tr>
-          <td><a href="../betting-site-review/playtsogo.html" style="font-weight:500;color:var(--text-primary);display:inline-flex;align-items:center;gap:8px"><img src="../assets/logos/playtsogo.svg" alt="PlayTsogo" style="width:28px;height:28px;object-fit:contain;border-radius:6px;background:#0F2D84;padding:2px;border:1px solid var(--border);vertical-align:middle;margin-right:8px" loading="lazy">PlayTsogo</a></td>
+          <td><a href="../betting-site-review/playtsogo.html" style="font-weight:500;color:var(--text-primary);display:inline-flex;align-items:center;gap:8px"><img decoding="async" src="../assets/logos/playtsogo.svg" alt="PlayTsogo" style="width:28px;height:28px;object-fit:contain;border-radius:6px;background:#0F2D84;padding:2px;border:1px solid var(--border);vertical-align:middle;margin-right:8px" loading="lazy">PlayTsogo</a></td>
           <td><span class="rating-badge high sm">4.2/5.0</span></td>
           <td style="font-size:12px;color:var(--text-secondary)">Exclusive: R10,000 + 25 Bet, 50 Spins + </td>
           <td style="text-align:right"><a href="../betting-site-review/playtsogo.html" class="table-link text-xs">Review</a></td>
         </tr><tr>
-          <td><a href="../betting-site-review/playbet-co-za.html" style="font-weight:500;color:var(--text-primary);display:inline-flex;align-items:center;gap:8px"><img src="../assets/logos/playbet-co-za.svg" alt="Playbet.co.za" style="width:28px;height:28px;object-fit:contain;border-radius:6px;background:#CB151A;padding:2px;border:1px solid var(--border);vertical-align:middle;margin-right:8px" loading="lazy">Playbet.co.za</a></td>
+          <td><a href="../betting-site-review/playbet-co-za.html" style="font-weight:500;color:var(--text-primary);display:inline-flex;align-items:center;gap:8px"><img decoding="async" src="../assets/logos/playbet-co-za.svg" alt="Playbet.co.za" style="width:28px;height:28px;object-fit:contain;border-radius:6px;background:#CB151A;padding:2px;border:1px solid var(--border);vertical-align:middle;margin-right:8px" loading="lazy">Playbet.co.za</a></td>
           <td><span class="rating-badge high sm">4.2/5.0</span></td>
           <td style="font-size:12px;color:var(--text-secondary)">R50 +50 Spins on Signup</td>
           <td style="text-align:right"><a href="../betting-site-review/playbet-co-za.html" class="table-link text-xs">Review</a></td>
         </tr><tr>
-          <td><a href="../betting-site-review/soccershop.html" style="font-weight:500;color:var(--text-primary);display:inline-flex;align-items:center;gap:8px"><img src="../assets/logos/soccershop.svg" alt="Soccershop" style="width:28px;height:28px;object-fit:contain;border-radius:6px;background:#0578B4;padding:2px;border:1px solid var(--border);vertical-align:middle;margin-right:8px" loading="lazy">Soccershop</a></td>
+          <td><a href="../betting-site-review/soccershop.html" style="font-weight:500;color:var(--text-primary);display:inline-flex;align-items:center;gap:8px"><img decoding="async" src="../assets/logos/soccershop.svg" alt="Soccershop" style="width:28px;height:28px;object-fit:contain;border-radius:6px;background:#0578B4;padding:2px;border:1px solid var(--border);vertical-align:middle;margin-right:8px" loading="lazy">Soccershop</a></td>
           <td><span class="rating-badge mid sm">4.0/5.0</span></td>
           <td style="font-size:12px;color:var(--text-secondary)">Deposit R7500 Get R7500</td>
           <td style="text-align:right"><a href="../betting-site-review/soccershop.html" class="table-link text-xs">Review</a></td>
         </tr><tr>
-          <td><a href="../betting-site-review/supersportbet.html" style="font-weight:500;color:var(--text-primary);display:inline-flex;align-items:center;gap:8px"><img src="../assets/logos/supersportbet.svg" alt="Supersportbet" style="width:28px;height:28px;object-fit:contain;border-radius:6px;background:#111fa3;padding:2px;border:1px solid var(--border);vertical-align:middle;margin-right:8px" loading="lazy">Supersportbet</a></td>
+          <td><a href="../betting-site-review/supersportbet.html" style="font-weight:500;color:var(--text-primary);display:inline-flex;align-items:center;gap:8px"><img decoding="async" src="../assets/logos/supersportbet.svg" alt="Supersportbet" style="width:28px;height:28px;object-fit:contain;border-radius:6px;background:#111fa3;padding:2px;border:1px solid var(--border);vertical-align:middle;margin-right:8px" loading="lazy">Supersportbet</a></td>
           <td><span class="rating-badge mid sm">3.8/5.0</span></td>
           <td style="font-size:12px;color:var(--text-secondary)">Deposit R5000 Get R5000</td>
           <td style="text-align:right"><a href="../betting-site-review/supersportbet.html" class="table-link text-xs">Review</a></td>
         </tr><tr>
-          <td><a href="../betting-site-review/betbus.html" style="font-weight:500;color:var(--text-primary);display:inline-flex;align-items:center;gap:8px"><img src="../assets/logos/betbus.svg" alt="betbus" style="width:28px;height:28px;object-fit:contain;border-radius:6px;background:#401010;padding:2px;border:1px solid var(--border);vertical-align:middle;margin-right:8px" loading="lazy">betbus</a></td>
+          <td><a href="../betting-site-review/betbus.html" style="font-weight:500;color:var(--text-primary);display:inline-flex;align-items:center;gap:8px"><img decoding="async" src="../assets/logos/betbus.svg" alt="betbus" style="width:28px;height:28px;object-fit:contain;border-radius:6px;background:#401010;padding:2px;border:1px solid var(--border);vertical-align:middle;margin-right:8px" loading="lazy">betbus</a></td>
           <td><span class="rating-badge low sm">3.3/5.0</span></td>
           <td style="font-size:12px;color:var(--text-secondary)">Deposit R5,000 Get R5,000</td>
           <td style="text-align:right"><a href="../betting-site-review/betbus.html" class="table-link text-xs">Review</a></td>
         </tr></tbody>
             </table>
           </div>
-          <!-- Mobile cards -->
+          
           <div class="sm-hide" style="display:flex;flex-direction:column;gap:10px;margin-bottom:32px"><a href="../betting-site-review/easybet-south-africa.html" class="brand-row-mobile">
-          <img src="../assets/logos/easybet-south-africa.svg" alt="Easybet South Africa" style="width:28px;height:28px;object-fit:contain;border-radius:6px;background:#FED702;padding:2px;border:1px solid var(--border);vertical-align:middle;margin-right:8px" loading="lazy">
+          <img decoding="async" src="../assets/logos/easybet-south-africa.svg" alt="Easybet South Africa" style="width:28px;height:28px;object-fit:contain;border-radius:6px;background:#FED702;padding:2px;border:1px solid var(--border);vertical-align:middle;margin-right:8px" loading="lazy">
           <div style="flex:1;min-width:0">
             <div style="display:flex;align-items:center;justify-content:space-between;gap:8px">
               <div style="font-size:14px;font-weight:600;overflow:hidden;text-overflow:ellipsis;white-space:nowrap">Easybet South Africa</div>
@@ -288,7 +289,7 @@
             <p style="font-size:12px;color:var(--bonus);font-weight:500;margin-top:2px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap">Free R50 + 150% MATCH to R1500</p>
           </div>
         </a><a href="../betting-site-review/tictacbets.html" class="brand-row-mobile">
-          <img src="../assets/logos/tictacbets.svg" alt="Tictacbets" style="width:28px;height:28px;object-fit:contain;border-radius:6px;background:#cc0100;padding:2px;border:1px solid var(--border);vertical-align:middle;margin-right:8px" loading="lazy">
+          <img decoding="async" src="../assets/logos/tictacbets.svg" alt="Tictacbets" style="width:28px;height:28px;object-fit:contain;border-radius:6px;background:#cc0100;padding:2px;border:1px solid var(--border);vertical-align:middle;margin-right:8px" loading="lazy">
           <div style="flex:1;min-width:0">
             <div style="display:flex;align-items:center;justify-content:space-between;gap:8px">
               <div style="font-size:14px;font-weight:600;overflow:hidden;text-overflow:ellipsis;white-space:nowrap">Tictacbets</div>
@@ -297,7 +298,7 @@
             <p style="font-size:12px;color:var(--bonus);font-weight:500;margin-top:2px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap">100% up to R5,000 + 50 spins</p>
           </div>
         </a><a href="../betting-site-review/yesplay.html" class="brand-row-mobile">
-          <img src="../assets/logos/yesplay.svg" alt="YesPlay" style="width:28px;height:28px;object-fit:contain;border-radius:6px;background:#fd7a01;padding:2px;border:1px solid var(--border);vertical-align:middle;margin-right:8px" loading="lazy">
+          <img decoding="async" src="../assets/logos/yesplay.svg" alt="YesPlay" style="width:28px;height:28px;object-fit:contain;border-radius:6px;background:#fd7a01;padding:2px;border:1px solid var(--border);vertical-align:middle;margin-right:8px" loading="lazy">
           <div style="flex:1;min-width:0">
             <div style="display:flex;align-items:center;justify-content:space-between;gap:8px">
               <div style="font-size:14px;font-weight:600;overflow:hidden;text-overflow:ellipsis;white-space:nowrap">YesPlay</div>
@@ -306,7 +307,7 @@
             <p style="font-size:12px;color:var(--bonus);font-weight:500;margin-top:2px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap">Deposit R3000 Get R3000</p>
           </div>
         </a><a href="../betting-site-review/pantherbet.html" class="brand-row-mobile">
-          <img src="../assets/logos/pantherbet.svg" alt="Pantherbet" style="width:28px;height:28px;object-fit:contain;border-radius:6px;background:#000000;padding:2px;border:1px solid var(--border);vertical-align:middle;margin-right:8px" loading="lazy">
+          <img decoding="async" src="../assets/logos/pantherbet.svg" alt="Pantherbet" style="width:28px;height:28px;object-fit:contain;border-radius:6px;background:#000000;padding:2px;border:1px solid var(--border);vertical-align:middle;margin-right:8px" loading="lazy">
           <div style="flex:1;min-width:0">
             <div style="display:flex;align-items:center;justify-content:space-between;gap:8px">
               <div style="font-size:14px;font-weight:600;overflow:hidden;text-overflow:ellipsis;white-space:nowrap">Pantherbet</div>
@@ -315,7 +316,7 @@
             <p style="font-size:12px;color:var(--bonus);font-weight:500;margin-top:2px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap">Get up to R14,000 (170%)</p>
           </div>
         </a><a href="../betting-site-review/playabets.html" class="brand-row-mobile">
-          <img src="../assets/logos/playabets.svg" alt="PlayaBets" style="width:28px;height:28px;object-fit:contain;border-radius:6px;background:#7DB913;padding:2px;border:1px solid var(--border);vertical-align:middle;margin-right:8px" loading="lazy">
+          <img decoding="async" src="../assets/logos/playabets.svg" alt="PlayaBets" style="width:28px;height:28px;object-fit:contain;border-radius:6px;background:#7DB913;padding:2px;border:1px solid var(--border);vertical-align:middle;margin-right:8px" loading="lazy">
           <div style="flex:1;min-width:0">
             <div style="display:flex;align-items:center;justify-content:space-between;gap:8px">
               <div style="font-size:14px;font-weight:600;overflow:hidden;text-overflow:ellipsis;white-space:nowrap">PlayaBets</div>
@@ -324,7 +325,7 @@
             <p style="font-size:12px;color:var(--bonus);font-weight:500;margin-top:2px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap">100% Sign-Up Bonus</p>
           </div>
         </a><a href="../betting-site-review/playtsogo.html" class="brand-row-mobile">
-          <img src="../assets/logos/playtsogo.svg" alt="PlayTsogo" style="width:28px;height:28px;object-fit:contain;border-radius:6px;background:#0F2D84;padding:2px;border:1px solid var(--border);vertical-align:middle;margin-right:8px" loading="lazy">
+          <img decoding="async" src="../assets/logos/playtsogo.svg" alt="PlayTsogo" style="width:28px;height:28px;object-fit:contain;border-radius:6px;background:#0F2D84;padding:2px;border:1px solid var(--border);vertical-align:middle;margin-right:8px" loading="lazy">
           <div style="flex:1;min-width:0">
             <div style="display:flex;align-items:center;justify-content:space-between;gap:8px">
               <div style="font-size:14px;font-weight:600;overflow:hidden;text-overflow:ellipsis;white-space:nowrap">PlayTsogo</div>
@@ -333,7 +334,7 @@
             <p style="font-size:12px;color:var(--bonus);font-weight:500;margin-top:2px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap">Exclusive: R10,000 + 25 Bet, 50 Spins + 25 Flights</p>
           </div>
         </a><a href="../betting-site-review/playbet-co-za.html" class="brand-row-mobile">
-          <img src="../assets/logos/playbet-co-za.svg" alt="Playbet.co.za" style="width:28px;height:28px;object-fit:contain;border-radius:6px;background:#CB151A;padding:2px;border:1px solid var(--border);vertical-align:middle;margin-right:8px" loading="lazy">
+          <img decoding="async" src="../assets/logos/playbet-co-za.svg" alt="Playbet.co.za" style="width:28px;height:28px;object-fit:contain;border-radius:6px;background:#CB151A;padding:2px;border:1px solid var(--border);vertical-align:middle;margin-right:8px" loading="lazy">
           <div style="flex:1;min-width:0">
             <div style="display:flex;align-items:center;justify-content:space-between;gap:8px">
               <div style="font-size:14px;font-weight:600;overflow:hidden;text-overflow:ellipsis;white-space:nowrap">Playbet.co.za</div>
@@ -342,7 +343,7 @@
             <p style="font-size:12px;color:var(--bonus);font-weight:500;margin-top:2px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap">R50 +50 Spins on Signup</p>
           </div>
         </a><a href="../betting-site-review/soccershop.html" class="brand-row-mobile">
-          <img src="../assets/logos/soccershop.svg" alt="Soccershop" style="width:28px;height:28px;object-fit:contain;border-radius:6px;background:#0578B4;padding:2px;border:1px solid var(--border);vertical-align:middle;margin-right:8px" loading="lazy">
+          <img decoding="async" src="../assets/logos/soccershop.svg" alt="Soccershop" style="width:28px;height:28px;object-fit:contain;border-radius:6px;background:#0578B4;padding:2px;border:1px solid var(--border);vertical-align:middle;margin-right:8px" loading="lazy">
           <div style="flex:1;min-width:0">
             <div style="display:flex;align-items:center;justify-content:space-between;gap:8px">
               <div style="font-size:14px;font-weight:600;overflow:hidden;text-overflow:ellipsis;white-space:nowrap">Soccershop</div>
@@ -351,7 +352,7 @@
             <p style="font-size:12px;color:var(--bonus);font-weight:500;margin-top:2px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap">Deposit R7500 Get R7500</p>
           </div>
         </a><a href="../betting-site-review/supersportbet.html" class="brand-row-mobile">
-          <img src="../assets/logos/supersportbet.svg" alt="Supersportbet" style="width:28px;height:28px;object-fit:contain;border-radius:6px;background:#111fa3;padding:2px;border:1px solid var(--border);vertical-align:middle;margin-right:8px" loading="lazy">
+          <img decoding="async" src="../assets/logos/supersportbet.svg" alt="Supersportbet" style="width:28px;height:28px;object-fit:contain;border-radius:6px;background:#111fa3;padding:2px;border:1px solid var(--border);vertical-align:middle;margin-right:8px" loading="lazy">
           <div style="flex:1;min-width:0">
             <div style="display:flex;align-items:center;justify-content:space-between;gap:8px">
               <div style="font-size:14px;font-weight:600;overflow:hidden;text-overflow:ellipsis;white-space:nowrap">Supersportbet</div>
@@ -360,7 +361,7 @@
             <p style="font-size:12px;color:var(--bonus);font-weight:500;margin-top:2px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap">Deposit R5000 Get R5000</p>
           </div>
         </a><a href="../betting-site-review/betbus.html" class="brand-row-mobile">
-          <img src="../assets/logos/betbus.svg" alt="betbus" style="width:28px;height:28px;object-fit:contain;border-radius:6px;background:#401010;padding:2px;border:1px solid var(--border);vertical-align:middle;margin-right:8px" loading="lazy">
+          <img decoding="async" src="../assets/logos/betbus.svg" alt="betbus" style="width:28px;height:28px;object-fit:contain;border-radius:6px;background:#401010;padding:2px;border:1px solid var(--border);vertical-align:middle;margin-right:8px" loading="lazy">
           <div style="flex:1;min-width:0">
             <div style="display:flex;align-items:center;justify-content:space-between;gap:8px">
               <div style="font-size:14px;font-weight:600;overflow:hidden;text-overflow:ellipsis;white-space:nowrap">betbus</div>
@@ -372,7 +373,6 @@
 
           <div style="background:var(--surface-2);border-radius:8px;padding:20px;margin-bottom:32px"><h2 style="font-size:16px;font-weight:700;margin-bottom:12px">Where to Get SnapScan (South Africa)</h2><p style="font-size:14px;color:var(--text-secondary);line-height:1.75">Download the SnapScan app (iOS/Android/Huawei AppGallery) and sign up with a South African SIM; add an eCommerce-enabled debit/credit card (supports SA banks; most international cards). To use Wallet withdrawals, verify with a South African ID and link a supported SA bank account.</p></div>
 
-          <!-- Explore More -->
           <div style="margin-top:32px;padding:24px;background:var(--surface-2);border-radius:8px">
             <h3 style="font-size:15px;font-weight:700;margin-bottom:16px">Explore More</h3>
             <div style="display:flex;flex-wrap:wrap;gap:10px">
@@ -400,7 +400,6 @@
         </div>
       </div>
 
-      <!-- Mobile related -->
       <div class="lg-hide" style="margin-top:40px">
         <div class="sidebar-card">
           <h3>Related Methods</h3>
