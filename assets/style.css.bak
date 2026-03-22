@@ -1587,3 +1587,169 @@ a.payment-pill:hover { background: var(--accent); color: #fff; border-color: var
 
 /* Audit fix: prevent long text overflow in table cells */
 .features-table td { word-break: break-word; max-width: 300px; }
+
+/* ===== SITE-WIDE CONSISTENCY FIXES (22 Mar 2026) ===== */
+
+/* 1. Global H2/H3 spacing in content areas */
+h2 { margin-top: 36px; margin-bottom: 16px; }
+h3 { margin-top: 28px; margin-bottom: 12px; }
+h2:first-child, h3:first-child { margin-top: 0; }
+
+/* 2. Affiliate disclosure bar - better mobile formatting */
+.affiliate-disclosure-bar {
+  font-size: 11px; color: var(--text-muted); background: var(--surface-2);
+  border-bottom: 1px solid var(--sep); padding: 8px 0;
+}
+.affiliate-disclosure-bar .container {
+  display: flex; align-items: flex-start; justify-content: center; gap: 6px;
+  padding: 0 16px; line-height: 1.5;
+}
+.affiliate-disclosure-bar svg { flex-shrink: 0; margin-top: 2px; }
+@media (max-width: 639px) {
+  .affiliate-disclosure-bar { padding: 6px 0; }
+  .affiliate-disclosure-bar .container { text-align: left; justify-content: flex-start; }
+}
+
+/* 3. Global bullet/list consistency */
+ul, ol { padding-left: 20px; margin-bottom: 16px; }
+li { margin-bottom: 6px; line-height: 1.75; }
+li:last-child { margin-bottom: 0; }
+ol { list-style-position: outside; }
+ol li { padding-left: 4px; }
+
+/* 4. Table consistency - global */
+.compare-table, .features-table {
+  width: 100%; border-collapse: collapse; font-size: 14px;
+}
+.compare-table th, .features-table th {
+  background: var(--table-head); font-size: 12px; font-weight: 700;
+  text-transform: uppercase; letter-spacing: 0.04em; padding: 12px 14px;
+  color: var(--text-muted); text-align: left; white-space: nowrap;
+}
+.compare-table td, .features-table td {
+  padding: 12px 14px; border-bottom: 1px solid var(--sep);
+  vertical-align: middle; line-height: 1.6;
+}
+.compare-table tbody tr:hover, .features-table tbody tr:hover {
+  background: var(--accent-light);
+}
+[data-theme="dark"] .compare-table tbody tr:hover,
+[data-theme="dark"] .features-table tbody tr:hover {
+  background: rgba(22,65,180,0.1);
+}
+/* Consistent Play/CTA buttons in tables */
+.compare-table .btn-primary.btn-sm,
+.compare-table .btn-sm,
+.features-table .btn-primary.btn-sm,
+.features-table .btn-sm {
+  font-size: 12px !important; padding: 6px 14px !important; border-radius: 6px;
+  white-space: nowrap; display: inline-flex; align-items: center;
+}
+/* Mobile table scroll hint */
+@media (max-width: 639px) {
+  .table-wrap { margin: 0 -16px; border-radius: 0; border-left: none; border-right: none; }
+  .compare-table th, .compare-table td,
+  .features-table th, .features-table td { padding: 10px 12px; font-size: 13px; }
+}
+
+/* 5. Promo code page - better mobile spacing */
+.promo-detail-hero { padding: 32px 0; }
+.promo-detail-hero .hero-inner { gap: 16px; }
+@media (max-width: 639px) {
+  .promo-detail-hero { padding: 24px 0; }
+  .promo-detail-hero .hero-inner { gap: 12px; }
+  .promo-detail-hero h1 { font-size: 1.5rem; }
+  .promo-detail-hero .promo-badges { gap: 6px; }
+  .promo-detail-hero .promo-badges span { font-size: 12px; padding: 6px 10px; }
+}
+/* Promo page body content spacing */
+.promo-body h2 { margin-top: 32px; margin-bottom: 14px; font-size: 1.25rem; }
+.promo-body p { margin-bottom: 16px; line-height: 1.75; color: var(--text-secondary); }
+.promo-body ol, .promo-body ul { margin-bottom: 16px; padding-left: 24px; }
+.promo-body li { margin-bottom: 8px; line-height: 1.75; color: var(--text-secondary); }
+
+/* 6. Category hero deco - remove oversized emoji icons */
+.category-hero-deco {
+  display: none;
+}
+
+/* 7. Toplist card (mobile betting-sites listing) */
+.toplist-card {
+  background: var(--surface); border: 1px solid var(--border); border-radius: 12px;
+  padding: 16px; position: relative; overflow: hidden;
+}
+.toplist-rank {
+  font-size: 13px; font-weight: 800; color: var(--text-muted); margin-bottom: 8px;
+}
+.toplist-header {
+  display: flex; align-items: center; gap: 12px; margin-bottom: 12px;
+}
+.toplist-logo {
+  width: 56px; height: 56px; object-fit: contain; border-radius: 10px;
+  padding: 4px; flex-shrink: 0; border: 1px solid var(--border);
+}
+.toplist-info { flex: 1; min-width: 0; }
+.toplist-bonus {
+  font-size: 15px; font-weight: 700; color: var(--bonus); line-height: 1.3;
+}
+.toplist-reward {
+  font-size: 13px; color: var(--text-muted); margin-top: 2px;
+}
+.toplist-rating-circle {
+  width: 44px; height: 44px; border-radius: 50%; border: 2px solid var(--accent);
+  display: flex; align-items: center; justify-content: center;
+  font-size: 15px; font-weight: 800; color: var(--accent); flex-shrink: 0;
+}
+.toplist-sales-msg { margin-bottom: 10px; }
+.toplist-bullets {
+  list-style: none; padding: 0; margin: 0 0 12px;
+  display: flex; flex-direction: column; gap: 4px;
+}
+.toplist-bullets li {
+  font-size: 13px; color: var(--text-secondary); line-height: 1.5; margin-bottom: 0;
+  padding-left: 16px; position: relative;
+}
+.toplist-bullets li::before {
+  content: '•'; position: absolute; left: 0; color: var(--accent);
+}
+.toplist-promo-box {
+  display: inline-flex; align-items: center; gap: 6px;
+  padding: 8px 14px; border: 1px dashed var(--accent); border-radius: 6px;
+  font-size: 13px; font-weight: 600; color: var(--accent);
+  cursor: pointer; margin-bottom: 12px; transition: background 0.15s;
+}
+.toplist-promo-box:hover { background: var(--accent-light); }
+.toplist-stars {
+  display: flex; align-items: center; gap: 2px; margin-bottom: 12px;
+  font-size: 13px; font-weight: 600; color: var(--text-secondary);
+}
+.toplist-stars span { margin-left: 6px; }
+.toplist-cta {
+  display: block; width: 100%; text-align: center; padding: 12px;
+  background: var(--accent); color: #fff; font-weight: 700; font-size: 14px;
+  border-radius: 8px; margin-bottom: 8px; text-decoration: none;
+  transition: background 0.15s;
+}
+.toplist-cta:hover { background: var(--accent-hover); }
+.toplist-review-link {
+  display: block; width: 100%; text-align: center; padding: 8px;
+  font-size: 13px; font-weight: 600; color: var(--accent);
+  text-decoration: none;
+}
+.toplist-review-link:hover { text-decoration: underline; }
+.toplist-tcs {
+  font-size: 11px; color: var(--text-muted); line-height: 1.4; margin-top: 8px;
+}
+.toplist-disclaimer {
+  font-size: 11px; color: var(--text-muted); margin-top: 4px;
+}
+[data-theme="dark"] .toplist-card { background: var(--surface); border-color: var(--border); }
+[data-theme="dark"] .toplist-promo-box { border-color: rgba(22,65,180,0.5); }
+
+/* 8. Logo/image consistency */
+.toplist-logo, .sidebar-brand-logo, .hero-pick-card img, .top-picks-logo {
+  width: 48px; height: 48px; object-fit: contain; border-radius: 8px;
+}
+@media (max-width: 639px) {
+  .toplist-logo { width: 48px; height: 48px; }
+}
