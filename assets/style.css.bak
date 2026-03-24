@@ -125,7 +125,10 @@ table { border-collapse: collapse; }
   border-bottom: 1px solid var(--sep); transition: background 140ms;
 }
 .dropdown-item:hover { background: var(--surface-2); color: var(--text-primary); }
+.dropdown-desc { font-size: 11px; color: var(--text-muted); white-space: nowrap; }
 .dropdown-rating { font-size: 11px; color: var(--accent); font-weight: 600; }
+.nav-dropdown-reviews { width: 260px; max-height: 400px; }
+.nav-dropdown-btn.active { color: var(--accent); border-bottom-color: var(--accent); }
 
 .theme-btn {
   display: flex; align-items: center; justify-content: center;
@@ -514,6 +517,8 @@ a.payment-pill:hover { background: var(--accent); color: #fff; border-color: var
 .news-featured-img span { font-size: 48px; opacity: 0.2; color: var(--accent); }
 .news-card { display: block; background: var(--card-bg); border: var(--card-border); border-radius: 8px; overflow: hidden; transition: box-shadow 200ms; height: 100%; }
 .news-card:hover { box-shadow: 0 4px 16px rgba(0,0,0,0.08); }
+.news-card-thumb { width: 100%; aspect-ratio: 16/9; overflow: hidden; background: var(--surface-2); }
+.news-card-thumb img { width: 100%; height: 100%; object-fit: cover; }
 .news-badge { font-size: 11px; font-weight: 600; color: #fff; padding: 2px 8px; border-radius: 4px; display: inline-block; }
 
 /* ===== FAQ ===== */
@@ -570,13 +575,15 @@ a.payment-pill:hover { background: var(--accent); color: #fff; border-color: var
   letter-spacing: 0.05em; cursor: pointer; color: var(--accent);
 }
 .copy-btn {
-  padding: 8px 12px; background: var(--bonus); color: #fff;
+  padding: 8px 14px; background: var(--bonus); color: #fff;
   border-radius: 8px; border: none; cursor: pointer; min-width: 40px; min-height: 40px;
-  display: inline-flex; align-items: center; justify-content: center;
-  font-size: 13px; font-weight: 600;
+  display: inline-flex; align-items: center; justify-content: center; gap: 4px;
+  font-size: 13px; font-weight: 600; transition: background 200ms, transform 100ms;
 }
 .copy-btn:hover { filter: brightness(0.95); }
-.copy-btn.copied { background: #15803d; }
+.copy-btn:active { transform: scale(0.95); }
+.copy-btn.copied { background: #15803d; animation: copied-pulse 300ms ease; }
+@keyframes copied-pulse { 0% { transform: scale(1); } 50% { transform: scale(1.08); } 100% { transform: scale(1); } }
 
 /* ===== RATING BREAKDOWN ===== */
 .rating-ring { position: relative; width: 80px; height: 80px; flex-shrink: 0; }
@@ -825,7 +832,7 @@ a.payment-pill:hover { background: var(--accent); color: #fff; border-color: var
 .promo-card-bullets li::before { content: '\2713'; color: var(--bonus); font-weight: 700; font-size: 13px; flex-shrink: 0; }
 
 /* T&Cs text */
-.promo-card-tcs { font-size: 11px; color: var(--text-muted); line-height: 1.5; margin-bottom: 16px; flex: 1; }
+.promo-card-tcs { font-size: 11px; color: var(--text-muted); line-height: 1.5; margin-bottom: 16px; flex: 1; display: -webkit-box; -webkit-line-clamp: 3; -webkit-box-orient: vertical; overflow: hidden; }
 
 /* Card CTA */
 .promo-card-cta {
@@ -955,7 +962,7 @@ a.payment-pill:hover { background: var(--accent); color: #fff; border-color: var
 /* ===== COMPARE TABLE ALIGNMENT ===== */
 .compare-table td { text-align: center; vertical-align: middle; word-wrap: break-word; }
 .compare-table td:first-child { text-align: left; }
-.sticky-bottom-tcs { font-size: 11px; color: #888; line-height: 1.3; max-width: 280px; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+.sticky-bottom-tcs { font-size: 11px; color: #888; line-height: 1.3; max-width: 340px; display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden; }
 .sticky-bottom-right { display: flex; align-items: center; gap: 10px; flex-shrink: 0; }
 .sticky-bottom-code { font-family: 'Courier New', monospace; font-size: 13px; font-weight: 700; padding: 6px 12px; background: #FFF8E7; border: 1.5px dashed #d4a843; border-radius: 6px; }
 .sticky-bottom-cta {
@@ -1671,6 +1678,93 @@ ol li { padding-left: 4px; }
 /* 6. Category hero deco - remove oversized emoji icons */
 .category-hero-deco {
   display: none;
+}
+
+/* Jump-to sticky section tabs (review pages) */
+.jump-to-bar {
+  position: sticky; top: 56px; z-index: 30;
+  background: var(--surface); border-bottom: 1px solid var(--border);
+  margin: 0 -16px 24px; padding: 0 16px;
+  overflow-x: auto; -webkit-overflow-scrolling: touch;
+  scrollbar-width: none;
+}
+.jump-to-bar::-webkit-scrollbar { display: none; }
+.jump-to-inner {
+  display: flex; gap: 0; min-width: max-content;
+}
+.jump-to-tab {
+  padding: 10px 14px; font-size: 13px; font-weight: 600;
+  color: var(--text-muted); white-space: nowrap;
+  border-bottom: 2px solid transparent; transition: color 180ms, border-color 180ms;
+}
+.jump-to-tab:hover { color: var(--text-primary); }
+.jump-to-tab.active { color: var(--accent); border-bottom-color: var(--accent); }
+
+/* Category hero badges (trust pills) */
+.category-hero-badges {
+  display: flex; flex-wrap: wrap; gap: 8px; margin-top: 12px;
+}
+.category-hero-badge {
+  display: inline-flex; align-items: center; gap: 4px;
+  padding: 6px 14px; border-radius: 20px;
+  font-size: 13px; font-weight: 600; line-height: 1;
+  background: rgba(255,255,255,0.15); color: #fff;
+  backdrop-filter: blur(4px); -webkit-backdrop-filter: blur(4px);
+  border: 1px solid rgba(255,255,255,0.2);
+}
+[data-theme="dark"] .category-hero-badge {
+  background: rgba(255,255,255,0.1); border-color: rgba(255,255,255,0.15);
+}
+
+/* Casino quick filters */
+.casino-quick-filters {
+  display: flex; align-items: center; gap: 8px; flex-wrap: wrap;
+  margin-bottom: 20px; padding: 12px 0;
+}
+.casino-filter {
+  padding: 6px 16px; border-radius: 20px; font-size: 13px; font-weight: 600;
+  background: var(--surface-2); color: var(--text-secondary); border: 1px solid var(--border);
+  cursor: pointer; transition: all 180ms;
+}
+.casino-filter:hover { border-color: var(--accent); color: var(--accent); }
+.casino-filter.active { background: var(--accent); color: #fff; border-color: var(--accent); }
+
+/* Share bar (articles) */
+.share-bar {
+  display: flex; align-items: center; gap: 12px; margin-top: 24px;
+  padding: 16px 0; border-top: 1px solid var(--sep);
+}
+.share-btn {
+  display: inline-flex; align-items: center; gap: 6px;
+  padding: 8px 16px; border-radius: 20px; font-size: 13px; font-weight: 600;
+  color: #fff; text-decoration: none; transition: opacity 180ms;
+}
+.share-btn:hover { opacity: 0.85; }
+.share-whatsapp { background: #25D366; }
+.share-x { background: #000; }
+[data-theme="dark"] .share-x { background: #333; }
+
+/* Subcategory navigation pills */
+.subcat-nav { margin: 32px 0 24px; }
+.subcat-nav-heading { font-size: 18px; font-weight: 700; margin-bottom: 14px; }
+.subcat-nav-pills { display: flex; flex-wrap: wrap; gap: 10px; }
+.subcat-pill {
+  display: inline-flex; align-items: center; gap: 7px;
+  padding: 8px 14px; border-radius: 8px;
+  border: 1px solid var(--border); background: var(--surface);
+  font-size: 13px; font-weight: 600; color: var(--text-primary);
+  text-decoration: none; transition: border-color .15s, background .15s;
+}
+.subcat-pill:hover { border-color: var(--accent); background: var(--accent-light); color: var(--accent); text-decoration: none; }
+.subcat-pill-icon { display: flex; align-items: center; color: var(--accent); }
+[data-theme="dark"] .subcat-pill { background: var(--surface); border-color: var(--border); }
+[data-theme="dark"] .subcat-pill:hover { background: var(--accent-light); }
+
+/* Best for labels */
+.best-for-label {
+  display: inline-block; font-size: 11px; font-weight: 700;
+  color: var(--accent); background: var(--accent-light);
+  padding: 3px 10px; border-radius: 12px; margin-bottom: 8px;
 }
 
 /* 7. Toplist card (mobile betting-sites listing) */
