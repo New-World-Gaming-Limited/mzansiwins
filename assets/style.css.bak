@@ -585,6 +585,51 @@ a.payment-pill:hover { background: var(--accent); color: #fff; border-color: var
 .copy-btn.copied { background: #15803d; animation: copied-pulse 300ms ease; }
 @keyframes copied-pulse { 0% { transform: scale(1); } 50% { transform: scale(1.08); } 100% { transform: scale(1); } }
 
+/* ===== REVIEW SECTION CARD ===== */
+.review-section-card {
+  background: var(--surface); border: 1px solid var(--sep); border-radius: 10px;
+  padding: 24px 28px;
+}
+@media (max-width: 639px) { .review-section-card { padding: 20px 16px; } }
+
+/* Review CTA box (mid-article) */
+.review-cta-box {
+  background: var(--accent-light, rgba(22,65,180,0.06));
+  border: 2px solid rgba(22,65,180,0.15);
+  border-radius: 10px; padding: 20px 24px;
+}
+.review-cta-inner {
+  display: flex; align-items: center; justify-content: space-between; gap: 16px; flex-wrap: wrap;
+}
+.review-cta-text { flex: 1; min-width: 200px; }
+@media (max-width: 480px) {
+  .review-cta-inner { flex-direction: column; align-items: stretch; }
+  .review-cta-inner .btn-primary { text-align: center; justify-content: center; }
+}
+
+/* Review pros/cons improved grid */
+.review-pros-cons-grid {
+  display: grid; grid-template-columns: 1fr 1fr; gap: 16px;
+}
+@media (max-width: 639px) { .review-pros-cons-grid { grid-template-columns: 1fr; } }
+
+/* Review content section styling */
+.review-content h2 {
+  padding-top: 24px; margin-top: 24px; border-top: 1px solid var(--sep);
+}
+.review-content h2:first-child { padding-top: 0; margin-top: 0; border-top: none; }
+
+/* How we rate tooltip */
+.how-we-rate-tooltip {
+  position: relative; display: inline-flex; cursor: pointer; vertical-align: middle;
+}
+.how-we-rate-panel {
+  display: none; position: absolute; top: calc(100% + 8px); left: 50%; transform: translateX(-50%);
+  width: 300px; background: var(--surface); border: 1px solid var(--border); border-radius: 8px;
+  padding: 16px; box-shadow: 0 8px 24px rgba(0,0,0,0.12); z-index: 20;
+}
+.how-we-rate-tooltip.active .how-we-rate-panel { display: block; }
+
 /* ===== RATING BREAKDOWN ===== */
 .rating-ring { position: relative; width: 80px; height: 80px; flex-shrink: 0; }
 .rating-ring svg { transform: rotate(-90deg); }
@@ -737,7 +782,7 @@ a.payment-pill:hover { background: var(--accent); color: #fff; border-color: var
 
 /* Review content */
 .review-content { margin-bottom: 40px; }
-.review-content h2 { font-size: 18px; font-weight: 700; margin-top: 36px; margin-bottom: 14px; color: var(--text-primary); }
+.review-content h2 { font-size: 18px; font-weight: 700; margin-bottom: 14px; color: var(--text-primary); }
 .review-content p { font-size: 15px; line-height: 1.75; color: var(--text-secondary); margin-bottom: 14px; }
 .review-content p strong { color: var(--text-primary); }
 .review-content .review-intro { font-size: 16px; line-height: 1.8; color: var(--text-primary); margin-bottom: 24px; }
@@ -858,20 +903,40 @@ a.payment-pill:hover { background: var(--accent); color: #fff; border-color: var
 
 /* ===== REVIEW HERO LOGO ===== */
 .review-hero-header {
-  display: flex; align-items: center; gap: 20px;
+  display: flex; align-items: flex-start; gap: 16px;
+}
+.review-hero-text {
+  flex: 1;
 }
 .review-hero-logo {
-  width: 72px; height: 72px; border-radius: 14px; object-fit: contain;
+  width: 64px; height: 64px; border-radius: 12px; object-fit: contain;
   border: 1px solid var(--border); flex-shrink: 0;
 }
 @media (max-width: 767px) {
-  .review-hero-header { gap: 14px; }
-  .review-hero-logo { width: 56px; height: 56px; border-radius: 10px; }
+  .review-hero-header { gap: 12px; }
+  .review-hero-logo { width: 52px; height: 52px; border-radius: 10px; }
 }
 
 /* ===== BRAND WATERMARK HERO ===== */
 .brand-hero-wrap {
   position: relative; overflow: hidden;
+  background: var(--surface);
+}
+.brand-hero-wrap .breadcrumbs { margin-bottom: 8px; }
+
+/* Review trust badges */
+.review-trust-badges {
+  display: flex; flex-wrap: wrap; gap: 6px; margin-top: 8px;
+}
+.review-trust-badge {
+  display: inline-flex; align-items: center; gap: 4px;
+  font-size: 11px; font-weight: 600;
+  color: var(--bonus); background: rgba(22,163,74,0.08);
+  padding: 3px 10px; border-radius: 20px;
+  letter-spacing: 0.01em;
+}
+[data-theme="dark"] .review-trust-badge {
+  background: rgba(52,211,153,0.12); color: var(--bonus);
 }
 .brand-hero-wrap .brand-watermark {
   position: absolute; right: -20px; top: 50%; transform: translateY(-50%);
