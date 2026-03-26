@@ -585,6 +585,44 @@ a.payment-pill:hover { background: var(--accent); color: #fff; border-color: var
 .copy-btn.copied { background: #15803d; animation: copied-pulse 300ms ease; }
 @keyframes copied-pulse { 0% { transform: scale(1); } 50% { transform: scale(1.08); } 100% { transform: scale(1); } }
 
+/* ===== REVIEW BYLINE (compact) ===== */
+.review-byline {
+  display: flex; align-items: center; gap: 10px;
+  padding: 8px 0; margin-bottom: 12px;
+  font-size: 13px; color: var(--text-secondary); line-height: 1.5;
+  flex-wrap: wrap; border-bottom: 1px solid var(--sep);
+}
+
+/* ===== QUICK FACTS ===== */
+.quick-facts-box {
+  background: var(--surface); border: 1px solid var(--sep); border-radius: 10px;
+  padding: 20px 24px; margin-bottom: 28px;
+}
+@media (max-width: 639px) { .quick-facts-box { padding: 16px; } }
+.quick-facts-header {
+  display: flex; align-items: center; gap: 8px; margin-bottom: 14px;
+}
+.quick-facts-header svg { display: none; }
+.quick-facts-header h2 {
+  font-size: 15px; font-weight: 700; margin: 0;
+}
+.quick-facts-table {
+  width: 100%; border-collapse: collapse; font-size: 14px;
+}
+.quick-facts-table th {
+  text-align: left; font-size: 11px; text-transform: uppercase;
+  letter-spacing: 0.05em; color: var(--text-muted); font-weight: 600;
+  padding: 6px 0; border-bottom: 1px solid var(--sep);
+}
+.quick-facts-table td {
+  padding: 8px 0; border-bottom: 1px solid var(--sep);
+  color: var(--text-secondary);
+}
+.quick-facts-table td:first-child {
+  font-weight: 600; color: var(--text-primary); width: 140px;
+}
+.quick-facts-table tr:last-child td { border-bottom: none; }
+
 /* ===== REVIEW SECTION CARD ===== */
 .review-section-card {
   background: var(--surface); border: 1px solid var(--sep); border-radius: 10px;
@@ -1749,7 +1787,7 @@ ol li { padding-left: 4px; }
 .jump-to-bar {
   position: sticky; top: 56px; z-index: 30;
   background: var(--surface); border-bottom: 1px solid var(--border);
-  margin: 0 -16px 24px; padding: 0 16px;
+  margin: 0 -16px 16px; padding: 0 16px;
   overflow-x: auto; -webkit-overflow-scrolling: touch;
   scrollbar-width: none;
 }
