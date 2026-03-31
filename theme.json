@@ -1,0 +1,25 @@
+{
+  "colors": {
+    "primary": "#1641B4",
+    "secondary": "#1234a0",
+    "accent": "#1641B4",
+    "text": "#111111",
+    "text_muted": "#888888",
+    "background": "#F9FAFC",
+    "card_bg": "#ffffff",
+    "success": "#16a34a",
+    "warning": "#ffd600",
+    "error": "#ef4444"
+  },
+  "fonts": {
+    "heading": "Inter, system-ui, sans-serif",
+    "body": "Inter, system-ui, sans-serif"
+  },
+  "border_radius": "8px",
+  "logo": {
+    "light": "assets/logo-light.svg",
+    "dark": "assets/logo-dark.svg",
+    "favicon": "favicon-96x96.png"
+  },
+  "flag": "🇿🇦"
+}
