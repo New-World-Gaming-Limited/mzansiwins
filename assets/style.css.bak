@@ -1584,8 +1584,14 @@ a.payment-pill:hover { background: var(--accent); color: #fff; border-color: var
 /* Animated hero background */
 .hero-animated-bg {
   position: relative; overflow: hidden;
-  background: linear-gradient(135deg, #0c1a4a 0%, #1641B4 50%, #0f2d7a 100%);
+  background: #1641B4;
 }
+.hero-animated-bg::before {
+  content: ''; position: absolute; inset: 0;
+  background: url(hero-banner.jpg) center/cover no-repeat;
+  opacity: 0.5; z-index: 0;
+}
+.hero-animated-bg .container { position: relative; z-index: 1; }
 .hero-animated-bg .hero-text h1,
 .hero-animated-bg .hero-text .hero-lead { color: #fff !important; }
 .hero-animated-bg .hero-text .hero-badge {
@@ -1623,7 +1629,8 @@ a.payment-pill:hover { background: var(--accent); color: #fff; border-color: var
 @media (prefers-reduced-motion: reduce) {
   .hero-animated-bg .particle-layer { animation: none !important; }
 }
-[data-theme="dark"] .hero-animated-bg { background: linear-gradient(135deg, #080f2e 0%, #0e2670 50%, #0a1d5a 100%); }
+[data-theme="dark"] .hero-animated-bg { background: #0e1a45; }
+[data-theme="dark"] .hero-animated-bg::before { opacity: 0.3; }
 [data-theme="dark"] .hero-animated-bg .particle-layer text { opacity: 0.6; }
 [data-theme="dark"] .hero-sports-characters { opacity: 0.15; }
 
