@@ -1589,23 +1589,26 @@ a.payment-pill:hover { background: var(--accent); color: #fff; border-color: var
 .hero-animated-bg .hero-text h1,
 .hero-animated-bg .hero-text .hero-lead { color: #fff !important; }
 .hero-animated-bg .hero-text .hero-badge {
-  background: rgba(255,255,255,0.15) !important; border: 1px solid rgba(255,255,255,0.3) !important;
+  background: rgba(14,44,143,0.4) !important; border: 1px solid rgba(255,255,255,0.3) !important;
   color: #fff !important; backdrop-filter: blur(4px); -webkit-backdrop-filter: blur(4px);
 }
 .hero-animated-bg .hero-text .hero-badge span { color: #fff !important; }
 .hero-animated-bg .hero-text .hero-badge svg { stroke: #fff; }
-.hero-animated-bg .hero-text h1 span[style*="color:var(--bonus)"] { color: #34d399 !important; }
-.hero-animated-bg .hero-trust-bar { background: rgba(255,255,255,0.08) !important; border-color: rgba(255,255,255,0.15) !important; }
+.hero-animated-bg .hero-text h1 span[style*="color:var(--bonus)"] { color: #ffc920 !important; }
+.hero-animated-bg .hero-trust-bar { background: rgba(14,44,143,0.4) !important; border-color: rgba(255,255,255,0.5) !important; }
 .hero-animated-bg .hero-trust-item { color: rgba(255,255,255,0.85) !important; }
 .hero-animated-bg .hero-trust-item.trust-badge-primary { background: rgba(255,255,255,0.12) !important; border-color: rgba(255,255,255,0.25) !important; color: #fff !important; }
-.hero-animated-bg .btn-outline { border-color: rgba(255,255,255,0.5); color: #fff; background: rgba(255,255,255,0.1); }
-.hero-animated-bg .btn-outline:hover { background: rgba(255,255,255,0.2); border-color: #fff; }
-.hero-animated-bg .hero-picks-box { background: rgba(255,255,255,0.1) !important; border-color: rgba(255,255,255,0.2) !important; backdrop-filter: blur(12px); -webkit-backdrop-filter: blur(12px); }
+.hero-animated-bg .btn-primary { background: #ffc920 !important; color: #000 !important; border-color: #ffc920 !important; }
+.hero-animated-bg .btn-primary:hover { background: #e6b41c !important; }
+.hero-animated-bg .btn-outline { border-color: rgba(255,255,255,0.5); color: #fff; background: rgba(14,44,143,0.4); }
+.hero-animated-bg .btn-outline:hover { background: rgba(14,44,143,0.6); border-color: #fff; }
+.hero-animated-bg .hero-picks-box { background: rgba(14,44,143,0.4) !important; border: 1px solid rgba(255,255,255,0.5) !important; backdrop-filter: blur(12px); -webkit-backdrop-filter: blur(12px); }
 .hero-animated-bg .hero-picks-box h2,
 .hero-animated-bg .hero-picks-box a[style*="font-size:12px"] { color: rgba(255,255,255,0.9) !important; }
 .hero-animated-bg .hero-pick-card { background: rgba(255,255,255,0.06) !important; border-color: rgba(255,255,255,0.12) !important; }
 .hero-animated-bg .hero-pick-card:hover { background: rgba(255,255,255,0.12) !important; }
 .hero-animated-bg .hero-pick-card div[style*="font-size:14px"] { color: #fff !important; }
+.hero-animated-bg .hero-pick-card [style*="color:var(--bonus)"] { color: #ffc920 !important; }
 .hero-animated-bg .hero-pick-card div[style*="font-size:12px"] { color: #34d399 !important; }
 .hero-animated-bg .hero-pick-card div[style*="font-size:18px"] { color: #fff !important; }
 .hero-animated-bg .hero-particles {
