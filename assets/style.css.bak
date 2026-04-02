@@ -1565,18 +1565,21 @@ a.payment-pill:hover { background: var(--accent); color: #fff; border-color: var
 }
 .payment-icon-sm { width: 24px; height: 24px; object-fit: contain; flex-shrink: 0; }
 
-/* Hero logo collage - tilted background */
-.hero-logo-collage {
-  position: absolute; inset: -40px -60px; z-index: 0;
-  display: flex; flex-wrap: wrap; gap: 12px; align-content: flex-start;
-  transform: rotate(-12deg) scale(1.3); transform-origin: center center;
-  opacity: 0.10; pointer-events: none; overflow: hidden;
+/* Sports characters overlay */
+.hero-sports-characters {
+  position: absolute; right: -20px; bottom: 0; z-index: 1;
+  pointer-events: none; opacity: 0.25;
 }
-.hero-collage-logo {
-  width: 56px; height: 56px; object-fit: contain; border-radius: 10px;
-  padding: 6px; flex-shrink: 0;
+.hero-sports-characters img {
+  width: 480px; height: auto; display: block;
 }
-[data-theme="dark"] .hero-logo-collage { opacity: 0.08; }
+@media (max-width: 1024px) {
+  .hero-sports-characters { right: -40px; }
+  .hero-sports-characters img { width: 360px; }
+}
+@media (max-width: 639px) {
+  .hero-sports-characters { display: none; }
+}
 
 /* Animated hero background */
 .hero-animated-bg {
@@ -1622,6 +1625,7 @@ a.payment-pill:hover { background: var(--accent); color: #fff; border-color: var
 }
 [data-theme="dark"] .hero-animated-bg { background: linear-gradient(135deg, #080f2e 0%, #0e2670 50%, #0a1d5a 100%); }
 [data-theme="dark"] .hero-animated-bg .particle-layer text { opacity: 0.6; }
+[data-theme="dark"] .hero-sports-characters { opacity: 0.15; }
 
 /* Sidebar T&Cs */
 .sidebar-tcs { font-size: 11px; color: var(--text-muted); line-height: 1.4; margin-top: 2px; }
