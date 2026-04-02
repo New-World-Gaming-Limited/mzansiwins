@@ -956,11 +956,41 @@ a.payment-pill:hover { background: var(--accent); color: #fff; border-color: var
 }
 
 /* ===== BRAND WATERMARK HERO ===== */
+/* Category page hero banner */
+.category-hero-banner {
+  position: relative; overflow: hidden;
+  background: #1641B4 url(hero-bg-swirl.jpg) center/cover no-repeat;
+  padding: 28px 0 24px; color: #fff;
+}
+.category-hero-banner .container { position: relative; z-index: 1; }
+.category-hero-banner .breadcrumbs { margin-bottom: 8px; }
+.category-hero-banner .breadcrumbs a { color: rgba(255,255,255,0.7); }
+.category-hero-banner .breadcrumbs a:hover { color: #fff; }
+.category-hero-banner .breadcrumbs .bc-sep { color: rgba(255,255,255,0.4); }
+.category-hero-banner .breadcrumbs span:last-child { color: rgba(255,255,255,0.9); }
+.category-hero-banner h1 { color: #fff; margin-bottom: 6px; }
+.category-hero-banner .page-subtitle { color: rgba(255,255,255,0.85); font-size: 15px; margin-bottom: 0; }
+.category-hero-banner .hero-stat { color: #ffc920; font-weight: 700; }
+[data-theme="dark"] .category-hero-banner { background-color: #0e1a45; }
+
+/* Review page hero banner */
 .brand-hero-wrap {
   position: relative; overflow: hidden;
-  background: var(--surface);
+  background: #1641B4 url(hero-bg-swirl.jpg) center/cover no-repeat;
+  color: #fff;
 }
+.brand-hero-wrap .container { position: relative; z-index: 1; }
 .brand-hero-wrap .breadcrumbs { margin-bottom: 8px; }
+.brand-hero-wrap .breadcrumbs a { color: rgba(255,255,255,0.7); }
+.brand-hero-wrap .breadcrumbs a:hover { color: #fff; }
+.brand-hero-wrap .breadcrumbs .bc-sep { color: rgba(255,255,255,0.4); }
+.brand-hero-wrap .breadcrumbs span:last-child { color: rgba(255,255,255,0.9); }
+.brand-hero-wrap h1 { color: #fff; }
+.brand-hero-wrap p { color: rgba(255,255,255,0.7); }
+.brand-hero-wrap .review-hero-logo {
+  background: #fff; padding: 6px; border: 2px solid rgba(255,255,255,0.3);
+}
+[data-theme="dark"] .brand-hero-wrap { background-color: #0e1a45; }
 
 /* Review trust badges */
 .review-trust-badges {
@@ -969,12 +999,9 @@ a.payment-pill:hover { background: var(--accent); color: #fff; border-color: var
 .review-trust-badge {
   display: inline-flex; align-items: center; gap: 4px;
   font-size: 11px; font-weight: 600;
-  color: var(--bonus); background: rgba(22,163,74,0.08);
+  color: #fff; background: rgba(255,255,255,0.15);
   padding: 3px 10px; border-radius: 20px;
-  letter-spacing: 0.01em;
-}
-[data-theme="dark"] .review-trust-badge {
-  background: rgba(52,211,153,0.12); color: var(--bonus);
+  letter-spacing: 0.01em; border: 1px solid rgba(255,255,255,0.25);
 }
 .brand-hero-wrap .brand-watermark {
   position: absolute; right: -20px; top: 50%; transform: translateY(-50%);
