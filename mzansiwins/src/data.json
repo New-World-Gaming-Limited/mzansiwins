@@ -1,0 +1,4810 @@
+{
+  "siteName": "MzansiWins",
+  "siteUrl": "mzansiwins.co.za",
+  "brands": [
+    {
+      "id": "tictacbets",
+      "name": "Tictacbets",
+      "overallRating": 4.7,
+      "welcomeBonusAmount": "100% up to R5,000 + 50 spins",
+      "welcomeBonusDetails": "Use promo code BETS",
+      "promoCode": "BETS",
+      "paymentMethodsList": [
+        "FNB",
+        "OTT voucher",
+        "American Express",
+        "1 Voucher",
+        "Blu voucher",
+        "Snapscan",
+        "Visa",
+        "Mastercard",
+        "Easyload",
+        "Peach Payment",
+        "Ozow",
+        "EFT",
+        "Zapper",
+        "TicTac Instore Deposit"
+      ],
+      "depositMethods": [
+        {
+          "name": "FNB",
+          "min": "R5",
+          "max": "R100000",
+          "cost": "Free",
+          "delay": "Instant"
+        },
+        {
+          "name": "OTT voucher",
+          "min": "R5",
+          "max": "R100000",
+          "cost": "Free",
+          "delay": "Instant"
+        },
+        {
+          "name": "American Express",
+          "min": "R5",
+          "max": "R100000",
+          "cost": "Free",
+          "delay": "Instant"
+        },
+        {
+          "name": "1 Voucher",
+          "min": "R5",
+          "max": "R100000",
+          "cost": "Free",
+          "delay": "Instant"
+        },
+        {
+          "name": "Blu voucher",
+          "min": "R5",
+          "max": "R100000",
+          "cost": "Free",
+          "delay": "Instant"
+        },
+        {
+          "name": "Snapscan",
+          "min": "R5",
+          "max": "R100000",
+          "cost": "Free",
+          "delay": "Instant"
+        },
+        {
+          "name": "Visa",
+          "min": "R5",
+          "max": "R100000",
+          "cost": "Free",
+          "delay": "Instant"
+        },
+        {
+          "name": "Mastercard",
+          "min": "R5",
+          "max": "R100000",
+          "cost": "Free",
+          "delay": "Instant"
+        },
+        {
+          "name": "Easyload",
+          "min": "R5",
+          "max": "R100000",
+          "cost": "Free",
+          "delay": "Instant"
+        },
+        {
+          "name": "Peach Payment",
+          "min": "R5",
+          "max": "R100000",
+          "cost": "Free",
+          "delay": "Instant"
+        },
+        {
+          "name": "Ozow",
+          "min": "R5",
+          "max": "R100000",
+          "cost": "Free",
+          "delay": "Instant"
+        },
+        {
+          "name": "EFT",
+          "min": "R5",
+          "max": "R100000",
+          "cost": "Free",
+          "delay": "Instant"
+        },
+        {
+          "name": "Zapper",
+          "min": "R5",
+          "max": "R100000",
+          "cost": "Free",
+          "delay": "Instant"
+        }
+      ],
+      "withdrawalMethods": [
+        {
+          "name": "General withdrawal times: 2-3 days processing. Specific methods not detailed in table but include the listed payment options."
+        }
+      ],
+      "sportsCovered": [
+        "Football",
+        "Tennis",
+        "Basketball",
+        "Rugby",
+        "American Football",
+        "Baseball",
+        "Handball",
+        "Volleyball",
+        "Ice Hockey",
+        "Golf",
+        "Cricket",
+        "Formula 1",
+        "Cycling",
+        "Olympic Games",
+        "Futsal",
+        "Table tennis",
+        "Boxing",
+        "Darts",
+        "MMA",
+        "Snooker",
+        "Biathlon",
+        "Cross-country skiing",
+        "Water Polo",
+        "Floorball",
+        "Bandy"
+      ],
+      "liveBetting": "Yes (available across several sports)",
+      "liveStreaming": "No",
+      "mobileApp": "Yes (Android only via APK)",
+      "customerSupport": "WhatsApp, Phone (0539270110), Email (support@tictacbets.co.za), Live Chat, Online Form, Address (3 Acacia Street Kuruman, Northern Cape - 8460 South Africa)",
+      "ratingLive": 4.3,
+      "ratingMobile": 4.5,
+      "ratingVariety": 4.6,
+      "ratingWebsite": 4.5,
+      "ratingOdds": 4.7,
+      "ratingPayment": 4.8,
+      "ratingSupport": 4.6,
+      "ratingReputation": 4.5,
+      "ratingBonus": 4.9,
+      "license": "Vengies Gaming (Pty) Ltd; Registration number: K2012050393; Licence number: 2012/050393/07; Licence date: 2021/04/30",
+      "pros": [
+        "Up to R5,000 welcome bonus with weekly cashback",
+        "500+ markets on major football matches",
+        "14 payment methods including Ozow and vouchers",
+        "Withdrawals processed within 24 hours in our test",
+        "PSL and Currie Cup coverage with in-play betting"
+      ],
+      "cons": [
+        "No live streaming for any sport",
+        "iOS app not available, mobile browser only for iPhone",
+        "Smaller brand with less market history than established operators"
+      ],
+      "minDeposit": "R5 (Minimum for bonus is R50)",
+      "minBet": "R1",
+      "betTypes": "Single, Accumulator, Three-way, Two-way, Under/Over, BTTS, Outright, Special bets",
+      "cashOut": "Yes (including Early Payout with minimum odds of 1.3)",
+      "otherProducts": "Casino (over 50 free casino spins as part of new customer offer), Lucky Numbers, Football Pool (No), E-sports (No)",
+      "yearEstablished": "2021 (Licence date)",
+      "tcs": "18+ T&Cs apply.",
+      "type": "betting",
+      "exitLink": "https://www.mzansiwins.co.za/link/49302a5d260212114831/146/",
+      "mcpTerms": "Register using the code BETS to claim the best bonus on Tic Tac Sports Betting. 18+. T&Cs apply.",
+      "mcpLogoUrl": "https://www.imageservera.com/uploadedimages/202509/Sep30/ORG_Tictacbets2625_23628.svg",
+      "baseColour": "#cc0100",
+      "textColour": "#ffffff",
+      "licenceStatus": "sa-licensed",
+      "bestFor": [
+        "Sports Variety",
+        "Mobile App",
+        "In-Play"
+      ]
+    },
+    {
+      "id": "easybet-south-africa",
+      "name": "Easybet South Africa",
+      "overallRating": 4.7,
+      "welcomeBonusAmount": "Free R50 + 150% MATCH to R1500",
+      "welcomeBonusDetails": "use promo code NEWBONUS",
+      "promoCode": "NEWBONUS",
+      "paymentMethodsList": [
+        "OTT voucher",
+        "Snapscan",
+        "Blu voucher",
+        "1 Voucher",
+        "Visa",
+        "Mastercard",
+        "Apple Pay",
+        "Easyload",
+        "Ozow",
+        "EFT",
+        "Zapper"
+      ],
+      "depositMethods": [
+        {
+          "name": "OTT voucher",
+          "min": "R5",
+          "max": "R100000",
+          "cost": "Free",
+          "delay": "Instant"
+        },
+        {
+          "name": "Snapscan",
+          "min": "R5",
+          "max": "R100000",
+          "cost": "Free",
+          "delay": "Instant"
+        },
+        {
+          "name": "Blu voucher",
+          "min": "R100",
+          "max": "R100000",
+          "cost": "Free",
+          "delay": "Instant"
+        },
+        {
+          "name": "1 Voucher",
+          "min": "R100",
+          "max": "R100000",
+          "cost": "Free",
+          "delay": "Instant"
+        },
+        {
+          "name": "Visa",
+          "min": "R5",
+          "max": "R100000",
+          "cost": "Free",
+          "delay": "Instant"
+        },
+        {
+          "name": "Mastercard",
+          "min": "R5",
+          "max": "R100000",
+          "cost": "Free",
+          "delay": "Instant"
+        },
+        {
+          "name": "Apple Pay",
+          "min": "R5",
+          "max": "R100000",
+          "cost": "Free",
+          "delay": "Instant"
+        },
+        {
+          "name": "Easyload",
+          "min": "R5",
+          "max": "R100000",
+          "cost": "Free",
+          "delay": "Instant"
+        },
+        {
+          "name": "Ozow",
+          "min": "R5",
+          "max": "R100000",
+          "cost": "Free",
+          "delay": "Instant"
+        },
+        {
+          "name": "EFT",
+          "min": "R5",
+          "max": "R100000",
+          "cost": "Free",
+          "delay": "Instant"
+        },
+        {
+          "name": "Zapper",
+          "min": "R5",
+          "max": "R100000",
+          "cost": "Free",
+          "delay": "Instant"
+        }
+      ],
+      "withdrawalMethods": [
+        {
+          "name": "OTT voucher",
+          "min": "R50",
+          "max": "R1000000",
+          "cost": "Free",
+          "delay": "1-2 business days"
+        },
+        {
+          "name": "Ozow",
+          "min": "R50",
+          "max": "R1000000",
+          "cost": "Free",
+          "delay": "1-2 business days"
+        },
+        {
+          "name": "EFT",
+          "min": "R50",
+          "max": "R1000000",
+          "cost": "Free",
+          "delay": "1-2 business days"
+        }
+      ],
+      "sportsCovered": [
+        "Football",
+        "Tennis",
+        "Basketball",
+        "Rugby",
+        "American Football",
+        "Baseball",
+        "Handball",
+        "Volleyball",
+        "Ice Hockey",
+        "Golf",
+        "Cricket",
+        "Formula 1",
+        "Cycling",
+        "Olympic Games",
+        "Futsal",
+        "Table tennis",
+        "Boxing",
+        "Darts",
+        "MMA",
+        "Snooker",
+        "Biathlon",
+        "Cross-country skiing",
+        "Water Polo",
+        "Floorball",
+        "Bandy"
+      ],
+      "liveBetting": "Yes",
+      "liveStreaming": "No",
+      "mobileApp": "Yes (Available on iOS and Android/APK)",
+      "customerSupport": "Live Chat, WhatsApp (072 549 0731), Email (help@easybet.co.za), Phone (0725490731), Address (Cape Town)",
+      "ratingLive": 4.5,
+      "ratingMobile": 4.8,
+      "ratingVariety": 4.6,
+      "ratingWebsite": 4.7,
+      "ratingOdds": 4.9,
+      "ratingPayment": 4.8,
+      "ratingSupport": 4.4,
+      "ratingReputation": 4.8,
+      "ratingBonus": 4.7,
+      "license": "Licence number: 10191733-001 (Western Cape Gambling and Racing Board)",
+      "pros": [
+        "Clean, fast website with good mobile experience",
+        "Covers 30+ sports with strong football and rugby odds",
+        "Weekly promotions beyond the welcome bonus",
+        "Generous 150% match up to R1,500"
+      ],
+      "cons": [
+        "Cash-out only available on partially won multi-bets",
+        "No live streaming on any sport",
+        "Fewer niche sports compared to larger operators"
+      ],
+      "minDeposit": "R5 (R20 to be eligible for bonus)",
+      "minBet": "R1",
+      "betTypes": "Singles, Accumulators",
+      "cashOut": "Yes (Note: Can only be done when at least one leg has already won)",
+      "otherProducts": "Casino (over 450 games)",
+      "yearEstablished": "2023",
+      "tcs": "18+ T&Cs apply.",
+      "type": "betting",
+      "exitLink": "https://www.mzansiwins.co.za/link/9b577ef9230623171008/146/",
+      "mcpTerms": "18+. T&Cs apply.",
+      "mcpLogoUrl": "https://www.imageservera.com/uploadedimages/202502/Feb07/ORG_easy-bet-logo2083_18752.svg",
+      "baseColour": "#FED702",
+      "textColour": "#000000",
+      "licenceStatus": "sa-licensed",
+      "bestFor": [
+        "Sports Variety",
+        "Mobile App",
+        "In-Play"
+      ]
+    },
+    {
+      "id": "zarbet",
+      "name": "Zarbet",
+      "overallRating": 4.6,
+      "welcomeBonusAmount": "Get up to R3,750 + 25FS",
+      "welcomeBonusDetails": "125% with promo code BETS",
+      "promoCode": "BETS",
+      "paymentMethodsList": [
+        "1 Voucher",
+        "Bank Transfer",
+        "OTT voucher",
+        "Visa",
+        "Mastercard",
+        "Apple Pay",
+        "Ozow"
+      ],
+      "depositMethods": [
+        {
+          "name": "1 Voucher",
+          "min": "R20",
+          "max": "R4000",
+          "cost": "Free",
+          "delay": "Instant"
+        },
+        {
+          "name": "Bank Transfer",
+          "min": "R20",
+          "max": "R1000000",
+          "cost": "Free",
+          "delay": "Instant"
+        },
+        {
+          "name": "OTT voucher",
+          "min": "R20",
+          "max": "R5000",
+          "cost": "Free",
+          "delay": "Instant"
+        },
+        {
+          "name": "Visa",
+          "min": "R20",
+          "max": "R1000000",
+          "cost": "Free",
+          "delay": "Instant"
+        },
+        {
+          "name": "Mastercard",
+          "min": "R20",
+          "max": "R1000000",
+          "cost": "Free",
+          "delay": "Instant"
+        },
+        {
+          "name": "Apple Pay",
+          "min": "R100",
+          "max": "R1000000",
+          "cost": "Free",
+          "delay": "Instant"
+        },
+        {
+          "name": "Ozow",
+          "min": "R100",
+          "max": "R1000000",
+          "cost": "Free",
+          "delay": "Instant"
+        }
+      ],
+      "withdrawalMethods": [
+        {
+          "name": "1 Voucher",
+          "min": "R250",
+          "max": "R10000000",
+          "cost": "Free",
+          "delay": "Up to 48 hours"
+        },
+        {
+          "name": "Bank Transfer",
+          "min": "R250",
+          "max": "R10000000",
+          "cost": "Free",
+          "delay": "Up to 48 hours"
+        },
+        {
+          "name": "OTT voucher",
+          "min": "R5",
+          "max": "R10000000",
+          "cost": "Free",
+          "delay": "Up to 48 hours"
+        },
+        {
+          "name": "Visa",
+          "min": "R250",
+          "max": "R10000000",
+          "cost": "Free",
+          "delay": "Up to 48 hours"
+        },
+        {
+          "name": "Mastercard",
+          "min": "R250",
+          "max": "R10000000",
+          "cost": "Free",
+          "delay": "Up to 48 hours"
+        },
+        {
+          "name": "Apple Pay",
+          "min": "R250",
+          "max": "R10000000",
+          "cost": "Free",
+          "delay": "Up to 48 hours"
+        },
+        {
+          "name": "Ozow",
+          "min": "R5",
+          "max": "R10000000",
+          "cost": "Free",
+          "delay": "Up to 48 hours"
+        }
+      ],
+      "sportsCovered": [
+        "Football",
+        "Tennis",
+        "Basketball",
+        "Rugby",
+        "American Football",
+        "Handball",
+        "Volleyball",
+        "Ice Hockey",
+        "Golf",
+        "Cricket",
+        "Formula 1",
+        "Cycling",
+        "Futsal",
+        "Table tennis",
+        "Badminton",
+        "Boxing",
+        "Darts",
+        "MMA",
+        "NASCAR",
+        "Snooker",
+        "Alpine Skiing",
+        "Biathlon",
+        "Water Polo",
+        "Auto racing",
+        "Beach football",
+        "Netball",
+        "Sumo",
+        "Pickleball and more (40+ sports)"
+      ],
+      "liveBetting": "Yes",
+      "liveStreaming": "Yes (available on filtered 'live games' only)",
+      "mobileApp": "Yes (Available on iOS and Android)",
+      "customerSupport": "- Live-chat: Yes\\n- Phone: 0860927238\\n- Email: support@zarbet.co.za",
+      "ratingLive": 4.2,
+      "ratingMobile": 4.8,
+      "ratingVariety": 4.4,
+      "ratingWebsite": 4.3,
+      "ratingOdds": 4.6,
+      "ratingPayment": 4.7,
+      "ratingSupport": 4.5,
+      "ratingReputation": 4.5,
+      "ratingBonus": 4.9,
+      "license": "- Registration number: 2024/307627/07\\n- Licence number: 10194647-002\\n- Licence date: 2024/03/27",
+      "pros": [
+        "125% match up to R3,750 plus 25 free spins",
+        "Cash-out and live streaming both available",
+        "40+ sports including less common markets",
+        "Multiple deposit options including Ozow and vouchers"
+      ],
+      "cons": [
+        "Limited ongoing promotions after the welcome offer",
+        "Website occasionally slow to load on mobile",
+        "Newer brand with less track record in SA"
+      ],
+      "minDeposit": "R20",
+      "minBet": "R0.50",
+      "betTypes": "Special betting markets (e.g., First half goals vs Second half goals, A substitute will score, Both halves over or under 1.5 goals, Race to X corners, Yellow cards double chance), Player Stats. Accumulator is listed as 'No' in the summary table but mentioned in general text as a powerful bet builder.",
+      "cashOut": "Yes (including partial cash out)",
+      "otherProducts": "Casino, poker, table games",
+      "yearEstablished": "2025",
+      "tcs": "18+ T&Cs apply.",
+      "type": "betting",
+      "exitLink": "https://www.mzansiwins.co.za/link/53abeed4250711122151/146/",
+      "mcpTerms": "The ZARbet code is BETS. 18+. T&Cs apply.",
+      "mcpLogoUrl": "https://www.imageservera.com/uploadedimages/202507/Jul24/ORG_zarbet3127_28146.svg",
+      "baseColour": "#000000",
+      "textColour": "#fcf8f8",
+      "licenceStatus": "sa-licensed",
+      "bestFor": [
+        "Sports Variety",
+        "Mobile App",
+        "Live Betting"
+      ]
+    },
+    {
+      "id": "betway-south-africa",
+      "name": "Betway South Africa",
+      "overallRating": 4.7,
+      "welcomeBonusAmount": "R10 Free Bet & 10 Aviator Flights",
+      "welcomeBonusDetails": "with promo code BETS",
+      "promoCode": "BETS",
+      "paymentMethodsList": [
+        "1 Voucher",
+        "FNB",
+        "OTT voucher",
+        "Visa",
+        "Mastercard",
+        "Peach Payment",
+        "Ozow",
+        "EFT",
+        "Voucher"
+      ],
+      "depositMethods": [
+        {
+          "name": "1 Voucher",
+          "min": "R10",
+          "max": "N/A",
+          "cost": "Free",
+          "delay": "Instant"
+        },
+        {
+          "name": "FNB",
+          "min": "R10",
+          "max": "N/A",
+          "cost": "Free",
+          "delay": "Instant"
+        },
+        {
+          "name": "OTT voucher",
+          "min": "R10",
+          "max": "N/A",
+          "cost": "Free",
+          "delay": "Instant"
+        },
+        {
+          "name": "Visa",
+          "min": "R10",
+          "max": "N/A",
+          "cost": "Free",
+          "delay": "Instant"
+        },
+        {
+          "name": "Mastercard",
+          "min": "R10",
+          "max": "N/A",
+          "cost": "Free",
+          "delay": "Instant"
+        },
+        {
+          "name": "Peach Payment",
+          "min": "R10",
+          "max": "N/A",
+          "cost": "Free",
+          "delay": "Instant"
+        },
+        {
+          "name": "Ozow",
+          "min": "R10",
+          "max": "N/A",
+          "cost": "Free",
+          "delay": "Instant"
+        },
+        {
+          "name": "EFT",
+          "min": "R10",
+          "max": "N/A",
+          "cost": "Free",
+          "delay": "Instant"
+        },
+        {
+          "name": "Voucher",
+          "min": "R10",
+          "max": "N/A",
+          "cost": "Free",
+          "delay": "Instant"
+        }
+      ],
+      "withdrawalMethods": [
+        {
+          "name": "EFT",
+          "min": "R10",
+          "max": "N/A",
+          "cost": "Free",
+          "delay": "Delayed payout times mentioned"
+        },
+        {
+          "name": "Standard Bank",
+          "min": "R10",
+          "max": "N/A",
+          "cost": "Free",
+          "delay": "Delayed payout times mentioned"
+        },
+        {
+          "name": "FNB",
+          "min": "R10",
+          "max": "N/A",
+          "cost": "Free",
+          "delay": "Delayed payout times mentioned"
+        },
+        {
+          "name": "Nedbank",
+          "min": "R10",
+          "max": "N/A",
+          "cost": "Free",
+          "delay": "Delayed payout times mentioned"
+        },
+        {
+          "name": "Absa",
+          "min": "R10",
+          "max": "N/A",
+          "cost": "Free",
+          "delay": "Delayed payout times mentioned"
+        }
+      ],
+      "sportsCovered": [
+        "Football",
+        "Tennis",
+        "Basketball",
+        "Rugby",
+        "American Football",
+        "Baseball",
+        "Handball",
+        "Volleyball",
+        "Ice Hockey",
+        "Motorsports",
+        "Golf",
+        "Horse Racing",
+        "Cricket",
+        "Formula 1",
+        "Cycling",
+        "Olympic Games",
+        "Futsal",
+        "Table tennis",
+        "Badminton",
+        "Beach Volley",
+        "Boxing",
+        "Darts",
+        "MMA",
+        "Snooker",
+        "Biathlon",
+        "Water Polo",
+        "Virtual sports",
+        "E-sports"
+      ],
+      "liveBetting": "Yes",
+      "liveStreaming": "Yes",
+      "mobileApp": "Yes (Available on iOS and Android)",
+      "customerSupport": "Live-chat, Phone (0861 787 250), Email (support@betway.co.za), Social Media platforms",
+      "ratingLive": 4.9,
+      "ratingMobile": 4.5,
+      "ratingVariety": 4.8,
+      "ratingWebsite": 4.6,
+      "ratingOdds": 4.8,
+      "ratingPayment": 4.7,
+      "ratingSupport": 4.3,
+      "ratingReputation": 4.5,
+      "ratingBonus": 4.5,
+      "license": "Registration number: 2011/134505/07, Licence number: 10181496-010, Licence date: 2016/11/30 (Western Cape Gambling and Racing Board)",
+      "pros": [
+        "24/7 customer support via live chat and phone",
+        "Established international brand with SA licence",
+        "Data-free Android app for zero-rated access",
+        "Strong live betting coverage across major sports"
+      ],
+      "cons": [
+        "Welcome bonus lower than many SA competitors",
+        "App performance can lag behind the desktop site",
+        "Withdrawal processing slower than some local operators"
+      ],
+      "minDeposit": "R10",
+      "minBet": "R1",
+      "betTypes": "Accumulator, Build A Bet, Handicap betting, Ante Post betting, Single bets, Multi bets, System bets (implied by accumulator/multi selection)",
+      "cashOut": "Yes (Auto Cash Out and Partial Cash Out also available)",
+      "otherProducts": "Casino games (Poker, Blackjack, Roulette), Live Betgames (Lucky Numbers, township games), Virtual sports, E-sports",
+      "yearEstablished": "2006",
+      "tcs": "Welcome package includes flights and free bet. 18+ T&Cs apply.",
+      "type": "betting",
+      "exitLink": "https://www.mzansiwins.co.za/link/65974d59190114175723/146/",
+      "mcpTerms": "Join betway South Africa with promo code BETS and get access to a welcome package that includes 10 Free Spins on 12 Masks of Fire DrumsTM, 10 Free Flights on Aviator and a R10 Free Bet. T&Cs apply. No persons under the age of 18 years are permitted to gamble. Winners know when to stop. National Responsible Gambling Programme: 0800 006 008. Warning: Gambling involves risk. By gambling on this website, you run the risk that you may lose.",
+      "mcpLogoUrl": "https://www.imageservera.com/uploadedimages/201901/Jan15/ORG_betway5525_49731.svg",
+      "baseColour": "#181818",
+      "textColour": "#ffffff",
+      "licenceStatus": "sa-licensed",
+      "bestFor": [
+        "Sports Variety",
+        "Mobile App",
+        "Live Betting"
+      ]
+    },
+    {
+      "id": "world-sports-betting",
+      "name": "World Sports Betting",
+      "overallRating": 4.6,
+      "welcomeBonusAmount": "R20,000 Bonus (100%)",
+      "welcomeBonusDetails": "use promo code NEWBONUS",
+      "promoCode": "NEWBONUS",
+      "tcs": "18+ only. T&Cs apply. Winners know when to stop.",
+      "paymentMethodsList": [
+        "Visa",
+        "Mastercard",
+        "EFT",
+        "Ozow",
+        "OTT voucher",
+        "Blu voucher",
+        "1 Voucher",
+        "Flash 1ForYou"
+      ],
+      "sportsCovered": [
+        "Football",
+        "Cricket",
+        "Rugby",
+        "UFC/MMA",
+        "Tennis",
+        "Horse Racing",
+        "Basketball",
+        "Golf",
+        "Olympics"
+      ],
+      "liveBetting": "Yes",
+      "liveStreaming": "Yes",
+      "mobileApp": "Yes (Android APK and iOS App Store)",
+      "customerSupport": "Phone: 0860 103 393, 011 326 3633, Email: support@wsb.co.za, Live chat",
+      "ratingLive": 4.6,
+      "ratingMobile": 4.5,
+      "ratingVariety": 4.9,
+      "ratingWebsite": 4.4,
+      "ratingOdds": 4.7,
+      "ratingPayment": 4.8,
+      "ratingSupport": 4.5,
+      "ratingReputation": 4.8,
+      "ratingBonus": 4.3,
+      "license": "Western Cape Gambling and Racing Board (WCGRB), Gauteng Gambling Board",
+      "pros": [
+        "Operating since 2002 with established reputation",
+        "Live streaming available on selected events",
+        "One of the widest sports selections in SA",
+        "R20,000 maximum welcome bonus"
+      ],
+      "cons": [
+        "High bonus cap may come with steep wagering requirements",
+        "Some payment methods have limited withdrawal options",
+        "Website design feels dated compared to newer competitors"
+      ],
+      "minDeposit": "R10",
+      "yearEstablished": "2002",
+      "type": "betting",
+      "exitLink": "https://www.mzansiwins.co.za/link/6f4efc2a190222151445/146/",
+      "mcpTerms": "18+ only. T&Cs apply. Winners know when to stop.",
+      "mcpLogoUrl": "https://www.imageservera.com/uploadedimages/201902/Feb22/ORG_World Sports Betting logo1719_15472.svg",
+      "baseColour": "#041467",
+      "textColour": "#ffffff",
+      "licenceStatus": "sa-licensed",
+      "bestFor": [
+        "Mobile App",
+        "Live Betting",
+        "Best Odds"
+      ]
+    },
+    {
+      "id": "pantherbet",
+      "name": "Pantherbet",
+      "overallRating": 4.4,
+      "welcomeBonusAmount": "Get up to R14,000 (170%)",
+      "welcomeBonusDetails": "use promo code BETS",
+      "promoCode": "BETS",
+      "tcs": "18+ T&Cs apply.",
+      "paymentMethodsList": [
+        "EFTSecure",
+        "Visa",
+        "Mastercard",
+        "SnapScan",
+        "OTT voucher",
+        "Blu voucher",
+        "Ozow"
+      ],
+      "sportsCovered": [
+        "Football",
+        "Tennis",
+        "Basketball",
+        "Rugby",
+        "American Football",
+        "Baseball",
+        "Handball",
+        "Volleyball",
+        "Ice Hockey",
+        "Golf",
+        "Cricket",
+        "Formula 1",
+        "Cycling",
+        "Table tennis",
+        "Boxing",
+        "Darts",
+        "MMA",
+        "Snooker",
+        "Rugby",
+        "NASCAR",
+        "MMA",
+        "Volleyball"
+      ],
+      "liveBetting": "Yes",
+      "liveStreaming": "Limited",
+      "mobileApp": "No (mobile-optimized site)",
+      "customerSupport": "Live chat (24/7), Email: support@pantherbet.co.za, Phone: +27 76 247 0816",
+      "ratingLive": 4.1,
+      "ratingMobile": 4.5,
+      "ratingVariety": 4.3,
+      "ratingWebsite": 4.2,
+      "ratingOdds": 4.4,
+      "ratingPayment": 4.5,
+      "ratingSupport": 4.0,
+      "ratingReputation": 4.5,
+      "ratingBonus": 4.6,
+      "license": "Western Cape Gambling and Racing Board (license 10194613-001, issued March 2025)",
+      "pros": [
+        "Very generous 170% welcome bonus",
+        "38 sports covered",
+        "24/7 live chat support",
+        "Fast cash out"
+      ],
+      "cons": [
+        "New operator (2025)",
+        "No dedicated mobile app"
+      ],
+      "minDeposit": "R10",
+      "yearEstablished": "2025",
+      "type": "betting",
+      "exitLink": "https://www.mzansiwins.co.za/link/f21fedfc250912164402/146/",
+      "mcpTerms": "18+. T&Cs apply. The Pantherbet promo code is BETS.",
+      "mcpLogoUrl": "https://www.imageservera.com/uploadedimages/202510/Oct01/ORG_panther-bet5260_47346.svg",
+      "baseColour": "#000000",
+      "textColour": "#ffffff",
+      "cashOut": "Yes",
+      "licenceStatus": "sa-licensed",
+      "bestFor": [
+        "In-Play",
+        "Cash Out",
+        "Top Bonus"
+      ]
+    },
+    {
+      "id": "topbet",
+      "name": "Topbet",
+      "overallRating": 4.3,
+      "welcomeBonusAmount": "Deposit R1000 Get R1000",
+      "welcomeBonusDetails": "with promo code BETS",
+      "promoCode": "BETS",
+      "tcs": "100% welcome match bonus up to R1000. 18+ T&Cs apply.",
+      "paymentMethodsList": [
+        "Visa",
+        "Mastercard",
+        "EFT",
+        "OTT voucher",
+        "Blu voucher",
+        "1 Voucher",
+        "Zapper",
+        "Ozow"
+      ],
+      "sportsCovered": [
+        "Football",
+        "Rugby",
+        "Cricket",
+        "Tennis",
+        "Horse Racing",
+        "Basketball",
+        "Boxing",
+        "American Football",
+        "Baseball",
+        "Golf",
+        "Ice Hockey",
+        "MMA",
+        "Snooker",
+        "Netball",
+        "Handball",
+        "Table tennis",
+        "Darts",
+        "Cycling"
+      ],
+      "liveBetting": "No",
+      "liveStreaming": "No",
+      "mobileApp": "Yes (Android)",
+      "customerSupport": "Phone: 0861-867-238, 061 910 2589, WhatsApp, Email: mobi@topbet.co.za, Live chat",
+      "ratingLive": 3.9,
+      "ratingMobile": 4.5,
+      "ratingVariety": 4.4,
+      "ratingWebsite": 4.2,
+      "ratingOdds": 4.5,
+      "ratingPayment": 4.3,
+      "ratingSupport": 4.3,
+      "ratingReputation": 4.5,
+      "ratingBonus": 4.4,
+      "license": "Western Cape Gambling and Racing Board (license 10190445-004)",
+      "pros": [
+        "15+ years in SA market",
+        "Wide sports coverage",
+        "Easy cash out",
+        "Low minimum deposit"
+      ],
+      "cons": [
+        "No live betting",
+        "No live streaming"
+      ],
+      "minDeposit": "R10",
+      "yearEstablished": "2010",
+      "type": "betting",
+      "exitLink": "https://www.mzansiwins.co.za/link/680f3cc0190222145659/146/",
+      "mcpTerms": "Join Topbet with promo code BETS and avail of their 100% welcome match bonus up to R1000.\r\n18+ only. T&Cs apply. Winners know when to stop.",
+      "mcpLogoUrl": "https://www.imageservera.com/uploadedimages/202504/Apr04/ORG_topbet3540_31870.svg",
+      "baseColour": "#000000",
+      "textColour": "#ffffff",
+      "cashOut": "Yes",
+      "licenceStatus": "sa-licensed",
+      "bestFor": [
+        "Mobile App",
+        "Cash Out",
+        "Best Odds"
+      ]
+    },
+    {
+      "id": "jabula-bets",
+      "name": "Jabula Bets",
+      "overallRating": 4.3,
+      "welcomeBonusAmount": "Get 150% up to R15,000",
+      "welcomeBonusDetails": "use promo code BETS",
+      "promoCode": "BETS",
+      "tcs": "18+ T&Cs apply.",
+      "paymentMethodsList": [
+        "Visa",
+        "Mastercard",
+        "EFT",
+        "Capitec",
+        "Ozow",
+        "OTT voucher",
+        "Blu voucher",
+        "1 Voucher",
+        "Skrill",
+        "NETELLER"
+      ],
+      "sportsCovered": [
+        "Football",
+        "American Football",
+        "Athletics",
+        "Basketball",
+        "Cricket",
+        "Darts",
+        "eSports",
+        "Golf",
+        "Handball",
+        "Ice Hockey",
+        "Motor Racing",
+        "Netball",
+        "Rugby",
+        "Tennis",
+        "UFC",
+        "Volleyball"
+      ],
+      "liveBetting": "Yes",
+      "liveStreaming": "Yes (eSports)",
+      "mobileApp": "No (mobile-optimized site)",
+      "customerSupport": "Live chat (08:00-20:00 Mon-Sat), WhatsApp: 0730012129, Phone: 0215650777, Email: hello@jabulabets.co.za",
+      "ratingLive": 4.0,
+      "ratingMobile": 4.5,
+      "ratingVariety": 4.1,
+      "ratingWebsite": 4.3,
+      "ratingOdds": 4.2,
+      "ratingPayment": 4.6,
+      "ratingSupport": 4.2,
+      "ratingReputation": 4.5,
+      "ratingBonus": 4.5,
+      "license": "Western Cape Gambling and Racing Board",
+      "pros": [
+        "Generous 150% welcome bonus",
+        "30+ sports including eSports",
+        "Multiple payment options",
+        "Competitive odds"
+      ],
+      "cons": [
+        "No dedicated mobile app",
+        "Live chat hours limited on Sundays"
+      ],
+      "minDeposit": "R10",
+      "yearEstablished": "2021",
+      "type": "betting",
+      "exitLink": "https://www.mzansiwins.co.za/link/cc9032a0250318120530/146/",
+      "mcpTerms": "18+. T&Cs apply.",
+      "mcpLogoUrl": "https://www.imageservera.com/uploadedimages/202601/Jan13/ORG_jabula-bets4332_38993.svg",
+      "baseColour": "#282625",
+      "textColour": "#ffffff",
+      "licenceStatus": "sa-licensed",
+      "bestFor": [
+        "Live Betting",
+        "Top Bonus",
+        "Fast Payouts"
+      ]
+    },
+    {
+      "id": "saffaluck",
+      "name": "SaffaLuck",
+      "overallRating": 4.3,
+      "welcomeBonusAmount": "Get a 100% First Deposit Bonus",
+      "welcomeBonusDetails": "Double your play",
+      "promoCode": "BETS (not required)",
+      "tcs": "No requirement to use a code when signing up. 18+ T&Cs apply.",
+      "paymentMethodsList": [
+        "Visa",
+        "Mastercard",
+        "EFT",
+        "1 Voucher",
+        "Ozow",
+        "Apple Pay",
+        "Bitcoin",
+        "Ethereum"
+      ],
+      "sportsCovered": [
+        "Football",
+        "Rugby",
+        "Cricket",
+        "Basketball",
+        "Tennis",
+        "Volleyball",
+        "eSports",
+        "Virtual sports"
+      ],
+      "liveBetting": "Yes",
+      "liveStreaming": "No",
+      "mobileApp": "No (mobile-optimized site)",
+      "customerSupport": "24/7 live chat, Email support",
+      "ratingLive": 3.8,
+      "ratingMobile": 4.5,
+      "ratingVariety": 4.2,
+      "ratingWebsite": 4.1,
+      "ratingOdds": 4.3,
+      "ratingPayment": 4.4,
+      "ratingSupport": 4.0,
+      "ratingReputation": 4.3,
+      "ratingBonus": 4.6,
+      "license": "Eastern Cape Gambling Board",
+      "pros": [
+        "Supports crypto payments",
+        "100% first deposit bonus",
+        "24/7 live chat",
+        "Mobile-friendly site"
+      ],
+      "cons": [
+        "New operator",
+        "No dedicated mobile app",
+        "Limited sports coverage"
+      ],
+      "minDeposit": "R20",
+      "yearEstablished": "2026",
+      "type": "both",
+      "exitLink": "https://www.mzansiwins.co.za/link/ea4ccdb3260111202147/146/",
+      "mcpTerms": "The SaffaLuck referral code is BETS, but there is no requirement to use a code when you sign up for sports betting or casino play.",
+      "mcpLogoUrl": "https://www.imageservera.com/uploadedimages/202601/Jan12/ORG_saffaluck4170_37536.svg",
+      "baseColour": "#001F12",
+      "textColour": "#fdfcfc",
+      "licenceStatus": "sa-licensed",
+      "bestFor": [
+        "In-Play",
+        "Top Bonus"
+      ]
+    },
+    {
+      "id": "sportingbet",
+      "name": "Sportingbet",
+      "overallRating": 4.4,
+      "welcomeBonusAmount": "Up to R3,000 + 300 Spins",
+      "welcomeBonusDetails": "3 Deposit Bonuses",
+      "promoCode": "PROMOCODE",
+      "paymentMethodsList": [
+        "1 Voucher",
+        "PayPal",
+        "Skrill",
+        "FNB",
+        "Visa",
+        "Mastercard",
+        "Payz",
+        "NETELLER",
+        "Ozow",
+        "EFT"
+      ],
+      "depositMethods": [
+        {
+          "name": "1 Voucher",
+          "min": "N/A",
+          "max": "N/A",
+          "cost": "N/A",
+          "delay": "N/A"
+        },
+        {
+          "name": "PayPal",
+          "min": "R200",
+          "max": "R100000",
+          "cost": "Free",
+          "delay": "24 hours"
+        },
+        {
+          "name": "Skrill",
+          "min": "R200",
+          "max": "R200000",
+          "cost": "Free",
+          "delay": "24 hours"
+        },
+        {
+          "name": "FNB",
+          "min": "R200",
+          "max": "R25000",
+          "cost": "Free",
+          "delay": "24 hours"
+        },
+        {
+          "name": "Visa",
+          "min": "R200",
+          "max": "R25000",
+          "cost": "Free",
+          "delay": "24 hours"
+        },
+        {
+          "name": "Mastercard",
+          "min": "R200",
+          "max": "R250000",
+          "cost": "Free",
+          "delay": "1-2 minutes"
+        },
+        {
+          "name": "Payz",
+          "min": "R200",
+          "max": "R250000",
+          "cost": "Free",
+          "delay": "24 hours"
+        },
+        {
+          "name": "NETELLER",
+          "min": "R200",
+          "max": "R100000",
+          "cost": "Free",
+          "delay": "2-6 hours"
+        },
+        {
+          "name": "Ozow",
+          "min": "N/A",
+          "max": "N/A",
+          "cost": "N/A",
+          "delay": "N/A"
+        },
+        {
+          "name": "EFT",
+          "min": "R200",
+          "max": "R25000",
+          "cost": "Free",
+          "delay": "2-4 business days"
+        }
+      ],
+      "withdrawalMethods": [
+        {
+          "name": "1 Voucher",
+          "min": "N/A",
+          "max": "N/A",
+          "cost": "N/A",
+          "delay": "N/A"
+        },
+        {
+          "name": "PayPal",
+          "min": "R200",
+          "max": "R100000",
+          "cost": "Free",
+          "delay": "24 hours"
+        },
+        {
+          "name": "Skrill",
+          "min": "R200",
+          "max": "R200000",
+          "cost": "Free",
+          "delay": "24 hours"
+        },
+        {
+          "name": "FNB",
+          "min": "R200",
+          "max": "R25000",
+          "cost": "Free",
+          "delay": "24 hours"
+        },
+        {
+          "name": "Visa",
+          "min": "R200",
+          "max": "R25000",
+          "cost": "Free",
+          "delay": "24 hours"
+        },
+        {
+          "name": "Mastercard",
+          "min": "R200",
+          "max": "R250000",
+          "cost": "Free",
+          "delay": "1-2 minutes"
+        },
+        {
+          "name": "Payz",
+          "min": "R200",
+          "max": "R250000",
+          "cost": "Free",
+          "delay": "24 hours"
+        },
+        {
+          "name": "NETELLER",
+          "min": "R200",
+          "max": "R100000",
+          "cost": "Free",
+          "delay": "2-6 hours"
+        },
+        {
+          "name": "Ozow",
+          "min": "N/A",
+          "max": "N/A",
+          "cost": "N/A",
+          "delay": "N/A"
+        },
+        {
+          "name": "EFT",
+          "min": "R200",
+          "max": "R25000",
+          "cost": "Free",
+          "delay": "2-4 business days"
+        }
+      ],
+      "sportsCovered": [
+        "Football",
+        "Tennis",
+        "Basketball",
+        "Rugby",
+        "American Football",
+        "Baseball",
+        "Handball",
+        "Volleyball",
+        "Ice Hockey",
+        "Motorsports",
+        "Golf",
+        "Horse Racing",
+        "Cricket",
+        "Formula 1",
+        "Cycling",
+        "Olympic Games",
+        "Rugby League",
+        "Rugby Union",
+        "Futsal",
+        "Table tennis",
+        "Badminton",
+        "Boxing",
+        "Darts",
+        "MMA",
+        "MotoGP",
+        "NASCAR",
+        "Snooker",
+        "Biathlon",
+        "Cross-country skiing",
+        "Water Polo",
+        "Floorball",
+        "Bandy",
+        "Chess",
+        "Combat sports"
+      ],
+      "liveBetting": "Yes",
+      "liveStreaming": "Yes (Football and Tennis)",
+      "mobileApp": "Yes (iOS and Android available)",
+      "customerSupport": "Live-chat: Yes, Phone: 08000280348, Email: support@sportingbet.co.za",
+      "ratingLive": 4.4,
+      "ratingMobile": 4.3,
+      "ratingVariety": 4.5,
+      "ratingWebsite": 4.3,
+      "ratingOdds": 4.6,
+      "ratingPayment": 4.4,
+      "ratingSupport": 4.1,
+      "ratingReputation": 4.3,
+      "ratingBonus": 4.2,
+      "license": "Registration number: 2012/187650/07, Licence number: 10125193-017, Licence date: 2023/07/31",
+      "pros": [
+        "Great range of sports",
+        "Bet Builder feature",
+        "Excellent welcome bonus",
+        "Bet boost",
+        "odds boost and football challenge"
+      ],
+      "cons": [
+        "Delays with customer support",
+        "Limited live streaming"
+      ],
+      "minDeposit": "R10",
+      "minBet": "R1",
+      "betTypes": "Single, Multi (Accumulator), Handicap, BTTS, Under/Over, Outright, Special bets",
+      "cashOut": "Yes (Partial Cash Out available, but no Auto Cash Out)",
+      "otherProducts": "Casino available (Baccarat, Wheels), Football pool (No), DFS App (No), Poker App (No)",
+      "yearEstablished": "2008",
+      "tcs": "Earn bonus and spins on first three deposits. 18+ T&Cs apply.",
+      "type": "betting",
+      "exitLink": "https://www.mzansiwins.co.za/link/53d0c234190213110607/146/",
+      "mcpTerms": "Earn up to R3,000 in bonus funds PLUS 300 Free Spins, on your first three deposits. To get started, register and make a First Deposit *Min R10 and get 100% free up to R1,000 plus 100 free slot spins. | T&Cs apply.",
+      "baseColour": "#0988d1",
+      "textColour": "#000000",
+      "licenceStatus": "sa-licensed",
+      "bestFor": [
+        "Sports Variety",
+        "Mobile App",
+        "Live Betting"
+      ]
+    },
+    {
+      "id": "gbets",
+      "name": "Gbets",
+      "overallRating": 4.4,
+      "welcomeBonusAmount": "R1,000 Bonus",
+      "welcomeBonusDetails": "use code \"NEWBONUS\"",
+      "promoCode": "NEWBONUS",
+      "paymentMethodsList": [
+        "OTT voucher",
+        "FNB",
+        "Blu voucher",
+        "1 Voucher",
+        "Visa",
+        "Mastercard",
+        "Ozow",
+        "EFT",
+        "SID",
+        "Paygate"
+      ],
+      "depositMethods": [
+        {
+          "name": "OTT voucher",
+          "min": "R10",
+          "max": "R100000",
+          "cost": "Free",
+          "delay": "Instant"
+        },
+        {
+          "name": "FNB",
+          "min": "R10",
+          "max": "R100000",
+          "cost": "Free",
+          "delay": "Instant"
+        },
+        {
+          "name": "Blu voucher",
+          "min": "R10",
+          "max": "R100000",
+          "cost": "Free",
+          "delay": "Instant"
+        },
+        {
+          "name": "1 Voucher",
+          "min": "R10",
+          "max": "R100000",
+          "cost": "Free",
+          "delay": "Instant"
+        },
+        {
+          "name": "Visa",
+          "min": "R10",
+          "max": "R100000",
+          "cost": "Free",
+          "delay": "Instant"
+        },
+        {
+          "name": "Mastercard",
+          "min": "R10",
+          "max": "R100000",
+          "cost": "Free",
+          "delay": "Instant"
+        },
+        {
+          "name": "Ozow",
+          "min": "R10",
+          "max": "R100000",
+          "cost": "Free",
+          "delay": "Instant"
+        },
+        {
+          "name": "EFT",
+          "min": "R10",
+          "max": "R100000",
+          "cost": "Free",
+          "delay": "Instant"
+        },
+        {
+          "name": "SID",
+          "min": "R10",
+          "max": "R100000",
+          "cost": "Free",
+          "delay": "Instant"
+        },
+        {
+          "name": "Paygate",
+          "min": "R10",
+          "max": "R100000",
+          "cost": "Free",
+          "delay": "Instant"
+        }
+      ],
+      "withdrawalMethods": [
+        {
+          "name": "OTT voucher",
+          "min": "R10",
+          "max": "R100000",
+          "cost": "Free",
+          "delay": "Instant"
+        },
+        {
+          "name": "FNB",
+          "min": "R10",
+          "max": "R100000",
+          "cost": "Free",
+          "delay": "Instant"
+        },
+        {
+          "name": "Blu voucher",
+          "min": "R10",
+          "max": "R100000",
+          "cost": "Free",
+          "delay": "Instant"
+        },
+        {
+          "name": "1 Voucher",
+          "min": "R10",
+          "max": "R100000",
+          "cost": "Free",
+          "delay": "Instant"
+        },
+        {
+          "name": "Visa",
+          "min": "R10",
+          "max": "R100000",
+          "cost": "Free",
+          "delay": "Instant"
+        },
+        {
+          "name": "Mastercard",
+          "min": "R10",
+          "max": "R100000",
+          "cost": "Free",
+          "delay": "Instant"
+        },
+        {
+          "name": "Ozow",
+          "min": "R10",
+          "max": "R100000",
+          "cost": "Free",
+          "delay": "Instant"
+        },
+        {
+          "name": "EFT",
+          "min": "R10",
+          "max": "R100000",
+          "cost": "Free",
+          "delay": "Instant"
+        },
+        {
+          "name": "SID",
+          "min": "R10",
+          "max": "R100000",
+          "cost": "Free",
+          "delay": "Instant"
+        },
+        {
+          "name": "Paygate",
+          "min": "R10",
+          "max": "R100000",
+          "cost": "Free",
+          "delay": "Instant"
+        }
+      ],
+      "sportsCovered": [
+        "Football",
+        "Tennis",
+        "Basketball",
+        "Rugby",
+        "American Football",
+        "Baseball",
+        "Handball",
+        "Volleyball",
+        "Ice Hockey",
+        "Golf",
+        "Cricket",
+        "Formula 1",
+        "Cycling",
+        "Rugby League",
+        "Rugby Union",
+        "Futsal",
+        "Table tennis",
+        "Badminton",
+        "Boxing",
+        "Darts",
+        "MMA",
+        "NASCAR",
+        "Snooker",
+        "Alpine Skiing",
+        "Biathlon",
+        "Surfing",
+        "Water Polo",
+        "Lacrosse",
+        "Floorball",
+        "Bandy",
+        "Aussie Rules Football",
+        "Politics"
+      ],
+      "liveBetting": "Yes",
+      "liveStreaming": "No (Match Tracker available)",
+      "mobileApp": "Yes (Available on iOS and Android via APK, Casino App available)",
+      "customerSupport": "Live-chat: Yes, Phone: 0210233634, Email: support@gbets.co.za, Address: 66 Ontdekkers Rd, Westgate Park, Roodepoort - 1734 South Africa",
+      "ratingLive": 4.2,
+      "ratingMobile": 4.3,
+      "ratingVariety": 4.3,
+      "ratingWebsite": 4.4,
+      "ratingOdds": 4.5,
+      "ratingPayment": 4.6,
+      "ratingSupport": 4.5,
+      "ratingReputation": 4.3,
+      "ratingBonus": 4.3,
+      "license": "Yes (Registration number: 2012-121-966-07, Licence number: 10179096-012, Licence date: 2023/11/30)",
+      "pros": [
+        "Great Welcome Bonus",
+        "24/7 Customer Service",
+        "Super-fast withdrawals",
+        "Large range of sports covered"
+      ],
+      "cons": [
+        "No live streaming",
+        "All bonus offers must be wagered"
+      ],
+      "minDeposit": "R10",
+      "minBet": "R1",
+      "betTypes": "Accumulator, System, Chain Bet, Single, Multi, Ante Post, Edit My Bet",
+      "cashOut": "Yes (Partial Cash Out available, Auto Cash Out: No)",
+      "otherProducts": "Casino games, Bet Games, E-sports",
+      "yearEstablished": "2005",
+      "tcs": "18+ only. T&Cs apply. Winners know when to stop.",
+      "type": "betting",
+      "exitLink": "https://www.mzansiwins.co.za/link/9947adce190222182544/146/",
+      "mcpTerms": "Use the Gbets promo code NEWBONUS. 18+ only. T&Cs apply. Winners know when to stop.",
+      "mcpLogoUrl": "https://www.imageservera.com/uploadedimages/202211/Nov09/ORG_GBets1679_15115.svg",
+      "baseColour": "#13372e",
+      "textColour": "#ffffff",
+      "licenceStatus": "sa-licensed",
+      "bestFor": [
+        "Sports Variety",
+        "Mobile App",
+        "In-Play"
+      ]
+    },
+    {
+      "id": "playbet-co-za",
+      "name": "Playbet.co.za",
+      "overallRating": 4.1,
+      "welcomeBonusAmount": "R50 +50 Spins on Signup",
+      "welcomeBonusDetails": "with promo code BETS",
+      "promoCode": "BETS",
+      "tcs": "18+ T&Cs apply.",
+      "paymentMethodsList": [
+        "Visa",
+        "Mastercard",
+        "EFT",
+        "Ozow",
+        "1 Voucher",
+        "OTT voucher",
+        "SnapScan",
+        "Zapper",
+        "Capitec Pay"
+      ],
+      "sportsCovered": [
+        "Football",
+        "Cricket",
+        "Rugby",
+        "Tennis",
+        "Boxing",
+        "Basketball",
+        "American Football",
+        "Baseball",
+        "International leagues"
+      ],
+      "liveBetting": "Yes",
+      "liveStreaming": "No (live tracker available)",
+      "mobileApp": "Yes (Android APK)",
+      "customerSupport": "Live chat, Phone: +27 087 057 5292, WhatsApp, Email: info@playbet.co.za",
+      "ratingLive": 3.8,
+      "ratingMobile": 4.3,
+      "ratingVariety": 4.0,
+      "ratingWebsite": 3.9,
+      "ratingOdds": 4.3,
+      "ratingPayment": 4.2,
+      "ratingSupport": 4.0,
+      "ratingReputation": 4,
+      "ratingBonus": 4.1,
+      "license": "Mpumalanga Economic Regulator (MER), Gauteng Gambling Board",
+      "pros": [
+        "Established since 2011",
+        "30+ sports available",
+        "Early cash out feature",
+        "Multiple payment methods"
+      ],
+      "cons": [
+        "No iOS app",
+        "No live streaming"
+      ],
+      "minDeposit": "R5",
+      "yearEstablished": "2011",
+      "type": "both",
+      "exitLink": "https://www.mzansiwins.co.za/link/d396cd75251113093940/146/",
+      "mcpTerms": "The playbet.co.za promo code is BETS. 18+. T&Cs apply.",
+      "mcpLogoUrl": "https://www.imageservera.com/uploadedimages/202511/Nov13/ORG_playbet-co-za3338_30053.svg",
+      "baseColour": "#CB151A",
+      "textColour": "#ffffff",
+      "cashOut": "Yes",
+      "licenceStatus": "sa-licensed",
+      "bestFor": [
+        "Mobile App",
+        "In-Play",
+        "Cash Out"
+      ]
+    },
+    {
+      "id": "soccershop",
+      "name": "Soccershop",
+      "overallRating": 4.0,
+      "welcomeBonusAmount": "Deposit R7500 Get R7500",
+      "welcomeBonusDetails": "use referral code BETS",
+      "promoCode": "BETS",
+      "paymentMethodsList": [
+        "Snapscan",
+        "Blu voucher",
+        "OTT voucher",
+        "1 Voucher",
+        "Bank Transfer",
+        "Visa",
+        "Mastercard",
+        "Ozow",
+        "EFT"
+      ],
+      "depositMethods": [
+        {
+          "name": "Snapscan",
+          "min": "R5",
+          "max": "R100000",
+          "cost": "Free",
+          "delay": "Instant"
+        },
+        {
+          "name": "Blu voucher",
+          "min": "R5",
+          "max": "R100000",
+          "cost": "Free",
+          "delay": "Instant"
+        },
+        {
+          "name": "OTT voucher",
+          "min": "R5",
+          "max": "R100000",
+          "cost": "Free",
+          "delay": "Instant"
+        },
+        {
+          "name": "1 Voucher",
+          "min": "R5",
+          "max": "R100000",
+          "cost": "Free",
+          "delay": "Instant"
+        },
+        {
+          "name": "Bank Transfer",
+          "min": "R5",
+          "max": "R100000",
+          "cost": "Free",
+          "delay": "Instant"
+        },
+        {
+          "name": "Visa",
+          "min": "R5",
+          "max": "R100000",
+          "cost": "Free",
+          "delay": "Instant"
+        },
+        {
+          "name": "Mastercard",
+          "min": "R5",
+          "max": "R100000",
+          "cost": "Free",
+          "delay": "Instant"
+        },
+        {
+          "name": "Ozow",
+          "min": "R5",
+          "max": "R100000",
+          "cost": "Free",
+          "delay": "Instant"
+        },
+        {
+          "name": "EFT",
+          "min": "R5",
+          "max": "R100000",
+          "cost": "Free",
+          "delay": "Instant"
+        }
+      ],
+      "withdrawalMethods": [
+        {
+          "name": "Bank Transfer",
+          "min": "R5",
+          "max": "R100000",
+          "cost": "Free",
+          "delay": "Instant"
+        },
+        {
+          "name": "EFT",
+          "min": "R5",
+          "max": "R100000",
+          "cost": "Free",
+          "delay": "Instant"
+        },
+        {
+          "name": "Snapscan",
+          "min": "R5",
+          "max": "R100000",
+          "cost": "Free",
+          "delay": "Instant"
+        },
+        {
+          "name": "Ozow",
+          "min": "R5",
+          "max": "R100000",
+          "cost": "Free",
+          "delay": "Instant"
+        }
+      ],
+      "sportsCovered": [
+        "Football",
+        "Tennis",
+        "Basketball",
+        "Rugby",
+        "American Football",
+        "Baseball",
+        "Handball",
+        "Volleyball",
+        "Ice Hockey",
+        "Golf",
+        "Horse Racing",
+        "Athletics",
+        "Cricket",
+        "Formula 1",
+        "Cycling",
+        "Table tennis",
+        "Boxing",
+        "Darts",
+        "Greyhounds",
+        "MMA",
+        "Snooker",
+        "Alpine Skiing",
+        "Biathlon",
+        "Cross-country skiing"
+      ],
+      "liveBetting": "Yes (live odds and stats available)",
+      "liveStreaming": "No (live match broadcasts not provided, only live coverage of events)",
+      "mobileApp": "Available (iOS and Android supported)",
+      "customerSupport": "Phone: 861106676, Email: support@soccershop.bet, Live-chat, Social Media (Facebook, X/Twitter, Instagram), 10 physical branches",
+      "ratingLive": 3.7,
+      "ratingMobile": 3.5,
+      "ratingVariety": 3.9,
+      "ratingWebsite": 3.8,
+      "ratingOdds": 4.4,
+      "ratingPayment": 4.1,
+      "ratingSupport": 3.9,
+      "ratingReputation": 4.3,
+      "ratingBonus": 4.0,
+      "license": "Licensed by the Mpumalanga Economic Regulator (Version number 2.1). Registration number: 2017/167101/07. Licence number: 9-2-1-09502. Licence date: 2021/03/09.",
+      "pros": [
+        "Attractive welcome bonus",
+        "Extensive football coverage",
+        "Simple website layout",
+        "Wide variety of promotions"
+      ],
+      "cons": [
+        "No Live Streaming function",
+        "Limited offer on niche sports"
+      ],
+      "minDeposit": "R5",
+      "minBet": "R5",
+      "betTypes": "Single, Multiples, accumulators, parlays, long-term bets",
+      "cashOut": "Full cash-out, Partial Cash Out",
+      "otherProducts": "Online Casino, Football pool (No), DFS App (No), Poker App (Yes)",
+      "yearEstablished": "1995 (Parent company LM Bookmakers)",
+      "tcs": "18+ T&Cs apply.",
+      "type": "betting",
+      "exitLink": "https://www.mzansiwins.co.za/link/9ebdf908240402101657/146/",
+      "mcpTerms": "Join SoccerShop.bet with promo code BETS and unlock the 100% deposit bonus up to R7500. Deposit R200 or more and place bets equal to 5x the value of your 1st\r\ndeposit at odds of 1/1 or more. Then email support@soccershop.bet to claim your bonus. 18+. T&Cs apply.",
+      "baseColour": "#0578B4",
+      "textColour": "#ffffff",
+      "licenceStatus": "sa-licensed",
+      "bestFor": [
+        "In-Play"
+      ]
+    },
+    {
+      "id": "wanejo-bets",
+      "name": "Wanejo Bets",
+      "overallRating": 4.0,
+      "welcomeBonusAmount": "Deposit R10,000 Get R10,000",
+      "welcomeBonusDetails": "with promo code BETS",
+      "promoCode": "BETS",
+      "tcs": "18+ T&Cs apply.",
+      "paymentMethodsList": [
+        "Visa",
+        "Mastercard",
+        "EFT",
+        "Ozow",
+        "1 Voucher",
+        "OTT voucher",
+        "Blu voucher",
+        "Bitcoin",
+        "Ethereum",
+        "Litecoin"
+      ],
+      "sportsCovered": [
+        "Football",
+        "Basketball",
+        "Tennis",
+        "Volleyball",
+        "Handball",
+        "eSports",
+        "Formula 1",
+        "Cycling",
+        "Rugby",
+        "Cricket"
+      ],
+      "liveBetting": "Yes",
+      "liveStreaming": "No",
+      "mobileApp": "No (mobile-optimized site)",
+      "customerSupport": "Live chat, Email, Phone: +27 73 698 1869, WhatsApp, Telegram (8am-9pm)",
+      "ratingLive": 3.6,
+      "ratingMobile": 4.3,
+      "ratingVariety": 3.8,
+      "ratingWebsite": 3.9,
+      "ratingOdds": 4.1,
+      "ratingPayment": 4.3,
+      "ratingSupport": 4.1,
+      "ratingReputation": 4,
+      "ratingBonus": 4.2,
+      "license": "Eastern Cape Gambling Board (ECBM017)",
+      "pros": [
+        "Accepts cryptocurrency",
+        "35+ sports covered",
+        "Huge R10,000 welcome bonus",
+        "Multiple contact channels"
+      ],
+      "cons": [
+        "No mobile app",
+        "No live streaming",
+        "Newer operator (2023)"
+      ],
+      "minDeposit": "R5",
+      "yearEstablished": "2023",
+      "type": "betting",
+      "exitLink": "https://www.mzansiwins.co.za/link/d7d4ec31251106143909/146/",
+      "mcpTerms": "The Wanejo Bets promo code is BETS and gives you access to the WB22 welcome deposit bonus of 100% up to R10,000. 18+. T&Cs apply.",
+      "mcpLogoUrl": "https://www.imageservera.com/uploadedimages/202511/Nov06/ORG_Wanejo1297_11681.png",
+      "baseColour": "#202020",
+      "textColour": "#000000",
+      "licenceStatus": "sa-licensed",
+      "bestFor": [
+        "In-Play"
+      ]
+    },
+    {
+      "id": "betshezi",
+      "name": "Betshezi",
+      "overallRating": 4.2,
+      "welcomeBonusAmount": "Deposit R2000 Get R2000",
+      "welcomeBonusDetails": "with promo code NEWBONUS",
+      "promoCode": "NEWBONUS",
+      "paymentMethodsList": [
+        "1 Voucher",
+        "OTT voucher",
+        "Visa",
+        "Mastercard",
+        "Ozow",
+        "EFT"
+      ],
+      "depositMethods": [
+        {
+          "name": "1 Voucher",
+          "min": "R10",
+          "max": "R100000",
+          "cost": "Free",
+          "delay": "Instant"
+        },
+        {
+          "name": "OTT voucher",
+          "min": "R10",
+          "max": "R100000",
+          "cost": "Free",
+          "delay": "Instant"
+        },
+        {
+          "name": "Visa",
+          "min": "R10",
+          "max": "R100000",
+          "cost": "Free",
+          "delay": "Instant"
+        },
+        {
+          "name": "Mastercard",
+          "min": "R10",
+          "max": "R100000",
+          "cost": "Free",
+          "delay": "Instant"
+        },
+        {
+          "name": "Ozow",
+          "min": "R10",
+          "max": "R100000",
+          "cost": "Free",
+          "delay": "Instant"
+        },
+        {
+          "name": "EFT",
+          "min": "R10",
+          "max": "R100000",
+          "cost": "Free",
+          "delay": "Instant"
+        }
+      ],
+      "withdrawalMethods": [
+        {
+          "name": "1 Voucher",
+          "min": "R10",
+          "max": "R1000000",
+          "cost": "Free",
+          "delay": "N/A"
+        },
+        {
+          "name": "OTT voucher",
+          "min": "R10",
+          "max": "R1000000",
+          "cost": "Free",
+          "delay": "N/A"
+        },
+        {
+          "name": "Visa",
+          "min": "R10",
+          "max": "R1000000",
+          "cost": "Free",
+          "delay": "N/A"
+        },
+        {
+          "name": "Mastercard",
+          "min": "R10",
+          "max": "R1000000",
+          "cost": "Free",
+          "delay": "N/A"
+        },
+        {
+          "name": "Ozow",
+          "min": "R10",
+          "max": "R1000000",
+          "cost": "Free",
+          "delay": "N/A"
+        },
+        {
+          "name": "EFT",
+          "min": "R10",
+          "max": "R1000000",
+          "cost": "Free",
+          "delay": "N/A"
+        }
+      ],
+      "sportsCovered": [
+        "Football",
+        "Tennis",
+        "Basketball",
+        "Rugby",
+        "American Football",
+        "Baseball",
+        "Handball",
+        "Volleyball",
+        "Ice Hockey",
+        "Motorsports",
+        "Golf",
+        "Cricket",
+        "Cycling",
+        "Olympic Games",
+        "Rugby League",
+        "Rugby Union",
+        "Futsal",
+        "Table tennis",
+        "Boxing",
+        "Darts",
+        "MMA",
+        "NASCAR",
+        "Snooker",
+        "Surfing",
+        "Water Polo",
+        "Lacrosse"
+      ],
+      "liveBetting": "Yes",
+      "liveStreaming": "Yes (available for selected events)",
+      "mobileApp": "Yes (Android APK available; No iOS app)",
+      "customerSupport": "Live Chat, Email: support@betshezi.com",
+      "ratingLive": 3.9,
+      "ratingMobile": 4,
+      "ratingVariety": 4.1,
+      "ratingWebsite": 4.0,
+      "ratingOdds": 4.2,
+      "ratingPayment": 4.3,
+      "ratingSupport": 3.8,
+      "ratingReputation": 4,
+      "ratingBonus": 4.4,
+      "license": "Licensed by the Western Cape Gambling Board. Licence number: 10191121-002, Registration number: 2021/964248/07",
+      "pros": [
+        "More than 30 sports to bet on",
+        "Mobile app for Android customers",
+        "Great welcome bonus",
+        "Support for common deposit methods"
+      ],
+      "cons": [
+        "No data free play",
+        "Transaction fees apply to some deposits",
+        "FICA KYC verification"
+      ],
+      "minDeposit": "R10",
+      "minBet": "R1",
+      "betTypes": "Singles, Multiples (Express), System (Chain)",
+      "cashOut": "Yes (Auto Cash Out and Partial Cash Out available)",
+      "otherProducts": "Casino (Pragmatic, Red Tiger, and EGT slots)",
+      "yearEstablished": "2021",
+      "tcs": "18+ T&Cs apply.",
+      "type": "betting",
+      "exitLink": "https://www.mzansiwins.co.za/link/9a796eb9221107160023/146/",
+      "mcpTerms": "18+. T&Cs apply.",
+      "mcpLogoUrl": "https://www.imageservera.com/uploadedimages/202211/Nov07/ORG_betshezi-logo3722_33508.svg",
+      "baseColour": "#000000",
+      "textColour": "#ffffff",
+      "licenceStatus": "sa-licensed",
+      "bestFor": [
+        "Sports Variety",
+        "Mobile App",
+        "Live Betting"
+      ]
+    },
+    {
+      "id": "lucky-fish",
+      "name": "Lucky Fish",
+      "overallRating": 4.0,
+      "welcomeBonusAmount": "R50 Sign Up Bonus",
+      "welcomeBonusDetails": "use promo code BETS",
+      "promoCode": "BETS",
+      "tcs": "18+ T&Cs apply.",
+      "paymentMethodsList": [
+        "Visa",
+        "Mastercard",
+        "EFT",
+        "Ozow",
+        "1 Voucher",
+        "OTT voucher",
+        "Zapper",
+        "Apple Pay",
+        "Capitec Pay"
+      ],
+      "sportsCovered": [
+        "Football",
+        "Horse Racing",
+        "Rugby",
+        "Cricket",
+        "eSoccer",
+        "Tennis",
+        "Basketball",
+        "Golf",
+        "MMA",
+        "Motorsport"
+      ],
+      "liveBetting": "Yes",
+      "liveStreaming": "Yes (Horse Racing via Gallop TV)",
+      "mobileApp": "Yes (Android APK, iOS App Store, Huawei AppGallery)",
+      "customerSupport": "24/7 Phone: 087 365 0651, Email: helpline@luckyfish.co.za, WhatsApp: 076 675 0710",
+      "ratingLive": 3.7,
+      "ratingMobile": 4.3,
+      "ratingVariety": 3.9,
+      "ratingWebsite": 4.0,
+      "ratingOdds": 4.0,
+      "ratingPayment": 4.1,
+      "ratingSupport": 3.8,
+      "ratingReputation": 4,
+      "ratingBonus": 4.3,
+      "license": "Eastern Cape Gambling Board (ECBM 012-01), Mpumalanga Economic Regulator (9-2-1-09838), Western Cape Gambling and Racing Board (10192071-003)",
+      "pros": [
+        "Multi-licensed operator",
+        "Horse racing live streaming",
+        "Available on all platforms",
+        "Very low R1 minimum deposit"
+      ],
+      "cons": [
+        "R50 bonus is modest",
+        "Focused mainly on local SA sports"
+      ],
+      "minDeposit": "R1",
+      "yearEstablished": "2011",
+      "type": "betting",
+      "exitLink": "https://www.mzansiwins.co.za/link/5d0cc690260212095127/146/",
+      "mcpTerms": "The Lucky Fish code is BETS. 18+. T&Cs apply.",
+      "baseColour": "#00252b",
+      "textColour": "#ffffff",
+      "licenceStatus": "sa-licensed",
+      "bestFor": [
+        "Mobile App",
+        "Live Betting"
+      ]
+    },
+    {
+      "id": "betxchange",
+      "name": "betXchange",
+      "overallRating": 4.2,
+      "welcomeBonusAmount": "R20,000 Money Back",
+      "welcomeBonusDetails": "Use referral code BETS",
+      "promoCode": "BETS",
+      "tcs": "18+ T&Cs apply.",
+      "paymentMethodsList": [
+        "Visa",
+        "Mastercard",
+        "EFT",
+        "Ozow",
+        "1 Voucher",
+        "OTT voucher",
+        "Capitec Pay",
+        "WalletDoc"
+      ],
+      "sportsCovered": [
+        "Football",
+        "Rugby",
+        "Cricket",
+        "Horse Racing",
+        "Tennis",
+        "Basketball",
+        "Golf",
+        "Lotto",
+        "MMA",
+        "Motorsport"
+      ],
+      "liveBetting": "Yes",
+      "liveStreaming": "No",
+      "mobileApp": "Yes (iOS App Store)",
+      "customerSupport": "Phone (24/7): +27 011 712 4610, WhatsApp: +27 076 675 0710, Live Chat (08:00-18:00), Email: support@betxchange.com",
+      "ratingLive": 4.1,
+      "ratingMobile": 4,
+      "ratingVariety": 4.3,
+      "ratingWebsite": 4.0,
+      "ratingOdds": 4.4,
+      "ratingPayment": 4.2,
+      "ratingSupport": 3.7,
+      "ratingReputation": 4.3,
+      "ratingBonus": 4.1,
+      "license": "Western Cape Gambling and Racing Board (Licence No. 10180413/001); also Gauteng, Eastern Cape, Mpumalanga, Free State boards",
+      "pros": [
+        "Established since 1988",
+        "Multi-licensed across SA",
+        "24/7 phone support",
+        "Cash out available"
+      ],
+      "cons": [
+        "No live streaming",
+        "Live chat limited to business hours"
+      ],
+      "minDeposit": "R10",
+      "yearEstablished": "1988",
+      "type": "betting",
+      "exitLink": "https://www.mzansiwins.co.za/link/f1600f69251013161439/146/",
+      "mcpTerms": "18+. T&Cs apply. The betXchange promo code is BETS.",
+      "mcpLogoUrl": "https://www.imageservera.com/uploadedimages/202601/Jan15/ORG_betxchange3400_30606.svg",
+      "baseColour": "#0033cc",
+      "textColour": "#ffffff",
+      "cashOut": "Yes",
+      "licenceStatus": "sa-licensed",
+      "bestFor": [
+        "Mobile App",
+        "In-Play",
+        "Cash Out"
+      ]
+    },
+    {
+      "id": "mzansibet",
+      "name": "Mzansibet",
+      "overallRating": 4.2,
+      "welcomeBonusAmount": "Bet R50, Get R50 Extra Bet",
+      "welcomeBonusDetails": "use promo code NEWBONUS (not required)",
+      "promoCode": "NEWBONUS (not required)",
+      "paymentMethodsList": [
+        "FNB",
+        "Visa",
+        "Mastercard",
+        "Peach Payment",
+        "Ozow",
+        "EFT"
+      ],
+      "depositMethods": [
+        {
+          "name": "Visa",
+          "min": "R10",
+          "max": "R1000000",
+          "cost": "Free",
+          "delay": "Instant"
+        },
+        {
+          "name": "Mastercard",
+          "min": "R10",
+          "max": "R1000000",
+          "cost": "Free",
+          "delay": "Instant"
+        },
+        {
+          "name": "Peach Payment",
+          "min": "R10",
+          "max": "R1000000",
+          "cost": "Free",
+          "delay": "Instant"
+        },
+        {
+          "name": "Ozow",
+          "min": "R10",
+          "max": "R1000000",
+          "cost": "Free",
+          "delay": "Instant"
+        },
+        {
+          "name": "EFT",
+          "min": "R10",
+          "max": "R1000000",
+          "cost": "Free",
+          "delay": "Instant"
+        },
+        {
+          "name": "FNB",
+          "min": "R10",
+          "max": "R1000000",
+          "cost": "Free",
+          "delay": "Instant"
+        }
+      ],
+      "withdrawalMethods": [
+        {
+          "name": "FNB",
+          "min": "R10",
+          "max": "R1000000",
+          "cost": "Free",
+          "delay": "Instant"
+        },
+        {
+          "name": "Visa",
+          "min": "R10",
+          "max": "R1000000",
+          "cost": "Free",
+          "delay": "Instant"
+        },
+        {
+          "name": "Mastercard",
+          "min": "R10",
+          "max": "R1000000",
+          "cost": "Free",
+          "delay": "Instant"
+        },
+        {
+          "name": "Peach Payment",
+          "min": "R10",
+          "max": "R1000000",
+          "cost": "Free",
+          "delay": "Instant"
+        },
+        {
+          "name": "Ozow",
+          "min": "R10",
+          "max": "R1000000",
+          "cost": "Free",
+          "delay": "Instant"
+        },
+        {
+          "name": "EFT",
+          "min": "R10",
+          "max": "R1000000",
+          "cost": "Free",
+          "delay": "Instant"
+        }
+      ],
+      "sportsCovered": [
+        "Football",
+        "Tennis",
+        "Basketball",
+        "Rugby",
+        "American Football",
+        "Baseball",
+        "Handball",
+        "Volleyball",
+        "Ice Hockey",
+        "Motorsports",
+        "Golf",
+        "Formula 1",
+        "Cycling",
+        "Futsal",
+        "Table tennis",
+        "Boxing",
+        "Darts",
+        "Snooker",
+        "Alpine Skiing",
+        "Biathlon",
+        "Cross-country skiing",
+        "Water Polo",
+        "Lacrosse",
+        "Floorball",
+        "Bandy",
+        "eSports (12 types)",
+        "Awards",
+        "Eurovision",
+        "Politics"
+      ],
+      "liveBetting": "Yes (30 live betting sports)",
+      "liveStreaming": "Yes",
+      "mobileApp": "No (not currently available for iOS or Android)",
+      "customerSupport": "Live-chat, Email: support@mzansibet.com",
+      "ratingLive": 3.8,
+      "ratingMobile": 4.3,
+      "ratingVariety": 4.0,
+      "ratingWebsite": 4.2,
+      "ratingOdds": 4.1,
+      "ratingPayment": 4.4,
+      "ratingSupport": 4.3,
+      "ratingReputation": 3.8,
+      "ratingBonus": 4.3,
+      "license": "Yes; Registration number: 2009/007749/07; Licence number: 10144175-016; Licence date: 2013/12/31",
+      "pros": [
+        "Best football odds on the market",
+        "Top-notch collection of sports bonuses",
+        "Live streaming and cashout features",
+        "Fast customer service (responses in under 1 minute)"
+      ],
+      "cons": [
+        "No mobile apps yet",
+        "Few alternative gaming options"
+      ],
+      "minDeposit": "R10",
+      "minBet": "R1",
+      "betTypes": "Singles, Accumulators (up to 50 games), System bets",
+      "cashOut": "Yes",
+      "otherProducts": "Online Casino (Slots, Live Games), eSports",
+      "yearEstablished": "2013 (Licence date)",
+      "tcs": "No requirement to use a code for the sports bonus. 18+ T&Cs apply.",
+      "type": "betting",
+      "exitLink": "https://www.mzansiwins.co.za/link/4e6a1c8250506082921/146/",
+      "mcpTerms": "The Mzansibet promo code is NEWBONUS for casino. There is no requirement to use a code to avail of the \"Bet R50, Get R50 Extra Bet\" sport welcome bonus. To qualify, place your first real-money sports bet of at least R50 at minimum odds of 2.0. 18+. T&Cs apply.",
+      "mcpLogoUrl": "https://www.imageservera.com/uploadedimages/202505/May06/ORG_Mzansibet2645_23814.svg",
+      "baseColour": "#001F12",
+      "textColour": "#fdfcfc",
+      "licenceStatus": "sa-licensed",
+      "bestFor": [
+        "Sports Variety",
+        "Live Betting",
+        "Cash Out"
+      ]
+    },
+    {
+      "id": "playabets",
+      "name": "PlayaBets",
+      "overallRating": 4.1,
+      "welcomeBonusAmount": "100% Sign-Up Bonus",
+      "welcomeBonusDetails": "Get R5000 in free bets",
+      "promoCode": "NEWBONUS",
+      "paymentMethodsList": [
+        "Blu voucher",
+        "1 Voucher",
+        "Snapscan",
+        "FNB",
+        "OTT voucher",
+        "Visa",
+        "Mastercard",
+        "Ozow",
+        "EFT",
+        "Zapper"
+      ],
+      "depositMethods": [
+        {
+          "name": "Blu voucher",
+          "min": "R10",
+          "max": "R100000",
+          "cost": "Free",
+          "delay": "Instant"
+        },
+        {
+          "name": "1 Voucher",
+          "min": "R10",
+          "max": "R100000",
+          "cost": "Free",
+          "delay": "Instant"
+        },
+        {
+          "name": "Snapscan",
+          "min": "R10",
+          "max": "R100000",
+          "cost": "Free",
+          "delay": "Instant"
+        },
+        {
+          "name": "FNB",
+          "min": "N/A",
+          "max": "N/A",
+          "cost": "N/A",
+          "delay": "N/A"
+        },
+        {
+          "name": "OTT voucher",
+          "min": "R50",
+          "max": "R100000",
+          "cost": "Free",
+          "delay": "Instant"
+        },
+        {
+          "name": "Visa",
+          "min": "R10",
+          "max": "R100000",
+          "cost": "Free",
+          "delay": "Instant"
+        },
+        {
+          "name": "Mastercard",
+          "min": "R10",
+          "max": "R100000",
+          "cost": "Free",
+          "delay": "Instant"
+        },
+        {
+          "name": "Ozow",
+          "min": "R10",
+          "max": "R100000",
+          "cost": "Free",
+          "delay": "Instant"
+        },
+        {
+          "name": "EFT",
+          "min": "R10",
+          "max": "R100000",
+          "cost": "Free",
+          "delay": "Instant"
+        },
+        {
+          "name": "Zapper",
+          "min": "R10",
+          "max": "R100000",
+          "cost": "Free",
+          "delay": "Instant"
+        }
+      ],
+      "withdrawalMethods": [
+        {
+          "name": "Not explicitly detailed in a separate table, but listed as including Blu voucher, 1 Voucher, Snapscan, FNB, OTT voucher, Visa, Mastercard, Ozow, EFT, Zapper. Minimum withdrawal R10."
+        }
+      ],
+      "sportsCovered": [
+        "Football",
+        "Tennis",
+        "Basketball",
+        "Rugby",
+        "American Football",
+        "Baseball",
+        "Handball",
+        "Volleyball",
+        "Ice Hockey",
+        "Motorsports",
+        "Golf",
+        "Cricket",
+        "Formula 1",
+        "Cycling",
+        "Futsal",
+        "Table tennis",
+        "Boxing",
+        "Darts",
+        "MMA",
+        "Snooker",
+        "Biathlon",
+        "Cross-country skiing",
+        "Water Polo",
+        "Floorball",
+        "Bandy",
+        "Australian Football"
+      ],
+      "liveBetting": "Yes",
+      "liveStreaming": "No (according to advantages/disadvantages), Yes (according to Overview section)",
+      "mobileApp": "Yes (Android), No (iOS)",
+      "customerSupport": "Live-chat, Phone (0870575292), Email (support@playabets.co.za)",
+      "ratingLive": 4.0,
+      "ratingMobile": 4,
+      "ratingVariety": 4.2,
+      "ratingWebsite": 3.9,
+      "ratingOdds": 4.3,
+      "ratingPayment": 4.0,
+      "ratingSupport": 3.8,
+      "ratingReputation": 4.3,
+      "ratingBonus": 4.2,
+      "license": "Registration number: 2022/712478/07, Licence number: 9-2-1-09689, Licence date: 2023/02/05",
+      "pros": [
+        "Attractive Welcome Bonus",
+        "Detailed in-play betting",
+        "Great loyalty Program",
+        "Excellent coverage of sports"
+      ],
+      "cons": [
+        "No live streaming, Old website design"
+      ],
+      "minDeposit": "R10",
+      "minBet": "R1",
+      "betTypes": "Single, Multi, Accumulator, System, Chain, Handicap, Ante Post",
+      "cashOut": "Yes",
+      "otherProducts": "Casino, Live Betgames, Lucky Numbers",
+      "yearEstablished": "1990",
+      "tcs": "100% deposit bonus up to R5000. 18+ T&Cs apply.",
+      "type": "betting",
+      "exitLink": "https://www.mzansiwins.co.za/link/9cfaf6cf190222182019/146/",
+      "mcpTerms": "Join Playabets with bonus code NEWBONUS and get 100% deposit bonus up to R5000 in free bets. 18+ only. T&Cs apply. Winners know when to stop.",
+      "mcpLogoUrl": "https://www.imageservera.com/uploadedimages/202308/Aug23/ORG_playa1671_15043.svg",
+      "baseColour": "#7DB913",
+      "textColour": "#000000",
+      "licenceStatus": "sa-licensed",
+      "bestFor": [
+        "Sports Variety",
+        "Mobile App",
+        "Live Betting"
+      ]
+    },
+    {
+      "id": "supabets",
+      "name": "Supabets",
+      "overallRating": 4.3,
+      "welcomeBonusAmount": "Free R50 bonus sign up",
+      "welcomeBonusDetails": "Plus 100% up to R5,000 & 100 FS",
+      "promoCode": "NEWBONUS",
+      "paymentMethodsList": [
+        "OTT voucher",
+        "MTN",
+        "Blu voucher",
+        "FNB",
+        "1 Voucher",
+        "Visa",
+        "Mastercard",
+        "Peach Payment",
+        "Ozow",
+        "EFT",
+        "E-Wallet",
+        "SID",
+        "PayU"
+      ],
+      "depositMethods": [
+        {
+          "name": "OTT voucher",
+          "min": "R1",
+          "max": "R1000000",
+          "cost": "Free",
+          "delay": "Instant"
+        },
+        {
+          "name": "MTN",
+          "min": "R1",
+          "max": "R1000000",
+          "cost": "Free",
+          "delay": "Instant"
+        },
+        {
+          "name": "Blu voucher",
+          "min": "R1",
+          "max": "R1000000",
+          "cost": "Free",
+          "delay": "Instant"
+        },
+        {
+          "name": "FNB",
+          "min": "R1",
+          "max": "R1000000",
+          "cost": "Free",
+          "delay": "Instant"
+        },
+        {
+          "name": "1 Voucher",
+          "min": "R1",
+          "max": "R1000000",
+          "cost": "Free",
+          "delay": "Instant"
+        },
+        {
+          "name": "Visa",
+          "min": "R20",
+          "max": "R1000000",
+          "cost": "Free",
+          "delay": "Instant"
+        },
+        {
+          "name": "Mastercard",
+          "min": "R20",
+          "max": "R100000",
+          "cost": "Free",
+          "delay": "Instant"
+        },
+        {
+          "name": "Peach Payment",
+          "min": "R20",
+          "max": "R1000000",
+          "cost": "Free",
+          "delay": "Instant"
+        },
+        {
+          "name": "Ozow",
+          "min": "R1",
+          "max": "R1000000",
+          "cost": "Free",
+          "delay": "Instant"
+        },
+        {
+          "name": "EFT",
+          "min": "R1",
+          "max": "R1000000",
+          "cost": "Free",
+          "delay": "Instant"
+        },
+        {
+          "name": "E-Wallet",
+          "min": "R1",
+          "max": "R1000000",
+          "cost": "Free",
+          "delay": "Instant"
+        },
+        {
+          "name": "SID",
+          "min": "R1",
+          "max": "R1000000",
+          "cost": "Free",
+          "delay": "Instant"
+        },
+        {
+          "name": "PayU",
+          "min": "R20",
+          "max": "R1000000",
+          "cost": "Free",
+          "delay": "Instant."
+        }
+      ],
+      "withdrawalMethods": [
+        {
+          "name": "EFT",
+          "min": "R1",
+          "max": "R1000000",
+          "cost": "Free",
+          "delay": "Instant"
+        },
+        {
+          "name": "E-Wallet",
+          "min": "R1",
+          "max": "R1000000",
+          "cost": "Free",
+          "delay": "Instant"
+        },
+        {
+          "name": "Visa",
+          "min": "R20",
+          "max": "R1000000",
+          "cost": "Free",
+          "delay": "Instant"
+        },
+        {
+          "name": "Mastercard",
+          "min": "R20",
+          "max": "R100000",
+          "cost": "Free",
+          "delay": "Instant. (Note: Vouchers are listed under payment options but typically used for deposits; table toggles between same method list)."
+        }
+      ],
+      "sportsCovered": [
+        "Football",
+        "Tennis",
+        "Basketball",
+        "Rugby",
+        "American Football",
+        "Baseball",
+        "Handball",
+        "Volleyball",
+        "Ice Hockey",
+        "Motorsports",
+        "Golf",
+        "Horse Racing",
+        "Cricket",
+        "Formula 1",
+        "Cycling",
+        "Olympic Games",
+        "Rugby League",
+        "Futsal",
+        "Table tennis",
+        "Badminton",
+        "Beach Volley",
+        "Boxing",
+        "Darts",
+        "MMA",
+        "Snooker",
+        "Floorball",
+        "Bandy."
+      ],
+      "liveBetting": "Yes, includes comprehensive live stats section.",
+      "liveStreaming": "No",
+      "mobileApp": "Yes (Android available via APK; iOS not available).",
+      "customerSupport": "Live Chat (accessible on all pages); Phone: 0861762237 or +271 121 57000 (Callback service); Email: support@supabets.co.za; Social Media: X (Twitter), Instagram, Facebook, and LinkedIn.",
+      "ratingLive": 4.2,
+      "ratingMobile": 3.8,
+      "ratingVariety": 4.3,
+      "ratingWebsite": 4.1,
+      "ratingOdds": 4.2,
+      "ratingPayment": 4.5,
+      "ratingSupport": 4.0,
+      "ratingReputation": 4,
+      "ratingBonus": 4.4,
+      "license": "Licensed in South Africa; Registration number: 9-2-1-00055; Licence number: 2009/016148/07 (Date: 2020/10/25).",
+      "pros": [
+        "Great reputation",
+        "Generous welcome bonus",
+        "Outstanding range of sports betting markets",
+        "Wide choice of casino games."
+      ],
+      "cons": [
+        "No eSports betting options",
+        "Occasional website issues."
+      ],
+      "minDeposit": "R1",
+      "minBet": "R1",
+      "betTypes": "Single selection win bets, accumulator bets, and complex multiple-selection bets.",
+      "cashOut": "Yes (Full Cash Out, Partial Cash Out, and Auto Cash Out).",
+      "otherProducts": "Casino (Habanero slots), Live Casino, Virtual Sports (Virtual League), Lucky Numbers.",
+      "yearEstablished": "2008",
+      "tcs": "New customers receive R50 + 100 Free Spins + deposit bonuses. 18+ T&Cs apply.",
+      "type": "betting",
+      "exitLink": "https://www.mzansiwins.co.za/link/83a75fb3190222144052/146/",
+      "mcpTerms": "18+ only. T&Cs apply. Winners know when to stop.",
+      "mcpLogoUrl": "https://www.imageservera.com/uploadedimages/202507/Jul28/ORG_supabet5365_48294.svg",
+      "baseColour": "#EB0028",
+      "textColour": "#ffffff",
+      "licenceStatus": "sa-licensed",
+      "bestFor": [
+        "Sports Variety",
+        "Mobile App",
+        "In-Play"
+      ]
+    },
+    {
+      "id": "swifty",
+      "name": "Swifty",
+      "overallRating": 4.0,
+      "welcomeBonusAmount": "Deposit R3000 Get R3000",
+      "welcomeBonusDetails": "use promo code BETS",
+      "promoCode": "BETS",
+      "tcs": "18+ T&Cs apply.",
+      "paymentMethodsList": [
+        "Visa",
+        "Mastercard",
+        "EFT",
+        "OTT voucher",
+        "Capitec",
+        "Apple Pay",
+        "Ozow"
+      ],
+      "sportsCovered": [
+        "Football",
+        "Cricket",
+        "Rugby",
+        "Horse Racing",
+        "Golf",
+        "Motorsports",
+        "Snooker",
+        "Tennis",
+        "Basketball",
+        "Volleyball"
+      ],
+      "liveBetting": "Yes",
+      "liveStreaming": "No",
+      "mobileApp": "Yes (iOS and Android)",
+      "customerSupport": "Live chat (9 AM to 10 PM daily), Email: support@swiftysports.co.za",
+      "ratingLive": 3.6,
+      "ratingMobile": 4,
+      "ratingVariety": 3.8,
+      "ratingWebsite": 4.2,
+      "ratingOdds": 4.1,
+      "ratingPayment": 4.0,
+      "ratingSupport": 3.9,
+      "ratingReputation": 4,
+      "ratingBonus": 4.0,
+      "license": "Western Cape Gambling and Racing Board (license 10193252-002)",
+      "pros": [
+        "Modern iOS and Android apps",
+        "Crypto deposits accepted",
+        "1,000+ betting markets daily",
+        "Good welcome bonus"
+      ],
+      "cons": [
+        "Newer operator (2023/2024)",
+        "Live chat not 24/7"
+      ],
+      "minDeposit": "R50",
+      "yearEstablished": "2023",
+      "type": "betting",
+      "exitLink": "https://www.mzansiwins.co.za/link/7f57b3bb251121120813/146/",
+      "mcpTerms": "The Swifty Sports code is BETS. 18+. T&Cs apply. Get a 100% Matched Bonus Bet up to R3000 for the Swifty sportsbook.",
+      "mcpLogoUrl": "https://www.imageservera.com/uploadedimages/202511/Nov21/ORG_Swifty1900_17110.png",
+      "baseColour": "#001F12",
+      "textColour": "#fdfcfc",
+      "licenceStatus": "sa-licensed",
+      "bestFor": [
+        "Mobile App",
+        "In-Play"
+      ]
+    },
+    {
+      "id": "betjets",
+      "name": "Betjets",
+      "overallRating": 3.9,
+      "welcomeBonusAmount": "Deposit R2,000 Get R2,000",
+      "welcomeBonusDetails": "use promo code BETS",
+      "promoCode": "BETS",
+      "tcs": "18+ T&Cs apply.",
+      "paymentMethodsList": [
+        "Visa",
+        "Mastercard",
+        "EFT",
+        "1 Voucher",
+        "OTT voucher",
+        "Blu voucher",
+        "Capitec Pay",
+        "Callpay",
+        "Walletdoc"
+      ],
+      "sportsCovered": [
+        "Football",
+        "Cricket",
+        "Rugby",
+        "Tennis",
+        "Golf",
+        "American Football",
+        "Basketball",
+        "Horse Racing",
+        "Darts",
+        "Cycling",
+        "Volleyball",
+        "MMA"
+      ],
+      "liveBetting": "Yes",
+      "liveStreaming": "No",
+      "mobileApp": "No (responsive mobile site)",
+      "customerSupport": "Live chat (7am-10pm), Email: support@betjets.co.za, Phone: +27 12 023 2068",
+      "ratingLive": 3.5,
+      "ratingMobile": 4,
+      "ratingVariety": 3.7,
+      "ratingWebsite": 3.8,
+      "ratingOdds": 3.9,
+      "ratingPayment": 4.0,
+      "ratingSupport": 3.7,
+      "ratingReputation": 3.8,
+      "ratingBonus": 4.1,
+      "license": "Western Cape Gambling and Racing Board (license 10091157-104)",
+      "pros": [
+        "20+ sports covered",
+        "Full and partial cash out",
+        "Multiple payment methods",
+        "Low R1 minimum deposit"
+      ],
+      "cons": [
+        "New operator (2024)",
+        "No mobile app",
+        "No live streaming"
+      ],
+      "minDeposit": "R1",
+      "yearEstablished": "2024",
+      "type": "betting",
+      "exitLink": "https://www.mzansiwins.co.za/link/cb8b024250912114850/146/",
+      "mcpTerms": "18+. T&Cs apply.",
+      "mcpLogoUrl": "https://www.imageservera.com/uploadedimages/202509/Sep12/ORG_Betjets5126_46141.svg",
+      "baseColour": "#012169",
+      "textColour": "#ffffff",
+      "cashOut": "Yes",
+      "licenceStatus": "sa-licensed",
+      "bestFor": [
+        "In-Play",
+        "Cash Out"
+      ]
+    },
+    {
+      "id": "bettabets",
+      "name": "Bettabets",
+      "overallRating": 3.9,
+      "welcomeBonusAmount": "R2500 Match Bonus + 155 Free Spins",
+      "welcomeBonusDetails": "Two offers to choose from: Use code SPORT for a 100% match bonus up to R2500 on your first deposit (min R50). Or use code CASINO for 155 free spins on Aviator and Slots (min deposit R50). 18+ T&Cs apply.",
+      "promoCode": "SPORT",
+      "promoBanners": [
+        {
+          "image": "bettabets-sport-promo.jpg",
+          "alt": "Bettabets R2500 Match Bonus - Use promo code SPORT",
+          "code": "SPORT",
+          "label": "Sports Bonus - R2500 Match",
+          "details": "100% match on first deposit up to R2500. Min deposit R50."
+        },
+        {
+          "image": "bettabets-casino-promo.jpg",
+          "alt": "Bettabets 155 Free Spins - Use promo code CASINO",
+          "code": "CASINO",
+          "label": "Casino Bonus - 155 Free Spins",
+          "details": "155 free spins on Aviator and Slots. Min deposit R50."
+        }
+      ],
+      "paymentMethodsList": [
+        "1 Voucher",
+        "OTT Voucher",
+        "Blu Voucher",
+        "Visa",
+        "Mastercard",
+        "Peach Payment",
+        "Ozow",
+        "EFT",
+        "Call Pay"
+      ],
+      "depositMethods": [
+        {
+          "name": "1 Voucher",
+          "min": "R2",
+          "max": "R5000",
+          "cost": "Free",
+          "delay": "Instant"
+        },
+        {
+          "name": "OTT Voucher",
+          "min": "R2",
+          "max": "R5000",
+          "cost": "Free",
+          "delay": "Instant"
+        },
+        {
+          "name": "Blu Voucher",
+          "min": "R2",
+          "max": "R5000",
+          "cost": "Free",
+          "delay": "Instant"
+        },
+        {
+          "name": "EFT",
+          "min": "R50",
+          "max": "R100000",
+          "cost": "Free",
+          "delay": "Instant"
+        },
+        {
+          "name": "Visa",
+          "min": "R1",
+          "max": "R100000",
+          "cost": "Free",
+          "delay": "Instant"
+        },
+        {
+          "name": "Mastercard",
+          "min": "R1",
+          "max": "R100000",
+          "cost": "Free",
+          "delay": "Instant"
+        }
+      ],
+      "withdrawalMethods": [
+        {
+          "name": "Bank Transfer",
+          "min": "R50",
+          "max": "R100000",
+          "cost": "Free",
+          "delay": "Within 24 hours"
+        }
+      ],
+      "sportsCovered": [
+        "Football",
+        "Tennis",
+        "Basketball",
+        "Rugby",
+        "American Football",
+        "Baseball",
+        "Volleyball",
+        "Ice Hockey",
+        "Golf",
+        "Cricket",
+        "Formula 1",
+        "Cycling",
+        "Table Tennis",
+        "Boxing",
+        "Darts",
+        "MMA"
+      ],
+      "liveBetting": "No",
+      "liveStreaming": "No",
+      "mobileApp": "No (responsive mobile site available)",
+      "customerSupport": "Live chat, Email, Phone",
+      "ratingLive": 3.6,
+      "ratingMobile": 3.8,
+      "ratingVariety": 3.8,
+      "ratingWebsite": 3.7,
+      "ratingOdds": 4.0,
+      "ratingPayment": 3.9,
+      "ratingSupport": 3.8,
+      "ratingReputation": 3.8,
+      "ratingBonus": 4.0,
+      "license": "Mpumalanga Economic Regulator",
+      "pros": [
+        "Strong reputation, licensed operator",
+        "Wide selection of sports and markets",
+        "Competitive odds and bonuses",
+        "Low deposit minimums (R5)",
+        "Cash Out available"
+      ],
+      "cons": [
+        "Email required to activate welcome bonus",
+        "No mobile apps",
+        "No live betting or in-play"
+      ],
+      "minDeposit": "R5",
+      "minBet": "R1",
+      "betTypes": "Single, multi-bet, system bets",
+      "cashOut": "Yes (for multi-bets after first leg wins)",
+      "otherProducts": "Casino (601 games), BetGames, Virtual Games, Betta Numbers",
+      "yearEstablished": "2013",
+      "tcs": "Two welcome offers: SPORT code for R2500 100% match or CASINO code for 155 free spins. Min deposit R50. 18+ T&Cs apply.",
+      "type": "betting",
+      "exitLink": "https://www.mzansiwins.co.za/link/56eef481260312134641/146/",
+      "baseColour": "#FAE80B",
+      "textColour": "#000000",
+      "licenceStatus": "sa-licensed",
+      "bestFor": [
+        "Cash Out"
+      ]
+    },
+    {
+      "id": "supersportbet",
+      "name": "Supersportbet",
+      "overallRating": 4.3,
+      "welcomeBonusAmount": "Deposit R5000 Get R5000",
+      "welcomeBonusDetails": "+250 Bonus Spins & R25 Bonus Bet",
+      "promoCode": "BETS",
+      "tcs": "18+ T&Cs apply.",
+      "paymentMethodsList": [
+        "Visa",
+        "Mastercard",
+        "EFT",
+        "Ozow",
+        "Capitec Pay",
+        "1 Voucher",
+        "Blu voucher",
+        "OTT voucher",
+        "SnapScan",
+        "Zapper"
+      ],
+      "sportsCovered": [
+        "Football",
+        "Rugby",
+        "Cricket",
+        "Tennis",
+        "Basketball",
+        "UFC",
+        "Horse Racing",
+        "Golf",
+        "eSports",
+        "Virtual sports",
+        "Formula 1",
+        "American Football",
+        "Darts",
+        "MMA",
+        "Motorsport"
+      ],
+      "liveBetting": "Yes",
+      "liveStreaming": "Limited",
+      "mobileApp": "Yes (iOS, Android, Huawei)",
+      "customerSupport": "24/7 Live chat, Email: support@supersportbet.co.za, Phone: 0861 996 704, WhatsApp: 076 675 0710",
+      "ratingLive": 4.5,
+      "ratingMobile": 4,
+      "ratingVariety": 4.4,
+      "ratingWebsite": 4.3,
+      "ratingOdds": 4.5,
+      "ratingPayment": 4.3,
+      "ratingSupport": 4.0,
+      "ratingReputation": 3.5,
+      "ratingBonus": 4.2,
+      "license": "Western Cape Gambling and Racing Board (WCGRB), license 10191097",
+      "pros": [
+        "Available on all platforms",
+        "Generous bonus + spins",
+        "24/7 customer support",
+        "Reputable SuperSport brand"
+      ],
+      "cons": [
+        "Newer operator (2024)",
+        "Limited live streaming"
+      ],
+      "minDeposit": "R10",
+      "yearEstablished": "2024",
+      "type": "both",
+      "exitLink": "https://www.mzansiwins.co.za/link/ca597872250913133852/146/",
+      "mcpTerms": "18+. T&Cs apply. The Supersportbet code is BETS.",
+      "mcpLogoUrl": "https://www.imageservera.com/uploadedimages/202509/Sep12/ORG_Supersportbet4004_36044.svg",
+      "baseColour": "#111fa3",
+      "textColour": "#ffffff",
+      "licenceStatus": "sa-licensed",
+      "bestFor": [
+        "Mobile App",
+        "In-Play",
+        "Best Odds"
+      ]
+    },
+    {
+      "id": "pokerbet",
+      "name": "Pokerbet",
+      "overallRating": 3.8,
+      "welcomeBonusAmount": "Get R100 free + R2000 (100%)",
+      "welcomeBonusDetails": "Use promo code MAXBET",
+      "promoCode": "MAXBET",
+      "tcs": "R100 free is no deposit. 18+ T&Cs apply.",
+      "paymentMethodsList": [
+        "Visa",
+        "Mastercard",
+        "EFT",
+        "Ozow",
+        "1 Voucher",
+        "Zapper",
+        "Capitec",
+        "FNB",
+        "Absa"
+      ],
+      "sportsCovered": [
+        "Football",
+        "Basketball",
+        "Tennis",
+        "Rugby",
+        "Cricket",
+        "Volleyball",
+        "American Football",
+        "Baseball",
+        "Ice Hockey",
+        "MMA",
+        "Handball",
+        "Table tennis",
+        "Futsal",
+        "Snooker",
+        "Water Polo",
+        "Darts",
+        "Boxing",
+        "Golf",
+        "Formula 1",
+        "eSports"
+      ],
+      "liveBetting": "Yes",
+      "liveStreaming": "No",
+      "mobileApp": "Yes (Android APK)",
+      "customerSupport": "Live chat (9am-6pm), Email: support@pokerbet.co.za, Phone: 060 070 2807",
+      "ratingLive": 3.5,
+      "ratingMobile": 3.8,
+      "ratingVariety": 3.7,
+      "ratingWebsite": 3.6,
+      "ratingOdds": 4.0,
+      "ratingPayment": 3.8,
+      "ratingSupport": 3.6,
+      "ratingReputation": 3.5,
+      "ratingBonus": 3.9,
+      "license": "Northern Cape Gambling Board",
+      "pros": [
+        "R100 no-deposit bonus",
+        "30+ sports covered",
+        "Acca Boost available",
+        "Multiple payment options"
+      ],
+      "cons": [
+        "No iOS app",
+        "Live chat limited hours",
+        "No live streaming"
+      ],
+      "minDeposit": "R1",
+      "yearEstablished": "2022",
+      "type": "both",
+      "exitLink": "https://www.mzansiwins.co.za/link/2675704c230119095924/146/",
+      "mcpTerms": "Use code MAXBET when you open a new account to get an additional R100 free (no deposit) + 100% up to R2000. T&Cs apply. Over 18s.",
+      "mcpLogoUrl": "https://www.imageservera.com/uploadedimages/202510/Oct01/ORG_poker-bet1986_17881.svg",
+      "baseColour": "#3C3D65",
+      "textColour": "#ffffff",
+      "licenceStatus": "sa-licensed",
+      "bestFor": [
+        "Mobile App",
+        "In-Play"
+      ]
+    },
+    {
+      "id": "apexbets",
+      "name": "Apexbets",
+      "overallRating": 4.0,
+      "welcomeBonusAmount": "Get up to R30,000 + 50 Free Spins",
+      "welcomeBonusDetails": "Welcome package across first 5 deposits: 1st deposit 100% up to R5,000 + 50 Free Spins, 2nd deposit 75% up to R5,000, 3rd deposit 50% up to R5,000, 4th deposit 75% up to R5,000, 5th deposit 100% up to R10,000. Wagering requirements apply.",
+      "promoCode": "NEWBONUS",
+      "paymentMethodsList": [
+        "1Voucher",
+        "EFTpay",
+        "Ozow",
+        "Visa",
+        "Mastercard"
+      ],
+      "depositMethods": [
+        {
+          "name": "1Voucher",
+          "min": "R50",
+          "max": "R5000",
+          "cost": "Free",
+          "delay": "Instant"
+        },
+        {
+          "name": "EFTpay",
+          "min": "R50",
+          "max": "R50000",
+          "cost": "Free",
+          "delay": "Instant"
+        },
+        {
+          "name": "Ozow",
+          "min": "R50",
+          "max": "R50000",
+          "cost": "Free",
+          "delay": "Instant"
+        },
+        {
+          "name": "Visa",
+          "min": "R50",
+          "max": "R50000",
+          "cost": "Free",
+          "delay": "Instant"
+        },
+        {
+          "name": "Mastercard",
+          "min": "R50",
+          "max": "R50000",
+          "cost": "Free",
+          "delay": "Instant"
+        }
+      ],
+      "withdrawalMethods": [
+        {
+          "name": "Bank Transfer",
+          "min": "R100",
+          "max": "R50000",
+          "cost": "Free",
+          "delay": "24-48 hours"
+        },
+        {
+          "name": "Ozow",
+          "min": "R100",
+          "max": "R50000",
+          "cost": "Free",
+          "delay": "24-48 hours"
+        }
+      ],
+      "sportsCovered": [
+        "Football",
+        "Basketball",
+        "Tennis",
+        "MMA",
+        "Esports",
+        "Cricket",
+        "Rugby",
+        "Boxing",
+        "Volleyball",
+        "Ice Hockey",
+        "Table Tennis",
+        "Handball"
+      ],
+      "license": "Western Cape Gambling and Racing Board",
+      "customerSupport": "Live Chat (24/7), Email",
+      "supportEmail": "helpdesk@apexbets.co.za",
+      "liveBetting": "Yes",
+      "liveStreaming": "No",
+      "mobileApp": "Yes",
+      "cashOut": "Yes",
+      "minDeposit": "R50",
+      "minBet": "R1",
+      "ratingBonus": 4.0,
+      "ratingOdds": 4.1,
+      "ratingPayment": 4.2,
+      "ratingVariety": 3.9,
+      "ratingWebsite": 3.8,
+      "ratingLive": 3.7,
+      "ratingSupport": 3.9,
+      "pros": [
+        "Massive R30,000 welcome package across 5 deposits",
+        "50 free spins included with first deposit bonus",
+        "Licensed by the Western Cape Gambling and Racing Board",
+        "Over 713 casino slots from top providers",
+        "24/7 live chat support available",
+        "Both sports betting and casino games under one roof"
+      ],
+      "cons": [
+        "Relatively new to the South African market",
+        "Limited payment methods compared to established rivals",
+        "No live streaming available yet",
+        "Withdrawal times can take up to 48 hours"
+      ],
+      "otherProducts": "Casino, Slots, Live Casino",
+      "yearEstablished": "2024",
+      "tcs": "18+ T&Cs apply. Min deposit R50. Wagering requirements apply to bonus funds.",
+      "type": "both",
+      "exitLink": "https://www.mzansiwins.co.za/link/754825e7260306164405/146/",
+      "baseColour": "#1b1a1f",
+      "textColour": "#fcf8f8",
+      "licenceStatus": "sa-licensed",
+      "bestFor": [
+        "Mobile App",
+        "In-Play",
+        "Cash Out"
+      ]
+    },
+    {
+      "id": "hollywoodbets",
+      "name": "Hollywoodbets",
+      "overallRating": 4.5,
+      "welcomeBonusAmount": "R25 + 50 spins",
+      "welcomeBonusDetails": "Sign up bonus",
+      "promoCode": "NEWBONUS",
+      "paymentMethodsList": [
+        "Peach Payment",
+        "Ozow",
+        "EFT",
+        "SID",
+        "Zapper",
+        "PayU",
+        "VISA",
+        "Mastercard"
+      ],
+      "depositMethods": [
+        {
+          "name": "Peach Payment",
+          "min": "R5",
+          "max": "R100000",
+          "cost": "Free",
+          "delay": "Instant"
+        },
+        {
+          "name": "Ozow",
+          "min": "R5",
+          "max": "R100000",
+          "cost": "Free",
+          "delay": "Instant"
+        },
+        {
+          "name": "EFT",
+          "min": "R5",
+          "max": "R100000",
+          "cost": "Free",
+          "delay": "Instant"
+        },
+        {
+          "name": "SID",
+          "min": "R5",
+          "max": "R199999",
+          "cost": "Free",
+          "delay": "Instant"
+        },
+        {
+          "name": "Zapper",
+          "min": "R5",
+          "max": "R100000",
+          "cost": "Free",
+          "delay": "Instant"
+        },
+        {
+          "name": "PayU",
+          "min": "R50",
+          "max": "R100000",
+          "cost": "Free",
+          "delay": "Instant"
+        }
+      ],
+      "withdrawalMethods": [
+        {
+          "name": "Peach Payment",
+          "min": "R5",
+          "max": "R100000",
+          "cost": "Free",
+          "delay": "Instant"
+        },
+        {
+          "name": "Ozow",
+          "min": "R5",
+          "max": "R100000",
+          "cost": "Free",
+          "delay": "Instant"
+        },
+        {
+          "name": "EFT",
+          "min": "R5",
+          "max": "R100000",
+          "cost": "Free",
+          "delay": "Instant"
+        },
+        {
+          "name": "SID",
+          "min": "R5",
+          "max": "R199999",
+          "cost": "Free",
+          "delay": "Instant"
+        },
+        {
+          "name": "Zapper",
+          "min": "R5",
+          "max": "R100000",
+          "cost": "Free",
+          "delay": "Instant"
+        },
+        {
+          "name": "PayU",
+          "min": "R50",
+          "max": "R100000",
+          "cost": "Free",
+          "delay": "Instant"
+        }
+      ],
+      "sportsCovered": [
+        "Football",
+        "Tennis",
+        "Basketball",
+        "Rugby",
+        "American Football",
+        "Baseball",
+        "Handball",
+        "Volleyball",
+        "Ice Hockey",
+        "Motorsports",
+        "Golf",
+        "Horse Racing",
+        "Cricket",
+        "Cycling",
+        "Futsal",
+        "Table tennis",
+        "Boxing",
+        "Darts",
+        "MMA",
+        "Snooker",
+        "Floorball",
+        "Bandy",
+        "Aussie Rules"
+      ],
+      "liveBetting": "Yes",
+      "liveStreaming": "No (Match tracker available)",
+      "mobileApp": "Yes (Available on iOS: Yes, Available on Android: No (Mobisite available))",
+      "customerSupport": "Live-chat, Phone (0873537634), Email (hwhelpline@hollywoodbets.net), Social Media",
+      "ratingLive": 4.3,
+      "ratingMobile": 4.3,
+      "ratingVariety": 4.5,
+      "ratingWebsite": 4.5,
+      "ratingOdds": 4.6,
+      "ratingPayment": 4.7,
+      "ratingSupport": 4.6,
+      "ratingReputation": 4,
+      "ratingBonus": 4.4,
+      "license": "Registration number: 2008/011/557/07, Licence number: 10000107-027, Licence date: 2014/11/04",
+      "pros": [
+        "Excellent football odds",
+        "Bet Builder feature",
+        "24/7 Customer Service",
+        "Super-fast withdrawals"
+      ],
+      "cons": [
+        "No Android app (mobisite available)"
+      ],
+      "minDeposit": "R5",
+      "minBet": "R1",
+      "betTypes": "Single, Accumulator (Multi), Build a Bet, Handicap, Ante Post",
+      "cashOut": "Yes",
+      "otherProducts": "Casino, Spina Zonke, Aviator, JetX, Horse Racing, Lucky Numbers",
+      "yearEstablished": "Established in the 1990s",
+      "tcs": "R25 sign up bonus + 50 free spins once account is activated. 18+ T&Cs apply.",
+      "type": "betting",
+      "exitLink": "https://www.mzansiwins.co.za/link/96a5aad0181116205024/146/",
+      "mcpTerms": "Get a R25 sign up bonus + 50 free spins once your Hollywoodbets account is activated. T&Cs apply.",
+      "mcpLogoUrl": "https://www.imageservera.com/uploadedimages/202207/Jul04/ORG_Hollywoodbets3585_32270.svg",
+      "baseColour": "#52287b",
+      "textColour": "#ffffff",
+      "licenceStatus": "sa-licensed",
+      "bestFor": [
+        "Mobile App",
+        "In-Play",
+        "Cash Out"
+      ]
+    },
+    {
+      "id": "10bet-south-africa",
+      "name": "10Bet South Africa",
+      "overallRating": 4.6,
+      "welcomeBonusAmount": "Deposit R3,000 Get R3,000",
+      "welcomeBonusDetails": "100% bonus up to R3,000 Minimum deposit for bonus eligibility is R50.",
+      "promoCode": "Code Activated",
+      "paymentMethodsList": [
+        "1 Voucher",
+        "OTT voucher",
+        "Blu voucher",
+        "FNB",
+        "Visa",
+        "Mastercard",
+        "Ozow",
+        "EFT",
+        "Zapper"
+      ],
+      "depositMethods": [
+        {
+          "name": "1 Voucher",
+          "min": "R5",
+          "max": "R2500",
+          "cost": "Free",
+          "delay": "Instant"
+        },
+        {
+          "name": "OTT voucher",
+          "min": "R5",
+          "max": "R3000",
+          "cost": "Free",
+          "delay": "Instant"
+        },
+        {
+          "name": "Blu voucher",
+          "min": "R10",
+          "max": "R5000",
+          "cost": "Free",
+          "delay": "Instant"
+        },
+        {
+          "name": "Visa",
+          "min": "R10",
+          "max": "R1000000",
+          "cost": "Free",
+          "delay": "Instant"
+        },
+        {
+          "name": "Mastercard",
+          "min": "R10",
+          "max": "R1000000",
+          "cost": "Free",
+          "delay": "Instant"
+        },
+        {
+          "name": "Ozow",
+          "min": "R10",
+          "max": "R1000000",
+          "cost": "Free",
+          "delay": "Instant"
+        },
+        {
+          "name": "EFT",
+          "min": "R10",
+          "max": "R1000000",
+          "cost": "Free",
+          "delay": "Instant"
+        },
+        {
+          "name": "Zapper",
+          "min": "R10",
+          "max": "R1000000",
+          "cost": "Free",
+          "delay": "Instant"
+        }
+      ],
+      "withdrawalMethods": [
+        {
+          "name": "FNB",
+          "min": "R50",
+          "max": "R3000",
+          "cost": "10,50",
+          "delay": "Instant"
+        },
+        {
+          "name": "Ozow",
+          "min": "R300",
+          "max": "R1000000",
+          "cost": "Free",
+          "delay": "Up to 24 hours"
+        },
+        {
+          "name": "EFT",
+          "min": "R50",
+          "max": "R1000000",
+          "cost": "Free",
+          "delay": "1-2 Days"
+        }
+      ],
+      "sportsCovered": [
+        "Football",
+        "Tennis",
+        "Basketball",
+        "Rugby",
+        "American Football",
+        "Baseball",
+        "Handball",
+        "Volleyball",
+        "Ice Hockey",
+        "Cricket",
+        "Rugby League",
+        "Futsal",
+        "Table tennis",
+        "Badminton",
+        "Beach Volley",
+        "Boxing",
+        "Darts",
+        "MMA",
+        "Snooker",
+        "Water Polo",
+        "Lacrosse",
+        "Bandy",
+        "Aussie Rules",
+        "e-Soccer",
+        "bowls",
+        "field hockey",
+        "Gaelic football",
+        "Gaelic Hurling"
+      ],
+      "liveBetting": "Yes",
+      "liveStreaming": "No",
+      "mobileApp": "Yes (Available on iOS and Android)",
+      "customerSupport": "Live-chat, Phone: +27 10 746 1093, Email: support@10bet.co.za",
+      "ratingLive": 4.4,
+      "ratingMobile": 3.8,
+      "ratingVariety": 4.4,
+      "ratingWebsite": 4.6,
+      "ratingOdds": 4.5,
+      "ratingPayment": 4.6,
+      "ratingSupport": 4.2,
+      "ratingReputation": 3.5,
+      "ratingBonus": 4.8,
+      "license": "9-2-1-09661 (Licensed and available across South Africa)",
+      "pros": [
+        "Wide range of sports events available",
+        "Easy-to-navigate website and mobile app",
+        "Attractive welcome and loyalty bonuses",
+        "Cash-out feature available"
+      ],
+      "cons": [
+        "No live stream of sports events",
+        "No 24/7 Customer Support"
+      ],
+      "minDeposit": "R5",
+      "minBet": "R1",
+      "betTypes": "Accumulator, Bet builder, Handicaps, Live in-play, Totals, Correct scores, Asian handicaps, Outright odds, Special bets",
+      "cashOut": "Yes (Partial Cash Out also available)",
+      "otherProducts": "Casino available (Blackjack, Roulette), E-sports, Betting games",
+      "yearEstablished": "Not specified",
+      "tcs": "First deposit at least R20. 18+ T&Cs and wagering requirements apply.",
+      "type": "betting",
+      "exitLink": "https://www.mzansiwins.co.za/link/a82c3234190213122144/146/",
+      "mcpTerms": "Your first deposit at 10bet should be of at least R20. Get 100% up to R3,000 Bonus to bet on sports or games. New customers only. 18+ T&Cs and wagering requirements apply. To activate the bonus, select it from the cashier.",
+      "mcpLogoUrl": "https://www.imageservera.com/uploadedimages/202406/Jun04/ORG_10bet1155_10404.svg",
+      "baseColour": "#ffffff",
+      "textColour": "#000000",
+      "licenceStatus": "sa-licensed",
+      "bestFor": [
+        "Sports Variety",
+        "Mobile App",
+        "In-Play"
+      ]
+    },
+    {
+      "id": "yesplay",
+      "name": "YesPlay",
+      "overallRating": 4.2,
+      "welcomeBonusAmount": "Deposit R3000 Get R3000",
+      "welcomeBonusDetails": "Exclusive Offer",
+      "promoCode": "Applied",
+      "paymentMethodsList": [
+        "Blu voucher",
+        "1 Voucher",
+        "Snapscan",
+        "OTT voucher",
+        "FNB",
+        "Visa",
+        "Mastercard",
+        "Ozow",
+        "EFT"
+      ],
+      "depositMethods": [
+        {
+          "name": "Ozow",
+          "min": "R10",
+          "max": "R100000",
+          "cost": "Free",
+          "delay": "Instant"
+        },
+        {
+          "name": "Blu voucher",
+          "min": "N/A",
+          "max": "N/A",
+          "cost": "N/A",
+          "delay": "N/A"
+        },
+        {
+          "name": "1 Voucher",
+          "min": "N/A",
+          "max": "N/A",
+          "cost": "N/A",
+          "delay": "N/A"
+        },
+        {
+          "name": "Snapscan",
+          "min": "N/A",
+          "max": "N/A",
+          "cost": "N/A",
+          "delay": "N/A"
+        },
+        {
+          "name": "OTT voucher",
+          "min": "N/A",
+          "max": "N/A",
+          "cost": "N/A",
+          "delay": "N/A"
+        },
+        {
+          "name": "FNB",
+          "min": "N/A",
+          "max": "N/A",
+          "cost": "N/A",
+          "delay": "N/A"
+        },
+        {
+          "name": "Visa",
+          "min": "N/A",
+          "max": "N/A",
+          "cost": "N/A",
+          "delay": "N/A"
+        },
+        {
+          "name": "Mastercard",
+          "min": "N/A",
+          "max": "N/A",
+          "cost": "N/A",
+          "delay": "N/A"
+        },
+        {
+          "name": "EFT",
+          "min": "N/A",
+          "max": "N/A",
+          "cost": "N/A",
+          "delay": "N/A"
+        }
+      ],
+      "withdrawalMethods": [
+        {
+          "name": "General",
+          "min": "R100",
+          "max": "N/A",
+          "cost": "Free",
+          "delay": "Up to 48 hours"
+        },
+        {
+          "name": "Ozow",
+          "min": "R10",
+          "max": "R100000",
+          "cost": "Free",
+          "delay": "Instant"
+        }
+      ],
+      "sportsCovered": [
+        "Football",
+        "Tennis",
+        "Basketball",
+        "American Football",
+        "Baseball",
+        "Handball",
+        "Volleyball",
+        "Ice Hockey",
+        "Cricket",
+        "Rugby League",
+        "Futsal",
+        "Table tennis",
+        "Boxing",
+        "Darts",
+        "MMA",
+        "Snooker",
+        "Water Polo"
+      ],
+      "liveBetting": "Yes",
+      "liveStreaming": "No",
+      "mobileApp": "Yes (Available on iOS and Android)",
+      "customerSupport": "Live-chat, Phone (0027212005992), Email (info@yesplay.bet), Address (80 Strand Street, 8001 Cape Town)",
+      "ratingLive": 3.9,
+      "ratingMobile": 3.8,
+      "ratingVariety": 4.1,
+      "ratingWebsite": 4.4,
+      "ratingOdds": 4.2,
+      "ratingPayment": 4.5,
+      "ratingSupport": 4.1,
+      "ratingReputation": 3.8,
+      "ratingBonus": 4.3,
+      "license": "Western Cape Gambling and Racing Board (Licence number: 10180204-011, Registration: 2013/016123/07)",
+      "pros": [
+        "Variety of bonuses for new and existing users",
+        "Wide range of casino and slot games",
+        "Instant deposit and withdrawal facilities",
+        "New lucky number draws every two minutes",
+        "Simple registration process"
+      ],
+      "cons": [
+        "Limited sports coverage",
+        "No live stream of sports events",
+        "Exclusion of horse racing"
+      ],
+      "minDeposit": "R1",
+      "minBet": "R5",
+      "betTypes": "Accumulator, Single, Multi, Double chance, Match totals, Handicaps, 3-way, Odds or evens, First team to score, Highest-scoring half",
+      "cashOut": "Yes (Full and Partial Cash Out available)",
+      "otherProducts": "Casino (Blackjack, Roulette, Slots), Lucky Number games, Lottery (UK 49s, Powerball)",
+      "yearEstablished": "2013 (Registered), 2023 (Current License)",
+      "tcs": "18+ T&Cs apply.",
+      "type": "betting",
+      "exitLink": "https://www.mzansiwins.co.za/link/22c78280220928083006/146/",
+      "mcpTerms": "18+. T&Cs apply.",
+      "mcpLogoUrl": "https://www.imageservera.com/uploadedimages/202211/Nov09/ORG_Yesplay3853_34687.svg",
+      "baseColour": "#fd7a01",
+      "textColour": "#000000",
+      "licenceStatus": "sa-licensed",
+      "bestFor": [
+        "Mobile App",
+        "In-Play",
+        "Cash Out"
+      ]
+    },
+    {
+      "id": "betfred",
+      "name": "Betfred",
+      "overallRating": 4.2,
+      "welcomeBonusAmount": "up to R21,000 + 750 Spins",
+      "welcomeBonusDetails": "with promo code NEWBONUS",
+      "promoCode": "NEWBONUS",
+      "tcs": "Earn bonus funds and free spins over first deposits. 18+ T&Cs apply.",
+      "paymentMethodsList": [
+        "Visa",
+        "Mastercard",
+        "EFT",
+        "1 Voucher",
+        "Blu voucher",
+        "Ozow",
+        "OTT voucher",
+        "Zapper",
+        "Apple Pay",
+        "Walletdoc"
+      ],
+      "sportsCovered": [
+        "Football",
+        "Rugby",
+        "Cricket",
+        "Horse Racing",
+        "Basketball",
+        "Tennis",
+        "eSports",
+        "Darts",
+        "Cycling",
+        "Greyhound",
+        "Kabaddi",
+        "Hurling",
+        "Bandy",
+        "Floorball"
+      ],
+      "liveBetting": "Yes",
+      "liveStreaming": "Yes (per some sources)",
+      "mobileApp": "Yes (Android APK, iOS App Store)",
+      "customerSupport": "Live chat, Email: support@betfred.co.za, Phone: 087 095 8862",
+      "ratingLive": 4.3,
+      "ratingMobile": 3.8,
+      "ratingVariety": 4.2,
+      "ratingWebsite": 4.1,
+      "ratingOdds": 4.4,
+      "ratingPayment": 4.3,
+      "ratingSupport": 4.0,
+      "ratingReputation": 3.5,
+      "ratingBonus": 4.2,
+      "license": "Mpumalanga Economic Regulator",
+      "pros": [
+        "Well-known global brand",
+        "Huge welcome package",
+        "35-40+ sports covered",
+        "iOS and Android apps"
+      ],
+      "cons": [
+        "Higher minimum deposit on some methods",
+        "Mixed live streaming reports"
+      ],
+      "minDeposit": "R20",
+      "yearEstablished": "2021",
+      "type": "both",
+      "exitLink": "https://www.mzansiwins.co.za/link/4d0a9382190213123654/146/",
+      "mcpTerms": "Get up to R21,000 in bonus funds and earn up to 750 Free Spins over the course of your first three deposits when you register with promo code NEWBONUS.",
+      "mcpLogoUrl": "https://www.imageservera.com/uploadedimages/202302/Feb15/ORG_Betfred5283_47554.svg",
+      "baseColour": "#005a99",
+      "textColour": "#ffffff",
+      "licenceStatus": "sa-licensed",
+      "bestFor": [
+        "Mobile App",
+        "Live Betting"
+      ]
+    },
+    {
+      "id": "lulabet",
+      "name": "Lulabet",
+      "overallRating": 4.2,
+      "welcomeBonusAmount": "Bet R50 Get R50",
+      "welcomeBonusDetails": "with code NEWBONUS",
+      "promoCode": "NEWBONUS",
+      "tcs": "18+ T&Cs apply.",
+      "paymentMethodsList": [
+        "Visa",
+        "Mastercard",
+        "EFT",
+        "Capitec Pay",
+        "OTT voucher",
+        "1 Voucher",
+        "Blu voucher",
+        "FNB eWallet"
+      ],
+      "sportsCovered": [
+        "Football",
+        "Rugby",
+        "Cricket",
+        "Tennis",
+        "Basketball",
+        "Handball",
+        "Table tennis",
+        "MMA",
+        "Horse Racing",
+        "Virtual sports",
+        "eSports"
+      ],
+      "liveBetting": "Yes",
+      "liveStreaming": "No",
+      "mobileApp": "Yes (iOS app, Android PWA)",
+      "customerSupport": "Live Chat (24/7), Email: support@lulabet.co.za, Phone: 0860 762 237, WhatsApp",
+      "ratingLive": 3.8,
+      "ratingMobile": 3.8,
+      "ratingVariety": 4.0,
+      "ratingWebsite": 4.2,
+      "ratingOdds": 4.1,
+      "ratingPayment": 4.3,
+      "ratingSupport": 4.0,
+      "ratingReputation": 3.5,
+      "ratingBonus": 4.5,
+      "license": "Western Cape Gambling and Racing Board (License: 10190073-004/005)",
+      "pros": [
+        "24/7 customer support",
+        "iOS app available",
+        "eSports and virtual sports",
+        "20+ sports covered"
+      ],
+      "cons": [
+        "Modest welcome bonus",
+        "No live streaming",
+        "Android PWA only (no native app)"
+      ],
+      "minDeposit": "R10",
+      "yearEstablished": "2021",
+      "type": "betting",
+      "exitLink": "https://www.mzansiwins.co.za/link/d383b695221010094649/146/",
+      "mcpTerms": "18+. T&Cs apply",
+      "mcpLogoUrl": "https://www.imageservera.com/uploadedimages/202211/Nov08/ORG_Lulabet-logo4371_39344.svg",
+      "baseColour": "#171B38",
+      "textColour": "#ffffff",
+      "licenceStatus": "sa-licensed",
+      "bestFor": [
+        "Mobile App",
+        "In-Play",
+        "Top Bonus"
+      ]
+    },
+    {
+      "id": "betbus",
+      "name": "betbus",
+      "overallRating": 3.8,
+      "welcomeBonusAmount": "Deposit R5,000 Get R5,000",
+      "welcomeBonusDetails": "100% deposit match bonus up to R5,000. Minimum deposit R1 (via voucher), R100 for bonus eligibility. 18+ T&Cs apply.",
+      "promoCode": "BETS",
+      "tcs": "18+ T&Cs apply.",
+      "paymentMethodsList": [
+        "Visa",
+        "Mastercard",
+        "EFT",
+        "Ozow",
+        "1 Voucher",
+        "OTT voucher",
+        "SnapScan",
+        "Zapper"
+      ],
+      "sportsCovered": [
+        "Football",
+        "Rugby",
+        "Cricket",
+        "Basketball",
+        "Tennis",
+        "MMA/Boxing/UFC"
+      ],
+      "liveBetting": "Yes",
+      "liveStreaming": "Yes",
+      "mobileApp": "Yes (Android, iOS, Huawei)",
+      "customerSupport": "24/7 Live chat, Email: support@betbus.co.za, Social media (Facebook, X, Instagram)",
+      "ratingLive": 3.4,
+      "ratingMobile": 3.5,
+      "ratingVariety": 3.7,
+      "ratingWebsite": 3.6,
+      "ratingOdds": 3.9,
+      "ratingPayment": 4.0,
+      "ratingSupport": 3.7,
+      "ratingReputation": 3,
+      "ratingBonus": 3.8,
+      "license": "Mpumalanga Economic Regulator (MER), license 9-2-1-09721",
+      "pros": [
+        "Available on all platforms",
+        "Live streaming included",
+        "24/7 support",
+        "Low R1 minimum deposit (vouchers)"
+      ],
+      "cons": [
+        "Newer operator (2024)",
+        "Limited sports coverage vs top operators"
+      ],
+      "minDeposit": "R1",
+      "yearEstablished": "2024",
+      "type": "both",
+      "exitLink": "https://www.mzansiwins.co.za/link/fd10f517260118211403/146/",
+      "baseColour": "#401010",
+      "textColour": "#fdfcfc",
+      "licenceStatus": "sa-licensed",
+      "bestFor": [
+        "Mobile App",
+        "Live Betting"
+      ]
+    },
+    {
+      "id": "jackpot-city",
+      "name": "Jackpot City",
+      "overallRating": 4.3,
+      "welcomeBonusAmount": "100% up to R4000 + Spins",
+      "welcomeBonusDetails": "100% welcome bonus up to R4000 plus bonus spins. Minimum deposit R10. 18+ only. Gamble responsibly. T&Cs apply.",
+      "promoCode": "NEWBONUS",
+      "tcs": "18+ only. Gamble responsibly. T&Cs apply.",
+      "paymentMethodsList": [
+        "Visa",
+        "Mastercard",
+        "EFT",
+        "OTT voucher",
+        "Blu voucher",
+        "1 Voucher",
+        "Ozow",
+        "Apple Pay",
+        "Zapper"
+      ],
+      "sportsCovered": [
+        "Casino slots",
+        "Table games",
+        "Live casino",
+        "Crash games (Aviator)",
+        "BetGames"
+      ],
+      "liveBetting": "No",
+      "liveStreaming": "Yes (Live casino dealers)",
+      "mobileApp": "Yes (Android, iOS, Huawei)",
+      "customerSupport": "Live chat, Email: support@jackpotcity.co.za, Phone: 086 182 0100 (24/7)",
+      "ratingLive": 4.1,
+      "ratingMobile": 3.5,
+      "ratingVariety": 4.5,
+      "ratingWebsite": 4.3,
+      "ratingOdds": 4.0,
+      "ratingPayment": 4.4,
+      "ratingSupport": 4.2,
+      "ratingReputation": 3.3,
+      "ratingBonus": 4.6,
+      "license": "Mpumalanga Economic Regulator (License #9-2-1-09658)",
+      "pros": [
+        "Global brand since 1998",
+        "Wide casino game selection",
+        "Available on all platforms",
+        "24/7 support"
+      ],
+      "cons": [
+        "Primarily casino (no dedicated sportsbook)",
+        "No sports betting cash out",
+        "No live sports streaming"
+      ],
+      "minDeposit": "R10",
+      "yearEstablished": "1998",
+      "type": "casino",
+      "exitLink": "https://www.mzansiwins.co.za/link/d2432c08251010140647/146/",
+      "baseColour": "#181818",
+      "textColour": "#ffffff",
+      "cashOut": "No",
+      "licenceStatus": "casino-licence",
+      "bestFor": [
+        "Mobile App",
+        "Top Bonus"
+      ]
+    },
+    {
+      "id": "luckystake",
+      "name": "Luckystake",
+      "overallRating": 3.9,
+      "welcomeBonusAmount": "Luckystake Loyalty Program",
+      "welcomeBonusDetails": "Luckystake Loyalty Program rewards regular players. 18+ T&Cs apply.",
+      "promoCode": "BETS",
+      "tcs": "18+ T&Cs apply.",
+      "paymentMethodsList": [
+        "Visa",
+        "Mastercard",
+        "EFT",
+        "Ozow"
+      ],
+      "sportsCovered": [
+        "Casino games",
+        "Slots",
+        "Table games"
+      ],
+      "liveBetting": "No",
+      "liveStreaming": "No",
+      "mobileApp": "Yes (iOS app for global version)",
+      "customerSupport": "Live chat, Email support",
+      "ratingLive": 3.5,
+      "ratingMobile": 3.5,
+      "ratingVariety": 3.9,
+      "ratingWebsite": 3.9,
+      "ratingOdds": 3.8,
+      "ratingPayment": 4.0,
+      "ratingSupport": 3.8,
+      "ratingReputation": 3.3,
+      "ratingBonus": 4.1,
+      "license": "License details under review for SA operations",
+      "pros": [
+        "Loyalty program rewards",
+        "Casino game variety"
+      ],
+      "cons": [
+        "Limited SA-specific information",
+        "Licensing not fully confirmed for SA sports betting",
+        "No live sports betting"
+      ],
+      "minDeposit": "R20",
+      "yearEstablished": "2025",
+      "type": "casino",
+      "exitLink": "https://www.mzansiwins.co.za/link/a0fbbdac260126175628/146/",
+      "baseColour": "#292929",
+      "textColour": "#fdfcfc",
+      "licenceStatus": "unconfirmed",
+      "bestFor": [
+        "Mobile App"
+      ]
+    },
+    {
+      "id": "virginbet",
+      "name": "VirginBet",
+      "overallRating": 3.7,
+      "welcomeBonusAmount": "Up to R3,000 Deposit Match",
+      "welcomeBonusDetails": "with promo code MAXBONUS",
+      "promoCode": "MAXBONUS",
+      "tcs": "The Virgin Bet promo code in South Africa is MAXBONUS. 18+. T&Cs apply.",
+      "paymentMethodsList": [
+        "Visa",
+        "Mastercard",
+        "Ozow",
+        "EFT",
+        "Apple Pay"
+      ],
+      "depositMethods": [
+        {
+          "name": "Visa",
+          "minDeposit": "R10",
+          "processingTime": "Instant"
+        },
+        {
+          "name": "Mastercard",
+          "minDeposit": "R10",
+          "processingTime": "Instant"
+        },
+        {
+          "name": "Ozow",
+          "minDeposit": "R10",
+          "processingTime": "Instant"
+        },
+        {
+          "name": "EFT",
+          "minDeposit": "R10",
+          "processingTime": "Instant"
+        },
+        {
+          "name": "Apple Pay",
+          "minDeposit": "R10",
+          "processingTime": "Instant"
+        }
+      ],
+      "withdrawalMethods": [
+        {
+          "name": "EFT",
+          "minWithdrawal": "R50",
+          "processingTime": "1-3 business days"
+        },
+        {
+          "name": "Ozow",
+          "minWithdrawal": "R50",
+          "processingTime": "Within 24 hours"
+        }
+      ],
+      "sportsCovered": [
+        "Football",
+        "Rugby Union",
+        "Cricket",
+        "Horse Racing",
+        "Tennis",
+        "Basketball",
+        "Boxing",
+        "MMA",
+        "Golf",
+        "Darts",
+        "Formula 1",
+        "Baseball",
+        "American Football",
+        "Ice Hockey",
+        "Volleyball",
+        "Table Tennis",
+        "Handball",
+        "Cycling",
+        "Snooker",
+        "eSports",
+        "Surfing",
+        "Netball",
+        "Water Polo",
+        "Aussie Rules",
+        "Gaelic Football",
+        "Lacrosse",
+        "Futsal",
+        "Curling"
+      ],
+      "liveBetting": "Yes",
+      "liveStreaming": "No",
+      "mobileApp": "Yes (Android, iOS, Huawei AppGallery)",
+      "customerSupport": "Help Centre, Email, WhatsApp",
+      "ratingLive": 3.5,
+      "ratingMobile": 4.0,
+      "ratingVariety": 4.2,
+      "ratingWebsite": 4.0,
+      "ratingOdds": 3.6,
+      "ratingPayment": 3.3,
+      "ratingSupport": 3.2,
+      "ratingReputation": 3.8,
+      "ratingBonus": 3.5,
+      "license": "Mpumalanga Economic Regulator; Licence No: 9-2-1-09938",
+      "pros": [
+        "Backed by the Virgin brand with strong global reputation",
+        "28+ sports including niche markets like surfing and lacrosse",
+        "Apps for Android, iOS, and Huawei devices",
+        "Clean, modern betting interface"
+      ],
+      "cons": [
+        "Limited SA payment methods compared to local operators",
+        "No live streaming",
+        "Relatively new in the SA market (launched January 2026)"
+      ],
+      "minDeposit": "R10",
+      "minBet": "R1",
+      "betTypes": "Singles, Accumulators, Bet Builder",
+      "cashOut": "Yes",
+      "otherProducts": "Casino, Live Casino, VirginBet FIVES",
+      "yearEstablished": "2026 (SA launch)",
+      "type": "both",
+      "exitLink": "https://www.mzansiwins.co.za/link/d39aa076250922085716/146/",
+      "mcpTerms": "The Virgin Bet promo code in South Africa is NEWBONUS. 18+. T&Cs apply.",
+      "mcpLogoUrl": "https://www.imageservera.com/uploadedimages/202510/Oct01/ORG_virgin-bet4632_41693.svg",
+      "baseColour": "#E10A0A",
+      "textColour": "#ffffff",
+      "licenceStatus": "sa-licensed",
+      "bestFor": [
+        "Sports Variety",
+        "Mobile App",
+        "In-Play"
+      ]
+    }
+  ],
+  "paymentMethods": [
+    {
+      "id": "eft-electronic-funds-transfer",
+      "name": "EFT (Electronic Funds Transfer)",
+      "type": "bank transfer",
+      "description": "EFT (Electronic Funds Transfer) is a standard bank-to-bank electronic transfer system in South Africa processed through clearing houses like BankservAfrica. Users initiate transfers via online banking using bookmaker-provided bank details and a unique reference. Funds settle in batches, typically within 1-3 business days after verification.",
+      "howItWorks": "Punters select EFT in the bookmaker's deposit section, receive bank details/reference, log into their online banking, add bookmaker as beneficiary if needed, transfer funds, and wait for clearance. For withdrawals, request via site providing personal bank details; bookmakers process to bank account (FICA verified), funds arrive in 1-3 days.",
+      "depositSpeed": "1-3 business days (instant if via streamlined services like Ozow)",
+      "withdrawalSpeed": "1-3 business days (some bookmakers 1 hour to 24 hours processing)",
+      "fees": "No fees charged by most bookmakers; banks may charge small fee (&lt;R5)",
+      "minDeposit": "R5 - R50",
+      "maxDeposit": "R100,000 - R1,000,000 per transaction",
+      "availability": "Widely available at virtually all major SA bookmakers including Betway, Sportingbet, Hollywoodbets, Supabets, Tic Tac Bets, Playa Bets, EasyBet",
+      "pros": [
+        "Familiar and uses existing bank accounts",
+        "no or minimal fees",
+        "high limits suitable for large transactions",
+        "secure via bank channels",
+        "supports direct withdrawals to bank"
+      ],
+      "cons": [
+        "Slower processing times compared to instant EFT or e-wallets (1-3 business days)",
+        "not always 24/7",
+        "manual beneficiary setup required for deposits",
+        "weekends/holidays delayed"
+      ],
+      "websiteUrl": "https://www.bankservafrica.com/ (clearing house)",
+      "whereToBuy": "Access via any major SA bank's online/mobile banking (FNB, ABSA, Standard Bank, Nedbank, Capitec etc.); no purchase needed",
+      "security": "Leverages regulated bank security (PINs, 2FA, encryption); processed via BankservAfrica clearing house; FICA verification required for withdrawals; no card details shared"
+    },
+    {
+      "id": "blu-voucher",
+      "name": "Blu Voucher",
+      "type": "voucher",
+      "description": "Blu Voucher is a prepaid voucher launched in 2020 by Blue Label Distribution for South Africans to make secure online payments without a bank account. Users purchase it with cash at retailers for a chosen amount and receive a 16-digit PIN code to redeem at partner sites. It provides access to services like gaming, airtime, and more in ZAR.",
+      "howItWorks": "Punters buy a Blu Voucher (R10-R3000 typical) at stores like Pick n Pay, Clicks, Spar, or via bank apps, get the 16-digit PIN, go to bookmaker cashier, select Blu Voucher, enter PIN, and deposit instantly. Cannot be used for withdrawals; use other methods for cashouts.",
+      "depositSpeed": "Instant",
+      "withdrawalSpeed": "Not supported",
+      "fees": "No fees for purchase or use at bookmakers",
+      "minDeposit": "R10",
+      "maxDeposit": "R1000-R3000 per voucher",
+      "availability": "Widely available at major SA bookmakers including Betway, Hollywoodbets, World Sports Betting, 10Bet, YesPlay, Betfred",
+      "pros": [
+        "No bank account or card needed",
+        "instant deposits",
+        "no fees",
+        "high security (no personal/financial details shared)",
+        "widely available at 150,000+ points",
+        "promotes responsible gambling by limiting spend to purchased amount"
+      ],
+      "cons": [
+        "No withdrawals supported",
+        "non-reloadable",
+        "partial redemptions not possible (must use full amount)",
+        "expires after 36 months with loss of balance if unused"
+      ],
+      "websiteUrl": "https://bluvoucher.co.za/",
+      "whereToBuy": "Over 150,000 retail points nationwide: supermarkets (Pick n Pay, Game, Spar, Checkers), pharmacies (Clicks), petrol stations (BP, Caltex), spaza shops, Vodacom/Makro stores, or via bank apps (e.g. Discovery Bank) and digital platforms",
+      "security": "Secure prepaid system by Blue Label Distribution with stringent transaction safeguards; only PIN needed, no banking details exposed; supported 7am-9pm via phone (0861 411 411 or 0800 014 942) and social media"
+    },
+    {
+      "id": "ozow-instant-eft",
+      "name": "Ozow Instant EFT",
+      "type": "instant EFT",
+      "description": "Ozow Instant EFT is a South African payment gateway that enables automated, real-time electronic funds transfers directly from a user's bank account without cards. Users select their bank, log in via secure redirect, auto-populate payment details, and confirm with 2FA OTP from their bank. Funds transfer instantly to the merchant upon approval.",
+      "howItWorks": "Punters select Ozow under Instant EFT at bookmaker cashier, choose bank (e.g., FNB, Capitec), log into online banking, confirm via 2FA; funds credit instantly for betting. Withdrawals work similarly: select Ozow/EFT, enter bank details, bookmaker processes to bank account (real-time option available at some sites).",
+      "depositSpeed": "Instant (under 2 minutes)",
+      "withdrawalSpeed": "Fast (real-time clearing available up to limits, otherwise same-day or 1-3 days)",
+      "fees": "No fees charged by Ozow or most bookmakers; possible small bank fees",
+      "minDeposit": "R10 - R50",
+      "maxDeposit": "R100,000 - R500,000 per transaction (site-dependent)",
+      "availability": "Widely available at top SA bookmakers including Betway, Hollywoodbets, Bet.co.za, Easybet, Tictacbets, PlayaBets, Fafabet, and many others",
+      "pros": [
+        "Instant deposits and fast withdrawals",
+        "no card needed",
+        "direct bank security with 2FA",
+        "irreversible/no chargebacks",
+        "free for users",
+        "mobile-friendly",
+        "supports all major SA banks"
+      ],
+      "cons": [
+        "Requires internet banking access",
+        "limited to SA banks only",
+        "potential bank-side transaction fees",
+        "needs smartphone or computer for full functionality"
+      ],
+      "websiteUrl": "https://ozow.com/",
+      "whereToBuy": "Directly via any participating SA bookmaker or merchant site with Ozow integration; requires only an online banking account with one of 10 major SA banks (Capitec, FNB, Standard Bank, ABSA, Nedbank, TymeBank, Investec, Bidvest, African Bank)",
+      "security": "PCI DSS Level 1 compliant; end-to-end encryption; 2FA required per transaction; licensed by Payments Association of South Africa (PASA) as Third Party Payment Provider; Thawte certified; POPIA/GDPR compliant"
+    },
+    {
+      "id": "fnb-ewallet",
+      "name": "FNB eWallet",
+      "type": "mobile wallet",
+      "description": "FNB eWallet is a mobile wallet service from First National Bank allowing customers to send money instantly to any South African cellphone number without needing a bank account. Recipients receive an SMS and can withdraw cash at FNB ATMs using a temporary PIN (dial *120*277#), buy airtime/electricity, or send to others. First withdrawal per send is often free, with balance limits around R10,000.",
+      "howItWorks": "Primarily for withdrawals: punter selects FNB eWallet in bookmaker cashier (e.g. Sportingbet, Betway), enters amount/mobile number, receives SMS with PIN after processing (up to 24hrs), dials USSD or uses PIN at FNB ATM to cash out. Deposits usually via FNB Instant EFT instead.",
+      "depositSpeed": "Not directly used for deposits; FNB banking/EFT is instant at bookmakers",
+      "withdrawalSpeed": "Processed within 24 hours, then instant SMS PIN for ATM cashout",
+      "fees": "Sender fees R8.50-R16.50 based on amount; recipient ATM withdrawals R8.50 (first free per send), prepaid R2.50, dormancy R5 after 6 months inactivity. Bookmaker withdrawals typically free.",
+      "minDeposit": "N/A (withdrawals primarily); typical min R100 at bookmakers like Sportingbet",
+      "maxDeposit": "N/A (withdrawals primarily); bookmaker limits up to R3000 per transaction",
+      "availability": "Available at select SA bookmakers like Sportingbet, Betway, Hollywoodbets",
+      "pros": [
+        "No bank account needed for recipient, quick cash access at FNB ATMs nationwide, first withdrawal free per send, instant transfers, convenient for unbanked punters, secure FNB backing."
+      ],
+      "cons": [
+        "Limited max per withdrawal (typically R3000), fees on subsequent ATM withdrawals (R8.50-R11), limits on daily spend (R5000), outdated info on official site, potential processing delays up to 24hrs"
+      ],
+      "websiteUrl": "https://www.fnb.co.za/send-money/eWallet.html",
+      "whereToBuy": "Access via FNB App, Online Banking, USSD (*120*277#), or ATMs to send; receive on any SA cellphone, withdraw at FNB ATMs or retailers like SPAR.",
+      "security": "Uses temporary SMS PINs for withdrawals (expire quickly), FNB bank-level security, no debit orders, monitored for fraud; beware phishing/smishing as per FNB warnings."
+    },
+    {
+      "id": "sid-instant-eft",
+      "name": "SID Instant EFT",
+      "type": "instant EFT",
+      "description": "SID Instant EFT is a secure online payment method launched in 2007 that allows South African users to make instant bank transfers directly from their internet banking without needing a credit card. Users select their bank, log in securely, choose an account, and confirm with a one-time PIN (OTP) or push notification for immediate payment confirmation. It integrates seamlessly with e-commerce sites including betting platforms.",
+      "howItWorks": "Punters log into their bookmaker account, select SID Instant EFT in the deposit/withdrawal section, choose their SA bank (e.g., FNB, ABSA, Nedbank, Standard Bank), enter the amount, log into internet banking to confirm via OTP/push, and funds are credited instantly for deposits or processed for withdrawals (24-48 hours).",
+      "depositSpeed": "Instant (funds available in seconds)",
+      "withdrawalSpeed": "24-48 hours (plus bookmaker processing; faster than standard bank transfers)",
+      "fees": "Free for deposits at most bookmakers (SiD itself free for users, merchants pay ~1.5%; banks may charge small processing fees; withdrawals may have fees from banks or sites ~2.5%)",
+      "minDeposit": "R10-R100",
+      "maxDeposit": "R100,000 per transaction (up to R1,000,000 at some sites like Betway)",
+      "availability": "Widely available at major South African bookmakers including Betway, 1Win, Springbok Casino, Thunderbolt Casino, Yebo Casino, 1xBet, and others",
+      "pros": [
+        "Instant deposits",
+        "no credit card needed",
+        "highly secure via bank login/OTP and 256-bit SSL",
+        "free deposits at most sites",
+        "mobile-friendly",
+        "widely accepted",
+        "irreversible payments reduce fraud",
+        "works with major SA banks",
+        "compatible with bonuses"
+      ],
+      "cons": [
+        "Not free (low fees from banks or providers)",
+        "withdrawals slower than deposits and may incur bank fees",
+        "primarily for SA users/not available internationally",
+        "requires internet banking setup"
+      ],
+      "websiteUrl": "https://sidpayment.com/",
+      "whereToBuy": "Directly via your South African bank's internet banking/mobile app at participating online bookmakers; no registration or purchase needed \u2013 select SID at checkout",
+      "security": "Bank-level security: payments via secure internet banking login (no details stored by SID); OTP/push confirmation; 256-bit SSL encryption; certified by GoDaddy/Trust Guard; funds stay in banking system; 99.9% success rate; strict verification for withdrawals (ID, proof of address)"
+    },
+    {
+      "id": "zapper",
+      "name": "Zapper",
+      "type": "mobile wallet",
+      "description": "Zapper is a free South African 'scan to pay' mobile app owned by the Payfast network, allowing users to link credit/debit/cheque cards and make quick QR code payments. Users download the app, add card details securely, and scan merchant QR codes for seamless transactions without sharing info directly. It's designed for convenience, security, and rewards like loyalty points.",
+      "howItWorks": "For deposits: Select Zapper at bookmaker cashier, scan displayed QR code with Zapper app, confirm amount and pay (instant). For withdrawals: Select Zapper in withdrawal section, log in via app/prompts, confirm to receive funds in Zapper balance shortly after processing.",
+      "depositSpeed": "Instant",
+      "withdrawalSpeed": "Fast (shortly after processing, typically hours; site-dependent)",
+      "fees": "Free for users at bookmakers (no deposit/withdrawal fees charged by sites or Zapper for punters)",
+      "minDeposit": "R1 (e.g. at Bet.co.za); often R10+ at other sites",
+      "maxDeposit": "R100,000 per transaction (e.g. at Bet.co.za)",
+      "availability": "Available at several SA bookmakers including Bet.co.za, 10bet, Supabets, Rabona, Bet365, Easybet, Betfred; growing adoption but not universal",
+      "pros": [
+        "Instant deposits and fast withdrawals",
+        "no fees",
+        "highly secure (card details not shared with bookmaker, encrypted transactions via secure gateway)",
+        "easy QR scan process",
+        "reduced fraud risk",
+        "SA-specific with rewards/loyalty perks"
+      ],
+      "cons": [
+        "Linked to personal cards so requires bankroll management to avoid overspending",
+        "limited to bookies with Payfast integration",
+        "not as widespread as EFT or vouchers yet"
+      ],
+      "websiteUrl": "https://www.zapper.com",
+      "whereToBuy": "Download free Zapper app from App Store/Google Play, register, link SA credit/debit/cheque card (excl. Amex/Diners)",
+      "security": "Transactions via secure payment gateway with encryption; card details tokenized/stored only in app, never shared with merchants/bookmakers; 3D Secure support; PCI-DSS compliant; fraud prevention built-in"
+    },
+    {
+      "id": "ott-voucher",
+      "name": "OTT Voucher",
+      "type": "voucher",
+      "description": "OTT Voucher is a prepaid digital cash voucher purchased with cash at over 200,000 retail locations in South Africa or online via banks/EFT. Users receive a unique 12-digit PIN via SMS or receipt, which they redeem at partner sites. It enables cash users to make secure online payments without sharing bank details or needing a bank account.",
+      "howItWorks": "Punters buy an OTT Voucher (R5-R5000+), go to a supporting bookmaker's deposit section, select OTT Voucher, enter the PIN/code, and funds are instantly credited for betting. Withdrawals not supported-use other methods like EFT.",
+      "depositSpeed": "Instant",
+      "withdrawalSpeed": "Not supported",
+      "fees": "No fees from bookmakers or OTT; full voucher value credited. Some retail vendors may add small markup.",
+      "minDeposit": "R5-R10",
+      "maxDeposit": "R3,000-R5,000 per voucher (bookmakers flexible up to R1B e.g. Betway)",
+      "availability": "Widely available; accepted by most major SA bookmakers including Betway, Hollywoodbets, Playa Bets, Sportingbet, Gbets, YesPlay, Supabets, SunBet, WSB, LottoStar, and others.",
+      "pros": [
+        "No bank account needed",
+        "instant deposits",
+        "no sharing of card/bank details (high privacy/security)",
+        "promotes spending control (prepaid)",
+        "widely available at stores",
+        "no deposit fees",
+        "accessible for cash users."
+      ],
+      "cons": [
+        "Deposit-only (no withdrawals)",
+        "risk of losing physical voucher",
+        "some vendors may charge markup on purchase price",
+        "tied to specific denominations."
+      ],
+      "websiteUrl": "https://ottvoucher.com/",
+      "whereToBuy": "Over 200,000 retail outlets (Shoprite, Boxer, PEP, Makro, Game, petrol stations like Caltex/Sasol, spaza shops, taverns); or online via banks (Ozow, CallPay, Absa app, PayPal), OTT site, or apps like OTT4Me.",
+      "security": "Uses unique single-use PINs; no personal/financial details shared with sites; secure redemption process; limited risk (only voucher value at stake); compliant with SA gambling regs."
+    },
+    {
+      "id": "peach-payments",
+      "name": "Peach Payments",
+      "type": "payment gateway",
+      "description": "Peach Payments is a South African payment gateway founded in 2010 that enables secure online transactions for merchants including betting sites. It supports multiple methods like credit/debit cards (Visa/Mastercard), Instant EFT Secure, Masterpass, Mobicred, 1Voucher, and Scan to Pay. Users select Peach at the bookmaker, choose a sub-method, enter amount, and confirm via 3D Secure or bank auth.",
+      "howItWorks": "Punters select Peach Payments in the bookmaker's deposit section, choose from options like card or Instant EFT, enter amount and details, authenticate (OTP/3D Secure), funds credit instantly. Withdrawals possible via Peach at some sites (e.g., cards if deposited with) or standard EFT/payouts next business day.",
+      "depositSpeed": "Instant (minutes)",
+      "withdrawalSpeed": "Next business day (via payouts/EFT) or up to 72h at bookies; real-time payouts recently launched for merchants",
+      "fees": "Merchant fees ~2.95% + R1.50 per txn; punter fees vary by method/bookie, often low/none but check specific (e.g., transaction-based)",
+      "minDeposit": "R5-R50",
+      "maxDeposit": "Varies by bookie/method, up to R100,000+ for cards/e-wallets",
+      "availability": "Available at major SA bookmakers like HollywoodBets, Bet.co.za, Betway, BetXchange",
+      "pros": [
+        "Instant deposits across multiple convenient SA methods",
+        "added security layer",
+        "mobile/app compatible",
+        "supports cards and EFT/vouchers",
+        "reliable SA provider"
+      ],
+      "cons": [
+        "Transaction fees apply (merchant ~3% + fixed, may pass to punter)",
+        "primarily deposit-focused, limited direct withdrawals",
+        "fees vary by method/volume"
+      ],
+      "websiteUrl": "https://www.peachpayments.com/",
+      "whereToBuy": "Integrated at bookmaker deposit pages; no separate purchase - access via supported betting sites or merchants",
+      "security": "PCI DSS v4.x compliant (helps reduce merchant scope via hosted/embedded checkouts); secure hosted pages, tokenization, encryption, 3D Secure; merchant screening; firewalls/intrusion detection"
+    },
+    {
+      "id": "1voucher",
+      "name": "1Voucher",
+      "type": "voucher",
+      "description": "1Voucher is a prepaid voucher system in South Africa that converts cash into a 16-digit PIN for secure online payments without needing a bank account. Users buy vouchers at retailers or online, then redeem the PIN at merchants. Also known as 1ForYou, it supports the 1ForYou app for additional management.",
+      "howItWorks": "Punters buy a 1Voucher (R5+ denominations), go to bookmaker deposit page, select 1Voucher, enter 16-digit PIN; funds credit instantly. For withdrawals (where supported like Betway/Betfred), select 1Voucher in withdrawal, enter amount/mobile, receive new PIN via SMS instantly to spend elsewhere.",
+      "depositSpeed": "Instant",
+      "withdrawalSpeed": "Instant PIN via SMS at supported sites (e.g. Betway, Betfred); otherwise N/A - use EFT/ewallets",
+      "fees": "No fees for deposits or transactions at bookmakers; full voucher value credited. Possible small fees when buying voucher at some retailers or partners.",
+      "minDeposit": "R5-R10 (varies by bookmaker, e.g. R1 at YesPlay/Betshezi, R5 at 10Bet, R10 at Betfred)",
+      "maxDeposit": "R4,000 per voucher (site max may vary)",
+      "availability": "Widely available at many major SA bookmakers including Betway, Hollywoodbets, Betfred, YesPlay, Sportingbet, Gbets, Supabets, 10Bet, Betshezi, WSB, and others",
+      "pros": [
+        "High privacy (no bank details shared)",
+        "instant deposits",
+        "widely available at stores/online",
+        "no deposit fees",
+        "ideal for unbanked users",
+        "secure prepaid system"
+      ],
+      "cons": [
+        "Deposit-only at most sites (withdrawals supported at select like Betway/Betfred)",
+        "must use full voucher value at once",
+        "possible retailer purchase fees",
+        "occasional PIN invalidation issues"
+      ],
+      "websiteUrl": "https://www.1voucher.co.za/",
+      "whereToBuy": "Retail: Shoprite, Checkers, Usave, PEP, Ackermans, Flash shops, OK stores nationwide. Online: 1voucher.co.za (buy with card), 1ForYou app, TymeBank/Nedbank apps, Kazang, Flash.",
+      "security": "Uses advanced encryption; PIN-based single-use security; no personal financial data shared with merchants"
+    },
+    {
+      "id": "snapscan-south-africa",
+      "name": "SnapScan (South Africa)",
+      "type": "mobile wallet / QR scan-to-pay",
+      "description": "SnapScan is a South African QR-based mobile payments app that lets users pay online or in-store by scanning a merchant QR code (SnapCode) or using a payment link, with payment authorised in-app via PIN/biometrics. Users link an eCommerce-enabled debit/credit card (works with South African banks and most international cards) and can also use a SnapScan Wallet for send/receive and cashing out to a bank account.",
+      "howItWorks": "Deposit: In a bookmaker/casino cashier, select SnapScan, enter an amount, then scan the generated QR code (or follow an in-app link) and authenticate in SnapScan to complete the payment; funds typically credit instantly. Withdrawals: varies by operator-some sites may not offer SnapScan cashouts; where supported, winnings can be sent to your SnapScan Wallet (e.g., by the operator paying to your 'Receive' QR/link), after which you withdraw from Wallet to your bank account (account verification required).",
+      "depositSpeed": "Typically instant/near-instant: bookmakers display a QR code (or link) and the balance is credited once the payment is authenticated in-app (example deposit flow shown by Easybet).",
+      "withdrawalSpeed": "If a bookmaker supports SnapScan Wallet payouts, receipt into the SnapScan Wallet can be quick once approved by the operator; moving funds from SnapScan Wallet to your bank account is an additional step and timing depends on SnapScan/bank processing (fee applies). Where SnapScan withdrawals aren't offered by the bookmaker, punters must withdraw via alternative methods.",
+      "fees": "For punters, SnapScan is generally free to use for payments (no stated user fee on the official SnapScan site); however, withdrawing money from the SnapScan Wallet to a linked bank account carries a 3.5% fee. Individual bookmakers/merchants may still charge their own deposit/transaction fees (often listed as fee-free for the player, but this is operator-dependent).",
+      "minDeposit": "Varies by bookmaker (commonly around R10\u2013R50 at SA bookmakers depending on method, but SnapScan-specific minimums are typically set by the operator rather than SnapScan).",
+      "maxDeposit": "Varies by bookmaker and card/bank limits (SnapScan itself does not publish a universal max on its consumer site; many operators set their own caps).",
+      "availability": "Moderately available: supported by a handful of SA-facing bookmakers/casinos (more common at online casinos and some local sportsbooks than as a universal option). Evidence of direct support includes Easybet deposits via SnapScan, and multiple SA casino listings that include SnapScan (e.g., Tusk Casino mentioned in casino payment guides).",
+      "pros": [
+        "Fast deposits (QR scan + in-app auth",
+        "typically instant). Strong privacy vs entering card details on betting sites (pay via app",
+        "card details not typed into the bookmaker site). Widely accessible for SA users with smartphones and bank cards",
+        "supports PIN plus biometric authentication",
+        "convenient receipts/proof of payment features",
+        "useful budgeting via Wallet/top-ups."
+      ],
+      "cons": [
+        "Not universally supported across all SA bookmakers",
+        "often deposits-only at some operators (bookmaker policy varies) and withdrawals may require using a different method or routing via SnapScan Wallet then to bank. Requires a smartphone, the SnapScan app, and internet connectivity",
+        "if phone is lost/compromised you must secure the device and linked cards. Bookmaker- or bank-imposed limits/fees may still apply even if SnapScan itself is free to use for payments."
+      ],
+      "websiteUrl": "https://www.snapscan.co.za/",
+      "whereToBuy": "Download the SnapScan app (iOS/Android/Huawei AppGallery) and sign up with a South African SIM; add an eCommerce-enabled debit/credit card (supports SA banks; most international cards). To use Wallet withdrawals, verify with a South African ID and link a supported SA bank account.",
+      "security": "Payments are authenticated in-app using a user-created PIN and optionally fingerprint/FaceID, and card details are stored/handled securely (encrypted) rather than re-entered on merchant sites. Wallet withdrawals require account verification (SA ID + linked bank account), and the app supports proof-of-payment notifications."
+    },
+    {
+      "id": "visa-mastercard",
+      "name": "Visa & Mastercard",
+      "type": "credit/debit card",
+      "description": "Visa and Mastercard are the most widely accepted card payment methods worldwide. South African punters can use their Visa or Mastercard debit or credit cards to fund betting accounts instantly. Cards are linked to your bank account and provide a familiar, trusted payment experience.",
+      "howItWorks": "Select Visa/Mastercard at the bookmaker deposit page, enter card number, expiry date, and CVV, then authenticate via 3D Secure OTP from your bank. Funds credit instantly. Withdrawals back to card take 1-5 business days.",
+      "depositSpeed": "Instant",
+      "withdrawalSpeed": "1-5 business days",
+      "fees": "Usually free for deposits; some banks may charge international transaction fees",
+      "minDeposit": "R5-R50",
+      "maxDeposit": "R100,000-R1,000,000",
+      "availability": "Accepted at virtually all SA bookmakers",
+      "pros": [
+        "Universally accepted",
+        "Instant deposits",
+        "Familiar and easy to use",
+        "3D Secure protection",
+        "Supports withdrawals"
+      ],
+      "cons": [
+        "Some banks may block gambling transactions",
+        "Withdrawal times slower than EFT",
+        "Requires sharing card details"
+      ],
+      "websiteUrl": "https://www.visa.co.za/",
+      "whereToBuy": "Available from any SA bank - FNB, ABSA, Standard Bank, Nedbank, Capitec, TymeBank etc.",
+      "security": "3D Secure OTP verification, PCI DSS compliance, fraud monitoring, chargeback protection"
+    },
+    {
+      "id": "apple-pay",
+      "name": "Apple Pay",
+      "type": "digital wallet",
+      "description": "Apple Pay is a mobile and online payment service from Apple, available on iPhone, iPad, Apple Watch, and Mac. In South Africa, Apple Pay is accepted at a small but growing number of betting sites for instant deposits. Users authenticate via Face ID, Touch ID, or device passcode. Apple Pay works by tokenising your linked Visa or Mastercard, so the bookmaker never receives your actual card details.",
+      "howItWorks": "Select Apple Pay in the bookmaker's deposit section, enter your deposit amount, confirm with Face ID or Touch ID on your device. The transaction processes instantly through your linked debit or credit card. For withdrawals, most bookmakers do not support Apple Pay payouts - you'll typically withdraw via bank transfer or another method.",
+      "depositSpeed": "Instant",
+      "withdrawalSpeed": "Not available (use bank transfer)",
+      "fees": "Free at most bookmakers",
+      "minDeposit": "R10-R50 depending on bookmaker",
+      "maxDeposit": "R50,000+ depending on bookmaker",
+      "security": "Tokenised card numbers, Face ID/Touch ID biometric authentication, no card details shared with merchant",
+      "pros": [
+        "Instant deposits",
+        "Strong biometric security",
+        "No card details shared with bookmaker",
+        "Works from iPhone, iPad, or Apple Watch"
+      ],
+      "cons": [
+        "Only available on Apple devices",
+        "Most bookmakers do not support withdrawals",
+        "Limited adoption among SA betting sites",
+        "Requires linked Visa or Mastercard"
+      ],
+      "supportedBrands": [
+        "10Bet South Africa",
+        "Betway South Africa"
+      ],
+      "availableIn": "South Africa (via supported banks: FNB, Nedbank, Absa, Standard Bank, Capitec, Discovery Bank)"
+    },
+    {
+      "id": "capitec-pay",
+      "name": "Capitec Pay",
+      "type": "bank app payment",
+      "description": "Capitec Pay is a scan-to-pay and tap-to-pay feature within the Capitec banking app used by over 20 million South Africans. Some betting sites accept Capitec Pay for deposits via QR code scanning or direct app-to-app transfers. The service uses Mastercard's network for contactless payments and integrates with Capitec's app-based banking platform.",
+      "howItWorks": "Select Capitec Pay at the bookmaker deposit screen, scan the QR code using your Capitec app, or follow the redirect to approve the payment in the Capitec app. Confirm the amount and enter your banking PIN. Funds are transferred instantly from your Capitec transactional account. Withdrawals go to your Capitec account via standard bank transfer.",
+      "depositSpeed": "Instant",
+      "withdrawalSpeed": "1-24 hours (via bank transfer to Capitec account)",
+      "fees": "Free at most bookmakers",
+      "minDeposit": "R10-R50 depending on bookmaker",
+      "maxDeposit": "R50,000 depending on bookmaker",
+      "security": "Capitec app PIN authentication, biometric login, real-time transaction notifications, Mastercard network tokenisation",
+      "pros": [
+        "Instant deposits",
+        "No card details needed - pay from app",
+        "Used by 20M+ South Africans",
+        "Real-time notifications"
+      ],
+      "cons": [
+        "Only available to Capitec account holders",
+        "Not all betting sites support it",
+        "Withdrawals via standard bank transfer (not instant)",
+        "Requires Capitec app with latest update"
+      ],
+      "supportedBrands": [
+        "Hollywoodbets",
+        "Supabets",
+        "Betway South Africa"
+      ],
+      "availableIn": "South Africa (Capitec Bank customers)"
+    },
+    {
+      "id": "vodapay",
+      "name": "VodaPay",
+      "type": "mobile wallet",
+      "description": "VodaPay is Vodacom's super-app that offers mobile payments, money transfers, and a digital wallet. Available to any South African with a smartphone (not limited to Vodacom subscribers), VodaPay can be linked to bank accounts or funded via retail vouchers. A growing number of SA betting sites accept VodaPay deposits.",
+      "howItWorks": "Select VodaPay in the bookmaker's deposit section, scan the QR code or follow the link to the VodaPay app, confirm the amount and authorise using your VodaPay PIN. The funds transfer from your VodaPay wallet balance or linked bank account. For withdrawals, funds can be sent to your VodaPay wallet or linked bank account depending on the bookmaker.",
+      "depositSpeed": "Instant",
+      "withdrawalSpeed": "Instant to VodaPay wallet, 1-24 hours to bank account",
+      "fees": "Free deposits at most bookmakers; small fees may apply for wallet-to-bank transfers",
+      "minDeposit": "R10-R50 depending on bookmaker",
+      "maxDeposit": "R20,000+ depending on bookmaker and wallet tier",
+      "security": "PIN-protected transactions, biometric login, PCI DSS compliant, regulated by SARB",
+      "pros": [
+        "Works on any network (not just Vodacom)",
+        "Instant deposits",
+        "Can fund wallet without a bank account",
+        "Growing acceptance at SA bookmakers"
+      ],
+      "cons": [
+        "Wallet limits based on FICA verification level",
+        "Not as widely accepted as Ozow or EFT",
+        "Requires app download and registration",
+        "Withdrawal options vary by bookmaker"
+      ],
+      "supportedBrands": [
+        "Hollywoodbets",
+        "Supabets"
+      ],
+      "availableIn": "South Africa (any smartphone user, not limited to Vodacom)"
+    },
+    {
+      "id": "mtn-momo",
+      "name": "MTN MoMo",
+      "type": "mobile money",
+      "description": "MTN Mobile Money (MoMo) is MTN's mobile financial services platform that allows users to store, send, and receive money using their mobile phone. In South Africa, MTN MoMo can be used for betting deposits at select operators. The wallet is linked to your MTN SIM card and can be funded at retail agents, via bank transfer, or at MTN stores.",
+      "howItWorks": "Select MTN MoMo in the bookmaker deposit section, enter the amount, confirm the transaction via USSD or the MTN MoMo app on your phone. Funds transfer instantly from your MoMo wallet. For withdrawals, funds are sent to your MoMo wallet or linked bank account. Cash-out is available at MTN MoMo agents and ATMs.",
+      "depositSpeed": "Instant",
+      "withdrawalSpeed": "Instant to MoMo wallet, 1-24 hours to bank account",
+      "fees": "Free deposits at most bookmakers; standard MoMo cash-out fees apply",
+      "minDeposit": "R10-R50 depending on bookmaker",
+      "maxDeposit": "R20,000+ depending on wallet tier",
+      "security": "SIM-linked authentication, PIN-protected, encrypted transactions, regulated by SARB",
+      "pros": [
+        "No bank account required",
+        "Instant deposits",
+        "Cash out at agents and ATMs",
+        "Works on basic and smart phones via USSD"
+      ],
+      "cons": [
+        "MTN subscribers only",
+        "Limited acceptance at SA betting sites",
+        "Wallet limits based on verification",
+        "Cash-out fees at agents"
+      ],
+      "supportedBrands": [
+        "Hollywoodbets",
+        "Supabets"
+      ],
+      "availableIn": "South Africa (MTN subscribers)"
+    }
+  ],
+  "totalBrands": 35,
+  "totalPaymentMethods": 11
+}
