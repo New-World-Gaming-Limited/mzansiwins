@@ -136,14 +136,14 @@
 
       </nav>
       <div class="header-right">
-        <button class="theme-btn" onclick="toggleTheme()" aria-label="Toggle theme"></button>
         <div class="starred-nav-badge" id="starredNavBadge" style="display:none">
-          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2L15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2z"/></svg>
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 2L15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2z"/></svg>
           <span class="starred-nav-count" id="starredCount" style="display:none">0</span>
           <div class="starred-dropdown" id="starredDropdown">
             <div class="starred-dropdown-empty">Star a bookmaker to track it here</div>
           </div>
         </div>
+        <button class="theme-btn" onclick="toggleTheme()" aria-label="Toggle theme"></button>
         <a href="betting-sites" class="betting-sites-btn">Betting Sites</a>
       </div>
     </div>
@@ -249,18 +249,13 @@
     <div style="display:flex;align-items:center;gap:10px;flex:1;min-width:0">
       <button class="star-btn" data-brand="zarbet" onclick="event.stopPropagation();toggleStar('zarbet')" aria-label="Add to favourites"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg></button>
       <img decoding="async" src="assets/logos/zarbet.svg" alt="Zarbet" class="promo-card-logo" loading="lazy" style="background:#000000;padding:4px">
-      <div class="promo-card-brand">
-        <div class="promo-card-brand-row">
-          <h2 class="promo-card-brand-name">Zarbet</h2>
-          <span class="promo-badge promo-badge-top">TOP RATED</span>
-        </div>
-        <div style="display:flex;gap:6px;margin-top:2px"><span style="font-size:10px;color:var(--bonus);background:rgba(22,163,74,0.08);padding:1px 6px;border-radius:3px">Verified April 2026</span><span style="font-size:10px;color:var(--accent);background:var(--accent-light);padding:1px 6px;border-radius:3px">Code: BETS</span></div>
-      </div>
+      <h2 class="promo-card-brand-name" style="flex:1">Zarbet</h2>
     </div>
-    <div class="rating-circle">
+    <div class="rating-circle rating-dial-animate">
       <span class="rating-circle-score">4.6</span><span style="font-size:11px;color:var(--text-muted);font-weight:600">/5.0</span>
     </div>
   </div>
+  <div style="display:flex;gap:6px;margin-bottom:10px;flex-wrap:wrap"><span class="promo-badge promo-badge-top">TOP RATED</span><span style="font-size:10px;color:var(--bonus);background:rgba(22,163,74,0.08);padding:1px 6px;border-radius:3px">Verified April 2026</span></div>
   <div class="promo-card-offer">Get up to R3,750 + 25FS</div>
   <div class="promo-card-code-box">
     <span class="promo-card-code-text">BETS</span>
@@ -277,18 +272,13 @@
     <div style="display:flex;align-items:center;gap:10px;flex:1;min-width:0">
       <button class="star-btn" data-brand="tictacbets" onclick="event.stopPropagation();toggleStar('tictacbets')" aria-label="Add to favourites"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg></button>
       <img decoding="async" src="assets/logos/tictacbets.svg" alt="Tictacbets" class="promo-card-logo" loading="lazy" style="background:#cc0100;padding:4px">
-      <div class="promo-card-brand">
-        <div class="promo-card-brand-row">
-          <h2 class="promo-card-brand-name">Tictacbets</h2>
-          <span class="promo-badge promo-badge-value">EASY SIGNUP</span> <span style="font-size:11px;font-weight:600;color:var(--text-tertiary);background:var(--bg-tertiary,rgba(0,0,0,0.06));padding:2px 8px;border-radius:4px;vertical-align:middle">Featured</span>
-        </div>
-        <div style="display:flex;gap:6px;margin-top:2px"><span style="font-size:10px;color:var(--bonus);background:rgba(22,163,74,0.08);padding:1px 6px;border-radius:3px">Verified April 2026</span><span style="font-size:10px;color:var(--accent);background:var(--accent-light);padding:1px 6px;border-radius:3px">Code: BETS</span></div>
-      </div>
+      <h2 class="promo-card-brand-name" style="flex:1">Tictacbets</h2>
     </div>
-    <div class="rating-circle">
+    <div class="rating-circle rating-dial-animate">
       <span class="rating-circle-score">4.7</span><span style="font-size:11px;color:var(--text-muted);font-weight:600">/5.0</span>
     </div>
   </div>
+  <div style="display:flex;gap:6px;margin-bottom:10px;flex-wrap:wrap"><span class="promo-badge promo-badge-value">EASY SIGNUP</span><span style="font-size:10px;color:var(--bonus);background:rgba(22,163,74,0.08);padding:1px 6px;border-radius:3px">Verified April 2026</span> <span style="font-size:11px;font-weight:600;color:var(--text-tertiary);background:var(--bg-tertiary,rgba(0,0,0,0.06));padding:2px 8px;border-radius:4px;vertical-align:middle">Featured</span></div>
   <div class="promo-card-offer">100% up to R5,000 + 50 spins</div>
   <div class="promo-card-code-box">
     <span class="promo-card-code-text">BETS</span>
@@ -305,18 +295,13 @@
     <div style="display:flex;align-items:center;gap:10px;flex:1;min-width:0">
       <button class="star-btn" data-brand="easybet-south-africa" onclick="event.stopPropagation();toggleStar('easybet-south-africa')" aria-label="Add to favourites"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg></button>
       <img decoding="async" src="assets/logos/easybet-south-africa.svg" alt="Easybet South Africa" class="promo-card-logo" loading="lazy" style="background:#FED702;padding:4px">
-      <div class="promo-card-brand">
-        <div class="promo-card-brand-row">
-          <h2 class="promo-card-brand-name">Easybet South Africa</h2>
-          <span class="promo-badge promo-badge-value">LOWEST FEES</span> <span style="font-size:11px;font-weight:600;color:var(--text-tertiary);background:var(--bg-tertiary,rgba(0,0,0,0.06));padding:2px 8px;border-radius:4px;vertical-align:middle">Featured</span>
-        </div>
-        <div style="display:flex;gap:6px;margin-top:2px"><span style="font-size:10px;color:var(--bonus);background:rgba(22,163,74,0.08);padding:1px 6px;border-radius:3px">Verified April 2026</span><span style="font-size:10px;color:var(--text-muted);background:var(--surface-2);padding:1px 6px;border-radius:3px">Code: NEWBONUS</span></div>
-      </div>
+      <h2 class="promo-card-brand-name" style="flex:1">Easybet South Africa</h2>
     </div>
-    <div class="rating-circle">
+    <div class="rating-circle rating-dial-animate">
       <span class="rating-circle-score">4.7</span><span style="font-size:11px;color:var(--text-muted);font-weight:600">/5.0</span>
     </div>
   </div>
+  <div style="display:flex;gap:6px;margin-bottom:10px;flex-wrap:wrap"><span class="promo-badge promo-badge-value">LOWEST FEES</span><span style="font-size:10px;color:var(--bonus);background:rgba(22,163,74,0.08);padding:1px 6px;border-radius:3px">Verified April 2026</span> <span style="font-size:11px;font-weight:600;color:var(--text-tertiary);background:var(--bg-tertiary,rgba(0,0,0,0.06));padding:2px 8px;border-radius:4px;vertical-align:middle">Featured</span></div>
   <div class="promo-card-offer">Free R50 + 150% MATCH to R1500</div>
   <div class="promo-card-code-box">
     <span class="promo-card-code-text">NEWBONUS</span>
@@ -333,18 +318,13 @@
     <div style="display:flex;align-items:center;gap:10px;flex:1;min-width:0">
       <button class="star-btn" data-brand="betway-south-africa" onclick="event.stopPropagation();toggleStar('betway-south-africa')" aria-label="Add to favourites"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg></button>
       <img decoding="async" src="assets/logos/betway-south-africa.svg" alt="Betway South Africa" class="promo-card-logo" loading="lazy" style="background:#181818;padding:4px">
-      <div class="promo-card-brand">
-        <div class="promo-card-brand-row">
-          <h2 class="promo-card-brand-name">Betway South Africa</h2>
-          <span class="promo-badge promo-badge-top">MOST TRUSTED</span>
-        </div>
-        <div style="display:flex;gap:6px;margin-top:2px"><span style="font-size:10px;color:var(--bonus);background:rgba(22,163,74,0.08);padding:1px 6px;border-radius:3px">Verified April 2026</span><span style="font-size:10px;color:var(--accent);background:var(--accent-light);padding:1px 6px;border-radius:3px">Code: BETS</span></div>
-      </div>
+      <h2 class="promo-card-brand-name" style="flex:1">Betway South Africa</h2>
     </div>
-    <div class="rating-circle">
+    <div class="rating-circle rating-dial-animate">
       <span class="rating-circle-score">4.7</span><span style="font-size:11px;color:var(--text-muted);font-weight:600">/5.0</span>
     </div>
   </div>
+  <div style="display:flex;gap:6px;margin-bottom:10px;flex-wrap:wrap"><span class="promo-badge promo-badge-top">MOST TRUSTED</span><span style="font-size:10px;color:var(--bonus);background:rgba(22,163,74,0.08);padding:1px 6px;border-radius:3px">Verified April 2026</span></div>
   <div class="promo-card-offer">R10 Free Bet &amp; 10 Aviator Flights</div>
   <div class="promo-card-code-box">
     <span class="promo-card-code-text">BETS</span>
@@ -361,18 +341,13 @@
     <div style="display:flex;align-items:center;gap:10px;flex:1;min-width:0">
       <button class="star-btn" data-brand="world-sports-betting" onclick="event.stopPropagation();toggleStar('world-sports-betting')" aria-label="Add to favourites"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg></button>
       <img decoding="async" src="assets/logos/world-sports-betting.svg" alt="World Sports Betting" class="promo-card-logo" loading="lazy" style="background:#041467;padding:4px">
-      <div class="promo-card-brand">
-        <div class="promo-card-brand-row">
-          <h2 class="promo-card-brand-name">World Sports Betting</h2>
-          <span class="promo-badge promo-badge-top">SA LEGEND</span>
-        </div>
-        <div style="display:flex;gap:6px;margin-top:2px"><span style="font-size:10px;color:var(--bonus);background:rgba(22,163,74,0.08);padding:1px 6px;border-radius:3px">Verified April 2026</span><span style="font-size:10px;color:var(--text-muted);background:var(--surface-2);padding:1px 6px;border-radius:3px">Code: NEWBONUS</span></div>
-      </div>
+      <h2 class="promo-card-brand-name" style="flex:1">World Sports Betting</h2>
     </div>
-    <div class="rating-circle">
+    <div class="rating-circle rating-dial-animate">
       <span class="rating-circle-score">4.6</span><span style="font-size:11px;color:var(--text-muted);font-weight:600">/5.0</span>
     </div>
   </div>
+  <div style="display:flex;gap:6px;margin-bottom:10px;flex-wrap:wrap"><span class="promo-badge promo-badge-top">SA LEGEND</span><span style="font-size:10px;color:var(--bonus);background:rgba(22,163,74,0.08);padding:1px 6px;border-radius:3px">Verified April 2026</span></div>
   <div class="promo-card-offer">R20,000 Bonus (100%)</div>
   <div class="promo-card-code-box">
     <span class="promo-card-code-text">NEWBONUS</span>
@@ -389,18 +364,13 @@
     <div style="display:flex;align-items:center;gap:10px;flex:1;min-width:0">
       <button class="star-btn" data-brand="10bet-south-africa" onclick="event.stopPropagation();toggleStar('10bet-south-africa')" aria-label="Add to favourites"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg></button>
       <img decoding="async" src="assets/logos/10bet-south-africa.svg" alt="10Bet South Africa" class="promo-card-logo" loading="lazy" style="background:#ffffff;padding:4px">
-      <div class="promo-card-brand">
-        <div class="promo-card-brand-row">
-          <h2 class="promo-card-brand-name">10Bet South Africa</h2>
-          <span class="promo-badge promo-badge-pick">BEST ODDS</span> <span style="font-size:11px;font-weight:600;color:var(--text-tertiary);background:var(--bg-tertiary,rgba(0,0,0,0.06));padding:2px 8px;border-radius:4px;vertical-align:middle">Featured</span>
-        </div>
-        <div style="display:flex;gap:6px;margin-top:2px"><span style="font-size:10px;color:var(--bonus);background:rgba(22,163,74,0.08);padding:1px 6px;border-radius:3px">Verified April 2026</span><span style="font-size:10px;color:var(--accent);background:var(--accent-light);padding:1px 6px;border-radius:3px">Code: Code Activated</span></div>
-      </div>
+      <h2 class="promo-card-brand-name" style="flex:1">10Bet South Africa</h2>
     </div>
-    <div class="rating-circle">
+    <div class="rating-circle rating-dial-animate">
       <span class="rating-circle-score">4.6</span><span style="font-size:11px;color:var(--text-muted);font-weight:600">/5.0</span>
     </div>
   </div>
+  <div style="display:flex;gap:6px;margin-bottom:10px;flex-wrap:wrap"><span class="promo-badge promo-badge-pick">BEST ODDS</span><span style="font-size:10px;color:var(--bonus);background:rgba(22,163,74,0.08);padding:1px 6px;border-radius:3px">Verified April 2026</span> <span style="font-size:11px;font-weight:600;color:var(--text-tertiary);background:var(--bg-tertiary,rgba(0,0,0,0.06));padding:2px 8px;border-radius:4px;vertical-align:middle">Featured</span></div>
   <div class="promo-card-offer">Deposit R3,000 Get R3,000</div>
   <div class="promo-card-code-box">
     <span class="promo-card-code-text">Code Activated</span>
@@ -417,18 +387,13 @@
     <div style="display:flex;align-items:center;gap:10px;flex:1;min-width:0">
       <button class="star-btn" data-brand="hollywoodbets" onclick="event.stopPropagation();toggleStar('hollywoodbets')" aria-label="Add to favourites"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg></button>
       <img decoding="async" src="assets/logos/hollywoodbets.svg" alt="Hollywoodbets" class="promo-card-logo" loading="lazy" style="background:#52287b;padding:4px">
-      <div class="promo-card-brand">
-        <div class="promo-card-brand-row">
-          <h2 class="promo-card-brand-name">Hollywoodbets</h2>
-          <span class="promo-badge promo-badge-pick">TOP 10</span>
-        </div>
-        <div style="display:flex;gap:6px;margin-top:2px"><span style="font-size:10px;color:var(--bonus);background:rgba(22,163,74,0.08);padding:1px 6px;border-radius:3px">Verified April 2026</span><span style="font-size:10px;color:var(--text-muted);background:var(--surface-2);padding:1px 6px;border-radius:3px">Code: NEWBONUS</span></div>
-      </div>
+      <h2 class="promo-card-brand-name" style="flex:1">Hollywoodbets</h2>
     </div>
-    <div class="rating-circle">
+    <div class="rating-circle rating-dial-animate">
       <span class="rating-circle-score">4.5</span><span style="font-size:11px;color:var(--text-muted);font-weight:600">/5.0</span>
     </div>
   </div>
+  <div style="display:flex;gap:6px;margin-bottom:10px;flex-wrap:wrap"><span class="promo-badge promo-badge-pick">TOP 10</span><span style="font-size:10px;color:var(--bonus);background:rgba(22,163,74,0.08);padding:1px 6px;border-radius:3px">Verified April 2026</span></div>
   <div class="promo-card-offer">R25 + 50 spins</div>
   <div class="promo-card-code-box">
     <span class="promo-card-code-text">NEWBONUS</span>
@@ -445,18 +410,13 @@
     <div style="display:flex;align-items:center;gap:10px;flex:1;min-width:0">
       <button class="star-btn" data-brand="pantherbet" onclick="event.stopPropagation();toggleStar('pantherbet')" aria-label="Add to favourites"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg></button>
       <img decoding="async" src="assets/logos/pantherbet.svg" alt="Pantherbet" class="promo-card-logo" loading="lazy" style="background:#000000;padding:4px">
-      <div class="promo-card-brand">
-        <div class="promo-card-brand-row">
-          <h2 class="promo-card-brand-name">Pantherbet</h2>
-          <span class="promo-badge promo-badge-pick">TOP 10</span>
-        </div>
-        <div style="display:flex;gap:6px;margin-top:2px"><span style="font-size:10px;color:var(--bonus);background:rgba(22,163,74,0.08);padding:1px 6px;border-radius:3px">Verified April 2026</span><span style="font-size:10px;color:var(--accent);background:var(--accent-light);padding:1px 6px;border-radius:3px">Code: BETS</span></div>
-      </div>
+      <h2 class="promo-card-brand-name" style="flex:1">Pantherbet</h2>
     </div>
-    <div class="rating-circle">
+    <div class="rating-circle rating-dial-animate">
       <span class="rating-circle-score">4.4</span><span style="font-size:11px;color:var(--text-muted);font-weight:600">/5.0</span>
     </div>
   </div>
+  <div style="display:flex;gap:6px;margin-bottom:10px;flex-wrap:wrap"><span class="promo-badge promo-badge-pick">TOP 10</span><span style="font-size:10px;color:var(--bonus);background:rgba(22,163,74,0.08);padding:1px 6px;border-radius:3px">Verified April 2026</span></div>
   <div class="promo-card-offer">Get up to R14,000 (170%)</div>
   <div class="promo-card-code-box">
     <span class="promo-card-code-text">BETS</span>
@@ -473,18 +433,13 @@
     <div style="display:flex;align-items:center;gap:10px;flex:1;min-width:0">
       <button class="star-btn" data-brand="sportingbet" onclick="event.stopPropagation();toggleStar('sportingbet')" aria-label="Add to favourites"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg></button>
       <img decoding="async" src="assets/logos/sportingbet.svg" alt="Sportingbet" class="promo-card-logo" loading="lazy" style="background:#0988d1;padding:4px">
-      <div class="promo-card-brand">
-        <div class="promo-card-brand-row">
-          <h2 class="promo-card-brand-name">Sportingbet</h2>
-          <span class="promo-badge promo-badge-top">GLOBAL LEADER</span>
-        </div>
-        <div style="display:flex;gap:6px;margin-top:2px"><span style="font-size:10px;color:var(--bonus);background:rgba(22,163,74,0.08);padding:1px 6px;border-radius:3px">Verified April 2026</span><span style="font-size:10px;color:var(--accent);background:var(--accent-light);padding:1px 6px;border-radius:3px">Code: PROMOCODE</span></div>
-      </div>
+      <h2 class="promo-card-brand-name" style="flex:1">Sportingbet</h2>
     </div>
-    <div class="rating-circle">
+    <div class="rating-circle rating-dial-animate">
       <span class="rating-circle-score">4.4</span><span style="font-size:11px;color:var(--text-muted);font-weight:600">/5.0</span>
     </div>
   </div>
+  <div style="display:flex;gap:6px;margin-bottom:10px;flex-wrap:wrap"><span class="promo-badge promo-badge-top">GLOBAL LEADER</span><span style="font-size:10px;color:var(--bonus);background:rgba(22,163,74,0.08);padding:1px 6px;border-radius:3px">Verified April 2026</span></div>
   <div class="promo-card-offer">Up to R3,000 + 300 Spins</div>
   <div class="promo-card-code-box">
     <span class="promo-card-code-text">PROMOCODE</span>
@@ -501,18 +456,13 @@
     <div style="display:flex;align-items:center;gap:10px;flex:1;min-width:0">
       <button class="star-btn" data-brand="gbets" onclick="event.stopPropagation();toggleStar('gbets')" aria-label="Add to favourites"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg></button>
       <img decoding="async" src="assets/logos/gbets.svg" alt="Gbets" class="promo-card-logo" loading="lazy" style="background:#13372e;padding:4px">
-      <div class="promo-card-brand">
-        <div class="promo-card-brand-row">
-          <h2 class="promo-card-brand-name">Gbets</h2>
-          <span class="promo-badge promo-badge-top">TOP FOR RACING</span>
-        </div>
-        <div style="display:flex;gap:6px;margin-top:2px"><span style="font-size:10px;color:var(--bonus);background:rgba(22,163,74,0.08);padding:1px 6px;border-radius:3px">Verified April 2026</span><span style="font-size:10px;color:var(--text-muted);background:var(--surface-2);padding:1px 6px;border-radius:3px">Code: NEWBONUS</span></div>
-      </div>
+      <h2 class="promo-card-brand-name" style="flex:1">Gbets</h2>
     </div>
-    <div class="rating-circle">
+    <div class="rating-circle rating-dial-animate">
       <span class="rating-circle-score">4.4</span><span style="font-size:11px;color:var(--text-muted);font-weight:600">/5.0</span>
     </div>
   </div>
+  <div style="display:flex;gap:6px;margin-bottom:10px;flex-wrap:wrap"><span class="promo-badge promo-badge-top">TOP FOR RACING</span><span style="font-size:10px;color:var(--bonus);background:rgba(22,163,74,0.08);padding:1px 6px;border-radius:3px">Verified April 2026</span></div>
   <div class="promo-card-offer">R1,000 Bonus</div>
   <div class="promo-card-code-box">
     <span class="promo-card-code-text">NEWBONUS</span>
@@ -529,18 +479,13 @@
     <div style="display:flex;align-items:center;gap:10px;flex:1;min-width:0">
       <button class="star-btn" data-brand="topbet" onclick="event.stopPropagation();toggleStar('topbet')" aria-label="Add to favourites"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg></button>
       <img decoding="async" src="assets/logos/topbet.svg" alt="Topbet" class="promo-card-logo" loading="lazy" style="background:#000000;padding:4px">
-      <div class="promo-card-brand">
-        <div class="promo-card-brand-row">
-          <h2 class="promo-card-brand-name">Topbet</h2>
-          
-        </div>
-        <div style="display:flex;gap:6px;margin-top:2px"><span style="font-size:10px;color:var(--bonus);background:rgba(22,163,74,0.08);padding:1px 6px;border-radius:3px">Verified April 2026</span><span style="font-size:10px;color:var(--accent);background:var(--accent-light);padding:1px 6px;border-radius:3px">Code: BETS</span></div>
-      </div>
+      <h2 class="promo-card-brand-name" style="flex:1">Topbet</h2>
     </div>
-    <div class="rating-circle">
+    <div class="rating-circle rating-dial-animate">
       <span class="rating-circle-score">4.3</span><span style="font-size:11px;color:var(--text-muted);font-weight:600">/5.0</span>
     </div>
   </div>
+  <div style="display:flex;gap:6px;margin-bottom:10px;flex-wrap:wrap"><span style="font-size:10px;color:var(--bonus);background:rgba(22,163,74,0.08);padding:1px 6px;border-radius:3px">Verified April 2026</span></div>
   <div class="promo-card-offer">Deposit R1000 Get R1000</div>
   <div class="promo-card-code-box">
     <span class="promo-card-code-text">BETS</span>
@@ -558,18 +503,13 @@
     <div style="display:flex;align-items:center;gap:10px;flex:1;min-width:0">
       <button class="star-btn" data-brand="jabula-bets" onclick="event.stopPropagation();toggleStar('jabula-bets')" aria-label="Add to favourites"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg></button>
       <img decoding="async" src="assets/logos/jabula-bets.svg" alt="Jabula Bets" class="promo-card-logo" loading="lazy" style="background:#282625;padding:4px">
-      <div class="promo-card-brand">
-        <div class="promo-card-brand-row">
-          <h2 class="promo-card-brand-name">Jabula Bets</h2>
-          
-        </div>
-        <div style="display:flex;gap:6px;margin-top:2px"><span style="font-size:10px;color:var(--bonus);background:rgba(22,163,74,0.08);padding:1px 6px;border-radius:3px">Verified April 2026</span><span style="font-size:10px;color:var(--accent);background:var(--accent-light);padding:1px 6px;border-radius:3px">Code: BETS</span></div>
-      </div>
+      <h2 class="promo-card-brand-name" style="flex:1">Jabula Bets</h2>
     </div>
-    <div class="rating-circle">
+    <div class="rating-circle rating-dial-animate">
       <span class="rating-circle-score">4.3</span><span style="font-size:11px;color:var(--text-muted);font-weight:600">/5.0</span>
     </div>
   </div>
+  <div style="display:flex;gap:6px;margin-bottom:10px;flex-wrap:wrap"><span style="font-size:10px;color:var(--bonus);background:rgba(22,163,74,0.08);padding:1px 6px;border-radius:3px">Verified April 2026</span></div>
   <div class="promo-card-offer">Get 150% up to R15,000</div>
   <div class="promo-card-code-box">
     <span class="promo-card-code-text">BETS</span>
@@ -586,18 +526,13 @@
     <div style="display:flex;align-items:center;gap:10px;flex:1;min-width:0">
       <button class="star-btn" data-brand="saffaluck" onclick="event.stopPropagation();toggleStar('saffaluck')" aria-label="Add to favourites"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg></button>
       <img decoding="async" src="assets/logos/saffaluck.svg" alt="SaffaLuck" class="promo-card-logo" loading="lazy" style="background:#001F12;padding:4px">
-      <div class="promo-card-brand">
-        <div class="promo-card-brand-row">
-          <h2 class="promo-card-brand-name">SaffaLuck</h2>
-          <span class="promo-badge promo-badge-value">BEST FOR SLOTS</span>
-        </div>
-        <div style="display:flex;gap:6px;margin-top:2px"><span style="font-size:10px;color:var(--bonus);background:rgba(22,163,74,0.08);padding:1px 6px;border-radius:3px">Verified April 2026</span><span style="font-size:10px;color:var(--accent);background:var(--accent-light);padding:1px 6px;border-radius:3px">Code: BETS (not required)</span></div>
-      </div>
+      <h2 class="promo-card-brand-name" style="flex:1">SaffaLuck</h2>
     </div>
-    <div class="rating-circle">
+    <div class="rating-circle rating-dial-animate">
       <span class="rating-circle-score">4.3</span><span style="font-size:11px;color:var(--text-muted);font-weight:600">/5.0</span>
     </div>
   </div>
+  <div style="display:flex;gap:6px;margin-bottom:10px;flex-wrap:wrap"><span class="promo-badge promo-badge-value">BEST FOR SLOTS</span><span style="font-size:10px;color:var(--bonus);background:rgba(22,163,74,0.08);padding:1px 6px;border-radius:3px">Verified April 2026</span></div>
   <div class="promo-card-offer">Get a 100% First Deposit Bonus</div>
   <div class="promo-card-code-box">
     <span class="promo-card-code-text">BETS (not required)</span>
@@ -614,18 +549,13 @@
     <div style="display:flex;align-items:center;gap:10px;flex:1;min-width:0">
       <button class="star-btn" data-brand="supabets" onclick="event.stopPropagation();toggleStar('supabets')" aria-label="Add to favourites"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg></button>
       <img decoding="async" src="assets/logos/supabets.svg" alt="Supabets" class="promo-card-logo" loading="lazy" style="background:#EB0028;padding:4px">
-      <div class="promo-card-brand">
-        <div class="promo-card-brand-row">
-          <h2 class="promo-card-brand-name">Supabets</h2>
-          <span class="promo-badge promo-badge-value">BEST PROMOS</span>
-        </div>
-        <div style="display:flex;gap:6px;margin-top:2px"><span style="font-size:10px;color:var(--bonus);background:rgba(22,163,74,0.08);padding:1px 6px;border-radius:3px">Verified April 2026</span><span style="font-size:10px;color:var(--text-muted);background:var(--surface-2);padding:1px 6px;border-radius:3px">Code: NEWBONUS</span></div>
-      </div>
+      <h2 class="promo-card-brand-name" style="flex:1">Supabets</h2>
     </div>
-    <div class="rating-circle">
+    <div class="rating-circle rating-dial-animate">
       <span class="rating-circle-score">4.3</span><span style="font-size:11px;color:var(--text-muted);font-weight:600">/5.0</span>
     </div>
   </div>
+  <div style="display:flex;gap:6px;margin-bottom:10px;flex-wrap:wrap"><span class="promo-badge promo-badge-value">BEST PROMOS</span><span style="font-size:10px;color:var(--bonus);background:rgba(22,163,74,0.08);padding:1px 6px;border-radius:3px">Verified April 2026</span></div>
   <div class="promo-card-offer">Free R50 bonus sign up</div>
   <div class="promo-card-code-box">
     <span class="promo-card-code-text">NEWBONUS</span>
@@ -642,18 +572,13 @@
     <div style="display:flex;align-items:center;gap:10px;flex:1;min-width:0">
       <button class="star-btn" data-brand="supersportbet" onclick="event.stopPropagation();toggleStar('supersportbet')" aria-label="Add to favourites"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg></button>
       <img decoding="async" src="assets/logos/supersportbet.svg" alt="Supersportbet" class="promo-card-logo" loading="lazy" style="background:#111fa3;padding:4px">
-      <div class="promo-card-brand">
-        <div class="promo-card-brand-row">
-          <h2 class="promo-card-brand-name">Supersportbet</h2>
-          <span class="promo-badge promo-badge-top">BRAND YOU KNOW</span>
-        </div>
-        <div style="display:flex;gap:6px;margin-top:2px"><span style="font-size:10px;color:var(--bonus);background:rgba(22,163,74,0.08);padding:1px 6px;border-radius:3px">Verified April 2026</span><span style="font-size:10px;color:var(--accent);background:var(--accent-light);padding:1px 6px;border-radius:3px">Code: BETS</span></div>
-      </div>
+      <h2 class="promo-card-brand-name" style="flex:1">Supersportbet</h2>
     </div>
-    <div class="rating-circle">
+    <div class="rating-circle rating-dial-animate">
       <span class="rating-circle-score">4.3</span><span style="font-size:11px;color:var(--text-muted);font-weight:600">/5.0</span>
     </div>
   </div>
+  <div style="display:flex;gap:6px;margin-bottom:10px;flex-wrap:wrap"><span class="promo-badge promo-badge-top">BRAND YOU KNOW</span><span style="font-size:10px;color:var(--bonus);background:rgba(22,163,74,0.08);padding:1px 6px;border-radius:3px">Verified April 2026</span></div>
   <div class="promo-card-offer">Deposit R5000 Get R5000</div>
   <div class="promo-card-code-box">
     <span class="promo-card-code-text">BETS</span>
@@ -670,18 +595,13 @@
     <div style="display:flex;align-items:center;gap:10px;flex:1;min-width:0">
       <button class="star-btn" data-brand="jackpot-city" onclick="event.stopPropagation();toggleStar('jackpot-city')" aria-label="Add to favourites"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg></button>
       <img decoding="async" src="assets/logos/jackpot-city.svg" alt="Jackpot City" class="promo-card-logo" loading="lazy" style="background:#181818;padding:4px">
-      <div class="promo-card-brand">
-        <div class="promo-card-brand-row">
-          <h2 class="promo-card-brand-name">Jackpot City</h2>
-          
-        </div>
-        <div style="display:flex;gap:6px;margin-top:2px"><span style="font-size:10px;color:var(--bonus);background:rgba(22,163,74,0.08);padding:1px 6px;border-radius:3px">Verified April 2026</span><span style="font-size:10px;color:var(--text-muted);background:var(--surface-2);padding:1px 6px;border-radius:3px">Code: NEWBONUS</span></div>
-      </div>
+      <h2 class="promo-card-brand-name" style="flex:1">Jackpot City</h2>
     </div>
-    <div class="rating-circle">
+    <div class="rating-circle rating-dial-animate">
       <span class="rating-circle-score">4.3</span><span style="font-size:11px;color:var(--text-muted);font-weight:600">/5.0</span>
     </div>
   </div>
+  <div style="display:flex;gap:6px;margin-bottom:10px;flex-wrap:wrap"><span style="font-size:10px;color:var(--bonus);background:rgba(22,163,74,0.08);padding:1px 6px;border-radius:3px">Verified April 2026</span></div>
   <div class="promo-card-offer">100% up to R4000 + Spins</div>
   <div class="promo-card-code-box">
     <span class="promo-card-code-text">NEWBONUS</span>
@@ -698,18 +618,13 @@
     <div style="display:flex;align-items:center;gap:10px;flex:1;min-width:0">
       <button class="star-btn" data-brand="bet-co-za" onclick="event.stopPropagation();toggleStar('bet-co-za')" aria-label="Add to favourites"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg></button>
       <img decoding="async" src="assets/logos/bet-co-za.svg" alt="Bet.co.za" class="promo-card-logo" loading="lazy" style="background:#16a34a;padding:4px">
-      <div class="promo-card-brand">
-        <div class="promo-card-brand-row">
-          <h2 class="promo-card-brand-name">Bet.co.za</h2>
-          
-        </div>
-        <div style="display:flex;gap:6px;margin-top:2px"><span style="font-size:10px;color:var(--bonus);background:rgba(22,163,74,0.08);padding:1px 6px;border-radius:3px">Verified April 2026</span><span style="font-size:10px;color:var(--accent);background:var(--accent-light);padding:1px 6px;border-radius:3px">Code: STYVIP</span></div>
-      </div>
+      <h2 class="promo-card-brand-name" style="flex:1">Bet.co.za</h2>
     </div>
-    <div class="rating-circle">
+    <div class="rating-circle rating-dial-animate">
       <span class="rating-circle-score">4.3</span><span style="font-size:11px;color:var(--text-muted);font-weight:600">/5.0</span>
     </div>
   </div>
+  <div style="display:flex;gap:6px;margin-bottom:10px;flex-wrap:wrap"><span style="font-size:10px;color:var(--bonus);background:rgba(22,163,74,0.08);padding:1px 6px;border-radius:3px">Verified April 2026</span></div>
   <div class="promo-card-offer">100% up to R5,000</div>
   <div class="promo-card-code-box">
     <span class="promo-card-code-text">STYVIP</span>
@@ -726,18 +641,13 @@
     <div style="display:flex;align-items:center;gap:10px;flex:1;min-width:0">
       <button class="star-btn" data-brand="betshezi" onclick="event.stopPropagation();toggleStar('betshezi')" aria-label="Add to favourites"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg></button>
       <img decoding="async" src="assets/logos/betshezi.svg" alt="Betshezi" class="promo-card-logo" loading="lazy" style="background:#000000;padding:4px">
-      <div class="promo-card-brand">
-        <div class="promo-card-brand-row">
-          <h2 class="promo-card-brand-name">Betshezi</h2>
-          
-        </div>
-        <div style="display:flex;gap:6px;margin-top:2px"><span style="font-size:10px;color:var(--bonus);background:rgba(22,163,74,0.08);padding:1px 6px;border-radius:3px">Verified April 2026</span><span style="font-size:10px;color:var(--text-muted);background:var(--surface-2);padding:1px 6px;border-radius:3px">Code: NEWBONUS</span></div>
-      </div>
+      <h2 class="promo-card-brand-name" style="flex:1">Betshezi</h2>
     </div>
-    <div class="rating-circle">
+    <div class="rating-circle rating-dial-animate">
       <span class="rating-circle-score">4.2</span><span style="font-size:11px;color:var(--text-muted);font-weight:600">/5.0</span>
     </div>
   </div>
+  <div style="display:flex;gap:6px;margin-bottom:10px;flex-wrap:wrap"><span style="font-size:10px;color:var(--bonus);background:rgba(22,163,74,0.08);padding:1px 6px;border-radius:3px">Verified April 2026</span></div>
   <div class="promo-card-offer">Deposit R2000 Get R2000</div>
   <div class="promo-card-code-box">
     <span class="promo-card-code-text">NEWBONUS</span>
@@ -754,18 +664,13 @@
     <div style="display:flex;align-items:center;gap:10px;flex:1;min-width:0">
       <button class="star-btn" data-brand="betxchange" onclick="event.stopPropagation();toggleStar('betxchange')" aria-label="Add to favourites"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg></button>
       <img decoding="async" src="assets/logos/betxchange.svg" alt="betXchange" class="promo-card-logo" loading="lazy" style="background:#0033cc;padding:4px">
-      <div class="promo-card-brand">
-        <div class="promo-card-brand-row">
-          <h2 class="promo-card-brand-name">betXchange</h2>
-          
-        </div>
-        <div style="display:flex;gap:6px;margin-top:2px"><span style="font-size:10px;color:var(--bonus);background:rgba(22,163,74,0.08);padding:1px 6px;border-radius:3px">Verified April 2026</span><span style="font-size:10px;color:var(--accent);background:var(--accent-light);padding:1px 6px;border-radius:3px">Code: BETS</span></div>
-      </div>
+      <h2 class="promo-card-brand-name" style="flex:1">betXchange</h2>
     </div>
-    <div class="rating-circle">
+    <div class="rating-circle rating-dial-animate">
       <span class="rating-circle-score">4.2</span><span style="font-size:11px;color:var(--text-muted);font-weight:600">/5.0</span>
     </div>
   </div>
+  <div style="display:flex;gap:6px;margin-bottom:10px;flex-wrap:wrap"><span style="font-size:10px;color:var(--bonus);background:rgba(22,163,74,0.08);padding:1px 6px;border-radius:3px">Verified April 2026</span></div>
   <div class="promo-card-offer">R20,000 Money Back</div>
   <div class="promo-card-code-box">
     <span class="promo-card-code-text">BETS</span>
@@ -782,18 +687,13 @@
     <div style="display:flex;align-items:center;gap:10px;flex:1;min-width:0">
       <button class="star-btn" data-brand="mzansibet" onclick="event.stopPropagation();toggleStar('mzansibet')" aria-label="Add to favourites"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg></button>
       <img decoding="async" src="assets/logos/mzansibet.svg" alt="Mzansibet" class="promo-card-logo" loading="lazy" style="background:#001F12;padding:4px">
-      <div class="promo-card-brand">
-        <div class="promo-card-brand-row">
-          <h2 class="promo-card-brand-name">Mzansibet</h2>
-          <span class="promo-badge promo-badge-value">SA BORN</span>
-        </div>
-        <div style="display:flex;gap:6px;margin-top:2px"><span style="font-size:10px;color:var(--bonus);background:rgba(22,163,74,0.08);padding:1px 6px;border-radius:3px">Verified April 2026</span><span style="font-size:10px;color:var(--accent);background:var(--accent-light);padding:1px 6px;border-radius:3px">Code: NEWBONUS (not required)</span></div>
-      </div>
+      <h2 class="promo-card-brand-name" style="flex:1">Mzansibet</h2>
     </div>
-    <div class="rating-circle">
+    <div class="rating-circle rating-dial-animate">
       <span class="rating-circle-score">4.2</span><span style="font-size:11px;color:var(--text-muted);font-weight:600">/5.0</span>
     </div>
   </div>
+  <div style="display:flex;gap:6px;margin-bottom:10px;flex-wrap:wrap"><span class="promo-badge promo-badge-value">SA BORN</span><span style="font-size:10px;color:var(--bonus);background:rgba(22,163,74,0.08);padding:1px 6px;border-radius:3px">Verified April 2026</span></div>
   <div class="promo-card-offer">Bet R50, Get R50 Extra Bet</div>
   <div class="promo-card-code-box">
     <span class="promo-card-code-text">NEWBONUS (not required)</span>
@@ -810,18 +710,13 @@
     <div style="display:flex;align-items:center;gap:10px;flex:1;min-width:0">
       <button class="star-btn" data-brand="yesplay" onclick="event.stopPropagation();toggleStar('yesplay')" aria-label="Add to favourites"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg></button>
       <img decoding="async" src="assets/logos/yesplay.svg" alt="YesPlay" class="promo-card-logo" loading="lazy" style="background:#fd7a01;padding:4px">
-      <div class="promo-card-brand">
-        <div class="promo-card-brand-row">
-          <h2 class="promo-card-brand-name">YesPlay</h2>
-          <span class="promo-badge promo-badge-pick">FAN FAVOURITE</span>
-        </div>
-        <div style="display:flex;gap:6px;margin-top:2px"><span style="font-size:10px;color:var(--bonus);background:rgba(22,163,74,0.08);padding:1px 6px;border-radius:3px">Verified April 2026</span><span style="font-size:10px;color:var(--accent);background:var(--accent-light);padding:1px 6px;border-radius:3px">Code: Applied</span></div>
-      </div>
+      <h2 class="promo-card-brand-name" style="flex:1">YesPlay</h2>
     </div>
-    <div class="rating-circle">
+    <div class="rating-circle rating-dial-animate">
       <span class="rating-circle-score">4.2</span><span style="font-size:11px;color:var(--text-muted);font-weight:600">/5.0</span>
     </div>
   </div>
+  <div style="display:flex;gap:6px;margin-bottom:10px;flex-wrap:wrap"><span class="promo-badge promo-badge-pick">FAN FAVOURITE</span><span style="font-size:10px;color:var(--bonus);background:rgba(22,163,74,0.08);padding:1px 6px;border-radius:3px">Verified April 2026</span></div>
   <div class="promo-card-offer">Deposit R3000 Get R3000</div>
   <div class="promo-card-code-box">
     <span class="promo-card-code-text">Applied</span>
@@ -838,18 +733,13 @@
     <div style="display:flex;align-items:center;gap:10px;flex:1;min-width:0">
       <button class="star-btn" data-brand="betfred" onclick="event.stopPropagation();toggleStar('betfred')" aria-label="Add to favourites"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg></button>
       <img decoding="async" src="assets/logos/betfred.svg" alt="Betfred" class="promo-card-logo" loading="lazy" style="background:#005a99;padding:4px">
-      <div class="promo-card-brand">
-        <div class="promo-card-brand-row">
-          <h2 class="promo-card-brand-name">Betfred</h2>
-          <span class="promo-badge promo-badge-pick">UK FAVOURITE</span>
-        </div>
-        <div style="display:flex;gap:6px;margin-top:2px"><span style="font-size:10px;color:var(--bonus);background:rgba(22,163,74,0.08);padding:1px 6px;border-radius:3px">Verified April 2026</span><span style="font-size:10px;color:var(--text-muted);background:var(--surface-2);padding:1px 6px;border-radius:3px">Code: NEWBONUS</span></div>
-      </div>
+      <h2 class="promo-card-brand-name" style="flex:1">Betfred</h2>
     </div>
-    <div class="rating-circle">
+    <div class="rating-circle rating-dial-animate">
       <span class="rating-circle-score">4.2</span><span style="font-size:11px;color:var(--text-muted);font-weight:600">/5.0</span>
     </div>
   </div>
+  <div style="display:flex;gap:6px;margin-bottom:10px;flex-wrap:wrap"><span class="promo-badge promo-badge-pick">UK FAVOURITE</span><span style="font-size:10px;color:var(--bonus);background:rgba(22,163,74,0.08);padding:1px 6px;border-radius:3px">Verified April 2026</span></div>
   <div class="promo-card-offer">up to R21,000 + 750 Spins</div>
   <div class="promo-card-code-box">
     <span class="promo-card-code-text">NEWBONUS</span>
@@ -866,18 +756,13 @@
     <div style="display:flex;align-items:center;gap:10px;flex:1;min-width:0">
       <button class="star-btn" data-brand="lulabet" onclick="event.stopPropagation();toggleStar('lulabet')" aria-label="Add to favourites"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg></button>
       <img decoding="async" src="assets/logos/lulabet.svg" alt="Lulabet" class="promo-card-logo" loading="lazy" style="background:#171B38;padding:4px">
-      <div class="promo-card-brand">
-        <div class="promo-card-brand-row">
-          <h2 class="promo-card-brand-name">Lulabet</h2>
-          <span class="promo-badge promo-badge-value">GREAT VALUE</span>
-        </div>
-        <div style="display:flex;gap:6px;margin-top:2px"><span style="font-size:10px;color:var(--bonus);background:rgba(22,163,74,0.08);padding:1px 6px;border-radius:3px">Verified April 2026</span><span style="font-size:10px;color:var(--text-muted);background:var(--surface-2);padding:1px 6px;border-radius:3px">Code: NEWBONUS</span></div>
-      </div>
+      <h2 class="promo-card-brand-name" style="flex:1">Lulabet</h2>
     </div>
-    <div class="rating-circle">
+    <div class="rating-circle rating-dial-animate">
       <span class="rating-circle-score">4.2</span><span style="font-size:11px;color:var(--text-muted);font-weight:600">/5.0</span>
     </div>
   </div>
+  <div style="display:flex;gap:6px;margin-bottom:10px;flex-wrap:wrap"><span class="promo-badge promo-badge-value">GREAT VALUE</span><span style="font-size:10px;color:var(--bonus);background:rgba(22,163,74,0.08);padding:1px 6px;border-radius:3px">Verified April 2026</span></div>
   <div class="promo-card-offer">Bet R50 Get R50</div>
   <div class="promo-card-code-box">
     <span class="promo-card-code-text">NEWBONUS</span>
@@ -894,18 +779,13 @@
     <div style="display:flex;align-items:center;gap:10px;flex:1;min-width:0">
       <button class="star-btn" data-brand="playbet-co-za" onclick="event.stopPropagation();toggleStar('playbet-co-za')" aria-label="Add to favourites"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg></button>
       <img decoding="async" src="assets/logos/playbet-co-za.svg" alt="Playbet.co.za" class="promo-card-logo" loading="lazy" style="background:#CB151A;padding:4px">
-      <div class="promo-card-brand">
-        <div class="promo-card-brand-row">
-          <h2 class="promo-card-brand-name">Playbet.co.za</h2>
-          
-        </div>
-        <div style="display:flex;gap:6px;margin-top:2px"><span style="font-size:10px;color:var(--bonus);background:rgba(22,163,74,0.08);padding:1px 6px;border-radius:3px">Verified April 2026</span><span style="font-size:10px;color:var(--accent);background:var(--accent-light);padding:1px 6px;border-radius:3px">Code: BETS</span></div>
-      </div>
+      <h2 class="promo-card-brand-name" style="flex:1">Playbet.co.za</h2>
     </div>
-    <div class="rating-circle">
+    <div class="rating-circle rating-dial-animate">
       <span class="rating-circle-score">4.1</span><span style="font-size:11px;color:var(--text-muted);font-weight:600">/5.0</span>
     </div>
   </div>
+  <div style="display:flex;gap:6px;margin-bottom:10px;flex-wrap:wrap"><span style="font-size:10px;color:var(--bonus);background:rgba(22,163,74,0.08);padding:1px 6px;border-radius:3px">Verified April 2026</span></div>
   <div class="promo-card-offer">R50 +50 Spins on Signup</div>
   <div class="promo-card-code-box">
     <span class="promo-card-code-text">BETS</span>
@@ -922,18 +802,13 @@
     <div style="display:flex;align-items:center;gap:10px;flex:1;min-width:0">
       <button class="star-btn" data-brand="playabets" onclick="event.stopPropagation();toggleStar('playabets')" aria-label="Add to favourites"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg></button>
       <img decoding="async" src="assets/logos/playabets.svg" alt="PlayaBets" class="promo-card-logo" loading="lazy" style="background:#7DB913;padding:4px">
-      <div class="promo-card-brand">
-        <div class="promo-card-brand-row">
-          <h2 class="promo-card-brand-name">PlayaBets</h2>
-          <span class="promo-badge promo-badge-pick">TOP LIVE BETTING</span>
-        </div>
-        <div style="display:flex;gap:6px;margin-top:2px"><span style="font-size:10px;color:var(--bonus);background:rgba(22,163,74,0.08);padding:1px 6px;border-radius:3px">Verified April 2026</span><span style="font-size:10px;color:var(--text-muted);background:var(--surface-2);padding:1px 6px;border-radius:3px">Code: NEWBONUS</span></div>
-      </div>
+      <h2 class="promo-card-brand-name" style="flex:1">PlayaBets</h2>
     </div>
-    <div class="rating-circle">
+    <div class="rating-circle rating-dial-animate">
       <span class="rating-circle-score">4.1</span><span style="font-size:11px;color:var(--text-muted);font-weight:600">/5.0</span>
     </div>
   </div>
+  <div style="display:flex;gap:6px;margin-bottom:10px;flex-wrap:wrap"><span class="promo-badge promo-badge-pick">TOP LIVE BETTING</span><span style="font-size:10px;color:var(--bonus);background:rgba(22,163,74,0.08);padding:1px 6px;border-radius:3px">Verified April 2026</span></div>
   <div class="promo-card-offer">100% Sign-Up Bonus</div>
   <div class="promo-card-code-box">
     <span class="promo-card-code-text">NEWBONUS</span>
@@ -950,18 +825,13 @@
     <div style="display:flex;align-items:center;gap:10px;flex:1;min-width:0">
       <button class="star-btn" data-brand="soccershop" onclick="event.stopPropagation();toggleStar('soccershop')" aria-label="Add to favourites"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg></button>
       <img decoding="async" src="assets/logos/soccershop.svg" alt="Soccershop" class="promo-card-logo" loading="lazy" style="background:#0578B4;padding:4px">
-      <div class="promo-card-brand">
-        <div class="promo-card-brand-row">
-          <h2 class="promo-card-brand-name">Soccershop</h2>
-          
-        </div>
-        <div style="display:flex;gap:6px;margin-top:2px"><span style="font-size:10px;color:var(--bonus);background:rgba(22,163,74,0.08);padding:1px 6px;border-radius:3px">Verified April 2026</span><span style="font-size:10px;color:var(--accent);background:var(--accent-light);padding:1px 6px;border-radius:3px">Code: BETS</span></div>
-      </div>
+      <h2 class="promo-card-brand-name" style="flex:1">Soccershop</h2>
     </div>
-    <div class="rating-circle">
+    <div class="rating-circle rating-dial-animate">
       <span class="rating-circle-score">4.0</span><span style="font-size:11px;color:var(--text-muted);font-weight:600">/5.0</span>
     </div>
   </div>
+  <div style="display:flex;gap:6px;margin-bottom:10px;flex-wrap:wrap"><span style="font-size:10px;color:var(--bonus);background:rgba(22,163,74,0.08);padding:1px 6px;border-radius:3px">Verified April 2026</span></div>
   <div class="promo-card-offer">Deposit R7500 Get R7500</div>
   <div class="promo-card-code-box">
     <span class="promo-card-code-text">BETS</span>
@@ -979,18 +849,13 @@ deposit at odds of 1/1 or more. Then email support@soccershop.bet to claim your 
     <div style="display:flex;align-items:center;gap:10px;flex:1;min-width:0">
       <button class="star-btn" data-brand="wanejo-bets" onclick="event.stopPropagation();toggleStar('wanejo-bets')" aria-label="Add to favourites"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg></button>
       <img decoding="async" src="assets/logos/wanejo-bets.png" alt="Wanejo Bets" class="promo-card-logo" loading="lazy" style="background:#202020;padding:4px">
-      <div class="promo-card-brand">
-        <div class="promo-card-brand-row">
-          <h2 class="promo-card-brand-name">Wanejo Bets</h2>
-          <span class="promo-badge promo-badge-pick">NEW CONTENDER</span>
-        </div>
-        <div style="display:flex;gap:6px;margin-top:2px"><span style="font-size:10px;color:var(--bonus);background:rgba(22,163,74,0.08);padding:1px 6px;border-radius:3px">Verified April 2026</span><span style="font-size:10px;color:var(--accent);background:var(--accent-light);padding:1px 6px;border-radius:3px">Code: BETS</span></div>
-      </div>
+      <h2 class="promo-card-brand-name" style="flex:1">Wanejo Bets</h2>
     </div>
-    <div class="rating-circle">
+    <div class="rating-circle rating-dial-animate">
       <span class="rating-circle-score">4.0</span><span style="font-size:11px;color:var(--text-muted);font-weight:600">/5.0</span>
     </div>
   </div>
+  <div style="display:flex;gap:6px;margin-bottom:10px;flex-wrap:wrap"><span class="promo-badge promo-badge-pick">NEW CONTENDER</span><span style="font-size:10px;color:var(--bonus);background:rgba(22,163,74,0.08);padding:1px 6px;border-radius:3px">Verified April 2026</span></div>
   <div class="promo-card-offer">Deposit R10,000 Get R10,000</div>
   <div class="promo-card-code-box">
     <span class="promo-card-code-text">BETS</span>
@@ -1007,18 +872,13 @@ deposit at odds of 1/1 or more. Then email support@soccershop.bet to claim your 
     <div style="display:flex;align-items:center;gap:10px;flex:1;min-width:0">
       <button class="star-btn" data-brand="lucky-fish" onclick="event.stopPropagation();toggleStar('lucky-fish')" aria-label="Add to favourites"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg></button>
       <img decoding="async" src="assets/logos/lucky-fish.svg" alt="Lucky Fish" class="promo-card-logo" loading="lazy" style="background:#00252b;padding:4px">
-      <div class="promo-card-brand">
-        <div class="promo-card-brand-row">
-          <h2 class="promo-card-brand-name">Lucky Fish</h2>
-          <span class="promo-badge promo-badge-value">RISING STAR</span>
-        </div>
-        <div style="display:flex;gap:6px;margin-top:2px"><span style="font-size:10px;color:var(--bonus);background:rgba(22,163,74,0.08);padding:1px 6px;border-radius:3px">Verified April 2026</span><span style="font-size:10px;color:var(--accent);background:var(--accent-light);padding:1px 6px;border-radius:3px">Code: BETS</span></div>
-      </div>
+      <h2 class="promo-card-brand-name" style="flex:1">Lucky Fish</h2>
     </div>
-    <div class="rating-circle">
+    <div class="rating-circle rating-dial-animate">
       <span class="rating-circle-score">4.0</span><span style="font-size:11px;color:var(--text-muted);font-weight:600">/5.0</span>
     </div>
   </div>
+  <div style="display:flex;gap:6px;margin-bottom:10px;flex-wrap:wrap"><span class="promo-badge promo-badge-value">RISING STAR</span><span style="font-size:10px;color:var(--bonus);background:rgba(22,163,74,0.08);padding:1px 6px;border-radius:3px">Verified April 2026</span></div>
   <div class="promo-card-offer">R50 Sign Up Bonus</div>
   <div class="promo-card-code-box">
     <span class="promo-card-code-text">BETS</span>
@@ -1035,18 +895,13 @@ deposit at odds of 1/1 or more. Then email support@soccershop.bet to claim your 
     <div style="display:flex;align-items:center;gap:10px;flex:1;min-width:0">
       <button class="star-btn" data-brand="swifty" onclick="event.stopPropagation();toggleStar('swifty')" aria-label="Add to favourites"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg></button>
       <img decoding="async" src="assets/logos/swifty.png" alt="Swifty" class="promo-card-logo" loading="lazy" style="background:#001F12;padding:4px">
-      <div class="promo-card-brand">
-        <div class="promo-card-brand-row">
-          <h2 class="promo-card-brand-name">Swifty</h2>
-          
-        </div>
-        <div style="display:flex;gap:6px;margin-top:2px"><span style="font-size:10px;color:var(--bonus);background:rgba(22,163,74,0.08);padding:1px 6px;border-radius:3px">Verified April 2026</span><span style="font-size:10px;color:var(--accent);background:var(--accent-light);padding:1px 6px;border-radius:3px">Code: BETS</span></div>
-      </div>
+      <h2 class="promo-card-brand-name" style="flex:1">Swifty</h2>
     </div>
-    <div class="rating-circle">
+    <div class="rating-circle rating-dial-animate">
       <span class="rating-circle-score">4.0</span><span style="font-size:11px;color:var(--text-muted);font-weight:600">/5.0</span>
     </div>
   </div>
+  <div style="display:flex;gap:6px;margin-bottom:10px;flex-wrap:wrap"><span style="font-size:10px;color:var(--bonus);background:rgba(22,163,74,0.08);padding:1px 6px;border-radius:3px">Verified April 2026</span></div>
   <div class="promo-card-offer">Deposit R3000 Get R3000</div>
   <div class="promo-card-code-box">
     <span class="promo-card-code-text">BETS</span>
@@ -1063,18 +918,13 @@ deposit at odds of 1/1 or more. Then email support@soccershop.bet to claim your 
     <div style="display:flex;align-items:center;gap:10px;flex:1;min-width:0">
       <button class="star-btn" data-brand="apexbets" onclick="event.stopPropagation();toggleStar('apexbets')" aria-label="Add to favourites"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg></button>
       <img decoding="async" src="assets/logos/apexbets.svg" alt="Apexbets" class="promo-card-logo" loading="lazy" style="background:#1b1a1f;padding:4px">
-      <div class="promo-card-brand">
-        <div class="promo-card-brand-row">
-          <h2 class="promo-card-brand-name">Apexbets</h2>
-          
-        </div>
-        <div style="display:flex;gap:6px;margin-top:2px"><span style="font-size:10px;color:var(--bonus);background:rgba(22,163,74,0.08);padding:1px 6px;border-radius:3px">Verified April 2026</span><span style="font-size:10px;color:var(--text-muted);background:var(--surface-2);padding:1px 6px;border-radius:3px">Code: NEWBONUS</span></div>
-      </div>
+      <h2 class="promo-card-brand-name" style="flex:1">Apexbets</h2>
     </div>
-    <div class="rating-circle">
+    <div class="rating-circle rating-dial-animate">
       <span class="rating-circle-score">4.0</span><span style="font-size:11px;color:var(--text-muted);font-weight:600">/5.0</span>
     </div>
   </div>
+  <div style="display:flex;gap:6px;margin-bottom:10px;flex-wrap:wrap"><span style="font-size:10px;color:var(--bonus);background:rgba(22,163,74,0.08);padding:1px 6px;border-radius:3px">Verified April 2026</span></div>
   <div class="promo-card-offer">Get up to R30,000 + 50 Free Spins</div>
   <div class="promo-card-code-box">
     <span class="promo-card-code-text">NEWBONUS</span>
@@ -1091,18 +941,13 @@ deposit at odds of 1/1 or more. Then email support@soccershop.bet to claim your 
     <div style="display:flex;align-items:center;gap:10px;flex:1;min-width:0">
       <button class="star-btn" data-brand="sunbet" onclick="event.stopPropagation();toggleStar('sunbet')" aria-label="Add to favourites"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg></button>
       
-      <div class="promo-card-brand">
-        <div class="promo-card-brand-row">
-          <h2 class="promo-card-brand-name">Sunbet</h2>
-          <span class="promo-badge promo-badge-pick">CASINO EXPERT</span>
-        </div>
-        <div style="display:flex;gap:6px;margin-top:2px"><span style="font-size:10px;color:var(--bonus);background:rgba(22,163,74,0.08);padding:1px 6px;border-radius:3px">Verified April 2026</span><span style="font-size:10px;color:var(--text-muted);background:var(--surface-2);padding:1px 6px;border-radius:3px">Code: NEWBONUS</span></div>
-      </div>
+      <h2 class="promo-card-brand-name" style="flex:1">Sunbet</h2>
     </div>
-    <div class="rating-circle">
+    <div class="rating-circle rating-dial-animate">
       <span class="rating-circle-score">4.0</span><span style="font-size:11px;color:var(--text-muted);font-weight:600">/5.0</span>
     </div>
   </div>
+  <div style="display:flex;gap:6px;margin-bottom:10px;flex-wrap:wrap"><span class="promo-badge promo-badge-pick">CASINO EXPERT</span><span style="font-size:10px;color:var(--bonus);background:rgba(22,163,74,0.08);padding:1px 6px;border-radius:3px">Verified April 2026</span></div>
   <div class="promo-card-offer">100% up to R1,000</div>
   <div class="promo-card-code-box">
     <span class="promo-card-code-text">NEWBONUS</span>
@@ -1119,18 +964,13 @@ deposit at odds of 1/1 or more. Then email support@soccershop.bet to claim your 
     <div style="display:flex;align-items:center;gap:10px;flex:1;min-width:0">
       <button class="star-btn" data-brand="playtsogo" onclick="event.stopPropagation();toggleStar('playtsogo')" aria-label="Add to favourites"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg></button>
       <img decoding="async" src="assets/logos/playtsogo.svg" alt="PlayTsogo" class="promo-card-logo" loading="lazy" style="background:#6b21a8;padding:4px">
-      <div class="promo-card-brand">
-        <div class="promo-card-brand-row">
-          <h2 class="promo-card-brand-name">PlayTsogo</h2>
-          
-        </div>
-        <div style="display:flex;gap:6px;margin-top:2px"><span style="font-size:10px;color:var(--bonus);background:rgba(22,163,74,0.08);padding:1px 6px;border-radius:3px">Verified April 2026</span><span style="font-size:10px;color:var(--accent);background:var(--accent-light);padding:1px 6px;border-radius:3px">Code: STYVIP</span></div>
-      </div>
+      <h2 class="promo-card-brand-name" style="flex:1">PlayTsogo</h2>
     </div>
-    <div class="rating-circle">
+    <div class="rating-circle rating-dial-animate">
       <span class="rating-circle-score">4.0</span><span style="font-size:11px;color:var(--text-muted);font-weight:600">/5.0</span>
     </div>
   </div>
+  <div style="display:flex;gap:6px;margin-bottom:10px;flex-wrap:wrap"><span style="font-size:10px;color:var(--bonus);background:rgba(22,163,74,0.08);padding:1px 6px;border-radius:3px">Verified April 2026</span></div>
   <div class="promo-card-offer">100% up to R10,000</div>
   <div class="promo-card-code-box">
     <span class="promo-card-code-text">STYVIP</span>
@@ -1147,18 +987,13 @@ deposit at odds of 1/1 or more. Then email support@soccershop.bet to claim your 
     <div style="display:flex;align-items:center;gap:10px;flex:1;min-width:0">
       <button class="star-btn" data-brand="betolimp" onclick="event.stopPropagation();toggleStar('betolimp')" aria-label="Add to favourites"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg></button>
       
-      <div class="promo-card-brand">
-        <div class="promo-card-brand-row">
-          <h2 class="promo-card-brand-name">BetOlimp</h2>
-          
-        </div>
-        <div style="display:flex;gap:6px;margin-top:2px"><span style="font-size:10px;color:var(--bonus);background:rgba(22,163,74,0.08);padding:1px 6px;border-radius:3px">Verified April 2026</span><span style="font-size:10px;color:var(--accent);background:var(--accent-light);padding:1px 6px;border-radius:3px">Code: OLFOOT</span></div>
-      </div>
+      <h2 class="promo-card-brand-name" style="flex:1">BetOlimp</h2>
     </div>
-    <div class="rating-circle">
+    <div class="rating-circle rating-dial-animate">
       <span class="rating-circle-score">4.0</span><span style="font-size:11px;color:var(--text-muted);font-weight:600">/5.0</span>
     </div>
   </div>
+  <div style="display:flex;gap:6px;margin-bottom:10px;flex-wrap:wrap"><span style="font-size:10px;color:var(--bonus);background:rgba(22,163,74,0.08);padding:1px 6px;border-radius:3px">Verified April 2026</span></div>
   <div class="promo-card-offer">100% up to R3,000</div>
   <div class="promo-card-code-box">
     <span class="promo-card-code-text">OLFOOT</span>
@@ -1175,18 +1010,13 @@ deposit at odds of 1/1 or more. Then email support@soccershop.bet to claim your 
     <div style="display:flex;align-items:center;gap:10px;flex:1;min-width:0">
       <button class="star-btn" data-brand="betjets" onclick="event.stopPropagation();toggleStar('betjets')" aria-label="Add to favourites"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg></button>
       <img decoding="async" src="assets/logos/betjets.svg" alt="Betjets" class="promo-card-logo" loading="lazy" style="background:#012169;padding:4px">
-      <div class="promo-card-brand">
-        <div class="promo-card-brand-row">
-          <h2 class="promo-card-brand-name">Betjets</h2>
-          
-        </div>
-        <div style="display:flex;gap:6px;margin-top:2px"><span style="font-size:10px;color:var(--bonus);background:rgba(22,163,74,0.08);padding:1px 6px;border-radius:3px">Verified April 2026</span><span style="font-size:10px;color:var(--accent);background:var(--accent-light);padding:1px 6px;border-radius:3px">Code: BETS</span></div>
-      </div>
+      <h2 class="promo-card-brand-name" style="flex:1">Betjets</h2>
     </div>
-    <div class="rating-circle">
+    <div class="rating-circle rating-dial-animate">
       <span class="rating-circle-score">3.9</span><span style="font-size:11px;color:var(--text-muted);font-weight:600">/5.0</span>
     </div>
   </div>
+  <div style="display:flex;gap:6px;margin-bottom:10px;flex-wrap:wrap"><span style="font-size:10px;color:var(--bonus);background:rgba(22,163,74,0.08);padding:1px 6px;border-radius:3px">Verified April 2026</span></div>
   <div class="promo-card-offer">Deposit R2,000 Get R2,000</div>
   <div class="promo-card-code-box">
     <span class="promo-card-code-text">BETS</span>
@@ -1203,18 +1033,13 @@ deposit at odds of 1/1 or more. Then email support@soccershop.bet to claim your 
     <div style="display:flex;align-items:center;gap:10px;flex:1;min-width:0">
       <button class="star-btn" data-brand="bettabets" onclick="event.stopPropagation();toggleStar('bettabets')" aria-label="Add to favourites"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg></button>
       <img decoding="async" src="assets/logos/bettabets.svg" alt="Bettabets" class="promo-card-logo" loading="lazy" style="background:#FAE80B;padding:4px">
-      <div class="promo-card-brand">
-        <div class="promo-card-brand-row">
-          <h2 class="promo-card-brand-name">Bettabets</h2>
-          
-        </div>
-        <div style="display:flex;gap:6px;margin-top:2px"><span style="font-size:10px;color:var(--bonus);background:rgba(22,163,74,0.08);padding:1px 6px;border-radius:3px">Verified April 2026</span><span style="font-size:10px;color:var(--accent);background:var(--accent-light);padding:1px 6px;border-radius:3px">Code: SPORT</span></div>
-      </div>
+      <h2 class="promo-card-brand-name" style="flex:1">Bettabets</h2>
     </div>
-    <div class="rating-circle">
+    <div class="rating-circle rating-dial-animate">
       <span class="rating-circle-score">3.9</span><span style="font-size:11px;color:var(--text-muted);font-weight:600">/5.0</span>
     </div>
   </div>
+  <div style="display:flex;gap:6px;margin-bottom:10px;flex-wrap:wrap"><span style="font-size:10px;color:var(--bonus);background:rgba(22,163,74,0.08);padding:1px 6px;border-radius:3px">Verified April 2026</span></div>
   <div class="promo-card-offer">R2500 Match Bonus + 155 Free Spins</div>
   <div class="promo-card-code-box">
     <span class="promo-card-code-text">SPORT</span>
@@ -1231,18 +1056,13 @@ deposit at odds of 1/1 or more. Then email support@soccershop.bet to claim your 
     <div style="display:flex;align-items:center;gap:10px;flex:1;min-width:0">
       <button class="star-btn" data-brand="luckystake" onclick="event.stopPropagation();toggleStar('luckystake')" aria-label="Add to favourites"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg></button>
       <img decoding="async" src="assets/logos/luckystake.svg" alt="Luckystake" class="promo-card-logo" loading="lazy" style="background:#292929;padding:4px">
-      <div class="promo-card-brand">
-        <div class="promo-card-brand-row">
-          <h2 class="promo-card-brand-name">Luckystake</h2>
-          
-        </div>
-        <div style="display:flex;gap:6px;margin-top:2px"><span style="font-size:10px;color:var(--bonus);background:rgba(22,163,74,0.08);padding:1px 6px;border-radius:3px">Verified April 2026</span><span style="font-size:10px;color:var(--accent);background:var(--accent-light);padding:1px 6px;border-radius:3px">Code: BETS</span></div>
-      </div>
+      <h2 class="promo-card-brand-name" style="flex:1">Luckystake</h2>
     </div>
-    <div class="rating-circle">
+    <div class="rating-circle rating-dial-animate">
       <span class="rating-circle-score">3.9</span><span style="font-size:11px;color:var(--text-muted);font-weight:600">/5.0</span>
     </div>
   </div>
+  <div style="display:flex;gap:6px;margin-bottom:10px;flex-wrap:wrap"><span style="font-size:10px;color:var(--bonus);background:rgba(22,163,74,0.08);padding:1px 6px;border-radius:3px">Verified April 2026</span></div>
   <div class="promo-card-offer">Luckystake Loyalty Program</div>
   <div class="promo-card-code-box">
     <span class="promo-card-code-text">BETS</span>
@@ -1259,18 +1079,13 @@ deposit at odds of 1/1 or more. Then email support@soccershop.bet to claim your 
     <div style="display:flex;align-items:center;gap:10px;flex:1;min-width:0">
       <button class="star-btn" data-brand="pokerbet" onclick="event.stopPropagation();toggleStar('pokerbet')" aria-label="Add to favourites"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg></button>
       <img decoding="async" src="assets/logos/pokerbet.svg" alt="Pokerbet" class="promo-card-logo" loading="lazy" style="background:#3C3D65;padding:4px">
-      <div class="promo-card-brand">
-        <div class="promo-card-brand-row">
-          <h2 class="promo-card-brand-name">Pokerbet</h2>
-          <span class="promo-badge promo-badge-pick">POKER PRO</span>
-        </div>
-        <div style="display:flex;gap:6px;margin-top:2px"><span style="font-size:10px;color:var(--bonus);background:rgba(22,163,74,0.08);padding:1px 6px;border-radius:3px">Verified April 2026</span><span style="font-size:10px;color:var(--accent);background:var(--accent-light);padding:1px 6px;border-radius:3px">Code: MAXBET</span></div>
-      </div>
+      <h2 class="promo-card-brand-name" style="flex:1">Pokerbet</h2>
     </div>
-    <div class="rating-circle">
+    <div class="rating-circle rating-dial-animate">
       <span class="rating-circle-score">3.8</span><span style="font-size:11px;color:var(--text-muted);font-weight:600">/5.0</span>
     </div>
   </div>
+  <div style="display:flex;gap:6px;margin-bottom:10px;flex-wrap:wrap"><span class="promo-badge promo-badge-pick">POKER PRO</span><span style="font-size:10px;color:var(--bonus);background:rgba(22,163,74,0.08);padding:1px 6px;border-radius:3px">Verified April 2026</span></div>
   <div class="promo-card-offer">Get R100 free + R2000 (100%)</div>
   <div class="promo-card-code-box">
     <span class="promo-card-code-text">MAXBET</span>
@@ -1287,18 +1102,13 @@ deposit at odds of 1/1 or more. Then email support@soccershop.bet to claim your 
     <div style="display:flex;align-items:center;gap:10px;flex:1;min-width:0">
       <button class="star-btn" data-brand="betbus" onclick="event.stopPropagation();toggleStar('betbus')" aria-label="Add to favourites"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg></button>
       <img decoding="async" src="assets/logos/betbus.svg" alt="betbus" class="promo-card-logo" loading="lazy" style="background:#401010;padding:4px">
-      <div class="promo-card-brand">
-        <div class="promo-card-brand-row">
-          <h2 class="promo-card-brand-name">betbus</h2>
-          
-        </div>
-        <div style="display:flex;gap:6px;margin-top:2px"><span style="font-size:10px;color:var(--bonus);background:rgba(22,163,74,0.08);padding:1px 6px;border-radius:3px">Verified April 2026</span><span style="font-size:10px;color:var(--accent);background:var(--accent-light);padding:1px 6px;border-radius:3px">Code: BETS</span></div>
-      </div>
+      <h2 class="promo-card-brand-name" style="flex:1">betbus</h2>
     </div>
-    <div class="rating-circle">
+    <div class="rating-circle rating-dial-animate">
       <span class="rating-circle-score">3.8</span><span style="font-size:11px;color:var(--text-muted);font-weight:600">/5.0</span>
     </div>
   </div>
+  <div style="display:flex;gap:6px;margin-bottom:10px;flex-wrap:wrap"><span style="font-size:10px;color:var(--bonus);background:rgba(22,163,74,0.08);padding:1px 6px;border-radius:3px">Verified April 2026</span></div>
   <div class="promo-card-offer">Deposit R5,000 Get R5,000</div>
   <div class="promo-card-code-box">
     <span class="promo-card-code-text">BETS</span>
@@ -1315,18 +1125,13 @@ deposit at odds of 1/1 or more. Then email support@soccershop.bet to claim your 
     <div style="display:flex;align-items:center;gap:10px;flex:1;min-width:0">
       <button class="star-btn" data-brand="neobet" onclick="event.stopPropagation();toggleStar('neobet')" aria-label="Add to favourites"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg></button>
       
-      <div class="promo-card-brand">
-        <div class="promo-card-brand-row">
-          <h2 class="promo-card-brand-name">NEO.bet</h2>
-          
-        </div>
-        <div style="display:flex;gap:6px;margin-top:2px"><span style="font-size:10px;color:var(--bonus);background:rgba(22,163,74,0.08);padding:1px 6px;border-radius:3px">Verified April 2026</span><span style="font-size:10px;color:var(--text-muted);background:var(--surface-2);padding:1px 6px;border-radius:3px">Code: NEWBONUS</span></div>
-      </div>
+      <h2 class="promo-card-brand-name" style="flex:1">NEO.bet</h2>
     </div>
-    <div class="rating-circle">
+    <div class="rating-circle rating-dial-animate">
       <span class="rating-circle-score">3.8</span><span style="font-size:11px;color:var(--text-muted);font-weight:600">/5.0</span>
     </div>
   </div>
+  <div style="display:flex;gap:6px;margin-bottom:10px;flex-wrap:wrap"><span style="font-size:10px;color:var(--bonus);background:rgba(22,163,74,0.08);padding:1px 6px;border-radius:3px">Verified April 2026</span></div>
   <div class="promo-card-offer">Up to R3,000 across 3 deposits</div>
   <div class="promo-card-code-box">
     <span class="promo-card-code-text">NEWBONUS</span>
@@ -1343,18 +1148,13 @@ deposit at odds of 1/1 or more. Then email support@soccershop.bet to claim your 
     <div style="display:flex;align-items:center;gap:10px;flex:1;min-width:0">
       <button class="star-btn" data-brand="palacebet" onclick="event.stopPropagation();toggleStar('palacebet')" aria-label="Add to favourites"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg></button>
       
-      <div class="promo-card-brand">
-        <div class="promo-card-brand-row">
-          <h2 class="promo-card-brand-name">PalaceBet</h2>
-          
-        </div>
-        <div style="display:flex;gap:6px;margin-top:2px"><span style="font-size:10px;color:var(--bonus);background:rgba(22,163,74,0.08);padding:1px 6px;border-radius:3px">Verified April 2026</span><span style="font-size:10px;color:var(--accent);background:var(--accent-light);padding:1px 6px;border-radius:3px">Code: WelcomeDeposit</span></div>
-      </div>
+      <h2 class="promo-card-brand-name" style="flex:1">PalaceBet</h2>
     </div>
-    <div class="rating-circle">
+    <div class="rating-circle rating-dial-animate">
       <span class="rating-circle-score">3.8</span><span style="font-size:11px;color:var(--text-muted);font-weight:600">/5.0</span>
     </div>
   </div>
+  <div style="display:flex;gap:6px;margin-bottom:10px;flex-wrap:wrap"><span style="font-size:10px;color:var(--bonus);background:rgba(22,163,74,0.08);padding:1px 6px;border-radius:3px">Verified April 2026</span></div>
   <div class="promo-card-offer">100% up to R2,000</div>
   <div class="promo-card-code-box">
     <span class="promo-card-code-text">WelcomeDeposit</span>
@@ -1371,18 +1171,13 @@ deposit at odds of 1/1 or more. Then email support@soccershop.bet to claim your 
     <div style="display:flex;align-items:center;gap:10px;flex:1;min-width:0">
       <button class="star-btn" data-brand="virginbet" onclick="event.stopPropagation();toggleStar('virginbet')" aria-label="Add to favourites"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg></button>
       <img decoding="async" src="assets/logos/virginbet.svg" alt="VirginBet" class="promo-card-logo" loading="lazy" style="background:#E10A0A;padding:4px">
-      <div class="promo-card-brand">
-        <div class="promo-card-brand-row">
-          <h2 class="promo-card-brand-name">VirginBet</h2>
-          
-        </div>
-        <div style="display:flex;gap:6px;margin-top:2px"><span style="font-size:10px;color:var(--bonus);background:rgba(22,163,74,0.08);padding:1px 6px;border-radius:3px">Verified April 2026</span><span style="font-size:10px;color:var(--accent);background:var(--accent-light);padding:1px 6px;border-radius:3px">Code: MAXBONUS</span></div>
-      </div>
+      <h2 class="promo-card-brand-name" style="flex:1">VirginBet</h2>
     </div>
-    <div class="rating-circle">
+    <div class="rating-circle rating-dial-animate">
       <span class="rating-circle-score">3.6</span><span style="font-size:11px;color:var(--text-muted);font-weight:600">/5.0</span>
     </div>
   </div>
+  <div style="display:flex;gap:6px;margin-bottom:10px;flex-wrap:wrap"><span style="font-size:10px;color:var(--bonus);background:rgba(22,163,74,0.08);padding:1px 6px;border-radius:3px">Verified April 2026</span></div>
   <div class="promo-card-offer">Up to R3,000 Deposit Match</div>
   <div class="promo-card-code-box">
     <span class="promo-card-code-text">MAXBONUS</span>
@@ -1399,18 +1194,13 @@ deposit at odds of 1/1 or more. Then email support@soccershop.bet to claim your 
     <div style="display:flex;align-items:center;gap:10px;flex:1;min-width:0">
       <button class="star-btn" data-brand="sportpesa" onclick="event.stopPropagation();toggleStar('sportpesa')" aria-label="Add to favourites"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg></button>
       
-      <div class="promo-card-brand">
-        <div class="promo-card-brand-row">
-          <h2 class="promo-card-brand-name">Sportpesa</h2>
-          
-        </div>
-        <div style="display:flex;gap:6px;margin-top:2px"><span style="font-size:10px;color:var(--bonus);background:rgba(22,163,74,0.08);padding:1px 6px;border-radius:3px">Verified April 2026</span><span style="font-size:10px;color:var(--text-muted);background:var(--surface-2);padding:1px 6px;border-radius:3px">Code: NEWBONUS</span></div>
-      </div>
+      <h2 class="promo-card-brand-name" style="flex:1">Sportpesa</h2>
     </div>
-    <div class="rating-circle">
+    <div class="rating-circle rating-dial-animate">
       <span class="rating-circle-score">3.6</span><span style="font-size:11px;color:var(--text-muted);font-weight:600">/5.0</span>
     </div>
   </div>
+  <div style="display:flex;gap:6px;margin-bottom:10px;flex-wrap:wrap"><span style="font-size:10px;color:var(--bonus);background:rgba(22,163,74,0.08);padding:1px 6px;border-radius:3px">Verified April 2026</span></div>
   <div class="promo-card-offer">Welcome Bonus Available</div>
   <div class="promo-card-code-box">
     <span class="promo-card-code-text">NEWBONUS</span>
@@ -1427,18 +1217,13 @@ deposit at odds of 1/1 or more. Then email support@soccershop.bet to claim your 
     <div style="display:flex;align-items:center;gap:10px;flex:1;min-width:0">
       <button class="star-btn" data-brand="shayabets" onclick="event.stopPropagation();toggleStar('shayabets')" aria-label="Add to favourites"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg></button>
       
-      <div class="promo-card-brand">
-        <div class="promo-card-brand-row">
-          <h2 class="promo-card-brand-name">ShayaBets</h2>
-          
-        </div>
-        <div style="display:flex;gap:6px;margin-top:2px"><span style="font-size:10px;color:var(--bonus);background:rgba(22,163,74,0.08);padding:1px 6px;border-radius:3px">Verified April 2026</span><span style="font-size:10px;color:var(--text-muted);background:var(--surface-2);padding:1px 6px;border-radius:3px">Code: NEWBONUS</span></div>
-      </div>
+      <h2 class="promo-card-brand-name" style="flex:1">ShayaBets</h2>
     </div>
-    <div class="rating-circle">
+    <div class="rating-circle rating-dial-animate">
       <span class="rating-circle-score">3.4</span><span style="font-size:11px;color:var(--text-muted);font-weight:600">/5.0</span>
     </div>
   </div>
+  <div style="display:flex;gap:6px;margin-bottom:10px;flex-wrap:wrap"><span style="font-size:10px;color:var(--bonus);background:rgba(22,163,74,0.08);padding:1px 6px;border-radius:3px">Verified April 2026</span></div>
   <div class="promo-card-offer">Welcome Bonus Available</div>
   <div class="promo-card-code-box">
     <span class="promo-card-code-text">NEWBONUS</span>
@@ -1455,18 +1240,13 @@ deposit at odds of 1/1 or more. Then email support@soccershop.bet to claim your 
     <div style="display:flex;align-items:center;gap:10px;flex:1;min-width:0">
       <button class="star-btn" data-brand="goldrush" onclick="event.stopPropagation();toggleStar('goldrush')" aria-label="Add to favourites"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg></button>
       
-      <div class="promo-card-brand">
-        <div class="promo-card-brand-row">
-          <h2 class="promo-card-brand-name">Goldrush</h2>
-          
-        </div>
-        <div style="display:flex;gap:6px;margin-top:2px"><span style="font-size:10px;color:var(--bonus);background:rgba(22,163,74,0.08);padding:1px 6px;border-radius:3px">Verified April 2026</span><span style="font-size:10px;color:var(--text-muted);background:var(--surface-2);padding:1px 6px;border-radius:3px">Code: NEWBONUS</span></div>
-      </div>
+      <h2 class="promo-card-brand-name" style="flex:1">Goldrush</h2>
     </div>
-    <div class="rating-circle">
+    <div class="rating-circle rating-dial-animate">
       <span class="rating-circle-score">3.4</span><span style="font-size:11px;color:var(--text-muted);font-weight:600">/5.0</span>
     </div>
   </div>
+  <div style="display:flex;gap:6px;margin-bottom:10px;flex-wrap:wrap"><span style="font-size:10px;color:var(--bonus);background:rgba(22,163,74,0.08);padding:1px 6px;border-radius:3px">Verified April 2026</span></div>
   <div class="promo-card-offer">No Sports Welcome Bonus</div>
   <div class="promo-card-code-box">
     <span class="promo-card-code-text">NEWBONUS</span>
