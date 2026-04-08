@@ -4360,6 +4360,793 @@
         "Mobile App",
         "In-Play"
       ]
+    },
+    {
+      "id": "shayabets",
+      "name": "ShayaBets",
+      "overallRating": 3.5,
+      "welcomeBonusAmount": "Welcome Bonus Available",
+      "welcomeBonusDetails": "with promo code NEWBONUS",
+      "promoCode": "NEWBONUS",
+      "tcs": "The ShayaBets promo code in South Africa is NEWBONUS. 18+. T&Cs apply.",
+      "paymentMethodsList": [
+        "Ozow",
+        "EFT",
+        "Visa",
+        "Mastercard"
+      ],
+      "depositMethods": [
+        {
+          "name": "Ozow",
+          "minDeposit": "R10",
+          "processingTime": "Instant"
+        },
+        {
+          "name": "EFT",
+          "minDeposit": "R10",
+          "processingTime": "Instant"
+        },
+        {
+          "name": "Visa",
+          "minDeposit": "R10",
+          "processingTime": "Instant"
+        }
+      ],
+      "withdrawalMethods": [
+        {
+          "name": "EFT",
+          "minWithdrawal": "R50",
+          "processingTime": "1-3 business days"
+        }
+      ],
+      "sportsCovered": [
+        "Football",
+        "Rugby Union",
+        "Cricket",
+        "Tennis",
+        "Basketball",
+        "Horse Racing",
+        "Boxing",
+        "MMA",
+        "Golf"
+      ],
+      "liveBetting": "Yes",
+      "liveStreaming": "No",
+      "mobileApp": "No (mobile browser)",
+      "customerSupport": "Live Chat, Email",
+      "ratingLive": 3.3,
+      "ratingMobile": 3.0,
+      "ratingVariety": 3.2,
+      "ratingWebsite": 3.5,
+      "ratingOdds": 3.4,
+      "ratingPayment": 3.5,
+      "ratingSupport": 3.0,
+      "ratingReputation": 3.0,
+      "ratingBonus": 3.5,
+      "license": "South African Provincial Licence (details pending confirmation)",
+      "licenceStatus": "unconfirmed",
+      "pros": [
+        "New operator with a modern platform",
+        "Sports betting and online casino in one place",
+        "Includes popular games like Aviator and slots"
+      ],
+      "cons": [
+        "Very new to the SA market (registered 2025)",
+        "Limited track record and user reviews",
+        "Licence details not yet fully confirmed"
+      ],
+      "minDeposit": "R10",
+      "minBet": "R1",
+      "betTypes": "Singles, Accumulators",
+      "cashOut": "Yes",
+      "otherProducts": "Casino, Live Casino, Aviator, Slots",
+      "yearEstablished": "2025",
+      "type": "both",
+      "exitLink": "",
+      "mcpLogoUrl": "",
+      "baseColour": "#1a1a2e",
+      "textColour": "#ffffff",
+      "bestFor": [
+        "New Operator"
+      ]
+    },
+    {
+      "id": "sunbet",
+      "name": "Sunbet",
+      "overallRating": 4.1,
+      "welcomeBonusAmount": "100% up to R1,000",
+      "welcomeBonusDetails": "First deposit match bonus",
+      "promoCode": "NEWBONUS",
+      "tcs": "The Sunbet promo code is NEWBONUS. 18+. T&Cs apply.",
+      "paymentMethodsList": [
+        "Ozow",
+        "EFT",
+        "Visa",
+        "Mastercard",
+        "OTT Voucher",
+        "1Voucher",
+        "Blu Voucher",
+        "Apple Pay",
+        "Capitec Pay"
+      ],
+      "depositMethods": [
+        {
+          "name": "Ozow",
+          "minDeposit": "R10",
+          "processingTime": "Instant"
+        },
+        {
+          "name": "EFT",
+          "minDeposit": "R50",
+          "processingTime": "Instant"
+        },
+        {
+          "name": "Visa",
+          "minDeposit": "R50",
+          "processingTime": "Instant"
+        }
+      ],
+      "withdrawalMethods": [
+        {
+          "name": "EFT",
+          "minWithdrawal": "R50",
+          "processingTime": "1-3 business days"
+        }
+      ],
+      "sportsCovered": [
+        "Football",
+        "Rugby Union",
+        "Cricket",
+        "Horse Racing",
+        "Tennis",
+        "Basketball",
+        "Golf",
+        "eSports"
+      ],
+      "liveBetting": "Yes",
+      "liveStreaming": "No",
+      "mobileApp": "Yes (Android APK, iOS)",
+      "customerSupport": "Phone, Email",
+      "ratingLive": 4.0,
+      "ratingMobile": 4.0,
+      "ratingVariety": 3.8,
+      "ratingWebsite": 4.2,
+      "ratingOdds": 4.0,
+      "ratingPayment": 4.3,
+      "ratingSupport": 3.8,
+      "ratingBonus": 3.8,
+      "license": "Western Cape Gambling and Racing Board; North West Gambling Board; Mpumalanga Economic Regulator",
+      "licenceStatus": "sa-licensed",
+      "pros": [
+        "Backed by Sun International (major casino group)",
+        "100,000+ live in-play events",
+        "Wide range of SA payment methods",
+        "Apps for Android and iOS"
+      ],
+      "cons": [
+        "No live streaming",
+        "Welcome bonus capped at R1,000",
+        "No eSports depth beyond basics"
+      ],
+      "minDeposit": "R10",
+      "minBet": "R1",
+      "betTypes": "Singles, Accumulators",
+      "cashOut": "Yes",
+      "otherProducts": "Casino, Lucky Numbers",
+      "yearEstablished": "2013",
+      "type": "both",
+      "exitLink": "",
+      "baseColour": "#f7941d",
+      "textColour": "#ffffff",
+      "bestFor": [
+        "Casino Brand",
+        "Fast Payouts"
+      ],
+      "parent_company": "Sun International"
+    },
+    {
+      "id": "goldrush",
+      "name": "Goldrush",
+      "overallRating": 3.6,
+      "welcomeBonusAmount": "No Sports Welcome Bonus",
+      "welcomeBonusDetails": "Casino bonuses available",
+      "promoCode": "NEWBONUS",
+      "tcs": "18+. T&Cs apply.",
+      "paymentMethodsList": [
+        "EFT",
+        "Visa",
+        "Mastercard",
+        "OTT Voucher",
+        "Blu Voucher"
+      ],
+      "depositMethods": [
+        {
+          "name": "EFT",
+          "minDeposit": "R50",
+          "processingTime": "Instant"
+        }
+      ],
+      "withdrawalMethods": [
+        {
+          "name": "EFT",
+          "minWithdrawal": "R50",
+          "processingTime": "1-3 business days"
+        }
+      ],
+      "sportsCovered": [
+        "Football",
+        "Rugby Union",
+        "Cricket",
+        "Horse Racing",
+        "Tennis",
+        "Basketball"
+      ],
+      "liveBetting": "Yes",
+      "liveStreaming": "No",
+      "mobileApp": "Yes (Android, iOS)",
+      "customerSupport": "Phone, Email, Live Chat",
+      "ratingLive": 3.4,
+      "ratingMobile": 3.5,
+      "ratingVariety": 3.3,
+      "ratingWebsite": 3.5,
+      "ratingOdds": 3.5,
+      "ratingPayment": 3.8,
+      "ratingSupport": 3.5,
+      "ratingBonus": 3.0,
+      "license": "Mpumalanga Economic Regulator",
+      "licenceStatus": "sa-licensed",
+      "pros": [
+        "Large retail chain across SA",
+        "Apps for Android and iOS",
+        "Established land-based brand"
+      ],
+      "cons": [
+        "No sports welcome bonus",
+        "Online platform less polished than competitors",
+        "Limited market depth"
+      ],
+      "minDeposit": "R50",
+      "minBet": "R1",
+      "betTypes": "Singles, Accumulators",
+      "cashOut": "Yes",
+      "otherProducts": "Casino, Slots, Bingo",
+      "yearEstablished": "2002 (online 2024)",
+      "type": "both",
+      "exitLink": "",
+      "baseColour": "#c8a415",
+      "textColour": "#000000",
+      "bestFor": [
+        "Retail Chain"
+      ],
+      "parent_company": "Goldrush Gaming Group"
+    },
+    {
+      "id": "neobet",
+      "name": "NEO.bet",
+      "overallRating": 3.8,
+      "welcomeBonusAmount": "Up to R3,000 across 3 deposits",
+      "welcomeBonusDetails": "100% match on each of first 3 deposits",
+      "promoCode": "NEWBONUS",
+      "tcs": "The NEO.bet promo code is NEWBONUS. 18+. T&Cs apply.",
+      "paymentMethodsList": [
+        "OTT Voucher",
+        "Visa",
+        "Mastercard",
+        "Capitec Pay",
+        "Instant EFT"
+      ],
+      "depositMethods": [
+        {
+          "name": "Visa",
+          "minDeposit": "R10",
+          "processingTime": "Instant"
+        },
+        {
+          "name": "Instant EFT",
+          "minDeposit": "R10",
+          "processingTime": "Instant"
+        }
+      ],
+      "withdrawalMethods": [
+        {
+          "name": "EFT",
+          "minWithdrawal": "R50",
+          "processingTime": "1-3 business days"
+        }
+      ],
+      "sportsCovered": [
+        "Football",
+        "Rugby Union",
+        "Cricket",
+        "Tennis",
+        "Basketball",
+        "Boxing",
+        "MMA",
+        "Golf",
+        "Darts"
+      ],
+      "liveBetting": "Yes",
+      "liveStreaming": "No",
+      "mobileApp": "Yes (Android, iOS)",
+      "customerSupport": "Live Chat, Callback, Email",
+      "ratingLive": 3.6,
+      "ratingMobile": 4.0,
+      "ratingVariety": 3.8,
+      "ratingWebsite": 4.0,
+      "ratingOdds": 3.7,
+      "ratingPayment": 3.5,
+      "ratingSupport": 3.5,
+      "ratingBonus": 4.0,
+      "license": "Western Cape Gambling and Racing Board",
+      "licenceStatus": "sa-licensed",
+      "pros": [
+        "Modern platform with clean design",
+        "Cash Out Control feature",
+        "Apps for Android and iOS",
+        "R3,000 spread across 3 deposits"
+      ],
+      "cons": [
+        "New to SA market (launched 2025)",
+        "Limited payment options vs local operators",
+        "No live streaming"
+      ],
+      "minDeposit": "R10",
+      "minBet": "R1",
+      "betTypes": "Singles, Accumulators, Bet Builder",
+      "cashOut": "Yes",
+      "otherProducts": "Casino",
+      "yearEstablished": "2025 (SA launch)",
+      "type": "both",
+      "exitLink": "",
+      "baseColour": "#00ff66",
+      "textColour": "#000000",
+      "bestFor": [
+        "New Operator",
+        "Mobile App"
+      ],
+      "parent_company": "Greenvest Betting Ltd"
+    },
+    {
+      "id": "sportpesa",
+      "name": "Sportpesa",
+      "overallRating": 3.7,
+      "welcomeBonusAmount": "Welcome Bonus Available",
+      "welcomeBonusDetails": "with promo code NEWBONUS",
+      "promoCode": "NEWBONUS",
+      "tcs": "The Sportpesa promo code is NEWBONUS. 18+. T&Cs apply.",
+      "paymentMethodsList": [
+        "Ozow",
+        "EFT",
+        "Visa",
+        "Mastercard"
+      ],
+      "depositMethods": [
+        {
+          "name": "Ozow",
+          "minDeposit": "R10",
+          "processingTime": "Instant"
+        }
+      ],
+      "withdrawalMethods": [
+        {
+          "name": "EFT",
+          "minWithdrawal": "R50",
+          "processingTime": "1-3 business days"
+        }
+      ],
+      "sportsCovered": [
+        "Football",
+        "Rugby Union",
+        "Cricket",
+        "Tennis",
+        "Basketball",
+        "Boxing",
+        "MMA",
+        "Horse Racing"
+      ],
+      "liveBetting": "Yes",
+      "liveStreaming": "No",
+      "mobileApp": "Yes (Android, iOS)",
+      "customerSupport": "Live Chat, Email",
+      "ratingLive": 3.5,
+      "ratingMobile": 3.8,
+      "ratingVariety": 3.5,
+      "ratingWebsite": 3.6,
+      "ratingOdds": 3.8,
+      "ratingPayment": 3.5,
+      "ratingSupport": 3.3,
+      "ratingBonus": 3.5,
+      "license": "Western Cape Gambling and Racing Board",
+      "licenceStatus": "sa-licensed",
+      "pros": [
+        "Major international brand (big in East Africa)",
+        "Strong football betting markets",
+        "Competitive odds on popular sports"
+      ],
+      "cons": [
+        "SA platform still developing",
+        "Limited local payment methods",
+        "Less established in SA vs local competitors"
+      ],
+      "minDeposit": "R10",
+      "minBet": "R1",
+      "betTypes": "Singles, Accumulators",
+      "cashOut": "Yes",
+      "otherProducts": "Casino, Virtual Sports",
+      "yearEstablished": "2014 (SA launch recent)",
+      "type": "betting",
+      "exitLink": "",
+      "baseColour": "#1a1a1a",
+      "textColour": "#ffffff",
+      "bestFor": [
+        "Football"
+      ],
+      "parent_company": "Sportpesa (Pty) Ltd"
+    },
+    {
+      "id": "playtsogo",
+      "name": "PlayTsogo",
+      "overallRating": 3.9,
+      "welcomeBonusAmount": "100% up to R10,000",
+      "welcomeBonusDetails": "First deposit match (min R50)",
+      "promoCode": "STYVIP",
+      "tcs": "The PlayTsogo promo code is STYVIP. Min deposit R50. 18+. T&Cs apply.",
+      "paymentMethodsList": [
+        "Ozow",
+        "EFT",
+        "Visa",
+        "Mastercard",
+        "Zapper",
+        "SnapScan",
+        "OTT Voucher",
+        "Blu Voucher",
+        "1Voucher"
+      ],
+      "depositMethods": [
+        {
+          "name": "Ozow",
+          "minDeposit": "R50",
+          "processingTime": "Instant"
+        },
+        {
+          "name": "OTT Voucher",
+          "minDeposit": "R2",
+          "processingTime": "Instant"
+        }
+      ],
+      "withdrawalMethods": [
+        {
+          "name": "EFT",
+          "minWithdrawal": "R50",
+          "processingTime": "1-3 business days"
+        }
+      ],
+      "sportsCovered": [
+        "Football",
+        "Rugby Union",
+        "Cricket",
+        "Tennis",
+        "Basketball",
+        "Boxing",
+        "MMA",
+        "Golf",
+        "F1",
+        "Darts",
+        "Volleyball",
+        "Handball",
+        "Ice Hockey"
+      ],
+      "liveBetting": "Yes",
+      "liveStreaming": "No",
+      "mobileApp": "No (mobile browser)",
+      "customerSupport": "Phone, Email, Live Chat",
+      "ratingLive": 3.8,
+      "ratingMobile": 3.5,
+      "ratingVariety": 4.0,
+      "ratingWebsite": 3.8,
+      "ratingOdds": 3.8,
+      "ratingPayment": 4.0,
+      "ratingSupport": 3.8,
+      "ratingBonus": 4.5,
+      "license": "Western Cape Gambling and Racing Board (10190075-004); Mpumalanga Economic Regulator (9-2-1-09807)",
+      "licenceStatus": "sa-licensed",
+      "pros": [
+        "Massive R10,000 welcome bonus",
+        "Backed by Tsogo Sun Gaming",
+        "30+ sports markets",
+        "Wide range of SA payment methods"
+      ],
+      "cons": [
+        "No dedicated mobile app",
+        "Relatively new (launched Dec 2022)",
+        "No live streaming"
+      ],
+      "minDeposit": "R2",
+      "minBet": "R1",
+      "betTypes": "Singles, Accumulators",
+      "cashOut": "Yes",
+      "otherProducts": "Casino, Aviator, Lucky Numbers",
+      "yearEstablished": "2022",
+      "type": "both",
+      "exitLink": "",
+      "baseColour": "#6b21a8",
+      "textColour": "#ffffff",
+      "bestFor": [
+        "Top Bonus",
+        "SA Sports"
+      ],
+      "parent_company": "Tsogo Sun Gaming"
+    },
+    {
+      "id": "bet-co-za",
+      "name": "Bet.co.za",
+      "overallRating": 4.2,
+      "welcomeBonusAmount": "100% up to R5,000",
+      "welcomeBonusDetails": "First deposit match (min R50)",
+      "promoCode": "STYVIP",
+      "tcs": "The Bet.co.za promo code is STYVIP. Min deposit R50. 18+. T&Cs apply.",
+      "paymentMethodsList": [
+        "Ozow",
+        "EFT",
+        "Visa",
+        "Mastercard",
+        "Zapper",
+        "OTT Voucher",
+        "1Voucher"
+      ],
+      "depositMethods": [
+        {
+          "name": "Ozow",
+          "minDeposit": "R10",
+          "processingTime": "Instant"
+        },
+        {
+          "name": "EFT",
+          "minDeposit": "R50",
+          "processingTime": "Instant"
+        }
+      ],
+      "withdrawalMethods": [
+        {
+          "name": "EFT",
+          "minWithdrawal": "R50",
+          "processingTime": "1-3 business days"
+        }
+      ],
+      "sportsCovered": [
+        "Football",
+        "Rugby Union",
+        "Cricket",
+        "Tennis",
+        "Basketball",
+        "Horse Racing",
+        "Golf",
+        "Boxing",
+        "Cycling",
+        "Darts",
+        "Baseball",
+        "Handball",
+        "MMA"
+      ],
+      "liveBetting": "Yes",
+      "liveStreaming": "No",
+      "mobileApp": "No (mobile browser)",
+      "customerSupport": "Live Chat, Phone, Email",
+      "ratingLive": 4.0,
+      "ratingMobile": 3.8,
+      "ratingVariety": 4.3,
+      "ratingWebsite": 4.2,
+      "ratingOdds": 4.2,
+      "ratingPayment": 4.3,
+      "ratingSupport": 4.0,
+      "ratingBonus": 4.5,
+      "license": "Western Cape Gambling and Racing Board; Licence No: 10145732-016",
+      "licenceStatus": "sa-licensed",
+      "pros": [
+        "One of SA's oldest online bookmakers (est. 2010)",
+        "R5,000 welcome bonus",
+        "Strong odds on SA sports",
+        "Backed by Tsogo Sun Gaming"
+      ],
+      "cons": [
+        "No dedicated mobile app",
+        "No live streaming",
+        "Support hours limited on weekends"
+      ],
+      "minDeposit": "R10",
+      "minBet": "R1",
+      "betTypes": "Singles, Accumulators",
+      "cashOut": "Yes",
+      "otherProducts": "Casino, Lucky Numbers, Virtual Sports",
+      "yearEstablished": "2010",
+      "type": "both",
+      "exitLink": "",
+      "baseColour": "#16a34a",
+      "textColour": "#ffffff",
+      "bestFor": [
+        "SA Sports",
+        "Top Bonus",
+        "Fast Payouts"
+      ],
+      "parent_company": "Betcoza Online (Pty) Ltd / Tsogo Sun Gaming"
+    },
+    {
+      "id": "palacebet",
+      "name": "PalaceBet",
+      "overallRating": 3.8,
+      "welcomeBonusAmount": "100% up to R2,000",
+      "welcomeBonusDetails": "First deposit match + additional deposit bonuses up to R6,000 total",
+      "promoCode": "WelcomeDeposit",
+      "tcs": "The PalaceBet promo code is WelcomeDeposit. 18+. T&Cs apply.",
+      "paymentMethodsList": [
+        "Ozow",
+        "EFT",
+        "Visa",
+        "Mastercard",
+        "Zapper",
+        "OTT Voucher",
+        "Blu Voucher",
+        "1Voucher"
+      ],
+      "depositMethods": [
+        {
+          "name": "Ozow",
+          "minDeposit": "R25",
+          "processingTime": "Instant"
+        }
+      ],
+      "withdrawalMethods": [
+        {
+          "name": "EFT",
+          "minWithdrawal": "R50",
+          "processingTime": "1-3 business days"
+        }
+      ],
+      "sportsCovered": [
+        "Football",
+        "Rugby Union",
+        "Cricket",
+        "Tennis",
+        "Basketball",
+        "Horse Racing",
+        "eSports",
+        "Table Tennis"
+      ],
+      "liveBetting": "Yes",
+      "liveStreaming": "No",
+      "mobileApp": "Yes (Android, iOS)",
+      "customerSupport": "Live Chat, Phone, Email",
+      "ratingLive": 3.7,
+      "ratingMobile": 3.8,
+      "ratingVariety": 3.7,
+      "ratingWebsite": 3.8,
+      "ratingOdds": 3.6,
+      "ratingPayment": 4.0,
+      "ratingSupport": 3.8,
+      "ratingBonus": 4.0,
+      "license": "Western Cape Gambling and Racing Board; Licence No: 10189453-001",
+      "licenceStatus": "sa-licensed",
+      "pros": [
+        "Backed by Peermont/Sun International",
+        "Up to R6,000 across 3 deposits",
+        "Apps for Android and iOS",
+        "30,000+ events per year"
+      ],
+      "cons": [
+        "DraftKings partnership ended",
+        "Brand less known than casino-side Peermont",
+        "No live streaming"
+      ],
+      "minDeposit": "R25",
+      "minBet": "R1",
+      "betTypes": "Singles, Accumulators",
+      "cashOut": "Yes",
+      "otherProducts": "Casino, Live Casino, Lucky Numbers, Lotteries",
+      "yearEstablished": "2020",
+      "type": "both",
+      "exitLink": "",
+      "baseColour": "#8b5cf6",
+      "textColour": "#ffffff",
+      "bestFor": [
+        "Casino Brand",
+        "Mobile App"
+      ],
+      "parent_company": "Peermont Hotels / Sun International"
+    },
+    {
+      "id": "betolimp",
+      "name": "BetOlimp",
+      "overallRating": 3.9,
+      "welcomeBonusAmount": "100% up to R3,000",
+      "welcomeBonusDetails": "First deposit match + 250 free spins for casino",
+      "promoCode": "OLFOOT",
+      "tcs": "The BetOlimp promo code is OLFOOT. Min deposit R50. 18+. T&Cs apply.",
+      "paymentMethodsList": [
+        "Ozow",
+        "EFT",
+        "Visa",
+        "Mastercard",
+        "1Voucher",
+        "OTT Voucher"
+      ],
+      "depositMethods": [
+        {
+          "name": "Ozow",
+          "minDeposit": "R50",
+          "processingTime": "Instant"
+        },
+        {
+          "name": "1Voucher",
+          "minDeposit": "R1",
+          "processingTime": "Instant"
+        }
+      ],
+      "withdrawalMethods": [
+        {
+          "name": "EFT",
+          "minWithdrawal": "R50",
+          "processingTime": "1-3 business days"
+        }
+      ],
+      "sportsCovered": [
+        "Football",
+        "Rugby Union",
+        "Cricket",
+        "Tennis",
+        "Basketball",
+        "Boxing",
+        "MMA",
+        "Darts",
+        "Volleyball",
+        "Handball",
+        "Water Polo",
+        "Chess",
+        "eSports",
+        "Cycling",
+        "Table Tennis",
+        "Snooker"
+      ],
+      "liveBetting": "Yes",
+      "liveStreaming": "No",
+      "mobileApp": "No (mobile browser)",
+      "customerSupport": "Live Chat, Phone, Email",
+      "ratingLive": 4.0,
+      "ratingMobile": 3.5,
+      "ratingVariety": 4.2,
+      "ratingWebsite": 4.0,
+      "ratingOdds": 4.2,
+      "ratingPayment": 3.8,
+      "ratingSupport": 3.5,
+      "ratingBonus": 4.0,
+      "license": "Western Cape Gambling and Racing Board",
+      "licenceStatus": "sa-licensed",
+      "pros": [
+        "R3,000 welcome bonus + 250 free spins",
+        "30+ sports including niche markets (chess, water polo)",
+        "Excellent market depth on football (100+ markets)",
+        "Statistics and betting preview pages"
+      ],
+      "cons": [
+        "No mobile app",
+        "No cash out feature",
+        "No horse racing",
+        "No live streaming"
+      ],
+      "minDeposit": "R50",
+      "minBet": "R1",
+      "betTypes": "Singles, Accumulators",
+      "cashOut": "No",
+      "otherProducts": "Casino, Lucky Numbers, Jika Sports",
+      "yearEstablished": "2016 (SA)",
+      "type": "both",
+      "exitLink": "",
+      "baseColour": "#ff6600",
+      "textColour": "#ffffff",
+      "bestFor": [
+        "Sports Variety",
+        "Top Bonus"
+      ],
+      "parent_company": "OLIMP (Pty) Ltd / Olimp Group"
     }
   ],
   "paymentMethods": [

@@ -8,7 +8,7 @@ def betting_sites_intro_html():
     return '''
     <div class="seo-intro" style="margin-bottom:24px">
       <p style="font-size:15px;line-height:1.75;color:var(--text-secondary)">
-        We tested all 35 licensed SA bookmakers with real money. These are our rankings for 2026, sorted by bonus value, odds quality and payout speed.
+        We tested all 44 licensed SA bookmakers with real money. These are our rankings for 2026, sorted by bonus value, odds quality and payout speed.
       </p>
     </div>
     '''
@@ -106,7 +106,7 @@ def betting_sites_mid_html():
       </p>
 
       <p style="font-size:15px;line-height:1.8;color:var(--text-secondary);margin-bottom:16px">
-        The table below lists all 35 licensed SA bookmakers in order of our overall rating. You can sort
+        The table below lists all 44 licensed SA bookmakers in order of our overall rating. You can sort
         by any column, search by name, and star your favourites to keep track of the ones you are
         interested in. Every bookmaker links through to a detailed review and a dedicated promo code page.
       </p>
@@ -440,7 +440,7 @@ def _build_legality():
       <p style="font-size:15px;line-height:1.75;color:var(--text-secondary);margin-bottom:16px">
         You must be at least 18 years old to place a bet in South Africa. Unlicensed offshore bookmakers
         are illegal, and while some South Africans use them, you have zero consumer protection if
-        something goes wrong. Stick to licensed operators - all 35 bookmakers on this page hold valid
+        something goes wrong. Stick to licensed operators - all 44 bookmakers on this page hold valid
         SA licences.
       </p>
       <div style="background:var(--surface);border-radius:10px;padding:20px;border:1px solid var(--border)">

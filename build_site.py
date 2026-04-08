@@ -99,6 +99,41 @@ _PAYMENT_WITHDRAWAL_TIMES = {
 def _get_payment_timing(method, timing_dict, fallback):
     return timing_dict.get(method.lower().strip(), fallback)
 
+def _build_related_guides(brand, depth=0):
+    """Return a Related Guides section with links to relevant betting/casino guides."""
+    prefix = '../' * depth
+    sports = [s.lower() for s in brand.get('sportsCovered', [])]
+    has_casino = 'casino' in brand.get('type', '').lower() or 'casino' in brand.get('otherProducts', '').lower()
+    has_app = 'yes' in str(brand.get('mobileApp', '')).lower()
+    
+    guides = []
+    # Sport-specific guides
+    if 'football' in sports:
+        guides.append(('How to Bet on Football in SA', f'{prefix}guides/football-betting-guide.html'))
+    if 'rugby union' in sports:
+        guides.append(('How to Bet on Rugby in SA', f'{prefix}guides/rugby-betting-guide.html'))
+    if 'horse racing' in sports:
+        guides.append(('Horse Racing Betting Guide', f'{prefix}guides/horse-racing-guide.html'))
+    # General guides
+    guides.append(('Accumulator Betting Guide', f'{prefix}guides/accumulator-guide.html'))
+    guides.append(('Bankroll Management', f'{prefix}guides/bankroll-management.html'))
+    if has_app:
+        guides.append(('Best Betting Apps SA', f'{prefix}betting/best-betting-apps-south-africa.html'))
+    if has_casino:
+        guides.append(('Online Slots Guide', f'{prefix}casino-guides/online-slots-guide.html'))
+        guides.append(('Crash Games Guide', f'{prefix}casino-guides/crash-games-guide.html'))
+    guides.append(('Live Betting Guide', f'{prefix}guides/live-betting-guide.html'))
+    
+    # Limit to 4
+    guides = guides[:4]
+    
+    links = ''.join(f'<a href="{url}" style="display:flex;align-items:center;gap:8px;padding:10px 14px;background:var(--accent-light);border-radius:8px;font-size:13px;font-weight:600;color:var(--accent);text-decoration:none">{title} <svg width="12" height="12" viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M2.5 6h7M6.5 3l3 3-3 3"/></svg></a>' for title, url in guides)
+    
+    return f'''<div style="margin-top:28px">
+        <h2 style="font-size:16px;font-weight:700;margin-bottom:12px">Related Guides</h2>
+        <div style="display:grid;grid-template-columns:repeat(auto-fill,minmax(220px,1fr));gap:8px">{links}</div>
+      </div>'''
+
 def generate_evidence_box(brand):
     """Return a compact evidence summary box for near the top of review pages."""
     import html as _html
@@ -1315,14 +1350,14 @@ def page(title, description, canonical, body, depth=0, active_nav='', json_ld=''
         {desktop_nav}
       </nav>
       <div class="header-right">
-        <button class="theme-btn" onclick="toggleTheme()" aria-label="Toggle theme"></button>
         <div class="starred-nav-badge" id="starredNavBadge" style="display:none">
-          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2L15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2z"/></svg>
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 2L15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2z"/></svg>
           <span class="starred-nav-count" id="starredCount" style="display:none">0</span>
           <div class="starred-dropdown" id="starredDropdown">
             <div class="starred-dropdown-empty">Star a bookmaker to track it here</div>
           </div>
         </div>
+        <button class="theme-btn" onclick="toggleTheme()" aria-label="Toggle theme"></button>
         <a href="{prefix}betting-sites.html" class="betting-sites-btn">Betting Sites</a>
       </div>
     </div>
@@ -1987,7 +2022,7 @@ def build_brand_review(brand):
           {hero_logo_html}
           <div class="review-hero-text">
             <h1 class="page-title" style="margin-bottom:4px">{e(brand['name'])} Review 2026</h1>
-            <p style="font-size:13px;color:var(--text-muted);margin-bottom:0">{f"Est. {brand['yearEstablished'].split('(')[0].strip()}" if brand.get('yearEstablished') and brand['yearEstablished'].lower() not in ('not specified','n/a','unknown','') else 'Licensed SA Bookmaker'} &#x2022; {e(brand.get('license','Provincial licence').split(';')[0].strip())}</p>
+            <p style="font-size:13px;color:rgba(255,255,255,0.75);margin-bottom:0">{f"Est. {brand['yearEstablished'].split('(')[0].strip()}" if brand.get('yearEstablished') and brand['yearEstablished'].lower() not in ('not specified','n/a','unknown','') else 'Licensed SA Bookmaker'} &#x2022; {e(brand.get('license','Provincial licence').split(';')[0].strip())}</p>
             {trust_badges_html}
           </div>
         </div>
@@ -2134,6 +2169,9 @@ def build_brand_review(brand):
           <!-- Related -->
           <h2 style="font-size:16px;font-weight:700;margin-bottom:16px">Related Bookmakers</h2>
           <div class="grid-2">{related_cards}</div>
+
+          <!-- Related Guides -->
+          {_build_related_guides(brand, depth)}
         </div>
 
         <!-- Sidebar -->
@@ -2398,7 +2436,6 @@ def build_promo_detail(brand):
     body = f"""
     <!-- Hero -->
     <div class="promo-detail-hero" style="background:var(--surface);border-bottom:1px solid var(--border);padding:20px 0 16px">
-      {wm_html_promo}
       <div class="container">
         {bc}
         <div class="hero-inner" style="align-items:flex-start">
@@ -2429,7 +2466,8 @@ def build_promo_detail(brand):
                   <span class="promo-code">{e(code)}</span>
                   <button class="copy-btn" onclick="copyCode(this,'{e(code)}')">Copy</button>
                 </div>
-                {f'<a href="{masked_exit(brand, depth)}" target="_blank" rel="noopener noreferrer nofollow" class="btn-primary" style="margin-top:14px;display:inline-flex;align-items:center;gap:8px;font-size:15px;padding:12px 28px;border-radius:24px">{ICON_TROPHY} Claim Bonus</a>' if brand.get("exitLink") else ''}
+                {f'<a href="{masked_exit(brand, depth)}" target="_blank" rel="noopener noreferrer nofollow" class="btn-primary" style="margin-top:14px;display:inline-flex;align-items:center;gap:8px;font-size:15px;padding:12px 28px;border-radius:24px">{ICON_TROPHY} Claim Bonus</a>' if brand.get('exitLink') else ''}
+                <a href="{prefix}betting-site-review/{brand['id']}.html" style="display:block;margin-top:8px;font-size:13px;color:var(--accent);text-decoration:none;font-weight:500">Read full {e(brand['name'])} review &rarr;</a>
                 <p style="font-size:12px;color:var(--text-muted);margin-top:12px">{e(brand.get("mcpTerms", brand.get("tcs","T&Cs apply. 18+.")))}</p>
               </div>
             </div>
@@ -2820,6 +2858,13 @@ def build_news_article(article):
         </a>'''
 
     sidebar = news_sidebar_top5(depth=1)
+    # Build article TOC from h2s in body
+    _h2s = re.findall(r'<h2[^>]*>(.*?)</h2>', body_html) if body_html else []
+    _toc_links = ''.join(f'<a class="sidebar-toc-link" href="#"><svg fill="none" height="12" viewBox="0 0 14 14" width="12"><path d="M3 7h8M8 4l3 3-3 3" stroke="#1641B4" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"></path></svg>{re.sub(r"<[^>]+>", "", h)}</a>' for h in _h2s[:6])
+    _article_toc = f'''<div class="sidebar-toc" style="margin-bottom:20px">
+      <p class="sidebar-toc-title">In This Article</p>
+      <nav class="sidebar-toc-nav">{_toc_links}</nav>
+    </div>''' if _toc_links else ''
 
     body = f'''
     <div class="container" style="padding-top:40px;padding-bottom:80px">
@@ -2837,24 +2882,38 @@ def build_news_article(article):
             </div>
             {body_html}
           </article>
-          <div class="share-bar">
-            <span style="font-size:13px;font-weight:600;color:var(--text-muted)">Share this article</span>
-            <a href="https://wa.me/?text={e(article['title'])}%20-%20https://mzansiwins.co.za/news/{article['slug']}" target="_blank" rel="noopener noreferrer" class="share-btn share-whatsapp" aria-label="Share on WhatsApp">
-              <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
-              WhatsApp
+          <div class="share-bar" style="display:flex;align-items:center;gap:8px;margin-top:20px;padding:14px 0;border-top:1px solid var(--sep)">
+            <span style="font-size:13px;font-weight:600;color:var(--text-muted)">Share</span>
+            <a href="javascript:void(0)" onclick="navigator.clipboard.writeText(window.location.href);this.textContent='Copied!'" class="share-btn" aria-label="Copy link" style="display:inline-flex;align-items:center;gap:4px;font-size:12px;padding:6px 10px;border-radius:6px;border:1px solid var(--border);color:var(--text-secondary);text-decoration:none">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M10 13a5 5 0 007.54.54l3-3a5 5 0 00-7.07-7.07l-1.72 1.71"/><path d="M14 11a5 5 0 00-7.54-.54l-3 3a5 5 0 007.07 7.07l1.71-1.71"/></svg>Link
             </a>
-            <a href="https://twitter.com/intent/tweet?text={e(article['title'])}&url=https://mzansiwins.co.za/news/{article['slug']}" target="_blank" rel="noopener noreferrer" class="share-btn share-x" aria-label="Share on X">
-              <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
-              Share
+            <a href="https://twitter.com/intent/tweet?text={e(article['title'])}&url=https://mzansiwins.co.za/news/{article['slug']}" target="_blank" rel="noopener noreferrer" class="share-btn" style="display:inline-flex;align-items:center;gap:4px;font-size:12px;padding:6px 10px;border-radius:6px;border:1px solid var(--border);color:var(--text-secondary);text-decoration:none">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>X
+            </a>
+            <a href="https://www.facebook.com/sharer/sharer.php?u=https://mzansiwins.co.za/news/{article['slug']}" target="_blank" rel="noopener noreferrer" class="share-btn" style="display:inline-flex;align-items:center;gap:4px;font-size:12px;padding:6px 10px;border-radius:6px;border:1px solid var(--border);color:var(--text-secondary);text-decoration:none">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg>Facebook
+            </a>
+            <a href="https://www.linkedin.com/sharing/share-offsite/?url=https://mzansiwins.co.za/news/{article['slug']}" target="_blank" rel="noopener noreferrer" class="share-btn" style="display:inline-flex;align-items:center;gap:4px;font-size:12px;padding:6px 10px;border-radius:6px;border:1px solid var(--border);color:var(--text-secondary);text-decoration:none">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>LinkedIn
             </a>
           </div>
+
+          <!-- Author bio -->
+          <div style="display:flex;align-items:center;gap:14px;padding:16px;background:var(--surface-2);border-radius:10px;margin-top:20px">
+            {author_img(article.get('author',''), size=48, depth=1)}
+            <div>
+              <a href="../authors/{AUTHOR_IDS.get(article.get('author',''), 'thabo-mokoena')}.html" style="font-size:14px;font-weight:700;color:var(--text-primary);text-decoration:none">{e(article.get('author','MzansiWins'))}</a>
+              <p style="font-size:12px;color:var(--text-muted);margin:2px 0 0">MzansiWins Editorial Team</p>
+            </div>
+          </div>
+
           <p style="font-size:13px;line-height:1.6;color:var(--text-muted);border-top:1px solid var(--sep);padding-top:14px;margin-top:24px">Commercial note: MzansiWins may earn a commission if readers open an account through bookmaker links.</p>
           <div style="margin-top:48px">
             <h2 style="font-size:18px;font-weight:700;margin-bottom:20px">Related Articles</h2>
             <div class="grid-3">{related_html}</div>
           </div>
         </div>
-        {sidebar}
+        <div>{_article_toc}{sidebar}</div>
       </div>
     </div>'''
 
@@ -2888,12 +2947,22 @@ def category_hero(title, subtitle, breadcrumb_items, depth, badges=None, deco_ic
         items = ''.join(f'<span class="category-hero-badge">{b}</span>' for b in badges)
         badge_html = f'<div class="category-hero-badges">{items}</div>'
     deco = f'<div class="category-hero-deco" aria-hidden="true">{deco_icon}</div>' if deco_icon else ''
+    # Author for category pages
+    _cat_author = AUTHOR_NAMES[hash(title) % len(AUTHOR_NAMES)] if 'AUTHOR_NAMES' in dir() else 'Thabo Mokoena'
+    _cat_aid = AUTHOR_IDS.get(_cat_author, 'thabo-mokoena') if 'AUTHOR_IDS' in dir() else 'thabo-mokoena'
+    _cat_photo = f'assets/author-{_cat_aid}.jpg'
+    _author_line = f'''<div style="display:flex;align-items:center;gap:8px;margin-top:12px">
+      <img src="{_cat_photo}" alt="{_cat_author}" style="width:28px;height:28px;border-radius:50%;object-fit:cover;border:2px solid rgba(255,255,255,0.3)" loading="lazy">
+      <span style="font-size:12px;color:rgba(255,255,255,0.8)">Updated by <a href="authors/{_cat_aid}.html" style="color:#fff;font-weight:600;text-decoration:none">{_cat_author}</a> &middot; {CURRENT_MONTH_YEAR}</span>
+    </div>'''
+
     return f'''<section class="category-hero-banner">
       <div class="container">
         {bc}
         <h1>{title}</h1>
         <p class="page-subtitle">{subtitle}</p>
         {badge_html}
+        {_author_line}
       </div>
     </section>'''
 
@@ -3178,8 +3247,26 @@ def build_listing_page(page_type):
 
       {subcat_html}
 
-      {seo_mid}
-      {seo_below}
+      <!-- 2/3 + 1/3 layout with sticky TOC -->
+      <div style="display:grid;grid-template-columns:1fr 300px;gap:32px;margin-top:32px" class="content-toc-grid">
+        <div>
+          {seo_mid}
+          {seo_below}
+        </div>
+        <div class="sidebar-toc-wrap">
+          <div class="sidebar-toc">
+            <p class="sidebar-toc-title">On This Page</p>
+            <nav class="sidebar-toc-nav">
+              <a class="sidebar-toc-link" href="#section-rankings"><svg fill="none" height="12" viewBox="0 0 14 14" width="12"><path d="M3 7h8M8 4l3 3-3 3" stroke="#1641B4" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"></path></svg>Rankings Table</a>
+              <a class="sidebar-toc-link" href="#section-how-we-rate"><svg fill="none" height="12" viewBox="0 0 14 14" width="12"><path d="M3 7h8M8 4l3 3-3 3" stroke="#1641B4" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"></path></svg>How We Rate</a>
+              <a class="sidebar-toc-link" href="#section-bonuses"><svg fill="none" height="12" viewBox="0 0 14 14" width="12"><path d="M3 7h8M8 4l3 3-3 3" stroke="#1641B4" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"></path></svg>Welcome Bonuses</a>
+              <a class="sidebar-toc-link" href="#section-payments"><svg fill="none" height="12" viewBox="0 0 14 14" width="12"><path d="M3 7h8M8 4l3 3-3 3" stroke="#1641B4" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"></path></svg>Payment Methods</a>
+              <a class="sidebar-toc-link" href="#section-legal"><svg fill="none" height="12" viewBox="0 0 14 14" width="12"><path d="M3 7h8M8 4l3 3-3 3" stroke="#1641B4" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"></path></svg>Legality &amp; Safety</a>
+              <a class="sidebar-toc-link" href="#section-faq"><svg fill="none" height="12" viewBox="0 0 14 14" width="12"><path d="M3 7h8M8 4l3 3-3 3" stroke="#1641B4" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"></path></svg>FAQ</a>
+            </nav>
+          </div>
+        </div>
+      </div>
     </div>
     <script>var brandBonusData = {brand_data_json};</script>'''
 
@@ -3325,18 +3412,13 @@ def build_promo_codes_page():
     <div style="display:flex;align-items:center;gap:10px;flex:1;min-width:0">
       <button class="star-btn" data-brand="{bid}" onclick="event.stopPropagation();toggleStar('{bid}')" aria-label="Add to favourites">{ICON_STAR}</button>
       {logo_img}
-      <div class="promo-card-brand">
-        <div class="promo-card-brand-row">
-          <h2 class="promo-card-brand-name">{name}</h2>
-          {badge}{ftag}
-        </div>
-        <div style="display:flex;gap:6px;margin-top:2px"><span style="font-size:10px;color:var(--bonus);background:rgba(22,163,74,0.08);padding:1px 6px;border-radius:3px">Verified {CURRENT_MONTH_YEAR}</span>{'<span style="font-size:10px;color:var(--accent);background:var(--accent-light);padding:1px 6px;border-radius:3px">Code: ' + e(code) + '</span>' if code != 'NEWBONUS' and code else '<span style="font-size:10px;color:var(--text-muted);background:var(--surface-2);padding:1px 6px;border-radius:3px">Code: NEWBONUS</span>'}</div>
-      </div>
+      <h2 class="promo-card-brand-name" style="flex:1">{name}</h2>
     </div>
-    <div class="rating-circle">
+    <div class="rating-circle rating-dial-animate">
       <span class="rating-circle-score">{rating_5_str}</span><span style="font-size:11px;color:var(--text-muted);font-weight:600">/5.0</span>
     </div>
   </div>
+  <div style="display:flex;gap:6px;margin-bottom:10px;flex-wrap:wrap">{badge}<span style="font-size:10px;color:var(--bonus);background:rgba(22,163,74,0.08);padding:1px 6px;border-radius:3px">Verified {CURRENT_MONTH_YEAR}</span>{ftag}</div>
   <div class="promo-card-offer">{bonus}</div>
   <div class="promo-card-code-box">
     <span class="promo-card-code-text">{e(code)}</span>

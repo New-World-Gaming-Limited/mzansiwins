@@ -272,14 +272,13 @@
         }
         var items = '';
         starred.forEach(function(id) {
-          // Try to find brand name from page data
           var el = document.querySelector('[data-brand-id="' + id + '"]');
           var name = el ? (el.getAttribute('data-name') || id) : id;
-          // Capitalise brand name nicely
           name = name.replace(/(^|\s)\w/g, function(m) { return m.toUpperCase(); });
-          items += '<a href="' + prefix + 'promo-code/' + id + '.html" class="starred-dropdown-item">' +
-            '<span style="font-size:14px;font-weight:600">' + name + '</span>' +
-            '</a>';
+          items += '<div class="starred-dropdown-item">' +
+            '<a href="' + prefix + 'betting-site-review/' + id + '.html" style="flex:1;font-size:13px;font-weight:600;color:var(--text-primary);text-decoration:none">' + name + '</a>' +
+            '<button class="unfav-btn" data-unfav="' + id + '" onclick="event.stopPropagation();toggleStar(\'' + id + '\')">&times;</button>' +
+            '</div>';
         });
         dropdown.innerHTML = items;
       }
