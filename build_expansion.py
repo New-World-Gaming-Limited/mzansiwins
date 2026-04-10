@@ -740,9 +740,215 @@ def run_expansion(DATA, BRANDS, BRANDS_ORDERED, page_fn, breadcrumbs_fn, logo_pa
         app_cards += brand_card_fullwidth_html(b, 1, rank=i, sport_detail='apps')
     bc_items = [{"label": "Home", "href": "index.html"}, {"label": "Betting Sites", "href": "betting-sites.html"}, {"label": "Best Betting Apps"}]
     apps_hero = category_hero('Best Betting Apps in South Africa 2026', f'Not every SA bookmaker has a proper mobile app. We have tested them all and ranked the top {len(app_brands)} betting apps available on iOS and Android in South Africa.', bc_items, 1, deco_icon='&#x1F4F1;')
+    # Build device compatibility matrix
+    matrix_rows = ''
+    for b in app_brands:
+        bid = b['id']
+        name = b['name']
+        app_info = str(b.get('mobileApp', ''))
+        has_ios = 'ios' in app_info.lower() or 'iphone' in app_info.lower()
+        has_android = 'android' in app_info.lower() or 'apk' in app_info.lower()
+        has_huawei = 'huawei' in app_info.lower()
+        has_pwa = 'pwa' in app_info.lower() or 'browser' in app_info.lower()
+        live = 'Yes' if b.get('liveBetting','').lower().startswith('yes') else 'No'
+        cashout = 'Yes' if b.get('cashOut','').lower().startswith('yes') else 'No'
+        r = b.get('overallRating', 0)
+        _check = '<span style="color:var(--bonus)">&#10003;</span>'
+        _cross = '<span style="color:var(--text-muted)">&mdash;</span>'
+        logo = logo_path_fn(b, 1)
+        logo_html = f'<img src="{logo}" alt="{name}" style="width:24px;height:24px;border-radius:4px;object-fit:contain;background:{brand_bg_fn(b)};padding:2px">' if logo else ''
+        matrix_rows += f'''<tr style="border-bottom:1px solid var(--sep)">
+          <td style="white-space:nowrap;padding:12px 16px 12px 0"><div style="display:flex;align-items:center;gap:8px">{logo_html} <a href="../betting-site-review/{bid}.html" style="color:var(--text-primary);font-weight:600;text-decoration:none;font-size:13px">{name}</a></div></td>
+          <td style="text-align:center;padding:12px 14px">{_check if has_ios else _cross}</td>
+          <td style="text-align:center;padding:12px 14px">{_check if has_android else _cross}</td>
+          <td style="text-align:center;padding:12px 14px">{_check if has_huawei else _cross}</td>
+          <td style="text-align:center;padding:12px 14px">{_check if live else _cross}</td>
+          <td style="text-align:center;padding:12px 14px">{_check if cashout else _cross}</td>
+          <td style="text-align:center;padding:12px 14px;font-weight:700;color:var(--accent)">{r:.1f}</td>
+        </tr>'''
+
+    device_matrix = f'''
+      <div id="device-matrix" style="background:var(--surface);border:var(--card-border);border-radius:12px;padding:28px;margin-bottom:28px">
+        <h2 style="font-size:18px;font-weight:700;margin-bottom:4px">Device Compatibility Matrix</h2>
+        <p style="font-size:13px;color:var(--text-muted);margin-bottom:16px">Which SA betting apps work on your device? Tested April 2026.</p>
+        <div style="overflow-x:auto">
+          <table style="width:100%;font-size:13px;border-collapse:collapse">
+            <thead><tr style="border-bottom:2px solid var(--border)">
+              <th style="text-align:left;padding:12px 16px 12px 0">Bookmaker</th>
+              <th style="text-align:center;padding:12px 14px">iOS</th>
+              <th style="text-align:center;padding:12px 14px">Android</th>
+              <th style="text-align:center;padding:12px 14px">Huawei</th>
+              <th style="text-align:center;padding:12px 14px">Live Bet</th>
+              <th style="text-align:center;padding:12px 14px">Cash Out</th>
+              <th style="text-align:center;padding:12px 14px">Rating</th>
+            </tr></thead>
+            <tbody>{matrix_rows}</tbody>
+          </table>
+        </div>
+      </div>'''
+
+    # Download steps
+    download_steps = '''
+      <div id="download-steps" style="background:var(--surface);border:var(--card-border);border-radius:12px;padding:28px;margin-bottom:28px">
+        <h2 style="font-size:18px;font-weight:700;margin-bottom:16px">How to Download a Betting App in South Africa</h2>
+        <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:20px">
+          <div style="padding:16px;background:var(--surface-2);border-radius:10px">
+            <div style="font-size:24px;font-weight:800;color:var(--accent);margin-bottom:4px">1</div>
+            <h3 style="font-size:15px;font-weight:700;margin-bottom:4px">iPhone / iPad</h3>
+            <p style="font-size:13px;color:var(--text-secondary);line-height:1.6">Open the App Store, search for the bookmaker name. Download and install. You need an SA Apple ID or to be in South Africa. Open the app and register or log in.</p>
+          </div>
+          <div style="padding:16px;background:var(--surface-2);border-radius:10px">
+            <div style="font-size:24px;font-weight:800;color:var(--accent);margin-bottom:4px">2</div>
+            <h3 style="font-size:15px;font-weight:700;margin-bottom:4px">Android (APK)</h3>
+            <p style="font-size:13px;color:var(--text-secondary);line-height:1.6">Most SA betting apps aren\'t on Google Play. Visit the bookmaker\'s website on your phone. Tap "Download App" or "APK". Allow installation from unknown sources when prompted. Install and open.</p>
+          </div>
+          <div style="padding:16px;background:var(--surface-2);border-radius:10px">
+            <div style="font-size:24px;font-weight:800;color:var(--accent);margin-bottom:4px">3</div>
+            <h3 style="font-size:15px;font-weight:700;margin-bottom:4px">Huawei</h3>
+            <p style="font-size:13px;color:var(--text-secondary);line-height:1.6">Check Huawei AppGallery first. If the app isn\'t listed, download the APK from the bookmaker\'s site using the same method as Android. Works on all Huawei devices with HMS.</p>
+          </div>
+        </div>
+      </div>'''
+
+    # Build app comparison tool data
+    app_compare_data = []
+    for b in app_brands:
+        ai = str(b.get('mobileApp', '')).lower()
+        app_compare_data.append({
+            'id': b['id'], 'name': b['name'], 'rating': b['overallRating'],
+            'bonus': b.get('welcomeBonusAmount', ''),
+            'ios': 1 if ('ios' in ai or 'iphone' in ai or 'app store' in ai) else 0,
+            'android': 1 if ('android' in ai or 'apk' in ai) else 0,
+            'huawei': 1 if 'huawei' in ai else 0,
+            'live': 1 if b.get('liveBetting','').lower().startswith('yes') else 0,
+            'cashout': 1 if b.get('cashOut','').lower().startswith('yes') else 0,
+            'sports': len(b.get('sportsCovered', [])),
+            'colour': b.get('baseColour', '#333'),
+        })
+    import json as _json
+    _app_json = _json.dumps(app_compare_data)
+
+    compare_tool = f'''
+      <div id="app-compare" style="background:var(--surface);border:var(--card-border);border-radius:12px;padding:28px;margin-bottom:28px">
+        <h2 style="font-size:18px;font-weight:700;margin-bottom:4px">Compare Betting Apps Side by Side</h2>
+        <p style="font-size:13px;color:var(--text-muted);margin-bottom:16px">Filter by device, sort by rating or sports depth. Select two apps to compare.</p>
+        <div style="display:flex;flex-wrap:wrap;gap:8px;margin-bottom:16px">
+          <button class="ac-filter active" data-filter="all" onclick="acFilter('all',this)">All Apps</button>
+          <button class="ac-filter" data-filter="ios" onclick="acFilter('ios',this)">iOS</button>
+          <button class="ac-filter" data-filter="android" onclick="acFilter('android',this)">Android</button>
+          <button class="ac-filter" data-filter="huawei" onclick="acFilter('huawei',this)">Huawei</button>
+          <span style="margin-left:auto;display:flex;align-items:center;gap:6px;font-size:12px;color:var(--text-muted)">Sort:
+            <select id="acSort" onchange="acSort()" style="font-size:12px;padding:4px 8px;border:1px solid var(--border);border-radius:6px;background:var(--surface);color:var(--text-primary)">
+              <option value="rating">Rating</option>
+              <option value="sports">Sports Count</option>
+              <option value="name">Name</option>
+            </select>
+          </span>
+        </div>
+        <div id="acGrid" style="display:grid;grid-template-columns:repeat(auto-fill,minmax(160px,1fr));gap:10px"></div>
+        <div id="acCompare" style="display:none;margin-top:20px;padding:20px;background:var(--surface-2);border-radius:10px">
+          <h3 style="font-size:15px;font-weight:700;margin-bottom:12px">Head-to-Head Comparison</h3>
+          <div id="acCompareBody" style="display:grid;grid-template-columns:1fr 1fr;gap:16px"></div>
+        </div>
+      </div>
+      <style>
+        .ac-filter {{ padding:6px 14px; border:1px solid var(--border); border-radius:20px; background:var(--surface); font-size:12px; font-weight:600; cursor:pointer; color:var(--text-secondary); }}
+        .ac-filter.active {{ background:var(--accent); color:#fff; border-color:var(--accent); }}
+        .ac-app-card {{ padding:12px; border:1px solid var(--border); border-radius:10px; cursor:pointer; text-align:center; transition:all 0.15s; position:relative; }}
+        .ac-app-card:hover {{ border-color:var(--accent); box-shadow:0 2px 8px rgba(0,0,0,0.08); }}
+        .ac-app-card.selected {{ border-color:var(--accent); border-width:2px; background:var(--accent-light); }}
+        .ac-app-card.hidden {{ display:none; }}
+        .ac-check {{ position:absolute;top:6px;right:6px;width:18px;height:18px;border-radius:50%;background:var(--accent);color:#fff;font-size:10px;display:none;align-items:center;justify-content:center; }}
+        .ac-app-card.selected .ac-check {{ display:flex; }}
+      </style>
+      <script>
+      (function(){{var apps={_app_json};
+      var selected=[];
+      var currentFilter='all';
+      function render(){{var sort=document.getElementById('acSort').value;
+      var sorted=apps.slice().sort(function(a,b){{if(sort==='rating')return b.rating-a.rating;if(sort==='sports')return b.sports-a.sports;return a.name.localeCompare(b.name);}});
+      var grid=document.getElementById('acGrid');grid.innerHTML='';
+      sorted.forEach(function(app){{var show=currentFilter==='all'||(currentFilter==='ios'&&app.ios)||(currentFilter==='android'&&app.android)||(currentFilter==='huawei'&&app.huawei);
+      var sel=selected.indexOf(app.id)>-1;
+      var card=document.createElement('div');card.className='ac-app-card'+(sel?' selected':'')+(show?'':' hidden');
+      card.innerHTML='<div class="ac-check">&#10003;</div><div style="width:36px;height:36px;border-radius:8px;background:'+app.colour+';margin:0 auto 8px;display:flex;align-items:center;justify-content:center;color:#fff;font-size:10px;font-weight:700">'+app.name.substring(0,2).toUpperCase()+'</div><div style="font-size:13px;font-weight:700">'+app.name+'</div><div style="font-size:18px;font-weight:800;color:var(--accent);margin:4px 0">'+app.rating.toFixed(1)+'</div><div style="font-size:11px;color:var(--text-muted)">'+app.sports+' sports</div><div style="display:flex;gap:4px;justify-content:center;margin-top:6px"><span style="font-size:10px;padding:1px 5px;border-radius:3px;background:'+(app.ios?'rgba(22,163,74,0.1);color:var(--bonus)':'var(--surface-2);color:var(--text-muted)')+'">'+(app.ios?'iOS':'no iOS')+'</span><span style="font-size:10px;padding:1px 5px;border-radius:3px;background:'+(app.android?'rgba(22,163,74,0.1);color:var(--bonus)':'var(--surface-2);color:var(--text-muted)')+'">'+(app.android?'Android':'no Android')+'</span></div>';
+      card.onclick=function(){{toggleSelect(app.id);}};grid.appendChild(card);}});updateCompare();}}
+      function toggleSelect(id){{var idx=selected.indexOf(id);if(idx>-1)selected.splice(idx,1);else if(selected.length<2)selected.push(id);else{{selected.shift();selected.push(id);}};render();}}
+      function updateCompare(){{var panel=document.getElementById('acCompare');var body=document.getElementById('acCompareBody');
+      if(selected.length<2){{panel.style.display='none';return;}}
+      panel.style.display='block';
+      var a=apps.find(function(x){{return x.id===selected[0];}});var b=apps.find(function(x){{return x.id===selected[1];}});
+      var yes='<span style="color:var(--bonus);font-weight:700">Yes</span>';var no='<span style="color:var(--text-muted)">No</span>';
+      var rows=[['Rating',a.rating.toFixed(1),b.rating.toFixed(1)],['Sports',a.sports,b.sports],['iOS',a.ios?yes:no,b.ios?yes:no],['Android',a.android?yes:no,b.android?yes:no],['Huawei',a.huawei?yes:no,b.huawei?yes:no],['Live Betting',a.live?yes:no,b.live?yes:no],['Cash Out',a.cashout?yes:no,b.cashout?yes:no],['Bonus',a.bonus,b.bonus]];
+      body.innerHTML='<div><div style="font-size:15px;font-weight:700;margin-bottom:12px;text-align:center">'+a.name+'</div></div><div><div style="font-size:15px;font-weight:700;margin-bottom:12px;text-align:center">'+b.name+'</div></div>'+rows.map(function(r){{return '<div style="display:flex;justify-content:space-between;padding:6px 0;border-bottom:1px solid var(--sep);font-size:13px"><span style="color:var(--text-muted)">'+r[0]+'</span><strong>'+r[1]+'</strong></div><div style="display:flex;justify-content:space-between;padding:6px 0;border-bottom:1px solid var(--sep);font-size:13px"><span style="color:var(--text-muted)">'+r[0]+'</span><strong>'+r[2]+'</strong></div>';}}).join('')+'<div style="grid-column:span 2;text-align:center;margin-top:12px"><a href="../compare/" style="font-size:13px;color:var(--accent);font-weight:600">See full head-to-head comparisons &rarr;</a></div>';}}
+      window.acFilter=function(f,btn){{currentFilter=f;document.querySelectorAll('.ac-filter').forEach(function(b){{b.classList.remove('active');}});btn.classList.add('active');render();}}
+      window.acSort=function(){{render();}}
+      render();}})();
+      </script>'''
+
+    # Build leaderboard table - ALL brands with apps, scored by composite
+    all_app_brands = sorted([b for b in DATA['brands'] if b.get('mobileApp','').lower().startswith('yes')],
+                            key=lambda b: b['overallRating'], reverse=True)
+    lb_rows = ''
+    for i, b in enumerate(all_app_brands, 1):
+        ai = str(b.get('mobileApp', '')).lower()
+        _ios = 'ios' in ai or 'iphone' in ai or 'app store' in ai
+        _and = 'android' in ai or 'apk' in ai
+        _hua = 'huawei' in ai
+        _live = b.get('liveBetting','').lower().startswith('yes')
+        _co = b.get('cashOut','').lower().startswith('yes')
+        # Composite: rating (40%) + device breadth (20%) + live (15%) + cashout (10%) + sports (15%)
+        device_score = (1 if _ios else 0) + (1 if _and else 0) + (1 if _hua else 0)
+        sports_count = len(b.get('sportsCovered', []))
+        composite = (b['overallRating'] / 5 * 40) + (device_score / 3 * 20) + (15 if _live else 0) + (10 if _co else 0) + (min(sports_count, 25) / 25 * 15)
+        _ck = '<span style="color:var(--bonus)">&#10003;</span>'
+        _no = '<span style="color:var(--text-muted)">&mdash;</span>'
+        _logo = logo_path_fn(b, 1)
+        _bg = brand_bg_fn(b)
+        _lh = f'<img src="{_logo}" alt="" style="width:22px;height:22px;border-radius:4px;object-fit:contain;background:{_bg};padding:2px">' if _logo else ''
+        lb_rows += f'''<tr style="border-bottom:1px solid var(--sep)">
+          <td style="padding:10px 8px;font-weight:700;color:var(--text-muted);text-align:center">{i}</td>
+          <td style="padding:10px 8px;white-space:nowrap"><div style="display:flex;align-items:center;gap:6px">{_lh}<a href="../betting-site-review/{b['id']}.html" style="color:var(--text-primary);font-weight:600;text-decoration:none;font-size:13px">{e(b['name'])}</a></div></td>
+          <td style="padding:10px 8px;text-align:center;font-weight:700;color:var(--accent)">{b['overallRating']:.1f}</td>
+          <td style="padding:10px 8px;text-align:center">{_ck if _ios else _no}</td>
+          <td style="padding:10px 8px;text-align:center">{_ck if _and else _no}</td>
+          <td style="padding:10px 8px;text-align:center">{_ck if _hua else _no}</td>
+          <td style="padding:10px 8px;text-align:center">{_ck if _live else _no}</td>
+          <td style="padding:10px 8px;text-align:center">{_ck if _co else _no}</td>
+          <td style="padding:10px 8px;text-align:center;font-size:12px;color:var(--text-secondary)">{sports_count}</td>
+          <td style="padding:10px 8px;text-align:center"><strong style="color:var(--bonus)">{composite:.0f}</strong></td>
+        </tr>'''
+
+    leaderboard = f'''
+      <div id="leaderboard" style="background:var(--surface);border:var(--card-border);border-radius:12px;padding:28px;margin-bottom:28px">
+        <h2 style="font-size:18px;font-weight:700;margin-bottom:4px">Full App Leaderboard</h2>
+        <p style="font-size:13px;color:var(--text-muted);margin-bottom:16px">All {len(all_app_brands)} SA betting apps ranked by composite score. Score weights: rating (40%), device support (20%), live betting (15%), sports depth (15%), cash out (10%).</p>
+        <div style="overflow-x:auto">
+          <table style="width:100%;font-size:13px;border-collapse:collapse">
+            <thead><tr style="border-bottom:2px solid var(--border)">
+              <th style="padding:10px 8px;text-align:center">#</th>
+              <th style="padding:10px 8px;text-align:left">Bookmaker</th>
+              <th style="padding:10px 8px;text-align:center">Rating</th>
+              <th style="padding:10px 8px;text-align:center">iOS</th>
+              <th style="padding:10px 8px;text-align:center">Android</th>
+              <th style="padding:10px 8px;text-align:center">Huawei</th>
+              <th style="padding:10px 8px;text-align:center">Live</th>
+              <th style="padding:10px 8px;text-align:center">Cash Out</th>
+              <th style="padding:10px 8px;text-align:center">Sports</th>
+              <th style="padding:10px 8px;text-align:center">Score</th>
+            </tr></thead>
+            <tbody>{lb_rows}</tbody>
+          </table>
+        </div>
+      </div>'''
+
     body = f'''
     {apps_hero}
     <div class="container" style="padding-top:32px;padding-bottom:80px;max-width:900px">
+      {device_matrix}
+      {compare_tool}
+      {leaderboard}
+      {download_steps}
       {app_cards}
           <div style="background:var(--surface);border:var(--card-border);border-radius:12px;padding:28px;margin-top:32px">
             <h2 style="font-size:18px;font-weight:700;margin-bottom:12px">What Makes a Great Betting App?</h2>

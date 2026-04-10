@@ -685,14 +685,18 @@ def seo_meta(page_type, brand=None, method=None, article=None):
         rating = fmtRating(brand['overallRating'])
         bonus = brand.get('welcomeBonusAmount', '')
         code = get_promo(brand)
-        return (f'{name} Review 2026 - Rating {rating}/5.0 | MzansiWins',
-                f'In-depth {name} review for 2026. Rated {rating}/5.0. Bonus: {bonus}. Code: {code}. Odds, payments, live betting, pros and cons.')
+        # SA-targeted, keyword-rich description
+        _sports = brand.get('sportsCovered', [])
+        _top_sport = _sports[0] if _sports else 'sports'
+        _app = 'app available' if 'yes' in str(brand.get('mobileApp','')).lower() else 'mobile site'
+        return (trim_title(f'{name} Review South Africa 2026 - {rating}/5.0 | MzansiWins'),
+                f'{name} South Africa review 2026. Rated {rating}/5.0. Get {bonus} with code {code}. Tested: odds, {_top_sport.lower()} markets, deposits, withdrawals, {_app}. Licensed SA bookmaker.')
     elif page_type == 'promo' and brand:
         name = brand['name']
         bonus = brand.get('welcomeBonusAmount', '')
         code = get_promo(brand)
-        return (f'{name} Promo Code 2026: {code} | MzansiWins',
-                f'Verified {name} code {code} for {CURRENT_MONTH_YEAR}. Claim {bonus}. Sign-up guide and wagering requirements.')
+        return (trim_title(f'{name} Promo Code South Africa 2026: {code} | MzansiWins'),
+                f'{name} promo code South Africa: {code}. Get {bonus}. Verified {CURRENT_MONTH_YEAR}. Step-by-step sign-up, T&Cs, and wagering requirements for SA players.')
     elif page_type == 'payment' and method:
         return (f'{method["name"]} Betting Sites SA 2026 | MzansiWins',
                 f'SA betting sites accepting {method["name"]}. Compare fees, withdrawal times. {brand_count_for_method(method["name"])} bookmakers reviewed.')
@@ -1465,6 +1469,17 @@ def build_homepage():
         </a>'''
 
     # Payment methods
+    # More Reviews grid - links from homepage to reviews with few inbound links
+    _review_brands = sorted([b for b in DATA['brands']], key=lambda b: -b['overallRating'])
+    # Pick brands that aren't in the top 5 (those already get hero links)
+    _extra_brands = _review_brands[5:21]  # Brands ranked 6-21
+    _more_reviews_grid = ''
+    for b in _extra_brands:
+        _logo = logo_path(b, 0)
+        _bg = brand_bg(b)
+        _li = f'<img src="{_logo}" alt="" style="width:28px;height:28px;border-radius:6px;object-fit:contain;background:{_bg};padding:2px">' if _logo else ''
+        _more_reviews_grid += f'<a href="betting-site-review/{b["id"]}.html" style="display:flex;align-items:center;gap:8px;padding:10px 12px;background:var(--surface);border:1px solid var(--border);border-radius:8px;text-decoration:none;font-size:13px;font-weight:600;color:var(--text-primary)">{_li}{e(b["name"])}<span style="margin-left:auto;font-size:12px;color:var(--accent)">{b["overallRating"]:.1f}</span></a>'
+
     pay_cards = ''
     for m in PAYMENTS[:6]:
         icon = payment_icon_img(m['name'], size=28, depth=0)
@@ -1706,6 +1721,16 @@ def build_homepage():
     </section>
 
     <section class="section">
+      <div class="container">
+        <div class="section-header">
+          <div><h2 class="section-title">More SA Bookmaker Reviews</h2><p class="section-subtitle">In-depth reviews of every licensed operator in South Africa</p></div>
+          <a href="betting-sites.html" class="section-link">View all {len(DATA['brands'])}</a>
+        </div>
+        <div style="display:grid;grid-template-columns:repeat(auto-fill,minmax(200px,1fr));gap:12px">{_more_reviews_grid}</div>
+      </div>
+    </section>
+
+    <section class="section section-alt">
       <div class="container" style="max-width:800px">
         <div style="margin-bottom:40px">
           <h2 class="section-title">How We Rate Bookmakers</h2>
