@@ -241,9 +241,10 @@
           <div class="calc-card">
             <form id="calc-form" onsubmit="return false;">
               
-    <div class="calc-row"><label>Value 1</label><input type="number" id="val1" value="100" min="0" step="0.01"></div>
-    <div class="calc-row"><label>Value 2</label><input type="number" id="val2" value="2.00" min="0" step="0.01"></div>
-    <button class="btn-primary calc-btn" onclick="calculate()">Calculate</button>
+            <div class="calc-field"><label class="calc-label">Back Odds</label><input type="number" id="backOdds" class="calc-input" value="3.00" min="1.01" step="0.01"></div>
+            <div class="calc-field"><label class="calc-label">Lay Odds</label><input type="number" id="layOdds" class="calc-input" value="3.10" min="1.01" step="0.01"></div>
+            <div class="calc-field"><label class="calc-label">Stake (R)</label><input type="number" id="stake" class="calc-input" value="100" min="1" step="1"></div>
+            <button class="btn-primary calc-btn" onclick="calculate()">Calculate Lay Bet</button>
               <div class="calc-actions">
                 <button type="button" id="calc-example" class="btn-outline btn-sm">Load example</button>
                 <button type="button" id="calc-reset" class="btn-outline btn-sm" style="color:var(--text-muted)">Reset</button>
@@ -253,10 +254,10 @@
             <div id="calc-results" class="calc-results" style="display:none">
               <h3 class="calc-results-title">Results</h3>
               <div id="results" class="calc-results" style="display:none">
-        <div class="calc-result-row"><span class="calc-result-label">Total Return</span><span class="calc-result-val" id="totalReturn">-</span></div>
-        <div class="calc-result-row"><span class="calc-result-label">Profit</span><span class="calc-result-val" id="profit">-</span></div>
-        <div class="calc-result-row"><span class="calc-result-label">ROI</span><span class="calc-result-val" id="roi">-</span></div>
-    </div>
+            <div class="calc-result-row"><span class="calc-result-label">Liability</span><span class="calc-result-val" id="totalReturn">-</span></div>
+            <div class="calc-result-row"><span class="calc-result-label">Profit if Selection Loses</span><span class="calc-result-val" id="profit">-</span></div>
+            <div class="calc-result-row"><span class="calc-result-label">Qualifying Loss</span><span class="calc-result-val" id="roi">-</span></div>
+        </div>
             </div>
           </div>
 
@@ -372,17 +373,33 @@
     </div>
     
     <script>
-    function calculate(){
-      var v1=parseFloat(document.getElementById('val1').value);
-      var v2=parseFloat(document.getElementById('val2').value);
-      if(isNaN(v1)||isNaN(v2))return;
-      var ret=v1*v2;var prof=ret-v1;
-      document.getElementById('totalReturn').textContent='R'+ret.toFixed(2);
-      document.getElementById('profit').textContent='R'+prof.toFixed(2);
-      document.getElementById('roi').textContent=((prof/v1)*100).toFixed(1)+'%';
-      document.getElementById('calc-results').style.display='block';
-      document.getElementById('results').style.display='block';
-    }</script></main>
+        function calculate(){
+          var back=parseFloat(document.getElementById('backOdds').value);
+          var lay=parseFloat(document.getElementById('layOdds').value);
+          var stake=parseFloat(document.getElementById('stake').value);
+          if(isNaN(back)||isNaN(lay)||isNaN(stake)||back<=1||lay<=1||stake<=0)return;
+          var liability=(lay-1)*stake;
+          var profitIfLoses=stake;
+          var qualLoss=stake-(stake*back/lay);
+          document.getElementById('totalReturn').textContent='R'+liability.toFixed(2);
+          document.getElementById('profit').textContent='R'+profitIfLoses.toFixed(2);
+          document.getElementById('roi').textContent='R'+Math.abs(qualLoss).toFixed(2);
+          document.getElementById('calc-results').style.display='block';
+          document.getElementById('results').style.display='block';
+        }
+        document.getElementById('calc-example').addEventListener('click',function(){
+          document.getElementById('backOdds').value='3.00';
+          document.getElementById('layOdds').value='3.10';
+          document.getElementById('stake').value='100';
+          calculate();
+        });
+        document.getElementById('calc-reset').addEventListener('click',function(){
+          document.getElementById('backOdds').value='3.00';
+          document.getElementById('layOdds').value='3.10';
+          document.getElementById('stake').value='100';
+          document.getElementById('calc-results').style.display='none';
+          document.getElementById('results').style.display='none';
+        });</script></main>
   <footer class="site-footer">
   <div class="container">
     <div class="footer-grid">

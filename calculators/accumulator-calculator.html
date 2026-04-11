@@ -241,13 +241,13 @@
           <div class="calc-card">
             <form id="calc-form" onsubmit="return false;">
               
-        <div id="legs">
-          <div class="calc-row"><label>Leg 1 Odds</label><input type="number" class="leg-odds" value="1.80" min="1.01" step="0.01"></div>
-          <div class="calc-row"><label>Leg 2 Odds</label><input type="number" class="leg-odds" value="2.10" min="1.01" step="0.01"></div>
-        </div>
-        <button class="btn-outline calc-btn" onclick="addLeg()" style="margin-bottom:12px">+ Add Leg</button>
-        <div class="calc-row"><label>Stake (R)</label><input type="number" id="stake" value="50" min="1" step="1"></div>
-        <button class="btn-primary calc-btn" onclick="calculate()">Calculate Accumulator</button>
+            <div id="legs">
+              <div class="calc-field"><label class="calc-label">Leg 1 Odds</label><input type="number" class="calc-input leg-odds" value="1.80" min="1.01" step="0.01"></div>
+              <div class="calc-field"><label class="calc-label">Leg 2 Odds</label><input type="number" class="calc-input leg-odds" value="2.10" min="1.01" step="0.01"></div>
+            </div>
+            <button class="btn-outline calc-btn" onclick="addLeg()" style="margin-bottom:12px">+ Add Leg</button>
+            <div class="calc-field"><label class="calc-label">Stake (R)</label><input type="number" id="stake" class="calc-input" value="50" min="1" step="1"></div>
+            <button class="btn-primary calc-btn" onclick="calculate()">Calculate Accumulator</button>
               <div class="calc-actions">
                 <button type="button" id="calc-example" class="btn-outline btn-sm">Load example</button>
                 <button type="button" id="calc-reset" class="btn-outline btn-sm" style="color:var(--text-muted)">Reset</button>
@@ -379,21 +379,39 @@
         function addLeg(){
           var legs=document.getElementById('legs');
           var n=legs.querySelectorAll('.leg-odds').length+1;
-          var div=document.createElement('div');div.className='calc-row';
-          div.innerHTML='<label>Leg '+n+' Odds</label><input type="number" class="leg-odds" value="1.50" min="1.01" step="0.01">';
+          var div=document.createElement('div');div.className='calc-field';
+          div.innerHTML='<label class="calc-label">Leg '+n+' Odds</label><input type="number" class="calc-input leg-odds" value="1.50" min="1.01" step="0.01">';
           legs.appendChild(div);
         }
         function calculate(){
           var odds=document.querySelectorAll('.leg-odds');
           var combined=1;odds.forEach(function(el){combined*=parseFloat(el.value)||1;});
           var s=parseFloat(document.getElementById('stake').value);
+          if(isNaN(s)||s<=0)return;
           var ret=s*combined;var prof=ret-s;var roi=(prof/s*100).toFixed(1);
           document.getElementById('totalReturn').textContent='R'+ret.toFixed(2);
           document.getElementById('profit').textContent='R'+prof.toFixed(2);
           document.getElementById('roi').textContent=roi+'% (Combined odds: '+combined.toFixed(2)+')';
           document.getElementById('calc-results').style.display='block';
           document.getElementById('results').style.display='block';
-        }</script></main>
+        }
+        document.getElementById('calc-example').addEventListener('click',function(){
+          document.getElementById('legs').innerHTML='';
+          var legs=[1.80,2.10,1.65,2.40];
+          legs.forEach(function(o,i){
+            var div=document.createElement('div');div.className='calc-field';
+            div.innerHTML='<label class="calc-label">Leg '+(i+1)+' Odds</label><input type="number" class="calc-input leg-odds" value="'+o+'" min="1.01" step="0.01">';
+            document.getElementById('legs').appendChild(div);
+          });
+          document.getElementById('stake').value='50';
+          calculate();
+        });
+        document.getElementById('calc-reset').addEventListener('click',function(){
+          document.getElementById('legs').innerHTML='<div class="calc-field"><label class="calc-label">Leg 1 Odds</label><input type="number" class="calc-input leg-odds" value="1.80" min="1.01" step="0.01"></div><div class="calc-field"><label class="calc-label">Leg 2 Odds</label><input type="number" class="calc-input leg-odds" value="2.10" min="1.01" step="0.01"></div>';
+          document.getElementById('stake').value='50';
+          document.getElementById('calc-results').style.display='none';
+          document.getElementById('results').style.display='none';
+        });</script></main>
   <footer class="site-footer">
   <div class="container">
     <div class="footer-grid">

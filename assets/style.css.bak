@@ -1344,16 +1344,17 @@ a.payment-pill:hover { background: var(--accent); color: #fff; border-color: var
   font-size: 14px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.5px;
   color: var(--text-muted); margin-bottom: 16px;
 }
-.result-row {
+.result-row, .calc-result-row {
   display: flex; justify-content: space-between; align-items: center;
   padding: 10px 0; border-bottom: 1px solid var(--sep);
   font-size: 14px;
 }
-.result-row:last-child { border-bottom: none; }
-.result-row span:first-child { color: var(--text-secondary); }
-.result-row span:last-child { font-weight: 700; color: var(--text-primary); font-variant-numeric: tabular-nums; }
+.result-row:last-child, .calc-result-row:last-child { border-bottom: none; }
+.result-row span:first-child, .calc-result-label { color: var(--text-secondary); }
+.result-row span:last-child, .calc-result-val { font-weight: 700; color: var(--text-primary); font-variant-numeric: tabular-nums; }
 .result-highlight { background: var(--accent-light); margin: 4px -12px; padding: 10px 12px !important; border-radius: 8px; border-bottom: none !important; }
 .result-highlight span:last-child { color: var(--accent); font-size: 16px; }
+.calc-label { display: block; font-size: 14px; font-weight: 600; margin-bottom: 6px; color: var(--text-primary); }
 
 /* Info section - boxed card */
 .calc-info-section {

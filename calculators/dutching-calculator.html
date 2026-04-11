@@ -241,9 +241,14 @@
           <div class="calc-card">
             <form id="calc-form" onsubmit="return false;">
               
-    <div class="calc-row"><label>Value 1</label><input type="number" id="val1" value="100" min="0" step="0.01"></div>
-    <div class="calc-row"><label>Value 2</label><input type="number" id="val2" value="2.00" min="0" step="0.01"></div>
-    <button class="btn-primary calc-btn" onclick="calculate()">Calculate</button>
+            <div id="selections">
+              <div class="calc-field"><label class="calc-label">Selection 1 Odds</label><input type="number" class="calc-input dutch-odds" value="4.00" min="1.01" step="0.01"></div>
+              <div class="calc-field"><label class="calc-label">Selection 2 Odds</label><input type="number" class="calc-input dutch-odds" value="5.00" min="1.01" step="0.01"></div>
+              <div class="calc-field"><label class="calc-label">Selection 3 Odds</label><input type="number" class="calc-input dutch-odds" value="8.00" min="1.01" step="0.01"></div>
+            </div>
+            <button class="btn-outline calc-btn" onclick="addSelection()" style="margin-bottom:12px">+ Add Selection</button>
+            <div class="calc-field"><label class="calc-label">Total Stake (R)</label><input type="number" id="totalStake" class="calc-input" value="200" min="1" step="1"></div>
+            <button class="btn-primary calc-btn" onclick="calculate()">Calculate Dutch Stakes</button>
               <div class="calc-actions">
                 <button type="button" id="calc-example" class="btn-outline btn-sm">Load example</button>
                 <button type="button" id="calc-reset" class="btn-outline btn-sm" style="color:var(--text-muted)">Reset</button>
@@ -253,10 +258,11 @@
             <div id="calc-results" class="calc-results" style="display:none">
               <h3 class="calc-results-title">Results</h3>
               <div id="results" class="calc-results" style="display:none">
-        <div class="calc-result-row"><span class="calc-result-label">Total Return</span><span class="calc-result-val" id="totalReturn">-</span></div>
-        <div class="calc-result-row"><span class="calc-result-label">Profit</span><span class="calc-result-val" id="profit">-</span></div>
-        <div class="calc-result-row"><span class="calc-result-label">ROI</span><span class="calc-result-val" id="roi">-</span></div>
-    </div>
+            <div id="dutchResults"></div>
+            <div class="calc-result-row"><span class="calc-result-label">Guaranteed Return</span><span class="calc-result-val" id="totalReturn">-</span></div>
+            <div class="calc-result-row"><span class="calc-result-label">Guaranteed Profit</span><span class="calc-result-val" id="profit">-</span></div>
+            <div class="calc-result-row"><span class="calc-result-label">ROI</span><span class="calc-result-val" id="roi">-</span></div>
+        </div>
             </div>
           </div>
 
@@ -264,7 +270,7 @@
             <h2>How it works</h2><p>Enter odds for multiple selections you want to back. The calculator tells you how much to stake on each to guarantee the same profit regardless of which one wins.</p>
             <div class="calc-example-box">
               <strong>Quick Example</strong>
-              <p><strong>Scenario:</strong> Kenilworth race with three fancied runners, R200 total budget.<br><strong>Horse A:</strong> 4.00 → Stake R90.91<br><strong>Horse B:</strong> 5.00 → Stake R72.73<br><strong>Horse C:</strong> 8.00 → Stake R36.36<br><strong>Total staked:</strong> R200<br><strong>Guaranteed return if any wins:</strong> R363.64 (<strong>R163.64 profit</strong>)</p>
+              <p><strong>Scenario:</strong> Kenilworth race with three fancied runners, R200 total budget.<br><strong>Horse A:</strong> 4.00 - Stake R90.91<br><strong>Horse B:</strong> 5.00 - Stake R72.73<br><strong>Horse C:</strong> 8.00 - Stake R36.36<br><strong>Total staked:</strong> R200<br><strong>Guaranteed return if any wins:</strong> R363.64 (<strong>R163.64 profit</strong>)</p>
             </div>
           </div>
 
@@ -372,17 +378,45 @@
     </div>
     
     <script>
-    function calculate(){
-      var v1=parseFloat(document.getElementById('val1').value);
-      var v2=parseFloat(document.getElementById('val2').value);
-      if(isNaN(v1)||isNaN(v2))return;
-      var ret=v1*v2;var prof=ret-v1;
-      document.getElementById('totalReturn').textContent='R'+ret.toFixed(2);
-      document.getElementById('profit').textContent='R'+prof.toFixed(2);
-      document.getElementById('roi').textContent=((prof/v1)*100).toFixed(1)+'%';
-      document.getElementById('calc-results').style.display='block';
-      document.getElementById('results').style.display='block';
-    }</script></main>
+        function addSelection(){
+          var sels=document.getElementById('selections');
+          var n=sels.querySelectorAll('.dutch-odds').length+1;
+          var div=document.createElement('div');div.className='calc-field';
+          div.innerHTML='<label class="calc-label">Selection '+n+' Odds</label><input type="number" class="calc-input dutch-odds" value="3.00" min="1.01" step="0.01">';
+          sels.appendChild(div);
+        }
+        function calculate(){
+          var inputs=document.querySelectorAll('.dutch-odds');
+          var totalStake=parseFloat(document.getElementById('totalStake').value);
+          if(isNaN(totalStake)||totalStake<=0)return;
+          var sumInv=0;
+          inputs.forEach(function(el){var o=parseFloat(el.value);if(!isNaN(o)&&o>1)sumInv+=1/o;});
+          if(sumInv===0)return;
+          var html='';
+          inputs.forEach(function(el,i){
+            var o=parseFloat(el.value);if(isNaN(o)||o<=1)return;
+            var stake=totalStake*(1/o)/sumInv;
+            html+='<div class="calc-result-row"><span class="calc-result-label">Selection '+(i+1)+' ('+o.toFixed(2)+')</span><span class="calc-result-val">R'+stake.toFixed(2)+'</span></div>';
+          });
+          document.getElementById('dutchResults').innerHTML=html;
+          var guaranteedReturn=totalStake/sumInv;
+          document.getElementById('totalReturn').textContent='R'+guaranteedReturn.toFixed(2);
+          document.getElementById('profit').textContent='R'+(guaranteedReturn-totalStake).toFixed(2);
+          document.getElementById('roi').textContent=((guaranteedReturn-totalStake)/totalStake*100).toFixed(1)+'%';
+          document.getElementById('calc-results').style.display='block';
+          document.getElementById('results').style.display='block';
+        }
+        document.getElementById('calc-example').addEventListener('click',function(){
+          document.getElementById('selections').innerHTML='<div class="calc-field"><label class="calc-label">Selection 1 Odds</label><input type="number" class="calc-input dutch-odds" value="4.00" min="1.01" step="0.01"></div><div class="calc-field"><label class="calc-label">Selection 2 Odds</label><input type="number" class="calc-input dutch-odds" value="5.00" min="1.01" step="0.01"></div><div class="calc-field"><label class="calc-label">Selection 3 Odds</label><input type="number" class="calc-input dutch-odds" value="8.00" min="1.01" step="0.01"></div>';
+          document.getElementById('totalStake').value='200';
+          calculate();
+        });
+        document.getElementById('calc-reset').addEventListener('click',function(){
+          document.getElementById('selections').innerHTML='<div class="calc-field"><label class="calc-label">Selection 1 Odds</label><input type="number" class="calc-input dutch-odds" value="4.00" min="1.01" step="0.01"></div><div class="calc-field"><label class="calc-label">Selection 2 Odds</label><input type="number" class="calc-input dutch-odds" value="5.00" min="1.01" step="0.01"></div><div class="calc-field"><label class="calc-label">Selection 3 Odds</label><input type="number" class="calc-input dutch-odds" value="8.00" min="1.01" step="0.01"></div>';
+          document.getElementById('totalStake').value='200';
+          document.getElementById('calc-results').style.display='none';
+          document.getElementById('results').style.display='none';
+        });</script></main>
   <footer class="site-footer">
   <div class="container">
     <div class="footer-grid">

@@ -241,9 +241,10 @@
           <div class="calc-card">
             <form id="calc-form" onsubmit="return false;">
               
-    <div class="calc-row"><label>Value 1</label><input type="number" id="val1" value="100" min="0" step="0.01"></div>
-    <div class="calc-row"><label>Value 2</label><input type="number" id="val2" value="2.00" min="0" step="0.01"></div>
-    <button class="btn-primary calc-btn" onclick="calculate()">Calculate</button>
+            <div class="calc-field"><label class="calc-label">Bonus Amount (R)</label><input type="number" id="bonus" class="calc-input" value="5000" min="1" step="1"></div>
+            <div class="calc-field"><label class="calc-label">Wagering Multiplier (x)</label><input type="number" id="multiplier" class="calc-input" value="5" min="1" step="1"></div>
+            <div class="calc-field"><label class="calc-label">Average Odds You'll Bet At</label><input type="number" id="avgOdds" class="calc-input" value="1.80" min="1.01" step="0.01"></div>
+            <button class="btn-primary calc-btn" onclick="calculate()">Calculate Rollover</button>
               <div class="calc-actions">
                 <button type="button" id="calc-example" class="btn-outline btn-sm">Load example</button>
                 <button type="button" id="calc-reset" class="btn-outline btn-sm" style="color:var(--text-muted)">Reset</button>
@@ -253,10 +254,10 @@
             <div id="calc-results" class="calc-results" style="display:none">
               <h3 class="calc-results-title">Results</h3>
               <div id="results" class="calc-results" style="display:none">
-        <div class="calc-result-row"><span class="calc-result-label">Total Return</span><span class="calc-result-val" id="totalReturn">-</span></div>
-        <div class="calc-result-row"><span class="calc-result-label">Profit</span><span class="calc-result-val" id="profit">-</span></div>
-        <div class="calc-result-row"><span class="calc-result-label">ROI</span><span class="calc-result-val" id="roi">-</span></div>
-    </div>
+            <div class="calc-result-row"><span class="calc-result-label">Total Wagering Needed</span><span class="calc-result-val" id="totalReturn">-</span></div>
+            <div class="calc-result-row"><span class="calc-result-label">Expected Cost (Margin)</span><span class="calc-result-val" id="profit">-</span></div>
+            <div class="calc-result-row"><span class="calc-result-label">Net Bonus Value</span><span class="calc-result-val" id="roi">-</span></div>
+        </div>
             </div>
           </div>
 
@@ -264,7 +265,7 @@
             <h2>How it works</h2><p>Enter your bonus amount, wagering multiplier and typical odds to see how much total wagering is needed to clear the bonus, and your expected cost.</p>
             <div class="calc-example-box">
               <strong>Quick Example</strong>
-              <p><strong>Scenario:</strong> TicTacBets offers a R5,000 bonus with 5x wagering requirements.<br><strong>Total wagering needed:</strong> R5,000 x 5 = <strong>R25,000</strong><br><strong>Average odds assumed:</strong> 1.80<br><strong>Expected margin cost:</strong> R25,000 x (1 - 1/1.80) = <strong>R11,111</strong><br>In practice, the bonus is worth approximately R5,000 - R11,111 in expected costs. Whether it is worthwhile depends on your betting volume.</p>
+              <p><strong>Scenario:</strong> TicTacBets offers a R5,000 bonus with 5x wagering requirements.<br><strong>Total wagering needed:</strong> R5,000 x 5 = <strong>R25,000</strong><br><strong>Average odds assumed:</strong> 1.80<br><strong>Expected margin cost:</strong> R25,000 x (1 - 1/1.80) = <strong>R11,111</strong><br>In practice, the bonus is worth approximately R5,000 minus R11,111 in expected costs. Whether it is worthwhile depends on your betting volume.</p>
             </div>
           </div>
 
@@ -372,17 +373,33 @@
     </div>
     
     <script>
-    function calculate(){
-      var v1=parseFloat(document.getElementById('val1').value);
-      var v2=parseFloat(document.getElementById('val2').value);
-      if(isNaN(v1)||isNaN(v2))return;
-      var ret=v1*v2;var prof=ret-v1;
-      document.getElementById('totalReturn').textContent='R'+ret.toFixed(2);
-      document.getElementById('profit').textContent='R'+prof.toFixed(2);
-      document.getElementById('roi').textContent=((prof/v1)*100).toFixed(1)+'%';
-      document.getElementById('calc-results').style.display='block';
-      document.getElementById('results').style.display='block';
-    }</script></main>
+        function calculate(){
+          var bonus=parseFloat(document.getElementById('bonus').value);
+          var mult=parseFloat(document.getElementById('multiplier').value);
+          var odds=parseFloat(document.getElementById('avgOdds').value);
+          if(isNaN(bonus)||isNaN(mult)||isNaN(odds)||bonus<=0||mult<1||odds<=1)return;
+          var totalWager=bonus*mult;
+          var marginCost=totalWager*(1-1/odds);
+          var netValue=bonus-marginCost;
+          document.getElementById('totalReturn').textContent='R'+totalWager.toFixed(2);
+          document.getElementById('profit').textContent='R'+marginCost.toFixed(2);
+          document.getElementById('roi').textContent=(netValue>=0?'R':'- R')+Math.abs(netValue).toFixed(2);
+          document.getElementById('calc-results').style.display='block';
+          document.getElementById('results').style.display='block';
+        }
+        document.getElementById('calc-example').addEventListener('click',function(){
+          document.getElementById('bonus').value='5000';
+          document.getElementById('multiplier').value='5';
+          document.getElementById('avgOdds').value='1.80';
+          calculate();
+        });
+        document.getElementById('calc-reset').addEventListener('click',function(){
+          document.getElementById('bonus').value='5000';
+          document.getElementById('multiplier').value='5';
+          document.getElementById('avgOdds').value='1.80';
+          document.getElementById('calc-results').style.display='none';
+          document.getElementById('results').style.display='none';
+        });</script></main>
   <footer class="site-footer">
   <div class="container">
     <div class="footer-grid">
