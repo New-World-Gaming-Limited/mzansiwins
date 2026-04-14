@@ -997,7 +997,7 @@ a.payment-pill:hover { background: var(--accent); color: #fff; border-color: var
 }
 .category-hero-banner::before {
   content: ''; position: absolute; inset: 0; z-index: 0;
-  background: url(hero-bg-swirl.jpg) center/cover no-repeat;
+  background: url(hero-bg-swirl.webp) center/cover no-repeat;
   opacity: 0.4; pointer-events: none;
 }
 .category-hero-banner .container { position: relative; z-index: 1; }
@@ -1019,7 +1019,7 @@ a.payment-pill:hover { background: var(--accent); color: #fff; border-color: var
 }
 .brand-hero-wrap::before {
   content: ''; position: absolute; inset: 0; z-index: 0;
-  background: url(hero-bg-swirl.jpg) center/cover no-repeat;
+  background: url(hero-bg-swirl.webp) center/cover no-repeat;
   opacity: 0.4; pointer-events: none;
 }
 .brand-hero-wrap .container { position: relative; z-index: 1; }
@@ -1707,7 +1707,7 @@ a.payment-pill:hover { background: var(--accent); color: #fff; border-color: var
   }
   .hero-animated-bg::before {
     content: ''; position: absolute; inset: 0; z-index: 0;
-    background: url(hero-bg-swirl.jpg) center/cover no-repeat;
+    background: url(hero-bg-swirl.webp) center/cover no-repeat;
     opacity: 0.4;
     pointer-events: none;
   }
