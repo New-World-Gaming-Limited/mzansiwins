@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 300" fill="none" stroke="#8ba4d4" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+  <rect width="800" height="300" fill="#0f1a3d"/>
+  <g transform="translate(300,50)" opacity="0.6">
+    <rect x="0" y="80" width="120" height="100" rx="6" stroke-width="2"/>
+    <path d="M0 110 L120 110" stroke-width="1.5"/>
+    <path d="M60 80 L60 180" stroke-width="1.5"/>
+    <path d="M30 80 C30 50 60 40 60 40 C60 40 90 50 90 80" stroke-width="2"/>
+    <circle cx="-30" cy="140" r="12" stroke-width="1.5"/>
+    <text x="-30" y="144" text-anchor="middle" fill="#8ba4d4" stroke="none" font-size="12" font-weight="bold">R</text>
+    <circle cx="160" cy="100" r="12" stroke-width="1.5"/>
+    <text x="160" y="104" text-anchor="middle" fill="#8ba4d4" stroke="none" font-size="12" font-weight="bold">R</text>
+    <circle cx="170" cy="160" r="8" stroke-width="1"/>
+    <path d="M-50 60 L-30 40 L-10 65" stroke-width="1" opacity="0.4"/>
+    <path d="M140 50 L160 30 L180 55" stroke-width="1" opacity="0.4"/>
+    <path d="M-20 190 L0 210 L20 195" stroke-width="1" opacity="0.3"/>
+    <path d="M120 190 L140 215 L160 200" stroke-width="1" opacity="0.3"/>
+  </g>
+  <text x="400" y="270" text-anchor="middle" fill="#8ba4d4" font-family="Inter,sans-serif" font-size="11" letter-spacing="2" opacity="0.5">PROMOTION</text>
+</svg>

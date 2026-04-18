@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 300" fill="none" stroke="#8ba4d4" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+  <rect width="800" height="300" fill="#0f1a3d"/>
+  <g transform="translate(310,50)" opacity="0.6">
+    <rect x="20" y="40" width="100" height="160" rx="4" stroke-width="2"/>
+    <rect x="40" y="60" width="20" height="20" rx="2"/>
+    <rect x="80" y="60" width="20" height="20" rx="2"/>
+    <rect x="40" y="100" width="20" height="20" rx="2"/>
+    <rect x="80" y="100" width="20" height="20" rx="2"/>
+    <rect x="55" y="150" width="30" height="50" rx="2"/>
+    <path d="M50 40 L70 15 L90 40" stroke-width="1.5"/>
+    <circle cx="70" cy="28" r="3"/>
+    <rect x="130" y="100" width="60" height="100" rx="3" stroke-width="1.5"/>
+    <rect x="140" y="115" width="15" height="12" rx="1"/>
+    <rect x="165" y="115" width="15" height="12" rx="1"/>
+    <rect x="140" y="145" width="15" height="12" rx="1"/>
+    <rect x="155" y="170" width="20" height="30" rx="1"/>
+  </g>
+  <text x="400" y="270" text-anchor="middle" fill="#8ba4d4" font-family="Inter,sans-serif" font-size="11" letter-spacing="2" opacity="0.5">INDUSTRY</text>
+</svg>
