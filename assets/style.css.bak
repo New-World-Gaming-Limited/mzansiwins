@@ -2133,3 +2133,12 @@ ol li { padding-left: 4px; }
 .code-box-unified .copy-icon { cursor: pointer; color: var(--text-muted); flex-shrink: 0; }
 .code-box-unified .copy-icon:hover { color: var(--accent); }
 [data-theme="dark"] .code-box-unified { background: rgba(131,160,236,0.1); border-color: var(--accent); }
+
+/* Mobile-responsive tables and grids */
+@media (max-width: 640px) {
+  table { display: block; overflow-x: auto; -webkit-overflow-scrolling: touch; font-size: 13px; }
+  table td, table th { padding: 8px 10px; white-space: nowrap; }
+  .stat-grid, .key-facts-grid { grid-template-columns: repeat(2, 1fr) !important; }
+  .fixture-card { padding: 16px !important; }
+  .hero-stats { grid-template-columns: repeat(2, 1fr) !important; gap: 8px !important; }
+}

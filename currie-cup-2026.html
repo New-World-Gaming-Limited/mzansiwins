@@ -41,7 +41,7 @@
   <style>*{margin:0;padding:0;box-sizing:border-box;-webkit-tap-highlight-color:transparent}:root{--accent:#1641B4;--accent-hover:#1233A0;--accent-light:#EEF2FF;--surface:#fff;--surface-2:#F0F0F2;--border:#e5e5e5;--text-primary:#111;--text-secondary:#555;--text-muted:#888;--bonus:#16a34a;--bg:#F9FAFC;--card-bg:#fff;--card-border:1px solid #e5e5e5;--sep:rgba(0,0,0,0.06)}[data-theme="dark"]{--accent-light:rgba(22,65,180,0.2);--surface:#1c1c1c;--surface-2:#1a1f2e;--border:rgba(255,255,255,0.12);--text-primary:#f5f5f5;--text-secondary:#b0b0b0;--text-muted:#888;--bg:#111;--card-bg:#1c1c1c;--card-border:1px solid rgba(255,255,255,0.1);--sep:rgba(255,255,255,0.08)}html{scroll-behavior:smooth;-webkit-font-smoothing:antialiased}body{font-family:'Inter',system-ui,sans-serif;background:var(--bg);color:var(--text-primary);font-size:16px;line-height:1.75;margin:0}a{color:inherit;text-decoration:none}img{max-width:100%;height:auto}.top-bar{position:sticky;top:0;z-index:100;background:var(--surface);border-bottom:1px solid var(--border);backdrop-filter:blur(12px)}.nav-inner{max-width:1200px;margin:0 auto;padding:0 20px;display:flex;align-items:center;justify-content:space-between;height:60px}.container{max-width:1200px;margin:0 auto;padding:0 20px}.hero{padding:64px 0 48px;border-bottom:1px solid var(--border)}.hero h1{font-size:clamp(2rem,5vw,2.75rem);font-weight:800;letter-spacing:-0.03em;line-height:1.15;margin-bottom:20px}.affiliate-disclosure{font-size:11px;color:var(--text-muted);text-align:center;padding:6px 20px;background:var(--surface-2);border-bottom:1px solid var(--sep)}@media(max-width:768px){.hero{padding:40px 0 32px}.container{padding:0 16px}}
   /* Hub hero banner */
   .hub-hero{background:linear-gradient(135deg,#1641B4 0%,#0d2d8a 100%);padding:52px 0 44px;border-bottom:1px solid rgba(255,255,255,0.1)}
-  .hub-stat-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:16px;margin-top:32px}
+  .hub-stat-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(140px,1fr));gap:16px;margin-top:32px}
   @media(max-width:768px){.hub-stat-grid{grid-template-columns:repeat(2,1fr)}}
   @media(max-width:420px){.hub-stat-grid{grid-template-columns:1fr 1fr}}
   .hub-stat-card{background:rgba(255,255,255,0.1);border:1px solid rgba(255,255,255,0.18);border-radius:10px;padding:14px 16px;text-align:center}
@@ -62,7 +62,7 @@
   .btn-visit{background:var(--accent);color:#fff;font-size:13px;font-weight:700;padding:9px 18px;border-radius:7px;white-space:nowrap;display:inline-block;text-align:center}
   .btn-review{font-size:11px;color:var(--accent);text-decoration:underline;text-align:center}
   /* Key facts grid */
-  .facts-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:12px;margin:20px 0}
+  .facts-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(140px,1fr));gap:12px;margin:20px 0}
   @media(max-width:900px){.facts-grid{grid-template-columns:repeat(2,1fr)}}
   @media(max-width:480px){.facts-grid{grid-template-columns:1fr 1fr}}
   .fact-card{background:var(--surface-2);border:1px solid var(--border);border-radius:10px;padding:14px 16px}
@@ -341,7 +341,7 @@
 
   <main>
     <div class="container" style="padding-top:40px;padding-bottom:80px">
-      <div class="news-layout" style="display:grid;grid-template-columns:1fr 300px;gap:32px">
+      <div class="news-layout" style="display:grid;grid-template-columns:1fr;gap:32px">
         <div>
           <article class="article-body">
 
@@ -580,7 +580,7 @@
             <p>The Currie Cup has been contested since 1889, making it the oldest provincial rugby union competition in the world. The trophy was donated by Sir Donald Currie, a shipping magnate, who gifted it to the team that performed best against the first touring British rugby side to visit South Africa. Griqualand West, the team that awarded the cup after the tour, chose to present it as a prize for provincial competition rather than keep it, and South African rugby has contested it ever since.</p>
             <p>Western Province dominated the competition for most of its history, winning more titles than any other province. In the modern professional era, the Bulls became the dominant force, particularly between 2009 and 2023. Recent seasons have seen the title move between teams, reflecting the closer competitive balance that the SA Cup qualification system brings.</p>
 
-            <table class="history-table">
+            <div style="overflow-x:auto;-webkit-overflow-scrolling:touch"><table class="history-table">
               <thead>
                 <tr>
                   <th>Year</th>
@@ -595,7 +595,7 @@
                 <tr><td>2022</td><td>Bulls</td><td>Sharks</td></tr>
                 <tr><td>2021</td><td>Bulls</td><td>Sharks</td></tr>
               </tbody>
-            </table>
+            </table></div>
 
             <p>The Bulls' three-year dominance from 2021 to 2023 was one of the most dominant runs in the competition's modern era. The Sharks were finalists in all three of those years, which illustrates how the competition has become a two-province contest in recent cycles. Griquas' 2025 win was a significant upset and ended that pattern, mirroring their surprise title in 2020 when they became the first smaller province to win in the professional era.</p>
 
