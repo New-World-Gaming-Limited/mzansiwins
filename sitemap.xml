@@ -1482,4 +1482,40 @@
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
+  <url>
+    <loc>https://mzansiwins.co.za/springboks-vs-all-blacks-2026</loc>
+    <lastmod>2026-04-19</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://mzansiwins.co.za/nations-championship-2026</loc>
+    <lastmod>2026-04-19</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://mzansiwins.co.za/currie-cup-2026</loc>
+    <lastmod>2026-04-19</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://mzansiwins.co.za/epl-2026-27</loc>
+    <lastmod>2026-04-19</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://mzansiwins.co.za/psl-2026-27</loc>
+    <lastmod>2026-04-19</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://mzansiwins.co.za/sa20-2027</loc>
+    <lastmod>2026-04-19</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
 </urlset>
