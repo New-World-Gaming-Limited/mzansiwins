@@ -975,14 +975,14 @@ a.payment-pill:hover { background: var(--accent); color: #fff; border-color: var
 
 /* ===== REVIEW HERO LOGO ===== */
 .review-hero-header {
-  display: flex; align-items: flex-start; gap: 16px;
+  display: flex; align-items: center; gap: 20px;
 }
 .review-hero-text {
   flex: 1;
 }
 .review-hero-logo {
-  width: 64px; height: 64px; border-radius: 12px; object-fit: contain;
-  border: 1px solid var(--border); flex-shrink: 0;
+  width: 80px; height: 80px; border-radius: 14px; object-fit: contain;
+  border: 2px solid rgba(255,255,255,0.2); flex-shrink: 0;
 }
 @media (max-width: 767px) {
   .review-hero-header { gap: 12px; }
